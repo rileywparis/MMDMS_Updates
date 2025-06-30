@@ -29,6 +29,14 @@
           <DataField>UTILITY</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="ACCT_NO">
+          <DataField>ACCT_NO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SERV_ID">
+          <DataField>SERV_ID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>v2_MDMSDBDataSet</rd:DataSetName>
@@ -37,6 +45,30 @@
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
         <rd:TableAdapterName>UsageSummaryTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="AcctServCountsDataSet">
+      <Query>
+        <DataSourceName>v2_MDMSDBDataSet</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="DistinctAcctCount">
+          <DataField>DistinctAcctCount</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="DistinctServCount">
+          <DataField>DistinctServCount</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>v2_MDMSDBDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\panda\source\repos\MDMS\MDMS\v2_MDMSDBDataSet.xsd</rd:SchemaPath>
+        <rd:TableName>AcctServCounts</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>AcctServCountsTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
@@ -51,7 +83,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Billing Edit List Summary</Value>
+                    <Value>Usage Report</Value>
                     <Style>
                       <FontSize>14pt</FontSize>
                       <FontWeight>Bold</FontWeight>
@@ -469,7 +501,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!BILL_USAGE.Value)</Value>
+                                  <Value>=Format(Sum(Fields!BILL_USAGE.Value), "N0")</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -513,7 +545,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!AMOUNT.Value)</Value>
+                                  <Value>=Format(Sum(Fields!AMOUNT.Value), "N2")</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -650,7 +682,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!BILL_USAGE.Value)</Value>
+                                  <Value>=Format(Sum(Fields!BILL_USAGE.Value), "N0")</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -685,6 +717,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -696,7 +729,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!AMOUNT.Value)</Value>
+                                  <Value>=Format(Sum(Fields!AMOUNT.Value), "N2")</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -841,7 +874,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=Parameters!NoOfAccounts.Value</Value>
+                    <Value>=Sum(Fields!DistinctAcctCount.Value, "AcctServCountsDataSet")</Value>
                     <Style />
                   </TextRun>
                 </TextRuns>
@@ -873,7 +906,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=Parameters!NoOfLocations.Value</Value>
+                    <Value>=Sum(Fields!DistinctServCount.Value, "AcctServCountsDataSet")</Value>
                     <Style />
                   </TextRun>
                 </TextRuns>
@@ -1022,14 +1055,6 @@
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
-    <ReportParameter Name="NoOfAccounts">
-      <DataType>Integer</DataType>
-      <Prompt>ReportParameter1</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="NoOfLocations">
-      <DataType>String</DataType>
-      <Prompt>ReportParameter1</Prompt>
-    </ReportParameter>
     <ReportParameter Name="MonthYear">
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
@@ -1044,16 +1069,6 @@
           <ColumnIndex>0</ColumnIndex>
           <RowIndex>0</RowIndex>
           <ParameterName>Sort</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>1</ColumnIndex>
-          <RowIndex>0</RowIndex>
-          <ParameterName>NoOfAccounts</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>2</ColumnIndex>
-          <RowIndex>0</RowIndex>
-          <ParameterName>NoOfLocations</ParameterName>
         </CellDefinition>
         <CellDefinition>
           <ColumnIndex>3</ColumnIndex>

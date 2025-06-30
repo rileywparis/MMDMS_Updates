@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "MMDMS_Updater/1.0.0": {
+        "runtime": {
+          "MMDMS_Updater.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MMDMS_Updater/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -506,7 +506,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=First(Fields!AddressString.Value)</Value>
+                                  <Value>=First(Fields!ADDR.Value)</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -883,21 +883,21 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <Textbox Name="FullName">
+                        <Textbox Name="FNAME">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=First(Fields!FullName.Value)</Value>
+                                  <Value>=First(Fields!FNAME.Value)</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>FullName</rd:DefaultName>
+                          <rd:DefaultName>FNAME</rd:DefaultName>
                           <Top>5.31045in</Top>
                           <Left>1.15663in</Left>
                           <Height>0.19792in</Height>
@@ -920,7 +920,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=First(Fields!ADDRESS1.Value)</Value>
+                                  <Value>=First(Fields!ADDR1.Value)</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -1110,7 +1110,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=First(Fields!ADDRESS2.Value)</Value>
+                                  <Value>=First(Fields!ADDR2.Value)</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -1372,7 +1372,7 @@
                                   </TablixMember>
                                 </TablixMembers>
                               </TablixRowHierarchy>
-                              <DataSetName>DataSet1</DataSetName>
+                              <DataSetName>Invoices</DataSetName>
                               <Height>0.5in</Height>
                               <Width>3.41573in</Width>
                               <Style>
@@ -1458,7 +1458,7 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>DataSet1</DataSetName>
+        <DataSetName>Invoices</DataSetName>
         <Height>6.68193in</Height>
         <Width>7.90625in</Width>
         <Style>
@@ -1490,108 +1490,76 @@
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DataSet1">
+    <DataSet Name="Invoices">
       <Query>
         <DataSourceName>MDMSDBDataSet</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="AddressString">
-          <DataField>AddressString</DataField>
+        <Field Name="SERV_ID">
+          <DataField>SERV_ID</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="ACCT_NO">
           <DataField>ACCT_NO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="FullName">
-          <DataField>FullName</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Expr1">
-          <DataField>Expr1</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="UTILITY">
           <DataField>UTILITY</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="TRAN_CODE">
-          <DataField>TRAN_CODE</DataField>
+        <Field Name="ROUTE_NO">
+          <DataField>ROUTE_NO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="POST_DATE">
-          <DataField>POST_DATE</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="DUE_DATE">
-          <DataField>DUE_DATE</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="AMOUNT">
-          <DataField>AMOUNT</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="DESC">
-          <DataField>DESC</DataField>
+        <Field Name="READ_SEQ">
+          <DataField>READ_SEQ</DataField>
           <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ADDRESS1">
-          <DataField>ADDRESS1</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ADDRESS2">
-          <DataField>ADDRESS2</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CITY">
-          <DataField>CITY</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="STATE">
-          <DataField>STATE</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ZIP">
-          <DataField>ZIP</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="BILL_USAGE">
-          <DataField>BILL_USAGE</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="METER_NO">
           <DataField>METER_NO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="MET_MESS">
+          <DataField>MET_MESS</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NOTES">
+          <DataField>NOTES</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="CUR_READ">
           <DataField>CUR_READ</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="PRIOR_READ">
-          <DataField>PRIOR_READ</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="PRIOR_DATE">
-          <DataField>PRIOR_DATE</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="CUR_DATE">
           <DataField>CUR_DATE</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
-        <Field Name="SERV_ID">
-          <DataField>SERV_ID</DataField>
+        <Field Name="LAST">
+          <DataField>LAST</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="BALANCE">
-          <DataField>BALANCE</DataField>
+        <Field Name="FIRST">
+          <DataField>FIRST</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="REV_FNAME">
+          <DataField>REV_FNAME</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ADDR">
+          <DataField>ADDR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RowNum">
+          <DataField>RowNum</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>MDMSDBDataSet</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\panda\source\repos\MDMS\MDMS\MDMSDBDataSet.xsd</rd:SchemaPath>
+        <rd:DataSetName>v2_MDMSDBDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\panda\source\repos\MDMS\MDMS\v2_MDMSDBDataSet.xsd</rd:SchemaPath>
         <rd:TableName>Bills</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
