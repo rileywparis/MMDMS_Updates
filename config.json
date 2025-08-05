@@ -1,0 +1,52 @@
+{
+  "Database": {
+    "SavedEditTbl": "SavedEditTable",
+    "AccountsTbl": "Accounts",
+    "UsageHistoryTbl": "Usages",
+    "ServiceTbl": "ServiceLocs",
+    "UtilityTbl": "Utilities",
+    "TransTbl": "Transactions",
+    "RateCodesTbl": "RateDescs",
+    "RateAmountsTbl": "Rates",
+    "AcctNoRegistryTbl": "AcctNoRegistry",
+    "LatestUsageVw": "vLatestUsage",
+    "BillingVw": "vBillingData",
+    "RouteSheetVw": "vRouteSheetData",
+    "DEPWaterUsageVw": "fDEPWaterUsage",
+    "ArchivedAccountsTbl": "ArchivedAccounts",
+    "ArchivedServiceTbl": "ArchivedServiceLocs",
+    "ArchivedUtilityTbl": "ArchivedUtilities",
+    "AccountCols": "A.ACCT_NO, A.LAST, A.FIRST, A.MIDDLE, A.SPOUSE, A.H_PHONE, A.W_PHONE, A.CUSTNOTE, A.CARE_OF, A.C_PHONE, A.FNAME, A.REV_FNAME, S.ADDR, S.SERV_ID, S.ROUTE_NO, S.SUFFIX, S.NUMBER, S.STREET, S.CITY, S.SERV_NOTES",
+    "UsageCols": "UTILITY, METER_NO, BILL_USAGE, PRIOR_READ, PRIOR_DATE, CUR_READ, CUR_DATE, TRAN_DATE, REF_NO",
+    "UtilityCols": "UTIL_PK, UTILITY, RATE_CODE, SERV_STAT, METER_NO, METER_ON, NOTES, READ_SEQ, SIZE, NO_OF_DIAL, NO_OF_MIN, INSTALL_DA"
+  },
+  "QuickBooks": {
+    "BreakdownPenalty": false,
+    "FlatRatePenalty": false,
+    "PenaltyPercent": 0.05,
+    "PenaltyCharge": 5.00,
+    "ErrorAllow": 0.15,
+    "WaterUsageItem": "Water Usage",
+    "SewerUsageItem": "Sewer Usage",
+    "WaterImpItem": "Water Improvements",
+    "SewerImpItem": "Sewer Improvements",
+    "PenaltyItem": "Penalty",
+    "WaterPenaltyItem": "",
+    "SewerPenaltyItem": "",
+    "WaterImpPenaltyItem": "",
+    "SewerImpPenaltyItem": "",
+    "InvoiceTemplate": "MMDMS Invoice"
+  },
+  "Billing": {
+    "GracePeriodDays": 10,
+    "PenaltyRate": 0.05
+  },
+  "Company": {
+    "Name": "Municipal Authority of Conneaut Lake",
+    "Address": "123 Main St",
+    "Phone": "555-1234",
+    "City": "Conneaut Lake",
+    "State": "PA",
+    "Zip": "16316"
+  }
+}

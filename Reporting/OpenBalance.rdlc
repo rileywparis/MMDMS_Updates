@@ -432,7 +432,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -483,7 +482,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Municipal Authority of Conneaut Lake</Value>
+                    <Value>=Parameters!Company.Value</Value>
                     <Style>
                       <FontSize>9pt</FontSize>
                       <FontWeight>Normal</FontWeight>
@@ -698,6 +697,10 @@
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
+    <ReportParameter Name="Company">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
@@ -708,6 +711,11 @@
           <ColumnIndex>0</ColumnIndex>
           <RowIndex>0</RowIndex>
           <ParameterName>Sort</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>Company</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>
