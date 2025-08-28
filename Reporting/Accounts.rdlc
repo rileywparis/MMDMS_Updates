@@ -245,7 +245,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Account #</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -279,7 +281,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Last, First M</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -313,7 +317,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Route</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -347,7 +353,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Status</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -514,7 +522,19 @@
                   <KeepWithGroup>After</KeepWithGroup>
                 </TablixMember>
                 <TablixMember>
-                  <Group Name="Details" />
+                  <Group Name="Details">
+                    <Filters>
+                      <Filter>
+                        <FilterExpression>=IIf(UCase(Parameters!Filter.Value) = "ANY",
+     (Fields!SERV_STAT.Value = "ACTIVE" OR Fields!SERV_STAT.Value = "INACTIVE"),
+     UCase(Fields!SERV_STAT.Value) = UCase(Parameters!Filter.Value))</FilterExpression>
+                        <Operator>Equal</Operator>
+                        <FilterValues>
+                          <FilterValue>=True</FilterValue>
+                        </FilterValues>
+                      </Filter>
+                    </Filters>
+                  </Group>
                   <SortExpressions>
                     <SortExpression>
                       <Value>=Fields(Parameters!Sort.Value).Value</Value>
@@ -663,6 +683,10 @@
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
+    <ReportParameter Name="Filter">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
@@ -678,6 +702,11 @@
           <ColumnIndex>1</ColumnIndex>
           <RowIndex>0</RowIndex>
           <ParameterName>Company</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>Filter</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>

@@ -18,12 +18,11 @@
     "ArchivedUtilityTbl": "ArchivedUtilities",
     "AccountCols": "A.ACCT_NO, A.LAST, A.FIRST, A.MIDDLE, A.SPOUSE, A.H_PHONE, A.W_PHONE, A.CUSTNOTE, A.CARE_OF, A.C_PHONE, A.FNAME, A.REV_FNAME, S.ADDR, S.SERV_ID, S.ROUTE_NO, S.SUFFIX, S.NUMBER, S.STREET, S.CITY, S.SERV_NOTES",
     "UsageCols": "UTILITY, METER_NO, BILL_USAGE, PRIOR_READ, PRIOR_DATE, CUR_READ, CUR_DATE, TRAN_DATE, REF_NO",
-    "UtilityCols": "UTIL_PK, UTILITY, RATE_CODE, SERV_STAT, METER_NO, METER_ON, NOTES, READ_SEQ, SIZE, NO_OF_DIAL, NO_OF_MIN, INSTALL_DA"
+    "UtilityCols": "UTIL_PK, UTILITY, RATE_CODE, SERV_STAT, METER_NO, NOTES, READ_SEQ, SIZE, NO_OF_DIAL, NO_OF_MIN, INSTALL_DA"
   },
   "QuickBooks": {
     "BreakdownPenalty": false,
     "FlatRatePenalty": false,
-    "PenaltyPercent": 0.05,
     "PenaltyCharge": 5.00,
     "ErrorAllow": 0.15,
     "WaterUsageItem": "Water Usage",
@@ -37,9 +36,16 @@
     "SewerImpPenaltyItem": "",
     "InvoiceTemplate": "MMDMS Invoice"
   },
+  "File": {
+    "ImportMeterNoHeader": "Serial",
+    "ImportReadingHeader": "Reading",
+    "ImportDateHeader": "Date"
+  },
   "Billing": {
+    "ExtraCharges": "ImpsEDU",
     "GracePeriodDays": 10,
-    "PenaltyRate": 0.05
+    "PenaltyRate": 0.05,
+    "MeterSizes": "5/8,3/4,1,1 1/2,2,3,4"
   },
   "Company": {
     "Name": "Municipal Authority of Conneaut Lake",

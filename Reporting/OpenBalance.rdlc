@@ -9,6 +9,13 @@
       </ConnectionProperties>
       <rd:DataSourceID>aa632fdb-a4b8-4430-b6bf-28bcf3abdf29</rd:DataSourceID>
     </DataSource>
+    <DataSource Name="v2_MDMSDBDataSet">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>de8dc84e-78ca-4a80-9f2c-8047ca967aa1</rd:DataSourceID>
+    </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="CustomerDataSet">
@@ -23,7 +30,7 @@
         </Field>
         <Field Name="Balance">
           <DataField>Balance</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
+          <rd:TypeName>System.Nullable`1[[System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</rd:TypeName>
         </Field>
         <Field Name="BillTo">
           <DataField>BillTo</DataField>
@@ -33,8 +40,8 @@
           <DataField>First</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="FNAME">
-          <DataField>FNAME</DataField>
+        <Field Name="FullName">
+          <DataField>FullName</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Last">
@@ -43,10 +50,6 @@
         </Field>
         <Field Name="Middle">
           <DataField>Middle</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="QbMemo">
-          <DataField>QbMemo</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
@@ -120,7 +123,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Accountt No.</Value>
+                                  <Value>Account #</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -155,7 +158,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Name</Value>
+                                  <Value>Last, First M</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -270,21 +273,21 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="FNAME">
+                        <Textbox Name="FullName">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!FNAME.Value</Value>
+                                  <Value>=Left(Fields!FullName.Value, InStrRev(Fields!FullName.Value, " ") - 1)</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>FNAME</rd:DefaultName>
+                          <rd:DefaultName>FullName</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -295,6 +298,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -457,6 +461,11 @@
                       <GroupExpression>=Fields!AcctNo.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields(Parameters!Sort.Value).Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
                 </TablixMember>
                 <TablixMember>
                   <KeepWithGroup>Before</KeepWithGroup>
