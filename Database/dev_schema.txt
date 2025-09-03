@@ -50,7 +50,6 @@ Table: Utilities
 - APPLY_HOW System.String
 - NO_OF_MIN System.Int32
 - METER_NO System.String
-- METER_ON System.Boolean
 - BEG_READ System.String
 - NOTES System.String
 - MET_MESS System.String
@@ -88,14 +87,6 @@ Table: ServiceLocs
 - ADDR System.String
 - REV_ADDR System.String
 - ACCT_NO System.String
-
-Table: vLatestUsage
-- SERV_ID System.String
-- CUR_READ System.Int32
-- PRIOR_READ System.Int32
-- CUR_DATE System.DateTime
-- PRIOR_DATE System.DateTime
-- RowNum System.Int64
 
 Table: vBillingData
 - SERV_ID System.String
@@ -196,7 +187,6 @@ Table: ArchivedUtilities
 - APPLY_HOW System.String
 - NO_OF_MIN System.Int32
 - METER_NO System.String
-- METER_ON System.String
 - BEG_READ System.String
 - NOTES System.String
 - MET_MESS System.String
@@ -266,4 +256,12 @@ Table: Transactions
 - AMOUNT System.Decimal
 - REF_NO System.String
 - BILL_CYCLE System.Int32
+
+Table: vLatestUsage
+- SERV_ID System.String
+- UTILITY System.String
+- CUR_READ System.Int32
+- PRIOR_READ System.Int32
+- CUR_DATE System.DateTime
+- PRIOR_DATE System.DateTime
 
