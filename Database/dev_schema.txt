@@ -113,6 +113,7 @@ Table: vBillingData
 - CUSTNOTE System.String
 - STREET System.String
 - NUMBER System.String
+- SUFFIX System.String
 - RowNum System.Int64
 
 Table: vRouteSheetData
