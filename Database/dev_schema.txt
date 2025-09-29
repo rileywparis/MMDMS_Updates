@@ -81,7 +81,6 @@ Table: ServiceLocs
 - CITY System.String
 - STATE System.String
 - ZIP System.String
-- SERV_STAT System.String
 - SERV_NOTES System.String
 - ADD_DATE System.DateTime
 - ADDR System.String

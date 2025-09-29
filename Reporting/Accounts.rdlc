@@ -535,11 +535,6 @@
                       </Filter>
                     </Filters>
                   </Group>
-                  <SortExpressions>
-                    <SortExpression>
-                      <Value>=Fields(Parameters!Sort.Value).Value</Value>
-                    </SortExpression>
-                  </SortExpressions>
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>

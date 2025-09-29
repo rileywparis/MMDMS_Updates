@@ -24,7 +24,7 @@
     "BreakdownPenalty": false,
     "FlatRatePenalty": false,
     "PenaltyCharge": 5.00,
-    "ErrorAllow": 0.15,
+    "ErrorAllow": 0.20,
     "WaterUsageItem": "Water Usage",
     "SewerUsageItem": "Sewer Usage",
     "WaterImpItem": "Water Improvements",
@@ -45,7 +45,8 @@
     "ExtraCharges": "ImpsEDU",
     "GracePeriodDays": 10,
     "PenaltyRate": 0.05,
-    "MeterSizes": "5/8,3/4,1,1 1/2,2,3,4"
+    "MeterSizes": "5/8,3/4,1,1 1/2,2,3,4",
+    "DueDays":  24
   },
   "Company": {
     "Name": "Municipal Authority of Conneaut Lake",
