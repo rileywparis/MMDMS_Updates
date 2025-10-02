@@ -1,4 +1,5 @@
 {
-  "version": "0.1.6",
-  "downloadPath": "https://github.com/rileywparis/MMDMS_Updates"
+  "version": "0.1.7",
+  "mainAppExe": "MuniBridge.exe",
+  "mainAppProcessName": "MMDMS"
 }
