@@ -124,6 +124,7 @@ Table: vRouteSheetData
 - METER_NO System.String
 - MET_MESS System.String
 - NOTES System.String
+- NO_OF_DIAL System.Int32
 - CUR_READ System.Int32
 - CUR_DATE System.DateTime
 - LAST System.String

@@ -21,10 +21,6 @@
     "UtilityCols": "UTIL_PK, UTILITY, RATE_CODE, SERV_STAT, METER_NO, NOTES, READ_SEQ, SIZE, NO_OF_DIAL, NO_OF_MIN, INSTALL_DA"
   },
   "QuickBooks": {
-    "BreakdownPenalty": false,
-    "FlatRatePenalty": false,
-    "PenaltyCharge": 5.00,
-    "ErrorAllow": 0.20,
     "WaterUsageItem": "Water Usage",
     "SewerUsageItem": "Sewer Usage",
     "WaterImpItem": "Water Improvements",
@@ -44,9 +40,11 @@
   "Billing": {
     "ExtraCharges": "ImpsEDU",
     "GracePeriodDays": 10,
+    "FlatRatePenalty": false,
     "PenaltyRate": 0.05,
+    "ErrorAllow": 0.20,
     "MeterSizes": "5/8,3/4,1,1 1/2,2,3,4",
-    "DueDays":  24
+    "DueDays": 24
   },
   "Company": {
     "Name": "Municipal Authority of Conneaut Lake",
