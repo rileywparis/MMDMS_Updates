@@ -417,7 +417,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=CStr(Fields!UTILITY.Value).Substring(1)</Value>
+                                  <Value>=CStr(Fields!UTILITY.Value)</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -460,7 +460,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=IIf(Fields!UTILITY.Value = "1WATER" Or Fields!UTILITY.Value = "2SEWER", "Gallons", "")</Value>
+                                  <Value>=IIf(Fields!UTILITY.Value = 1 Or Fields!UTILITY.Value = 2, "Gallons", "")</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>

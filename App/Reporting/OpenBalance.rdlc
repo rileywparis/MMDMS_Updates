@@ -9,13 +9,6 @@
       </ConnectionProperties>
       <rd:DataSourceID>aa632fdb-a4b8-4430-b6bf-28bcf3abdf29</rd:DataSourceID>
     </DataSource>
-    <DataSource Name="v2_MDMSDBDataSet">
-      <ConnectionProperties>
-        <DataProvider>System.Data.DataSet</DataProvider>
-        <ConnectString>/* Local Connection */</ConnectString>
-      </ConnectionProperties>
-      <rd:DataSourceID>de8dc84e-78ca-4a80-9f2c-8047ca967aa1</rd:DataSourceID>
-    </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="CustomerDataSet">
@@ -269,7 +262,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>

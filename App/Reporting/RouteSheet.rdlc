@@ -77,6 +77,10 @@
           <DataField>RowNum</DataField>
           <rd:TypeName>System.Int64</rd:TypeName>
         </Field>
+        <Field Name="UTIL_NAME">
+          <DataField>UTIL_NAME</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>v2_MDMSDBDataSet</rd:DataSetName>
@@ -525,7 +529,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=CStr(Fields!UTILITY.Value).Substring(1)</Value>
+                                      <Value>=Cstr(Fields!UTIL_NAME.Value)</Value>
                                       <Style>
                                         <FontWeight>Normal</FontWeight>
                                       </Style>

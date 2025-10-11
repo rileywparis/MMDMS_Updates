@@ -1,5 +1,10 @@
 {
   "Database": {
+    "Utility1": "WATER",
+    "Utility2": "SEWER",
+    "Utility4": "WATER IMP",
+    "Utility5": "SEWER IMP",
+    "Utility7": "PENALTY",
     "SavedEditTbl": "SavedEditTable",
     "AccountsTbl": "Accounts",
     "UsageHistoryTbl": "Usages",
@@ -9,6 +14,7 @@
     "RateCodesTbl": "RateDescs",
     "RateAmountsTbl": "Rates",
     "AcctNoRegistryTbl": "AcctNoRegistry",
+    "CopyBillTbl": "CopyBillToList",
     "LatestUsageVw": "vLatestUsage",
     "BillingVw": "vBillingData",
     "RouteSheetVw": "vRouteSheetData",
@@ -29,7 +35,8 @@
     "SewerPenaltyItem": "",
     "WaterImpPenaltyItem": "",
     "SewerImpPenaltyItem": "",
-    "InvoiceTemplate": "MMDMS Invoice"
+    "InvoiceTemplate": "MuniBridge Invoice",
+    "SortBillsBy": "LastName"
   },
   "File": {
     "ImportMeterNoHeader": "Serial",
@@ -43,11 +50,12 @@
     "PenaltyRate": 0.05,
     "ErrorAllow": 0.30,
     "MeterSizes": "5/8,3/4,1,1 1/2,2,3,4",
-    "DueDays": 24
+    "DueDays": 24,
+    "PrintInMuniBridge": true
   },
   "Company": {
     "Name": "Municipal Authority of Conneaut Lake",
-    "Address": "123 Main St",
+    "Address": "PO Box 395",
     "Phone": "555-1234",
     "City": "Conneaut Lake",
     "State": "PA",
