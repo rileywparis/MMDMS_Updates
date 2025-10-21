@@ -5,6 +5,7 @@
     "notes": [
       "*Copy Bill To feature",
       "*Bill Edit List Report",
+      "*Invoice mass messages",
       " Allow posting without sending to QuickBooks",
       " Database optimization",
       " Improved updater"
