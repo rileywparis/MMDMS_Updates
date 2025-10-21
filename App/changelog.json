@@ -5,9 +5,9 @@
     "notes": [
       "*Copy Bill To feature",
       "*Bill Edit List Report",
-      "Allow posting without sending to QuickBooks",
-      "Database optimization",
-      "Improved updater"
+      " Allow posting without sending to QuickBooks",
+      " Database optimization",
+      " Improved updater"
     ]
   },
   {
@@ -16,9 +16,10 @@
     "notes": [
       "*Update notes",
       "*Unassigned service location view",
+      "*Recent searches",
       "*Reminders/Calendar",
-      "Update account creation form",
-      "Update estimate UI + settings"
+      " Update account creation form",
+      " Update estimate UI + settings"
     ]
   }
 ]
