@@ -1,0 +1,24 @@
+[
+  {
+    "version": "0.2.0",
+    "date": "2025-10-11",
+    "notes": [
+      "*Copy Bill To feature",
+      "*Bill Edit List Report",
+      "Allow posting without sending to QuickBooks",
+      "Database optimization",
+      "Improved updater"
+    ]
+  },
+  {
+    "version": "0.2.1",
+    "date": "2025-10-21",
+    "notes": [
+      "*Update notes",
+      "*Unassigned service location view",
+      "*Reminders/Calendar",
+      "Update account creation form",
+      "Update estimate UI + settings"
+    ]
+  }
+]

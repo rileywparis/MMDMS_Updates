@@ -17,70 +17,50 @@
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
+        <Field Name="UTILITY">
+          <DataField>UTILITY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SERV_ID">
+          <DataField>SERV_ID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="StartRead">
+          <DataField>StartRead</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EndRead">
+          <DataField>EndRead</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CalculatedUsage">
+          <DataField>CalculatedUsage</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="CATEGORY">
           <DataField>CATEGORY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CorrectedUsage">
+          <DataField>CorrectedUsage</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SummedUsage">
+          <DataField>SummedUsage</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="ROUTE_NO">
           <DataField>ROUTE_NO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="CUR_DATE">
-          <DataField>CUR_DATE</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="AccountCount">
-          <DataField>AccountCount</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="TotalUsage">
-          <DataField>TotalUsage</DataField>
-          <rd:TypeName>System.Int64</rd:TypeName>
-        </Field>
-        <Field Name="ACCT_NO">
-          <DataField>ACCT_NO</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="BILL_USAGE">
-          <DataField>BILL_USAGE</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="LatestReadingDate">
-          <DataField>LatestReadingDate</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="TotalAccountsInRoute">
-          <DataField>TotalAccountsInRoute</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="TotalUsageInRoute">
-          <DataField>TotalUsageInRoute</DataField>
-          <rd:TypeName>System.Int64</rd:TypeName>
-        </Field>
-        <Field Name="TotalAccountsInCategory">
-          <DataField>TotalAccountsInCategory</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="TotalUsageInCategory">
-          <DataField>TotalUsageInCategory</DataField>
-          <rd:TypeName>System.Int64</rd:TypeName>
-        </Field>
-        <Field Name="GrandTotalAccounts">
-          <DataField>GrandTotalAccounts</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="GrandTotalUsage">
-          <DataField>GrandTotalUsage</DataField>
-          <rd:TypeName>System.Int64</rd:TypeName>
-        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>v2_MDMSDBDataSet</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\panda\source\repos\MDMS\MDMS\v2_MDMSDBDataSet.xsd</rd:SchemaPath>
+        <rd:SchemaPath>C:\Users\panda\source\repos\MDMS\MDMS\Reporting\v2_MDMSDBDataSet.xsd</rd:SchemaPath>
         <rd:TableName>DEPWaterUsage</rd:TableName>
-        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
-        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>DEPWaterUsageTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterFillMethod />
+        <rd:TableAdapterGetDataMethod />
+        <rd:TableAdapterName />
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
@@ -151,7 +131,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=IIf(IsNothing(Sum(Fields!AccountCount.Value)), 0, Sum(Fields!AccountCount.Value))</Value>
+                                      <Value>=CountRows()</Value>
                                       <Style />
                                     </TextRun>
                                   </TextRuns>
@@ -186,7 +166,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=IIf(IsNothing(Sum(Fields!TotalUsage.Value)), 0, Format(Sum(Fields!TotalUsage.Value), "N0"))</Value>
+                                      <Value>=IIf(IsNothing(Sum(Fields!CorrectedUsage.Value)), 0, Format(Sum(Fields!CorrectedUsage.Value), "N0"))</Value>
                                       <Style />
                                     </TextRun>
                                   </TextRuns>
@@ -226,7 +206,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Fields!TotalAccountsInRoute.Value</Value>
+                                      <Value>=CountRows()</Value>
                                       <Style>
                                         <FontWeight>Bold</FontWeight>
                                       </Style>
@@ -257,14 +237,14 @@
                         </TablixCell>
                         <TablixCell>
                           <CellContents>
-                            <Textbox Name="TotalUsageInRoute">
+                            <Textbox Name="CorrectedUsage">
                               <CanGrow>true</CanGrow>
                               <KeepTogether>true</KeepTogether>
                               <Paragraphs>
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Format(Fields!TotalUsageInRoute.Value, "N0")</Value>
+                                      <Value>=Format(Sum(Fields!CorrectedUsage.Value), "N0")</Value>
                                       <Style>
                                         <FontWeight>Bold</FontWeight>
                                       </Style>
@@ -275,7 +255,7 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <rd:DefaultName>TotalUsageInRoute</rd:DefaultName>
+                              <rd:DefaultName>CorrectedUsage</rd:DefaultName>
                               <Style>
                                 <Border>
                                   <Color>LightGrey</Color>
@@ -482,7 +462,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>DEP Water Usage Report</Value>
+                    <Value>="DEP Water Usage Report " + Year(Parameters!StartDate.Value).ToString()</Value>
                     <Style>
                       <FontSize>14pt</FontSize>
                       <FontWeight>Bold</FontWeight>
@@ -553,7 +533,7 @@
                   <Width>0.73958in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.55208in</Width>
+                  <Width>1.22019in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -701,7 +681,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!TotalAccountsInCategory.Value</Value>
+                                  <Value>=CountRows()</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -736,7 +716,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Format(Fields!TotalUsageInCategory.Value, "N0")</Value>
+                                  <Value>=Format(Sum(Fields!CorrectedUsage.Value), "N0")</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -806,7 +786,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!TotalAccountsInCategory.Value</Value>
+                                  <Value>=CountRows()</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -844,7 +824,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Format(Fields!GrandTotalUsage.Value, "N0")</Value>
+                                  <Value>=Format(Sum(Fields!CorrectedUsage.Value), "N0")</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -900,9 +880,9 @@
             </TablixRowHierarchy>
             <DataSetName>DEPWaterUsageDataSet</DataSetName>
             <Top>2.17583in</Top>
-            <Left>3.48958in</Left>
+            <Left>3.65553in</Left>
             <Height>0.8125in</Height>
-            <Width>3.52083in</Width>
+            <Width>3.18894in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -910,6 +890,38 @@
               </Border>
             </Style>
           </Tablix>
+          <Textbox Name="Textbox22">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value EvaluationMode="Constant">Gallons</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox18</rd:DefaultName>
+            <Top>0.60104in</Top>
+            <Left>4.51042in</Left>
+            <Height>0.25in</Height>
+            <Width>1.47917in</Width>
+            <ZIndex>4</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
         </ReportItems>
         <Height>3.11458in</Height>
         <Style />

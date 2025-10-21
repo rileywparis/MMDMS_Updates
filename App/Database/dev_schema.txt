@@ -8,32 +8,12 @@ Table: CopyBillToList
 - STATE System.String
 - ZIP System.String
 - EMAIL System.String
+- BILL_ADDR System.String
 
-Table: Usages
-- UTILITY System.Byte
-- SERV_ID System.String
+Table: vServiceStatus
 - ACCT_NO System.String
-- ACT_USAGE System.Int32
-- RATE_CODE System.String
-- BILL_USAGE System.Int32
-- METER_NO System.String
-- PRIOR_READ System.Int32
-- CUR_READ System.Int32
-- REF_NO System.String
-- TRAN_DATE System.DateTime
-- PRIOR_DATE System.DateTime
-- CUR_DATE System.DateTime
-- BILL_CYCLE System.Int32
-- FLAG System.String
-
-Table: Transactions
 - SERV_ID System.String
-- ACCT_NO System.String
-- UTILITY System.Byte
-- POST_DATE System.DateTime
-- AMOUNT System.Decimal
-- REF_NO System.String
-- BILL_CYCLE System.Int32
+- HAS_ACTIVE System.Boolean
 
 Table: SavedEditTable
 - SERV_ID System.String
@@ -89,29 +69,6 @@ Table: ArchivedUtilities
 - INSTALL_DA System.DateTime
 - UTIL_PK System.Int32
 
-Table: Accounts
-- ACCT_NO System.String
-- LAST System.String
-- FIRST System.String
-- MIDDLE System.String
-- SPOUSE System.String
-- ADDR1 System.String
-- ADDR2 System.String
-- CITY System.String
-- STATE System.String
-- ZIP System.String
-- C_PHONE System.String
-- H_PHONE System.String
-- W_PHONE System.String
-- EMAIL System.String
-- CUSTNOTE System.String
-- CARE_OF System.String
-- ADD_DATE System.DateTime
-- FNAME System.String
-- REV_FNAME System.String
-- CATEGORY System.String
-- SERV_ID System.String
-
 Table: RateDescs
 - RATE_CODE System.String
 - DESC System.String
@@ -121,34 +78,6 @@ Table: RateDescs
 - PEN_CODE System.String
 - USGUTIL System.Byte
 - APPLIES System.Byte
-
-Table: vCategoryRouteUsage
-- CATEGORY System.String
-- ROUTE_NO System.String
-- LatestReadingDate System.DateTime
-- AccountCount System.Int32
-- TotalUsage System.Int64
-- TotalAccountsInRoute System.Int32
-- TotalUsageInRoute System.Int64
-- TotalAccountsInCategory System.Int32
-- TotalUsageInCategory System.Int64
-- GrandTotalAccounts System.Int32
-- GrandTotalUsage System.Int64
-
-Table: ServiceLocs
-- SERV_ID System.String
-- ROUTE_NO System.String
-- SUFFIX System.String
-- NUMBER System.String
-- STREET System.String
-- CITY System.String
-- STATE System.String
-- ZIP System.String
-- SERV_NOTES System.String
-- ADD_DATE System.DateTime
-- ADDR System.String
-- REV_ADDR System.String
-- ACCT_NO System.String
 
 Table: vBillingData
 - SERV_ID System.String
@@ -160,18 +89,9 @@ Table: vBillingData
 - METER_NO System.String
 - CUR_READ System.Int32
 - CUR_DATE System.DateTime
-- LAST System.String
-- FIRST System.String
-- MIDDLE System.String
 - REV_FNAME System.String
-- ADDR1 System.String
-- ADDR2 System.String
-- CITY System.String
-- STATE System.String
-- ZIP System.String
-- H_PHONE System.String
-- W_PHONE System.String
-- C_PHONE System.String
+- FNAME System.String
+- BILL_ADDR System.String
 - CUSTNOTE System.String
 - STREET System.String
 - NUMBER System.String
@@ -196,48 +116,6 @@ Table: vRouteSheetData
 - REV_FNAME System.String
 - ADDR System.String
 - RowNum System.Int64
-
-Table: AcctNoRegistry
-- ACCT_NO System.String
-
-Table: ArchivedAccounts
-- ACCT_NO System.String
-- LAST System.String
-- FIRST System.String
-- MIDDLE System.String
-- SPOUSE System.String
-- ADDR1 System.String
-- ADDR2 System.String
-- CITY System.String
-- STATE System.String
-- ZIP System.String
-- C_PHONE System.String
-- H_PHONE System.String
-- W_PHONE System.String
-- EMAIL System.String
-- CUSTNOTE System.String
-- CARE_OF System.String
-- ADD_DATE System.DateTime
-- FNAME System.String
-- REV_FNAME System.String
-- CATEGORY System.String
-- SERV_ID System.String
-
-Table: ArchivedServiceLocs
-- SERV_ID System.String
-- ROUTE_NO System.String
-- SUFFIX System.String
-- NUMBER System.String
-- STREET System.String
-- CITY System.String
-- STATE System.String
-- ZIP System.String
-- SERV_STAT System.String
-- SERV_NOTES System.String
-- ADD_DATE System.DateTime
-- ADDR System.String
-- REV_ADDR System.String
-- ACCT_NO System.String
 
 Table: Utilities
 - SERV_ID System.String
@@ -269,6 +147,42 @@ Table: Rates
 - BEG_RANGE System.Int32
 - END_RANGE System.Int32
 
+Table: AcctNoRegistry
+- ACCT_NO System.String
+
+Table: ServiceLocs
+- SERV_ID System.String
+- ROUTE_NO System.String
+- SUFFIX System.String
+- NUMBER System.String
+- STREET System.String
+- CITY System.String
+- STATE System.String
+- ZIP System.String
+- SERV_NOTES System.String
+- ADD_DATE System.DateTime
+- ADDR System.String
+- REV_ADDR System.String
+- CATEGORY System.String
+- ACCT_NO System.String
+
+Table: ArchivedServiceLocs
+- SERV_ID System.String
+- ROUTE_NO System.String
+- SUFFIX System.String
+- NUMBER System.String
+- STREET System.String
+- CITY System.String
+- STATE System.String
+- ZIP System.String
+- SERV_STAT System.String
+- SERV_NOTES System.String
+- ADD_DATE System.DateTime
+- ADDR System.String
+- REV_ADDR System.String
+- CATEGORY System.String
+- ACCT_NO System.String
+
 Table: vLatestUsage
 - SERV_ID System.String
 - UTILITY System.Byte
@@ -276,4 +190,79 @@ Table: vLatestUsage
 - PRIOR_READ System.Int32
 - CUR_DATE System.DateTime
 - PRIOR_DATE System.DateTime
+
+Table: Transactions
+- SERV_ID System.String
+- ACCT_NO System.String
+- UTILITY System.Byte
+- POST_DATE System.DateTime
+- AMOUNT System.Decimal
+- REF_NO System.String
+- BILL_CYCLE System.Int32
+
+Table: Usages
+- UTILITY System.Byte
+- SERV_ID System.String
+- ACCT_NO System.String
+- ACT_USAGE System.Int32
+- RATE_CODE System.String
+- BILL_USAGE System.Int32
+- METER_NO System.String
+- PRIOR_READ System.Int32
+- CUR_READ System.Int32
+- REF_NO System.String
+- TOTAL System.Decimal
+- PREV_BALANCE System.Decimal
+- BALANCE System.Decimal
+- TRAN_DATE System.DateTime
+- PRIOR_DATE System.DateTime
+- CUR_DATE System.DateTime
+- BILL_CYCLE System.Int32
+- FLAG System.String
+
+Table: ArchivedAccounts
+- ACCT_NO System.String
+- LAST System.String
+- FIRST System.String
+- MIDDLE System.String
+- SPOUSE System.String
+- ADDR1 System.String
+- ADDR2 System.String
+- CITY System.String
+- STATE System.String
+- ZIP System.String
+- C_PHONE System.String
+- H_PHONE System.String
+- W_PHONE System.String
+- EMAIL System.String
+- CUSTNOTE System.String
+- CARE_OF System.String
+- ADD_DATE System.DateTime
+- FNAME System.String
+- REV_FNAME System.String
+- BILL_ADDR System.String
+- SERV_ID System.String
+
+Table: Accounts
+- ACCT_NO System.String
+- LAST System.String
+- FIRST System.String
+- MIDDLE System.String
+- SPOUSE System.String
+- ADDR1 System.String
+- ADDR2 System.String
+- CITY System.String
+- STATE System.String
+- ZIP System.String
+- C_PHONE System.String
+- H_PHONE System.String
+- W_PHONE System.String
+- EMAIL System.String
+- CUSTNOTE System.String
+- CARE_OF System.String
+- ADD_DATE System.DateTime
+- FNAME System.String
+- REV_FNAME System.String
+- BILL_ADDR System.String
+- SERV_ID System.String
 

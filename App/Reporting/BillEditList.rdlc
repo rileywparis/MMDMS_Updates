@@ -73,10 +73,26 @@
           <DataField>UTIL_NAME</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="USAGE_UTIL1">
+          <DataField>USAGE_UTIL</DataField>
+          <rd:TypeName>System.Byte</rd:TypeName>
+        </Field>
+        <Field Name="UTILITY1">
+          <DataField>UTILITY</DataField>
+          <rd:TypeName>System.Byte</rd:TypeName>
+        </Field>
+        <Field Name="ROUTE_NO">
+          <DataField>ROUTE_NO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PREV_BALANCE">
+          <DataField>PREV_BALANCE</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>v2_MDMSDBDataSet</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\panda\source\repos\MDMS\MDMS\v2_MDMSDBDataSet.xsd</rd:SchemaPath>
+        <rd:SchemaPath>C:\Users\panda\source\repos\MDMS\MDMS\Reporting\v2_MDMSDBDataSet.xsd</rd:SchemaPath>
         <rd:TableName>BillEditList</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
@@ -398,7 +414,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=IIf(Fields!BALANCE.Value = -99999, "", Fields!BALANCE.Value - Sum(Fields!AMOUNT.Value))</Value>
+                                  <Value>=IIf(IsNothing(Fields!BALANCE.Value), "", Fields!BALANCE.Value - Sum(Fields!AMOUNT.Value))</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -422,6 +438,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -740,7 +757,6 @@
                           <PaddingBottom>2pt</PaddingBottom>
                         </Style>
                       </Textbox>
-                      <rd:Selected>true</rd:Selected>
                     </CellContents>
                   </TablixHeader>
                 </TablixMember>

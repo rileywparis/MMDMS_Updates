@@ -18,7 +18,7 @@
     "LatestUsageVw": "vLatestUsage",
     "BillingVw": "vBillingData",
     "RouteSheetVw": "vRouteSheetData",
-    "DEPWaterUsageVw": "fDEPWaterUsage",
+    "ServiceStatusVw": "vServiceStatus",
     "ArchivedAccountsTbl": "ArchivedAccounts",
     "ArchivedServiceTbl": "ArchivedServiceLocs",
     "ArchivedUtilityTbl": "ArchivedUtilities",
@@ -53,12 +53,18 @@
     "DueDays": 24,
     "PrintInMuniBridge": true
   },
+  "Estimation": {
+    "YearLimit": 5,
+    "AdjustmentFactor": 0.10,
+    "Weights": "10,6,3,2,1"
+  },
   "Company": {
-    "Name": "Municipal Authority of Conneaut Lake",
-    "Address": "PO Box 395",
-    "Phone": "555-1234",
-    "City": "Conneaut Lake",
+    "Name": "Municipal Authority of Cityville",
+    "Address": "PO Box 123",
+    "Phone": "(814) 123-4567",
+    "City": "Cityville",
     "State": "PA",
-    "Zip": "16316"
+    "Zip": "12345",
+    "Email": "test@gmail.com"
   }
 }

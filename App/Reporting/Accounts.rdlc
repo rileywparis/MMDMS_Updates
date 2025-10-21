@@ -65,14 +65,18 @@
           <DataField>ROUTE_NO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="SERV_STAT">
-          <DataField>SERV_STAT</DataField>
+        <Field Name="EMAIL">
+          <DataField>EMAIL</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HAS_ACTIVE">
+          <DataField>HAS_ACTIVE</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>v2_MDMSDBDataSet</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\panda\source\repos\MDMS\MDMS\v2_MDMSDBDataSet.xsd</rd:SchemaPath>
+        <rd:SchemaPath>C:\Users\panda\source\repos\MDMS\MDMS\Reporting\v2_MDMSDBDataSet.xsd</rd:SchemaPath>
         <rd:TableName>Accounts</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
@@ -483,7 +487,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!SERV_STAT.Value</Value>
+                                  <Value>=IIf(Fields!HAS_ACTIVE.Value = 0, "Inactive", "Active")</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -522,23 +526,24 @@
                   <KeepWithGroup>After</KeepWithGroup>
                 </TablixMember>
                 <TablixMember>
-                  <Group Name="Details">
-                    <Filters>
-                      <Filter>
-                        <FilterExpression>=IIf(UCase(Parameters!Filter.Value) = "ANY",
-     (Fields!SERV_STAT.Value = "ACTIVE" OR Fields!SERV_STAT.Value = "INACTIVE"),
-     UCase(Fields!SERV_STAT.Value) = UCase(Parameters!Filter.Value))</FilterExpression>
-                        <Operator>Equal</Operator>
-                        <FilterValues>
-                          <FilterValue>=True</FilterValue>
-                        </FilterValues>
-                      </Filter>
-                    </Filters>
-                  </Group>
+                  <Group Name="Details" />
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>AccountsDataSet</DataSetName>
+            <Filters>
+              <Filter>
+                <FilterExpression>=Fields!HAS_ACTIVE.Value</FilterExpression>
+                <Operator>Equal</Operator>
+                <FilterValues>
+                  <FilterValue>=Switch(
+  Parameters!Filter.Value = "Any",      Fields!HAS_ACTIVE.Value,
+  Parameters!Filter.Value = "Active",   True,
+  Parameters!Filter.Value = "Inactive", False
+)</FilterValue>
+                </FilterValues>
+              </Filter>
+            </Filters>
             <Top>0.87221in</Top>
             <Left>0.47917in</Left>
             <Height>0.5in</Height>
