@@ -22,5 +22,13 @@
       " Update account creation form",
       " Update estimate UI + settings"
     ]
+  },
+  {
+    "version": "0.2.3",
+    "date": "2025-10-24",
+    "notes": [
+      "*Hotfix for Service Location Suffix Edit",
+      "*Change Table Font Size in Settings>Preferences"
+    ]
   }
 ]

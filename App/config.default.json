@@ -1,5 +1,8 @@
 {
   "Database": {
+    "ConnectionString": "Server=(LocalDB)\\MSSQLLocalDB;Database=MMDMS_Prod;Trusted_Connection=True;Connect Timeout=15;",
+    "MasterConnectionString": "Server=(LocalDB)\\MSSQLLocalDB;Database=master;Trusted_Connection=True;Connect Timeout=15;",
+    "DevConnectionString": "Server=(localdb)\\MSSQLLocalDB;Database=MMDMS_2025;Trusted_Connection=True;Connect Timeout=3;",
     "Utility1": "WATER",
     "Utility2": "SEWER",
     "Utility4": "WATER IMP",

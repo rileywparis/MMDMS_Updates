@@ -91,6 +91,9 @@ Table: vBillingData
 - CUR_DATE System.DateTime
 - REV_FNAME System.String
 - FNAME System.String
+- FIRST System.String
+- MIDDLE System.String
+- LAST System.String
 - BILL_ADDR System.String
 - CUSTNOTE System.String
 - STREET System.String
