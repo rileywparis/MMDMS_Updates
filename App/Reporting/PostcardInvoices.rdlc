@@ -252,7 +252,6 @@
                                                       <VerticalAlign>Top</VerticalAlign>
                                                     </Style>
                                                   </Textbox>
-                                                  <rd:Selected>true</rd:Selected>
                                                 </CellContents>
                                               </TablixCell>
                                               <TablixCell>
@@ -830,16 +829,6 @@
       </CellDefinitions>
     </GridLayoutDefinition>
   </ReportParametersLayout>
-  <Code>Dim currentRoute As String
-
-Function SetRoute(route As String) As String
-    currentRoute = route
-    Return ""
-End Function
-
-Function GetRoute() As String
-    Return currentRoute
-End Function</Code>
   <EmbeddedImages>
     <EmbeddedImage Name="postcard">
       <MIMEType>image/png</MIMEType>

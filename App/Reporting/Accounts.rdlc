@@ -711,16 +711,6 @@
       </CellDefinitions>
     </GridLayoutDefinition>
   </ReportParametersLayout>
-  <Code>Dim currentRoute As String
-
-Function SetRoute(route As String) As String
-    currentRoute = route
-    Return ""
-End Function
-
-Function GetRoute() As String
-    Return currentRoute
-End Function</Code>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:ReportID>f94c12eb-6f71-40ac-83d6-7dbddb7312e2</rd:ReportID>
