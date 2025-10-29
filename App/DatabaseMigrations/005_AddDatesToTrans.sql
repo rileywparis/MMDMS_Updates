@@ -1,0 +1,5 @@
+ALTER TABLE Transactions
+ADD TRAN_DATE DATE NULL,
+    DUE_DATE DATE NULL;
+
+INSERT INTO DbVersion (Version) VALUES (5);

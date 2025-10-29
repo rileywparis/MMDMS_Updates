@@ -499,6 +499,41 @@
                                     <PaddingBottom>2pt</PaddingBottom>
                                   </Style>
                                 </Textbox>
+                                <Textbox Name="Textbox48">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=IIf(InStr(Fields!ACCT_NO.Value, "%") &gt; 0, "COPY OF BILL" + Environment.NewLine + "DO NOT PAY", "")</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                            <FontWeight>SemiBold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox36</rd:DefaultName>
+                                  <Top>3.70361in</Top>
+                                  <Left>3.09375in</Left>
+                                  <Height>0.39063in</Height>
+                                  <Width>1.72916in</Width>
+                                  <ZIndex>7</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Top</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
                               </ReportItems>
                               <KeepTogether>true</KeepTogether>
                               <Height>4.25in</Height>
@@ -578,7 +613,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Fields!ACCT_NO.Value</Value>
+                                      <Value>=Fields!ACCT_NO.Value.ToString().Replace("%", "")</Value>
                                       <Style>
                                         <FontSize>9pt</FontSize>
                                         <FontWeight>SemiBold</FontWeight>
@@ -683,7 +718,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Fields!ACCT_NO.Value</Value>
+                                      <Value>=Fields!ACCT_NO.Value.ToString().Replace("%", "")</Value>
                                       <Style>
                                         <FontSize>9pt</FontSize>
                                         <FontWeight>SemiBold</FontWeight>

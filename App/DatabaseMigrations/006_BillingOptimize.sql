@@ -1,0 +1,52 @@
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+ALTER VIEW [dbo].[vRouteSheetData] AS
+SELECT 
+    s.SERV_ID,
+    a.ACCT_NO,
+    a.LAST, a.FIRST, a.MIDDLE, a.REV_FNAME,
+    s.ADDR,
+    u.UTILITY, u.ROUTE_NO, u.READ_SEQ, u.METER_NO, u.MET_MESS, u.NOTES, u.NO_OF_DIAL,
+    lu.CUR_READ, lu.CUR_DATE
+FROM dbo.ServiceLocs s
+JOIN dbo.Accounts a ON s.ACCT_NO = a.ACCT_NO
+CROSS APPLY (
+    SELECT TOP (1)
+        u.UTILITY, u.SERV_ID, u.ROUTE_NO, u.READ_SEQ, u.METER_NO, u.MET_MESS, u.NOTES, u.NO_OF_DIAL,
+        u.SERV_STAT
+    FROM dbo.Utilities u
+    WHERE u.SERV_ID = s.SERV_ID AND u.SERV_STAT = 'ACTIVE'
+    ORDER BY u.UTILITY
+) AS u
+OUTER APPLY (
+    SELECT TOP (1)
+        lu.CUR_READ, lu.CUR_DATE
+    FROM dbo.Usages lu
+    WHERE lu.SERV_ID = u.SERV_ID AND lu.UTILITY = u.UTILITY
+    ORDER BY lu.CUR_DATE DESC
+) AS lu;
+GO
+
+CREATE INDEX IDX_Usages_BillCycle_RefNo_AcctNo
+ON dbo.Usages (BILL_CYCLE, REF_NO, ACCT_NO);
+
+CREATE INDEX IDX_Usages_Utility_CurDate
+ON dbo.Usages (UTILITY, CUR_DATE)
+INCLUDE (ACCT_NO, BILL_USAGE, SERV_ID, CUR_READ, TRAN_DATE);
+
+CREATE INDEX IDX_Usages_ServUtilTran
+ON dbo.Usages (SERV_ID, UTILITY, TRAN_DATE);
+
+CREATE INDEX IDX_Utilities_RouteSeqServ
+ON dbo.Utilities (ROUTE_NO, READ_SEQ, SERV_ID)
+INCLUDE (ACCT_NO, UTILITY, METER_NO, SERV_STAT);
+
+CREATE INDEX IDX_vLatestUsage_ServUtility
+ON dbo.Usages (SERV_ID, UTILITY, CUR_DATE, CUR_READ);
+
+INSERT INTO DbVersion (Version) VALUES (7);

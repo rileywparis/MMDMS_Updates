@@ -9,11 +9,18 @@
       </ConnectionProperties>
       <rd:DataSourceID>77d5f127-df66-4d61-b3c9-bf14c8a3db9f</rd:DataSourceID>
     </DataSource>
+    <DataSource Name="v2_MDMSDBDataSet">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>77293844-2dc3-4c5d-b8dd-cd2461119588</rd:DataSourceID>
+    </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="RoutesDataSet">
+    <DataSet Name="BillsDataSet">
       <Query>
-        <DataSourceName>MDMSDBDataSet</DataSourceName>
+        <DataSourceName>v2_MDMSDBDataSet</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
@@ -25,9 +32,25 @@
           <DataField>ACCT_NO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="LAST">
+          <DataField>LAST</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FIRST">
+          <DataField>FIRST</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="REV_FNAME">
+          <DataField>REV_FNAME</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ADDR">
+          <DataField>ADDR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="UTILITY">
           <DataField>UTILITY</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+          <rd:TypeName>System.Byte</rd:TypeName>
         </Field>
         <Field Name="ROUTE_NO">
           <DataField>ROUTE_NO</DataField>
@@ -57,26 +80,6 @@
           <DataField>CUR_DATE</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
-        <Field Name="LAST">
-          <DataField>LAST</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="FIRST">
-          <DataField>FIRST</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="REV_FNAME">
-          <DataField>REV_FNAME</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ADDR">
-          <DataField>ADDR</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="RowNum">
-          <DataField>RowNum</DataField>
-          <rd:TypeName>System.Int64</rd:TypeName>
-        </Field>
         <Field Name="UTIL_NAME">
           <DataField>UTIL_NAME</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -84,7 +87,7 @@
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>v2_MDMSDBDataSet</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\panda\source\repos\MDMS\MDMS\v2_MDMSDBDataSet.xsd</rd:SchemaPath>
+        <rd:SchemaPath>C:\Users\panda\source\repos\MDMS\MDMS\Reporting\v2_MDMSDBDataSet.xsd</rd:SchemaPath>
         <rd:TableName>Bills</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
@@ -847,7 +850,7 @@
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
-            <DataSetName>RoutesDataSet</DataSetName>
+            <DataSetName>BillsDataSet</DataSetName>
             <Top>0.09399in</Top>
             <Height>1.46in</Height>
             <Width>8in</Width>

@@ -30,5 +30,18 @@
       "*Hotfix for Service Location Suffix Edit",
       "*Change Table Font Size in Settings>Preferences"
     ]
+  },
+  {
+    "version": "0.2.6",
+    "date": "2025-10-29",
+    "notes": [
+      "*AR Aging Report (W.I.P.)",
+      "*Group Billing",
+      "*Database optimization",
+      "*Automatic database updating",
+      "SQL Express support",
+      "Help button (W.I.P.)",
+      "Exclude Minimum Penalty option"
+    ]
   }
 ]

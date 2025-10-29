@@ -102,10 +102,10 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.19343in</Width>
+                  <Width>0.74551in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.94247in</Width>
+                  <Width>2.21044in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>0.68893in</Width>
@@ -540,7 +540,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!Current.Value)</Value>
+                                  <Value>=Format(Sum(Fields!Current.Value), "N2")</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -569,7 +569,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!PastDue.Value)</Value>
+                                  <Value>=Format(Sum(Fields!PastDue.Value), "N2")</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -598,7 +598,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!Over30.Value)</Value>
+                                  <Value>=Format(Sum(Fields!Over30.Value), "N2")</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -627,7 +627,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!Over60.Value)</Value>
+                                  <Value>=Format(Sum(Fields!Over60.Value), "N2")</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -656,7 +656,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!Over90.Value)</Value>
+                                  <Value>=Format(Sum(Fields!Over90.Value), "N2")</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -685,7 +685,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!Total.Value)</Value>
+                                  <Value>=Format(Sum(Fields!Total.Value), "N2")</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -787,7 +787,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!Current.Value)</Value>
+                                  <Value>=Format(Sum(Fields!Current.Value), "N2")</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -820,7 +820,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!PastDue.Value)</Value>
+                                  <Value>=Format(Sum(Fields!PastDue.Value), "N2")</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -853,7 +853,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!Over30.Value)</Value>
+                                  <Value>=Format(Sum(Fields!Over30.Value), "N2")</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -886,7 +886,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!Over60.Value)</Value>
+                                  <Value>=Format(Sum(Fields!Over60.Value), "N2")</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -919,7 +919,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!Over90.Value)</Value>
+                                  <Value>=Format(Sum(Fields!Over90.Value), "N2")</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -952,7 +952,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!Total.Value)</Value>
+                                  <Value>=Format(Sum(Fields!Total.Value), "N2")</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -1014,9 +1014,9 @@
             </TablixRowHierarchy>
             <DataSetName>AgingRecordDataSet</DataSetName>
             <Top>0.87221in</Top>
-            <Left>0.47496in</Left>
+            <Left>0.25955in</Left>
             <Height>0.75in</Height>
-            <Width>6.66084in</Width>
+            <Width>7.48089in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>

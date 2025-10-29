@@ -18,6 +18,7 @@
     "RateAmountsTbl": "Rates",
     "AcctNoRegistryTbl": "AcctNoRegistry",
     "CopyBillTbl": "CopyBillToList",
+    "GroupBillTbl": "GroupBills",
     "LatestUsageVw": "vLatestUsage",
     "BillingVw": "vBillingData",
     "RouteSheetVw": "vRouteSheetData",
@@ -51,10 +52,12 @@
     "GracePeriodDays": 10,
     "FlatRatePenalty": false,
     "PenaltyRate": 0.05,
+    "ExcludePenaltyMin": 0.00,
     "ErrorAllow": 0.30,
     "MeterSizes": "5/8,3/4,1,1 1/2,2,3,4",
     "DueDays": 24,
-    "PrintInMuniBridge": true
+    "PrintInMuniBridge": true,
+    "GroupBilling": true
   },
   "Estimation": {
     "YearLimit": 5,
