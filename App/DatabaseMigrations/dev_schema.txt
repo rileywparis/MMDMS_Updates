@@ -104,6 +104,11 @@ Table: vBillingData
 Table: vRouteSheetData
 - SERV_ID System.String
 - ACCT_NO System.String
+- LAST System.String
+- FIRST System.String
+- MIDDLE System.String
+- REV_FNAME System.String
+- ADDR System.String
 - UTILITY System.Byte
 - ROUTE_NO System.String
 - READ_SEQ System.String
@@ -113,12 +118,22 @@ Table: vRouteSheetData
 - NO_OF_DIAL System.Int32
 - CUR_READ System.Int32
 - CUR_DATE System.DateTime
-- LAST System.String
-- FIRST System.String
-- MIDDLE System.String
-- REV_FNAME System.String
-- ADDR System.String
-- RowNum System.Int64
+
+Table: Rates
+- RATE_CODE System.String
+- RATENUM System.String
+- RATEDESC System.String
+- RATEAMT System.Decimal
+- ALLOWANCE System.String
+- BEG_RANGE System.Int32
+- END_RANGE System.Int32
+
+Table: DbVersion
+- Version System.Int32
+- AppliedOn System.DateTime
+
+Table: AcctNoRegistry
+- ACCT_NO System.String
 
 Table: Utilities
 - SERV_ID System.String
@@ -140,18 +155,6 @@ Table: Utilities
 - MAKE System.String
 - INSTALL_DA System.DateTime
 - UTIL_PK System.Int32
-
-Table: Rates
-- RATE_CODE System.String
-- RATENUM System.String
-- RATEDESC System.String
-- RATEAMT System.Decimal
-- ALLOWANCE System.String
-- BEG_RANGE System.Int32
-- END_RANGE System.Int32
-
-Table: AcctNoRegistry
-- ACCT_NO System.String
 
 Table: ServiceLocs
 - SERV_ID System.String
@@ -178,13 +181,30 @@ Table: ArchivedServiceLocs
 - CITY System.String
 - STATE System.String
 - ZIP System.String
-- SERV_STAT System.String
 - SERV_NOTES System.String
 - ADD_DATE System.DateTime
 - ADDR System.String
 - REV_ADDR System.String
 - CATEGORY System.String
 - ACCT_NO System.String
+
+Table: GroupBills
+- ACCT_NO System.String
+- FNAME System.String
+- UTILITY System.String
+- AMOUNT System.String
+- NUMBER System.String
+- STREET System.String
+- SUFFIX System.String
+- BALANCE System.String
+- PREV_BALANCE System.String
+- CHARGE System.String
+- DIFF System.String
+- POST_DATE System.String
+- DUE_DATE System.String
+- BILL_TO System.String
+- UTIL_NAME System.String
+- MESSAGE System.String
 
 Table: vLatestUsage
 - SERV_ID System.String
@@ -202,6 +222,8 @@ Table: Transactions
 - AMOUNT System.Decimal
 - REF_NO System.String
 - BILL_CYCLE System.Int32
+- TRAN_DATE System.DateTime
+- DUE_DATE System.DateTime
 
 Table: Usages
 - UTILITY System.Byte
@@ -264,8 +286,8 @@ Table: Accounts
 - CUSTNOTE System.String
 - CARE_OF System.String
 - ADD_DATE System.DateTime
-- FNAME System.String
-- REV_FNAME System.String
 - BILL_ADDR System.String
 - SERV_ID System.String
+- FNAME System.String
+- REV_FNAME System.String
 
