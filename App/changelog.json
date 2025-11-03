@@ -43,5 +43,15 @@
       "Help button (W.I.P.)",
       "Exclude Minimum Penalty option"
     ]
+  },
+  {
+    "version": "0.2.8",
+    "date": "2025-11-02",
+    "notes": [
+      "*Import/Export Billing Table",
+      "*AR Aging Report Filtered (temporary)",
+      "Warning when editing negative usage",
+      "Changed Billing page layout"
+    ]
   }
 ]

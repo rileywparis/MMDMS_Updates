@@ -277,10 +277,7 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>0.68957in</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>0.61458in</Width>
+                  <Width>0.61665in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>0.7in</Width>
@@ -289,7 +286,10 @@
                   <Width>0.7in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.7in</Width>
+                  <Width>0.65in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>0.65in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -564,7 +564,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Sum(Fields!AMOUNT.Value)</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>SemiBold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -752,7 +754,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Format(Sum(Fields!AMOUNT.Value), "N2")</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>SemiBold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -874,7 +878,7 @@
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>Account #</Value>
+                                <Value>Acct #</Value>
                                 <Style />
                               </TextRun>
                             </TextRuns>
@@ -959,7 +963,9 @@
                             <TextRuns>
                               <TextRun>
                                 <Value>Charge</Value>
-                                <Style />
+                                <Style>
+                                  <FontWeight>SemiBold</FontWeight>
+                                </Style>
                               </TextRun>
                             </TextRuns>
                             <Style>
@@ -1209,7 +1215,7 @@
             <Top>0.87221in</Top>
             <Left>0.00835in</Left>
             <Height>1in</Height>
-            <Width>5.37498in</Width>
+            <Width>5.28748in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -1329,8 +1335,8 @@
             </Border>
           </Style>
         </PageFooter>
-        <LeftMargin>0.25in</LeftMargin>
-        <RightMargin>0.25in</RightMargin>
+        <LeftMargin>0.15in</LeftMargin>
+        <RightMargin>0.15in</RightMargin>
         <TopMargin>0.25in</TopMargin>
         <Style />
       </Page>
