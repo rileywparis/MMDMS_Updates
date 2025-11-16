@@ -11,14 +11,96 @@
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="InvoiceLines">
+    <DataSet Name="InvoiceLinesDataSet">
       <Query>
         <DataSourceName>PostcardDataSet</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
+      <Fields>
+        <Field Name="ACCT_NO">
+          <DataField>ACCT_NO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FNAME">
+          <DataField>FNAME</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="UTILITY">
+          <DataField>UTILITY</DataField>
+          <rd:TypeName>System.Byte</rd:TypeName>
+        </Field>
+        <Field Name="AMOUNT">
+          <DataField>AMOUNT</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="NUMBER">
+          <DataField>NUMBER</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="STREET">
+          <DataField>STREET</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SUFFIX">
+          <DataField>SUFFIX</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BALANCE">
+          <DataField>BALANCE</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="PREV_BALANCE">
+          <DataField>PREV_BALANCE</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="CHARGE">
+          <DataField>CHARGE</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="BILL_USAGE">
+          <DataField>BILL_USAGE</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="POST_DATE">
+          <DataField>POST_DATE</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="DUE_DATE">
+          <DataField>DUE_DATE</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="BILL_TO">
+          <DataField>BILL_TO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="UTIL_NAME">
+          <DataField>UTIL_NAME</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CUR_READ">
+          <DataField>CUR_READ</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="READING">
+          <DataField>READING</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FLAG">
+          <DataField>FLAG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LATE_BALANCE">
+          <DataField>LATE_BALANCE</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ACT_USAGE">
+          <DataField>ACT_USAGE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>PostcardDataSet</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\panda\source\repos\MDMS\MDMS\PostcardDataSet.xsd</rd:SchemaPath>
+        <rd:SchemaPath>C:\Users\panda\source\repos\MDMS\MDMS\Reporting\PostcardDataSet.xsd</rd:SchemaPath>
         <rd:TableName>InvoiceLines</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
@@ -30,7 +112,7 @@
     <ReportSection>
       <Body>
         <ReportItems>
-          <Tablix Name="Tablix2">
+          <Tablix Name="TablixPostcards">
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
@@ -43,21 +125,137 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Rectangle Name="Rectangle1">
+                        <Rectangle Name="SinglePostcard">
                           <ReportItems>
-                            <Rectangle Name="Rectangle2">
+                            <Textbox Name="TxtFromDate">
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Format(DateAdd("m", -1, First(Fields!POST_DATE.Value)), "MM/dd/yy")</Value>
+                                      <Style />
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>0.6625in</Top>
+                              <Left>0.25in</Left>
+                              <Height>0.25in</Height>
+                              <Width>0.875in</Width>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="TxtToDate">
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Format(First(Fields!POST_DATE.Value), "MM/dd/yy")</Value>
+                                      <Style />
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>0.6625in</Top>
+                              <Left>1.14583in</Left>
+                              <Height>0.25in</Height>
+                              <Width>0.875in</Width>
+                              <ZIndex>1</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="TxtBillDate">
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Format(First(Fields!POST_DATE.Value), "MM/dd/yy")</Value>
+                                      <Style />
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>0.6625in</Top>
+                              <Left>2.04167in</Left>
+                              <Height>0.25in</Height>
+                              <Width>0.875in</Width>
+                              <ZIndex>2</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="TxtPrevBal">
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Format(First(Fields!PREV_BALANCE.Value), "C2")</Value>
+                                      <Style />
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>0.6625in</Top>
+                              <Left>2.9375in</Left>
+                              <Height>0.25in</Height>
+                              <Width>0.9375in</Width>
+                              <ZIndex>3</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Rectangle Name="RectStub">
                               <ReportItems>
-                                <Textbox Name="Textbox44">
+                                <Textbox Name="TxtStubAcctNo">
                                   <KeepTogether>true</KeepTogether>
                                   <Paragraphs>
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>=First(Fields!DUE_DATE.Value)</Value>
-                                          <Style>
-                                            <FontSize>9pt</FontSize>
-                                            <FontWeight>SemiBold</FontWeight>
-                                          </Style>
+                                          <Value>=Fields!ACCT_NO.Value.ToString().Replace("%", "")</Value>
+                                          <Style />
                                         </TextRun>
                                       </TextRuns>
                                       <Style>
@@ -65,80 +263,221 @@
                                       </Style>
                                     </Paragraph>
                                   </Paragraphs>
-                                  <rd:DefaultName>Textbox36</rd:DefaultName>
-                                  <Top>2.62778in</Top>
-                                  <Left>0.375in</Left>
-                                  <Height>0.19792in</Height>
-                                  <Width>0.66666in</Width>
+                                  <Top>0.25in</Top>
+                                  <Left>0.25in</Left>
+                                  <Height>0.25in</Height>
+                                  <Width>1in</Width>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
                                     </Border>
-                                    <VerticalAlign>Middle</VerticalAlign>
                                     <PaddingLeft>2pt</PaddingLeft>
                                     <PaddingRight>2pt</PaddingRight>
                                     <PaddingTop>2pt</PaddingTop>
                                     <PaddingBottom>2pt</PaddingBottom>
                                   </Style>
                                 </Textbox>
-                                <Rectangle Name="Rectangle4">
+                                <Textbox Name="TxtStubDueDate">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Format(First(Fields!DUE_DATE.Value), "MM/dd/yy")</Value>
+                                          <Style />
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <Top>0.25in</Top>
+                                  <Left>1.25in</Left>
+                                  <Height>0.25in</Height>
+                                  <Width>1in</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="TxtStubDueLate">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Format(First(Fields!LATE_BALANCE.Value), "C2")</Value>
+                                          <Style />
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <Top>0.625in</Top>
+                                  <Left>0.25in</Left>
+                                  <Height>0.25in</Height>
+                                  <Width>1in</Width>
+                                  <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="TxtStubDueNow">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Format(First(Fields!BALANCE.Value), "C2")</Value>
+                                          <Style />
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <Top>0.625in</Top>
+                                  <Left>1.25in</Left>
+                                  <Height>0.25in</Height>
+                                  <Width>1in</Width>
+                                  <ZIndex>3</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="TxtBillTo">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=First(Fields!BILL_TO.Value)</Value>
+                                          <Style />
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <Left>3.375in</Left>
+                                  <Height>0.75in</Height>
+                                  <Width>2.625in</Width>
+                                  <ZIndex>4</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Bottom</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="TxtStubCopyBill">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=IIf(InStr(Fields!ACCT_NO.Value, "%") &gt; 0, "COPY OF BILL" + Environment.NewLine + "DO NOT PAY", "")</Value>
+                                          <Style />
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <Top>1in</Top>
+                                  <Left>0.25in</Left>
+                                  <Height>0.36458in</Height>
+                                  <Width>2in</Width>
+                                  <ZIndex>5</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Top>2.5in</Top>
+                              <Height>1.75in</Height>
+                              <Width>6in</Width>
+                              <ZIndex>4</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Rectangle>
+                            <Rectangle Name="RectCharges">
+                              <ReportItems>
+                                <Rectangle Name="RectTableBounds">
                                   <ReportItems>
-                                    <Tablix Name="Tablix4">
+                                    <Tablix Name="TablixCharges">
                                       <TablixBody>
                                         <TablixColumns>
                                           <TablixColumn>
-                                            <Width>2.15451in</Width>
+                                            <Width>0.75in</Width>
                                           </TablixColumn>
                                           <TablixColumn>
-                                            <Width>0.90451in</Width>
+                                            <Width>0.75in</Width>
+                                          </TablixColumn>
+                                          <TablixColumn>
+                                            <Width>0.1875in</Width>
+                                          </TablixColumn>
+                                          <TablixColumn>
+                                            <Width>0.625in</Width>
+                                          </TablixColumn>
+                                          <TablixColumn>
+                                            <Width>0.3125in</Width>
+                                          </TablixColumn>
+                                          <TablixColumn>
+                                            <Width>0.9375in</Width>
                                           </TablixColumn>
                                         </TablixColumns>
                                         <TablixRows>
                                           <TablixRow>
-                                            <Height>0.15625in</Height>
+                                            <Height>0.15in</Height>
                                             <TablixCells>
                                               <TablixCell>
                                                 <CellContents>
-                                                  <Textbox Name="Textbox31">
+                                                  <Textbox Name="Textbox20">
                                                     <CanGrow>true</CanGrow>
                                                     <KeepTogether>true</KeepTogether>
                                                     <Paragraphs>
                                                       <Paragraph>
                                                         <TextRuns>
                                                           <TextRun>
-                                                            <Value>Prior Balance</Value>
+                                                            <Value>=IIf(Fields!UTILITY.Value = 1, Fields!CUR_READ.Value, "-")</Value>
                                                             <Style>
                                                               <FontSize>9pt</FontSize>
-                                                              <FontWeight>SemiBold</FontWeight>
-                                                            </Style>
-                                                          </TextRun>
-                                                        </TextRuns>
-                                                        <Style />
-                                                      </Paragraph>
-                                                    </Paragraphs>
-                                                    <rd:DefaultName>Textbox31</rd:DefaultName>
-                                                    <Style>
-                                                      <Border>
-                                                        <Color>LightGrey</Color>
-                                                        <Style>None</Style>
-                                                      </Border>
-                                                      <VerticalAlign>Top</VerticalAlign>
-                                                    </Style>
-                                                  </Textbox>
-                                                </CellContents>
-                                              </TablixCell>
-                                              <TablixCell>
-                                                <CellContents>
-                                                  <Textbox Name="Textbox32">
-                                                    <KeepTogether>true</KeepTogether>
-                                                    <Paragraphs>
-                                                      <Paragraph>
-                                                        <TextRuns>
-                                                          <TextRun>
-                                                            <Value>=Fields!PREV_BALANCE.Value</Value>
-                                                            <Style>
-                                                              <FontSize>9pt</FontSize>
-                                                              <FontWeight>SemiBold</FontWeight>
+                                                              <FontWeight>Normal</FontWeight>
                                                             </Style>
                                                           </TextRun>
                                                         </TextRuns>
@@ -147,7 +486,7 @@
                                                         </Style>
                                                       </Paragraph>
                                                     </Paragraphs>
-                                                    <rd:DefaultName>Textbox32</rd:DefaultName>
+                                                    <rd:DefaultName>Textbox20</rd:DefaultName>
                                                     <Style>
                                                       <Border>
                                                         <Color>LightGrey</Color>
@@ -158,14 +497,99 @@
                                                   </Textbox>
                                                 </CellContents>
                                               </TablixCell>
-                                            </TablixCells>
-                                          </TablixRow>
-                                          <TablixRow>
-                                            <Height>0.15104in</Height>
-                                            <TablixCells>
                                               <TablixCell>
                                                 <CellContents>
-                                                  <Textbox Name="UTILITY">
+                                                  <Textbox Name="Curr">
+                                                    <KeepTogether>true</KeepTogether>
+                                                    <Paragraphs>
+                                                      <Paragraph>
+                                                        <TextRuns>
+                                                          <TextRun>
+                                                            <Value>=IIf(Fields!UTILITY.Value = 1, Fields!READING.Value, "-")</Value>
+                                                            <Style>
+                                                              <FontSize>9pt</FontSize>
+                                                              <FontWeight>Normal</FontWeight>
+                                                            </Style>
+                                                          </TextRun>
+                                                        </TextRuns>
+                                                        <Style>
+                                                          <TextAlign>Right</TextAlign>
+                                                        </Style>
+                                                      </Paragraph>
+                                                    </Paragraphs>
+                                                    <Style>
+                                                      <Border>
+                                                        <Color>LightGrey</Color>
+                                                        <Style>None</Style>
+                                                      </Border>
+                                                      <VerticalAlign>Top</VerticalAlign>
+                                                    </Style>
+                                                  </Textbox>
+                                                </CellContents>
+                                              </TablixCell>
+                                              <TablixCell>
+                                                <CellContents>
+                                                  <Textbox Name="Estimate">
+                                                    <KeepTogether>true</KeepTogether>
+                                                    <Paragraphs>
+                                                      <Paragraph>
+                                                        <TextRuns>
+                                                          <TextRun>
+                                                            <Value>=IIf(Fields!UTILITY.Value = 1, IIf(Fields!FLAG.Value = "ESTIMATE", "Y", "N"), "")</Value>
+                                                            <Style>
+                                                              <FontSize>9pt</FontSize>
+                                                              <FontWeight>Normal</FontWeight>
+                                                            </Style>
+                                                          </TextRun>
+                                                        </TextRuns>
+                                                        <Style>
+                                                          <TextAlign>Right</TextAlign>
+                                                        </Style>
+                                                      </Paragraph>
+                                                    </Paragraphs>
+                                                    <Style>
+                                                      <Border>
+                                                        <Color>LightGrey</Color>
+                                                        <Style>None</Style>
+                                                      </Border>
+                                                      <VerticalAlign>Top</VerticalAlign>
+                                                    </Style>
+                                                  </Textbox>
+                                                </CellContents>
+                                              </TablixCell>
+                                              <TablixCell>
+                                                <CellContents>
+                                                  <Textbox Name="Usage">
+                                                    <KeepTogether>true</KeepTogether>
+                                                    <Paragraphs>
+                                                      <Paragraph>
+                                                        <TextRuns>
+                                                          <TextRun>
+                                                            <Value>=IIf(Fields!UTILITY.Value = 1, Fields!ACT_USAGE.Value, "-")</Value>
+                                                            <Style>
+                                                              <FontSize>9pt</FontSize>
+                                                              <FontWeight>Normal</FontWeight>
+                                                            </Style>
+                                                          </TextRun>
+                                                        </TextRuns>
+                                                        <Style>
+                                                          <TextAlign>Center</TextAlign>
+                                                        </Style>
+                                                      </Paragraph>
+                                                    </Paragraphs>
+                                                    <Style>
+                                                      <Border>
+                                                        <Color>LightGrey</Color>
+                                                        <Style>None</Style>
+                                                      </Border>
+                                                      <VerticalAlign>Top</VerticalAlign>
+                                                    </Style>
+                                                  </Textbox>
+                                                </CellContents>
+                                              </TablixCell>
+                                              <TablixCell>
+                                                <CellContents>
+                                                  <Textbox Name="Code">
                                                     <KeepTogether>true</KeepTogether>
                                                     <Paragraphs>
                                                       <Paragraph>
@@ -174,14 +598,15 @@
                                                             <Value>=Fields!UTIL_NAME.Value</Value>
                                                             <Style>
                                                               <FontSize>9pt</FontSize>
-                                                              <FontWeight>SemiBold</FontWeight>
+                                                              <FontWeight>Normal</FontWeight>
                                                             </Style>
                                                           </TextRun>
                                                         </TextRuns>
-                                                        <Style />
+                                                        <Style>
+                                                          <TextAlign>Right</TextAlign>
+                                                        </Style>
                                                       </Paragraph>
                                                     </Paragraphs>
-                                                    <rd:DefaultName>UTILITY</rd:DefaultName>
                                                     <Style>
                                                       <Border>
                                                         <Color>LightGrey</Color>
@@ -194,16 +619,16 @@
                                               </TablixCell>
                                               <TablixCell>
                                                 <CellContents>
-                                                  <Textbox Name="AMOUNT">
+                                                  <Textbox Name="Charge">
                                                     <KeepTogether>true</KeepTogether>
                                                     <Paragraphs>
                                                       <Paragraph>
                                                         <TextRuns>
                                                           <TextRun>
-                                                            <Value>=Fields!AMOUNT.Value</Value>
+                                                            <Value>=Format(Fields!AMOUNT.Value, "C2")</Value>
                                                             <Style>
                                                               <FontSize>9pt</FontSize>
-                                                              <FontWeight>SemiBold</FontWeight>
+                                                              <FontWeight>Normal</FontWeight>
                                                             </Style>
                                                           </TextRun>
                                                         </TextRuns>
@@ -212,7 +637,6 @@
                                                         </Style>
                                                       </Paragraph>
                                                     </Paragraphs>
-                                                    <rd:DefaultName>AMOUNT</rd:DefaultName>
                                                     <Style>
                                                       <Border>
                                                         <Color>LightGrey</Color>
@@ -231,23 +655,23 @@
                                         <TablixMembers>
                                           <TablixMember />
                                           <TablixMember />
+                                          <TablixMember />
+                                          <TablixMember />
+                                          <TablixMember />
+                                          <TablixMember />
                                         </TablixMembers>
                                       </TablixColumnHierarchy>
                                       <TablixRowHierarchy>
                                         <TablixMembers>
                                           <TablixMember>
-                                            <KeepWithGroup>After</KeepWithGroup>
-                                          </TablixMember>
-                                          <TablixMember>
-                                            <Group Name="Details1" />
+                                            <Group Name="UTILITY" />
                                           </TablixMember>
                                         </TablixMembers>
                                       </TablixRowHierarchy>
                                       <KeepTogether>true</KeepTogether>
-                                      <DataSetName>InvoiceLines</DataSetName>
-                                      <Left>0.19097in</Left>
-                                      <Height>0.30729in</Height>
-                                      <Width>3.05902in</Width>
+                                      <DataSetName>InvoiceLinesDataSet</DataSetName>
+                                      <Height>0.15in</Height>
+                                      <Width>3.5625in</Width>
                                       <Style>
                                         <Border>
                                           <Style>None</Style>
@@ -257,197 +681,22 @@
                                     </Tablix>
                                   </ReportItems>
                                   <KeepTogether>true</KeepTogether>
-                                  <Top>0.99875in</Top>
-                                  <Height>1.15625in</Height>
-                                  <Width>3.53125in</Width>
-                                  <ZIndex>1</ZIndex>
+                                  <Height>0.75in</Height>
+                                  <Width>3.5625in</Width>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
                                     </Border>
                                   </Style>
                                 </Rectangle>
-                                <Textbox Name="Textbox39">
-                                  <KeepTogether>true</KeepTogether>
-                                  <Paragraphs>
-                                    <Paragraph>
-                                      <TextRuns>
-                                        <TextRun>
-                                          <Value>=Fields!BALANCE.Value</Value>
-                                          <Style>
-                                            <FontSize>9pt</FontSize>
-                                            <FontWeight>SemiBold</FontWeight>
-                                          </Style>
-                                        </TextRun>
-                                      </TextRuns>
-                                      <Style>
-                                        <TextAlign>Right</TextAlign>
-                                      </Style>
-                                    </Paragraph>
-                                  </Paragraphs>
-                                  <rd:DefaultName>Textbox36</rd:DefaultName>
-                                  <Top>2.22444in</Top>
-                                  <Left>2.39584in</Left>
-                                  <Height>0.19792in</Height>
-                                  <Width>0.85416in</Width>
-                                  <ZIndex>2</ZIndex>
-                                  <Style>
-                                    <Border>
-                                      <Style>None</Style>
-                                    </Border>
-                                    <VerticalAlign>Middle</VerticalAlign>
-                                    <PaddingLeft>2pt</PaddingLeft>
-                                    <PaddingRight>2pt</PaddingRight>
-                                    <PaddingTop>2pt</PaddingTop>
-                                    <PaddingBottom>2pt</PaddingBottom>
-                                  </Style>
-                                </Textbox>
-                                <Textbox Name="Textbox43">
-                                  <KeepTogether>true</KeepTogether>
-                                  <Paragraphs>
-                                    <Paragraph>
-                                      <TextRuns>
-                                        <TextRun>
-                                          <Value>=First(Fields!DUE_DATE.Value)</Value>
-                                          <Style>
-                                            <FontSize>9pt</FontSize>
-                                            <FontWeight>SemiBold</FontWeight>
-                                          </Style>
-                                        </TextRun>
-                                      </TextRuns>
-                                      <Style>
-                                        <TextAlign>Center</TextAlign>
-                                      </Style>
-                                    </Paragraph>
-                                  </Paragraphs>
-                                  <rd:DefaultName>Textbox36</rd:DefaultName>
-                                  <Top>1.49062in</Top>
-                                  <Left>3.96876in</Left>
-                                  <Height>0.19792in</Height>
-                                  <Width>0.66666in</Width>
-                                  <ZIndex>3</ZIndex>
-                                  <Style>
-                                    <Border>
-                                      <Style>None</Style>
-                                    </Border>
-                                    <VerticalAlign>Bottom</VerticalAlign>
-                                    <PaddingLeft>2pt</PaddingLeft>
-                                    <PaddingRight>2pt</PaddingRight>
-                                    <PaddingTop>2pt</PaddingTop>
-                                    <PaddingBottom>2pt</PaddingBottom>
-                                  </Style>
-                                </Textbox>
-                                <Textbox Name="Textbox45">
-                                  <KeepTogether>true</KeepTogether>
-                                  <Paragraphs>
-                                    <Paragraph>
-                                      <TextRuns>
-                                        <TextRun>
-                                          <Value>=First(Fields!POST_DATE.Value)</Value>
-                                          <Style>
-                                            <FontSize>9pt</FontSize>
-                                            <FontWeight>SemiBold</FontWeight>
-                                          </Style>
-                                        </TextRun>
-                                      </TextRuns>
-                                      <Style>
-                                        <TextAlign>Center</TextAlign>
-                                      </Style>
-                                    </Paragraph>
-                                  </Paragraphs>
-                                  <rd:DefaultName>Textbox36</rd:DefaultName>
-                                  <Top>1.99458in</Top>
-                                  <Left>3.96875in</Left>
-                                  <Height>0.19792in</Height>
-                                  <Width>0.66666in</Width>
-                                  <ZIndex>4</ZIndex>
-                                  <Style>
-                                    <Border>
-                                      <Style>None</Style>
-                                    </Border>
-                                    <VerticalAlign>Bottom</VerticalAlign>
-                                    <PaddingLeft>2pt</PaddingLeft>
-                                    <PaddingRight>2pt</PaddingRight>
-                                    <PaddingTop>2pt</PaddingTop>
-                                    <PaddingBottom>2pt</PaddingBottom>
-                                  </Style>
-                                </Textbox>
-                                <Textbox Name="FNAME">
-                                  <CanGrow>true</CanGrow>
-                                  <KeepTogether>true</KeepTogether>
-                                  <Paragraphs>
-                                    <Paragraph>
-                                      <TextRuns>
-                                        <TextRun>
-                                          <Value>=Fields!BILL_TO.Value</Value>
-                                          <Style>
-                                            <FontSize>9pt</FontSize>
-                                            <FontWeight>SemiBold</FontWeight>
-                                          </Style>
-                                        </TextRun>
-                                      </TextRuns>
-                                      <Style />
-                                    </Paragraph>
-                                  </Paragraphs>
-                                  <rd:DefaultName>FNAME</rd:DefaultName>
-                                  <Top>2.98833in</Top>
-                                  <Left>3.09375in</Left>
-                                  <Height>0.53125in</Height>
-                                  <Width>2.75in</Width>
-                                  <ZIndex>5</ZIndex>
-                                  <Style>
-                                    <Border>
-                                      <Style>None</Style>
-                                    </Border>
-                                    <PaddingLeft>2pt</PaddingLeft>
-                                    <PaddingRight>2pt</PaddingRight>
-                                    <PaddingTop>2pt</PaddingTop>
-                                    <PaddingBottom>2pt</PaddingBottom>
-                                  </Style>
-                                </Textbox>
-                                <Textbox Name="Textbox46">
+                                <Textbox Name="TxtMessage">
                                   <KeepTogether>true</KeepTogether>
                                   <Paragraphs>
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
                                           <Value>=Parameters!Message.Value</Value>
-                                          <Style>
-                                            <FontSize>9pt</FontSize>
-                                            <FontWeight>SemiBold</FontWeight>
-                                          </Style>
-                                        </TextRun>
-                                      </TextRuns>
-                                      <Style />
-                                    </Paragraph>
-                                  </Paragraphs>
-                                  <rd:DefaultName>Textbox46</rd:DefaultName>
-                                  <Top>2.86736in</Top>
-                                  <Left>0.19097in</Left>
-                                  <Height>0.95833in</Height>
-                                  <Width>2.15451in</Width>
-                                  <ZIndex>6</ZIndex>
-                                  <Style>
-                                    <Border>
-                                      <Style>None</Style>
-                                    </Border>
-                                    <PaddingLeft>2pt</PaddingLeft>
-                                    <PaddingRight>2pt</PaddingRight>
-                                    <PaddingTop>2pt</PaddingTop>
-                                    <PaddingBottom>2pt</PaddingBottom>
-                                  </Style>
-                                </Textbox>
-                                <Textbox Name="Textbox48">
-                                  <KeepTogether>true</KeepTogether>
-                                  <Paragraphs>
-                                    <Paragraph>
-                                      <TextRuns>
-                                        <TextRun>
-                                          <Value>=IIf(InStr(Fields!ACCT_NO.Value, "%") &gt; 0, "COPY OF BILL" + Environment.NewLine + "DO NOT PAY", "")</Value>
-                                          <Style>
-                                            <FontSize>9pt</FontSize>
-                                            <FontWeight>SemiBold</FontWeight>
-                                          </Style>
+                                          <Style />
                                         </TextRun>
                                       </TextRuns>
                                       <Style>
@@ -455,89 +704,51 @@
                                       </Style>
                                     </Paragraph>
                                   </Paragraphs>
-                                  <rd:DefaultName>Textbox36</rd:DefaultName>
-                                  <Top>3.70361in</Top>
-                                  <Left>3.09375in</Left>
-                                  <Height>0.39063in</Height>
-                                  <Width>1.72916in</Width>
-                                  <ZIndex>7</ZIndex>
+                                  <Top>0.76389in</Top>
+                                  <Left>0.2908in</Left>
+                                  <Height>0.48611in</Height>
+                                  <Width>2.98091in</Width>
+                                  <ZIndex>1</ZIndex>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
                                     </Border>
-                                    <VerticalAlign>Top</VerticalAlign>
-                                    <PaddingLeft>2pt</PaddingLeft>
-                                    <PaddingRight>2pt</PaddingRight>
-                                    <PaddingTop>2pt</PaddingTop>
-                                    <PaddingBottom>2pt</PaddingBottom>
-                                  </Style>
-                                </Textbox>
-                                <Textbox Name="Textbox38">
-                                  <KeepTogether>true</KeepTogether>
-                                  <Paragraphs>
-                                    <Paragraph>
-                                      <TextRuns>
-                                        <TextRun>
-                                          <Value>=Fields!BALANCE.Value</Value>
-                                          <Style>
-                                            <FontSize>9pt</FontSize>
-                                            <FontWeight>SemiBold</FontWeight>
-                                          </Style>
-                                        </TextRun>
-                                      </TextRuns>
-                                      <Style>
-                                        <TextAlign>Center</TextAlign>
-                                      </Style>
-                                    </Paragraph>
-                                  </Paragraphs>
-                                  <rd:DefaultName>Textbox36</rd:DefaultName>
-                                  <Top>2.62778in</Top>
-                                  <Left>4.98959in</Left>
-                                  <Height>0.19792in</Height>
-                                  <Width>0.85416in</Width>
-                                  <ZIndex>8</ZIndex>
-                                  <Style>
-                                    <Border>
-                                      <Style>None</Style>
-                                    </Border>
-                                    <VerticalAlign>Bottom</VerticalAlign>
-                                    <PaddingLeft>2pt</PaddingLeft>
-                                    <PaddingRight>2pt</PaddingRight>
-                                    <PaddingTop>2pt</PaddingTop>
-                                    <PaddingBottom>2pt</PaddingBottom>
+                                    <VerticalAlign>Middle</VerticalAlign>
                                   </Style>
                                 </Textbox>
                               </ReportItems>
                               <KeepTogether>true</KeepTogether>
-                              <Height>4.25in</Height>
-                              <Width>6in</Width>
+                              <Top>1.1625in</Top>
+                              <Left>0.25in</Left>
+                              <Height>1.25in</Height>
+                              <Width>3.5625in</Width>
+                              <ZIndex>5</ZIndex>
                               <Style>
                                 <Border>
                                   <Style>None</Style>
                                 </Border>
                               </Style>
                             </Rectangle>
-                            <Textbox Name="AMOUNT1">
+                            <Textbox Name="TxtAcctNo">
                               <KeepTogether>true</KeepTogether>
                               <Paragraphs>
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Parameters!Company.Value</Value>
-                                      <Style>
-                                        <FontSize>9pt</FontSize>
-                                      </Style>
+                                      <Value>=Fields!ACCT_NO.Value.ToString().Replace("%", "")</Value>
+                                      <Style />
                                     </TextRun>
                                   </TextRuns>
-                                  <Style />
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <rd:DefaultName>AMOUNT1</rd:DefaultName>
-                              <Top>0.11458in</Top>
-                              <Left>0.19097in</Left>
-                              <Height>0.48958in</Height>
-                              <Width>2.75in</Width>
-                              <ZIndex>1</ZIndex>
+                              <Top>1.375in</Top>
+                              <Left>3.875in</Left>
+                              <Height>0.25in</Height>
+                              <Width>1.0625in</Width>
+                              <ZIndex>6</ZIndex>
                               <Style>
                                 <Border>
                                   <Style>None</Style>
@@ -548,49 +759,104 @@
                                 <PaddingBottom>2pt</PaddingBottom>
                               </Style>
                             </Textbox>
-                            <Textbox Name="Textbox36">
+                            <Textbox Name="TxtDueLate">
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Format(First(Fields!LATE_BALANCE.Value), "C2")</Value>
+                                      <Style />
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>1.75in</Top>
+                              <Left>3.875in</Left>
+                              <Height>0.25in</Height>
+                              <Width>1.0625in</Width>
+                              <ZIndex>7</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="TxtDueDate">
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Format(First(Fields!DUE_DATE.Value), "MM/dd/yy")</Value>
+                                      <Style />
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>1.375in</Top>
+                              <Left>5in</Left>
+                              <Height>0.25in</Height>
+                              <Width>1in</Width>
+                              <ZIndex>8</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="TxtDueNow">
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Format(First(Fields!BALANCE.Value), "C2")</Value>
+                                      <Style />
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>1.75in</Top>
+                              <Left>5in</Left>
+                              <Height>0.25in</Height>
+                              <Width>1in</Width>
+                              <ZIndex>9</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="TxtServLoc">
                               <KeepTogether>true</KeepTogether>
                               <Paragraphs>
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
                                       <Value>=Fields!NUMBER.Value + " " + Fields!STREET.Value + " " + Fields!SUFFIX.Value</Value>
-                                      <Style>
-                                        <FontSize>9pt</FontSize>
-                                        <FontWeight>SemiBold</FontWeight>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>Textbox36</rd:DefaultName>
-                              <Top>2.32292in</Top>
-                              <Left>3.63542in</Left>
-                              <Height>0.19792in</Height>
-                              <Width>2.20833in</Width>
-                              <ZIndex>2</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>2pt</PaddingRight>
-                                <PaddingTop>2pt</PaddingTop>
-                                <PaddingBottom>2pt</PaddingBottom>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox37">
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=Fields!ACCT_NO.Value.ToString().Replace("%", "")</Value>
-                                      <Style>
-                                        <FontSize>9pt</FontSize>
-                                        <FontWeight>SemiBold</FontWeight>
-                                      </Style>
+                                      <Style />
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -598,122 +864,15 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <rd:DefaultName>Textbox36</rd:DefaultName>
-                              <Top>2.62778in</Top>
-                              <Left>3.96875in</Left>
-                              <Height>0.19792in</Height>
-                              <Width>0.66666in</Width>
-                              <ZIndex>3</ZIndex>
+                              <Top>2.1625in</Top>
+                              <Left>3.875in</Left>
+                              <Height>0.25in</Height>
+                              <Width>2.125in</Width>
+                              <ZIndex>10</ZIndex>
                               <Style>
                                 <Border>
                                   <Style>None</Style>
                                 </Border>
-                                <VerticalAlign>Bottom</VerticalAlign>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>2pt</PaddingRight>
-                                <PaddingTop>2pt</PaddingTop>
-                                <PaddingBottom>2pt</PaddingBottom>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox40">
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=Fields!BALANCE.Value</Value>
-                                      <Style>
-                                        <FontSize>9pt</FontSize>
-                                        <FontWeight>SemiBold</FontWeight>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style>
-                                    <TextAlign>Center</TextAlign>
-                                  </Style>
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>Textbox36</rd:DefaultName>
-                              <Top>1.49062in</Top>
-                              <Left>4.98959in</Left>
-                              <Height>0.19792in</Height>
-                              <Width>0.85416in</Width>
-                              <ZIndex>4</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                                <VerticalAlign>Bottom</VerticalAlign>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>2pt</PaddingRight>
-                                <PaddingTop>2pt</PaddingTop>
-                                <PaddingBottom>2pt</PaddingBottom>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox41">
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=Fields!ACCT_NO.Value.ToString().Replace("%", "")</Value>
-                                      <Style>
-                                        <FontSize>9pt</FontSize>
-                                        <FontWeight>SemiBold</FontWeight>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style>
-                                    <TextAlign>Center</TextAlign>
-                                  </Style>
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>Textbox36</rd:DefaultName>
-                              <Top>1.74062in</Top>
-                              <Left>3.96875in</Left>
-                              <Height>0.19792in</Height>
-                              <Width>0.66666in</Width>
-                              <ZIndex>5</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                                <VerticalAlign>Bottom</VerticalAlign>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>2pt</PaddingRight>
-                                <PaddingTop>2pt</PaddingTop>
-                                <PaddingBottom>2pt</PaddingBottom>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox42">
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>="gal" + Environment.NewLine + Fields!DIFF.Value</Value>
-                                      <Style>
-                                        <FontSize>9pt</FontSize>
-                                        <FontWeight>SemiBold</FontWeight>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style>
-                                    <TextAlign>Center</TextAlign>
-                                  </Style>
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>Textbox36</rd:DefaultName>
-                              <Top>0.63194in</Top>
-                              <Left>2.08334in</Left>
-                              <Height>0.33903in</Height>
-                              <Width>0.66666in</Width>
-                              <ZIndex>6</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                                <VerticalAlign>Top</VerticalAlign>
                                 <PaddingLeft>2pt</PaddingLeft>
                                 <PaddingRight>2pt</PaddingRight>
                                 <PaddingTop>2pt</PaddingTop>
@@ -750,7 +909,7 @@
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
-            <DataSetName>InvoiceLines</DataSetName>
+            <DataSetName>InvoiceLinesDataSet</DataSetName>
             <Height>4.25in</Height>
             <Width>6in</Width>
             <Style>
@@ -759,54 +918,13 @@
               </Border>
             </Style>
           </Tablix>
-          <Textbox Name="Textbox1">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>CORRUPTED</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>NEEDS FIXED</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>4.79042in</Top>
-            <Left>1.83334in</Left>
-            <Height>0.4375in</Height>
-            <Width>1.29165in</Width>
-            <ZIndex>1</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
         </ReportItems>
-        <Height>8.5in</Height>
+        <Height>14in</Height>
         <Style />
       </Body>
-      <Width>6in</Width>
+      <Width>8.5in</Width>
       <Page>
-        <PageHeight>8.5in</PageHeight>
-        <PageWidth>12in</PageWidth>
-        <Columns>2</Columns>
+        <PageHeight>14in</PageHeight>
         <ColumnSpacing>0in</ColumnSpacing>
         <Style />
       </Page>

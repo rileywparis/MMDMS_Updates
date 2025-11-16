@@ -580,7 +580,7 @@
             <Top>0.87221in</Top>
             <Left>0.25955in</Left>
             <Height>0.75in</Height>
-            <Width>7.49045in</Width>
+            <Width>7.49044in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -661,7 +661,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>="Sorted by: " + Parameters!Sort.Value + " Filtered by: &gt;= 54.00"</Value>
+                    <Value>="Sorted by: " + Parameters!Sort.Value + " Filtered by: &gt;= 53.00"</Value>
                     <Style />
                   </TextRun>
                 </TextRuns>

@@ -152,7 +152,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!DIFF.Value + " gal"</Value>
+                                  <Value>=Fields!DIFF.Value.ToString() + " gal"</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -171,6 +171,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -256,7 +257,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(CDec(Fields!CHARGE.Value))</Value>
+                                  <Value>=Format(Sum(Fields!CHARGE.Value), "C2")</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -293,7 +294,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(CDec(Fields!PREV_BALANCE.Value))</Value>
+                                  <Value>=Format(Sum(Fields!PREV_BALANCE.Value), "C2")</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -330,7 +331,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(CDec(Fields!PREV_BALANCE.Value)) + Sum(CDec(Fields!CHARGE.Value))</Value>
+                                  <Value>=Format(Sum(Fields!PREV_BALANCE.Value) + Sum(Fields!CHARGE.Value), "C2")</Value>
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>

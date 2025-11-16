@@ -53,5 +53,16 @@
       "Warning when editing negative usage",
       "Changed Billing page layout"
     ]
+  },
+  {
+    "version": "0.5.0",
+    "date": "2025-11-16",
+    "notes": [
+      "**Created many new errors",
+      "**Revamped estimation logic",
+      "*Change dial count from Verify & Edit",
+      "Route Sheet date line + tally",
+      "QuickBooks Online Integration (W.I.P.)"
+    ]
   }
 ]
