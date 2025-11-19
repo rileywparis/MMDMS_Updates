@@ -443,7 +443,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Utility</Value>
+                                  <Value EvaluationMode="Constant">Acct #</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -834,21 +834,21 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="UTILITY">
+                        <Textbox Name="ACCT_NO">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Cstr(Fields!UTIL_NAME.Value)</Value>
+                                  <Value>=Fields!ACCT_NO.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>UTILITY</rd:DefaultName>
+                          <rd:DefaultName>ACCT_NO</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -1270,7 +1270,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>BillsDataSet</DataSetName>
-            <Height>1.50521in</Height>
+            <Height>1.5052in</Height>
             <Width>8.00001in</Width>
             <Style>
               <Border>
@@ -1285,7 +1285,7 @@
       <Width>8.00001in</Width>
       <Page>
         <PageFooter>
-          <Height>0.275in</Height>
+          <Height>0.415in</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>

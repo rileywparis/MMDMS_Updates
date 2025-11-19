@@ -46,7 +46,6 @@
     "ReaderImport": "SNS6590"
   },
   "Billing": {
-    "GracePeriodDays": 10,
     "FlatRatePenalty": false,
     "PenaltyRate": 0.05,
     "ExcludePenaltyMin": 0.00,
@@ -54,10 +53,11 @@
     "UnitsPerRate": 1000,
     "SewerEstimate": 1000,
     "MeterSizes": "5/8,3/4,1,1 1/2,2,3,4",
+    "UseEDUs": true,
     "DueDays": 24,
     "PrintInMuniBridge": true,
     "GroupBilling": true,
-    "InvoiceRdlc": "PostcardInvoices",
+    "InvoiceRdlc": "PostcardInvoices4up",
     "Alias1": "WTR",
     "Alias2": "SWR",
     "Alias3": "UK",
