@@ -64,5 +64,14 @@
       "Route Sheet date line + tally",
       "QuickBooks Online Integration (W.I.P.)"
     ]
+  },
+  {
+    "version": "0.5.7",
+    "date": "2025-11-21",
+    "notes": [
+      "*Accounts table view overhaul",
+      "*Find customer in QuickBooks button (R-Click Account)",
+      "*Auto fill mail address on account creation"
+    ]
   }
 ]
