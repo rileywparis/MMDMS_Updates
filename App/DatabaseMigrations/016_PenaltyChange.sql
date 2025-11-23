@@ -1,0 +1,9 @@
+use mdms_prod;
+
+UPDATE Transactions
+SET UTILITY = 9
+WHERE UTILITY = 7;
+
+UPDATE RateDescs
+SET APPLIES = 9
+WHERE APPLIES = 7

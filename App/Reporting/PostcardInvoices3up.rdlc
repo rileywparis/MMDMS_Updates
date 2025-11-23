@@ -525,6 +525,7 @@
                                                       <VerticalAlign>Top</VerticalAlign>
                                                     </Style>
                                                   </Textbox>
+                                                  <rd:Selected>true</rd:Selected>
                                                 </CellContents>
                                               </TablixCell>
                                               <TablixCell>
@@ -565,7 +566,7 @@
                                                       <Paragraph>
                                                         <TextRuns>
                                                           <TextRun>
-                                                            <Value>=IIf(Fields!UTILITY.Value = 1, Fields!ACT_USAGE.Value, "-")</Value>
+                                                            <Value>=IIf(Fields!UTILITY.Value = 1, Fields!BILL_USAGE.Value, "-")</Value>
                                                             <Style>
                                                               <FontSize>9pt</FontSize>
                                                               <FontWeight>Normal</FontWeight>

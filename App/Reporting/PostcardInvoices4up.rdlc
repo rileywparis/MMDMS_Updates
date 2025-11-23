@@ -638,11 +638,10 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>="gal" 
-&amp; vbLf &amp; 
-IIF(Fields!FLAG.Value = "ESTIMATE",
-    "Est.",
-    Fields!ACT_USAGE.Value
+                                      <Value>= IIF(
+    Fields!FLAG.Value = "ESTIMATE",
+    Fields!BILL_USAGE.Value &amp; " Est." &amp; vbLf &amp; "gal",
+    Fields!BILL_USAGE.Value &amp; vbLf &amp; "gal"
 )</Value>
                                       <Style>
                                         <FontSize>9pt</FontSize>
