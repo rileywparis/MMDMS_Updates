@@ -95,6 +95,14 @@
         </Field>
         <Field Name="ACT_USAGE">
           <DataField>ACT_USAGE</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="CUR_DATE">
+          <DataField>CUR_DATE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DATE">
+          <DataField>DATE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
@@ -133,7 +141,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Format(DateAdd("m", -1, First(Fields!POST_DATE.Value)), "MM/dd/yy")</Value>
+                                      <Value>=Format(Fields!CUR_DATE.Value, "MM/dd/yy")</Value>
                                       <Style>
                                         <FontSize>9pt</FontSize>
                                         <FontWeight>Bold</FontWeight>
@@ -163,7 +171,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Format(First(Fields!POST_DATE.Value), "MM/dd/yy")</Value>
+                                      <Value>=Fields!DATE.Value</Value>
                                       <Style>
                                         <FontSize>9pt</FontSize>
                                         <FontWeight>Bold</FontWeight>
@@ -779,7 +787,7 @@
                                             <TablixCells>
                                               <TablixCell>
                                                 <CellContents>
-                                                  <Textbox Name="Textbox8">
+                                                  <Textbox Name="Utility">
                                                     <CanGrow>true</CanGrow>
                                                     <KeepTogether>true</KeepTogether>
                                                     <Paragraphs>
@@ -798,7 +806,6 @@
                                                         </Style>
                                                       </Paragraph>
                                                     </Paragraphs>
-                                                    <rd:DefaultName>Textbox8</rd:DefaultName>
                                                     <Style>
                                                       <Border>
                                                         <Color>LightGrey</Color>
@@ -808,6 +815,7 @@
                                                       <PaddingLeft>16pt</PaddingLeft>
                                                     </Style>
                                                   </Textbox>
+                                                  <rd:Selected>true</rd:Selected>
                                                 </CellContents>
                                               </TablixCell>
                                               <TablixCell>

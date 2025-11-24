@@ -297,4 +297,6 @@ Table: GroupBills
 - LATE_BALANCE System.Decimal
 - MESSAGE System.String
 - ACT_USAGE System.Int32
+- CUR_DATE System.DateTime
+- DATE System.String
 

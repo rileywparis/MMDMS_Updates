@@ -95,6 +95,14 @@
         </Field>
         <Field Name="ACT_USAGE">
           <DataField>ACT_USAGE</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="CUR_DATE">
+          <DataField>CUR_DATE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DATE">
+          <DataField>DATE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
@@ -133,7 +141,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Format(DateAdd("m", -1, First(Fields!POST_DATE.Value)), "MM/dd/yy")</Value>
+                                      <Value>=Format(Fields!CUR_DATE.Value, "MM/dd/yy")</Value>
                                       <Style />
                                     </TextRun>
                                   </TextRuns>
@@ -162,7 +170,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Format(First(Fields!POST_DATE.Value), "MM/dd/yy")</Value>
+                                      <Value>=Fields!DATE.Value</Value>
                                       <Style />
                                     </TextRun>
                                   </TextRuns>
@@ -467,7 +475,7 @@
                                             <TablixCells>
                                               <TablixCell>
                                                 <CellContents>
-                                                  <Textbox Name="Textbox20">
+                                                  <Textbox Name="Prior">
                                                     <CanGrow>true</CanGrow>
                                                     <KeepTogether>true</KeepTogether>
                                                     <Paragraphs>
@@ -486,7 +494,6 @@
                                                         </Style>
                                                       </Paragraph>
                                                     </Paragraphs>
-                                                    <rd:DefaultName>Textbox20</rd:DefaultName>
                                                     <Style>
                                                       <Border>
                                                         <Color>LightGrey</Color>
@@ -525,7 +532,6 @@
                                                       <VerticalAlign>Top</VerticalAlign>
                                                     </Style>
                                                   </Textbox>
-                                                  <rd:Selected>true</rd:Selected>
                                                 </CellContents>
                                               </TablixCell>
                                               <TablixCell>
@@ -616,6 +622,7 @@
                                                       <VerticalAlign>Top</VerticalAlign>
                                                     </Style>
                                                   </Textbox>
+                                                  <rd:Selected>true</rd:Selected>
                                                 </CellContents>
                                               </TablixCell>
                                               <TablixCell>
