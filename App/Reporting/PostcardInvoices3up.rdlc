@@ -150,7 +150,7 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0.6625in</Top>
+                              <Top>0.6in</Top>
                               <Left>0.25in</Left>
                               <Height>0.25in</Height>
                               <Width>0.875in</Width>
@@ -179,7 +179,7 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0.6625in</Top>
+                              <Top>0.6in</Top>
                               <Left>1.14583in</Left>
                               <Height>0.25in</Height>
                               <Width>0.875in</Width>
@@ -209,7 +209,7 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0.6625in</Top>
+                              <Top>0.6in</Top>
                               <Left>2.04167in</Left>
                               <Height>0.25in</Height>
                               <Width>0.875in</Width>
@@ -239,7 +239,7 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0.6625in</Top>
+                              <Top>0.6in</Top>
                               <Left>2.9375in</Left>
                               <Height>0.25in</Height>
                               <Width>0.9375in</Width>
@@ -271,8 +271,8 @@
                                       </Style>
                                     </Paragraph>
                                   </Paragraphs>
-                                  <Top>0.25in</Top>
-                                  <Left>0.25in</Left>
+                                  <Top>0.2in</Top>
+                                  <Left>0.3in</Left>
                                   <Height>0.25in</Height>
                                   <Width>1in</Width>
                                   <Style>
@@ -300,8 +300,8 @@
                                       </Style>
                                     </Paragraph>
                                   </Paragraphs>
-                                  <Top>0.25in</Top>
-                                  <Left>1.25in</Left>
+                                  <Top>0.2in</Top>
+                                  <Left>1.3in</Left>
                                   <Height>0.25in</Height>
                                   <Width>1in</Width>
                                   <ZIndex>1</ZIndex>
@@ -330,8 +330,8 @@
                                       </Style>
                                     </Paragraph>
                                   </Paragraphs>
-                                  <Top>0.625in</Top>
-                                  <Left>0.25in</Left>
+                                  <Top>0.575in</Top>
+                                  <Left>0.3in</Left>
                                   <Height>0.25in</Height>
                                   <Width>1in</Width>
                                   <ZIndex>2</ZIndex>
@@ -360,8 +360,8 @@
                                       </Style>
                                     </Paragraph>
                                   </Paragraphs>
-                                  <Top>0.625in</Top>
-                                  <Left>1.25in</Left>
+                                  <Top>0.575in</Top>
+                                  <Left>1.3in</Left>
                                   <Height>0.25in</Height>
                                   <Width>1in</Width>
                                   <ZIndex>3</ZIndex>
@@ -409,15 +409,15 @@
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>=IIf(InStr(Fields!ACCT_NO.Value, "%") &gt; 0, "COPY OF BILL" + Environment.NewLine + "DO NOT PAY", "")</Value>
+                                          <Value>=IIf(InStr(Fields!ACCT_NO.Value, "%") &gt; 0, "COPY OF BILL", "")</Value>
                                           <Style />
                                         </TextRun>
                                       </TextRuns>
                                       <Style />
                                     </Paragraph>
                                   </Paragraphs>
-                                  <Top>1in</Top>
-                                  <Left>0.25in</Left>
+                                  <Top>0.95in</Top>
+                                  <Left>0.3in</Left>
                                   <Height>0.36458in</Height>
                                   <Width>2in</Width>
                                   <ZIndex>5</ZIndex>
@@ -622,7 +622,6 @@
                                                       <VerticalAlign>Top</VerticalAlign>
                                                     </Style>
                                                   </Textbox>
-                                                  <rd:Selected>true</rd:Selected>
                                                 </CellContents>
                                               </TablixCell>
                                               <TablixCell>
@@ -726,7 +725,7 @@
                                 </Textbox>
                               </ReportItems>
                               <KeepTogether>true</KeepTogether>
-                              <Top>1.1625in</Top>
+                              <Top>1.0875in</Top>
                               <Left>0.25in</Left>
                               <Height>1.25in</Height>
                               <Width>3.5625in</Width>
@@ -872,7 +871,7 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>2.1625in</Top>
+                              <Top>2.1125in</Top>
                               <Left>3.875in</Left>
                               <Height>0.25in</Height>
                               <Width>2.125in</Width>
