@@ -11,7 +11,8 @@
     "Utility6": "UNKNOWN6",
     "Utility7": "UNKNOWN7",
     "Utility8": "MISC",
-    "Utility9": "PENALTY"
+    "Utility9": "PENALTY",
+    "NumericAcctNo": true
   },
   "QuickBooks": {
     "UsingQBO": false,
@@ -33,7 +34,7 @@
   "Billing": {
     "FlatRatePenalty": false,
     "PenaltyRate": 0.05,
-    "ExcludePenaltyMin": 0.00,
+    "ExcludePenaltyMin": 1.00,
     "ErrorAllow": 0.30,
     "UnitsPerRate": 1000,
     "SewerEstimate": 1000,
@@ -52,6 +53,12 @@
     "Alias7": "UK7",
     "Alias8": "MISC",
     "Alias9": "PEN"
+  },
+  "Preferences": {
+    "HighBill": 100.00,
+    "LowBill": 50.00,
+    "HighUsage": 10000,
+    "PrintInBrowser": false
   },
   "Estimation": {
     "YearLimit": 5,

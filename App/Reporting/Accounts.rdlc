@@ -219,7 +219,7 @@
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Tablix Name="Tablix2">
+          <Tablix Name="TablixAccounts">
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
@@ -556,7 +556,7 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>3.11458in</Height>
+        <Height>1.72916in</Height>
         <Style />
       </Body>
       <Width>8in</Width>
