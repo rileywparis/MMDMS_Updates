@@ -114,7 +114,6 @@ Table: Accounts
 - H_PHONE System.String
 - W_PHONE System.String
 - EMAIL System.String
-- CUSTNOTE System.String
 - CARE_OF System.String
 - ADD_DATE System.DateTime
 - BILL_ADDR System.String
@@ -124,29 +123,6 @@ Table: Accounts
 - KEEP_BILLING System.Boolean
 - BILL_EMAIL System.Boolean
 - BILL_PAPER System.Boolean
-
-Table: vBillingData
-- SERV_ID System.String
-- ACCT_NO System.String
-- UTILITY System.Byte
-- RATE_CODE System.String
-- ROUTE_NO System.String
-- READ_SEQ System.String
-- METER_NO System.String
-- NO_OF_DIAL System.Int32
-- CUR_READ System.Int32
-- CUR_DATE System.DateTime
-- REV_FNAME System.String
-- FNAME System.String
-- FIRST System.String
-- MIDDLE System.String
-- LAST System.String
-- BILL_ADDR System.String
-- CUSTNOTE System.String
-- STREET System.String
-- NUMBER System.String
-- SUFFIX System.String
-- RowNum System.Int64
 
 Table: ArchivedAccounts
 - ACCT_NO System.String
@@ -163,7 +139,6 @@ Table: ArchivedAccounts
 - H_PHONE System.String
 - W_PHONE System.String
 - EMAIL System.String
-- CUSTNOTE System.String
 - CARE_OF System.String
 - ADD_DATE System.DateTime
 - FNAME System.String
@@ -271,6 +246,14 @@ Table: Rates
 Table: DbVersion
 - Version System.Int32
 - AppliedOn System.DateTime
+
+Table: Notes
+- NOTE_PK System.Int32
+- CREATE_FOR System.String
+- TEXT System.String
+- DATE System.DateTime
+- USER System.String
+- PIN System.Byte
 
 Table: vLatestUsage
 - SERV_ID System.String

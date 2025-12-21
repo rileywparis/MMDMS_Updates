@@ -73,5 +73,28 @@
       "*Find customer in QuickBooks button (R-Click Account)",
       "*Auto fill mail address on account creation"
     ]
+  },
+  {
+    "version": "1.0.2",
+    "date": "2025-12-7",
+    "notes": [
+      "*Reporting tab with statistic charts",
+      "*Checkbox to silence warnings",
+      "Edit Usage Row from History window",
+      "Bill amount highlighting",
+      "Moved current read line on Route Sheet"
+    ]
+  },
+  {
+    "version": "1.0.3",
+    "date": "2025-12-20",
+    "notes": [
+      "*Allow Form re-sizing",
+      "*Account notes revamp",
+      "*Remove multiple rows from 'Verify & Edit' table",
+      "Row highlight color preferences",
+      "Stability improvements",
+      "Optimization"
+    ]
   }
 ]
