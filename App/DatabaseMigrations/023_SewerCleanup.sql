@@ -66,4 +66,4 @@ LEFT JOIN dbo.vLatestUsage lu
     ON lu.SERV_ID = u.SERV_ID;
 GO
 
-DROP FUNCTION fDEPWaterUsage;
+DROP FUNCTION IF EXISTS fDEPWaterUsage;
