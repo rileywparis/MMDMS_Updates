@@ -25,7 +25,7 @@
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="BillsDataSet">
+    <DataSet Name="RouteSheetDataSet">
       <Query>
         <DataSourceName>mdmsDataSet</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
@@ -35,29 +35,21 @@
           <DataField>SERV_ID</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="ADDR">
+          <DataField>ADDR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="ACCT_NO">
           <DataField>ACCT_NO</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="LAST">
-          <DataField>LAST</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="FIRST">
-          <DataField>FIRST</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="REV_FNAME">
           <DataField>REV_FNAME</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ADDR">
-          <DataField>ADDR</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="UTILITY">
           <DataField>UTILITY</DataField>
-          <rd:TypeName>System.Byte</rd:TypeName>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="ROUTE_NO">
           <DataField>ROUTE_NO</DataField>
@@ -79,26 +71,30 @@
           <DataField>NOTES</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="NO_OF_DIAL">
+          <DataField>NO_OF_DIAL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SERV_STAT">
+          <DataField>SERV_STAT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="CUR_READ">
           <DataField>CUR_READ</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="CUR_DATE">
           <DataField>CUR_DATE</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="UTIL_NAME">
-          <DataField>UTIL_NAME</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>mdmsDataSet</rd:DataSetName>
         <rd:SchemaPath>C:\Users\panda\source\repos\MDMS\MDMS\Reporting\mdmsDataSet.xsd</rd:SchemaPath>
-        <rd:TableName>Bills</rd:TableName>
-        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
-        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>BillsTableAdapter</rd:TableAdapterName>
+        <rd:TableName>RouteSheet</rd:TableName>
+        <rd:TableAdapterFillMethod />
+        <rd:TableAdapterGetDataMethod />
+        <rd:TableAdapterName />
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
@@ -274,6 +270,7 @@
                             <PaddingRight>2pt</PaddingRight>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -778,7 +775,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="MET_MESS1">
+                        <Textbox Name="MET_MESS">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -794,7 +791,6 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>MET_MESS1</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1242,7 +1238,7 @@
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
-            <DataSetName>BillsDataSet</DataSetName>
+            <DataSetName>RouteSheetDataSet</DataSetName>
             <Height>1.5052in</Height>
             <Width>8in</Width>
             <Style>

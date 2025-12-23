@@ -33,6 +33,7 @@
   },
   "Billing": {
     "FlatRatePenalty": false,
+    "ChargeBasedPenalty": false,
     "PenaltyRate": 0.05,
     "ExcludePenaltyMin": 1.00,
     "ErrorAllow": 0.30,
