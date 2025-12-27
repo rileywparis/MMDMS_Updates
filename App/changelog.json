@@ -96,5 +96,18 @@
       "Stability improvements",
       "Optimization"
     ]
+  },
+  {
+    "version": "1.0.5",
+    "date": "2025-12-27",
+    "notes": [
+      "*Bills Sent/Printed in the same Preview Sort Order",
+      "*Remember last batch message (during current session)",
+      "*Search bar in Service move-in window",
+      "*Allow archiving directly from database validation window",
+      "Loading splash screen",
+      "Change add/remove service to move in/out",
+      "Auto-refresh on service changes"
+    ]
   }
 ]
