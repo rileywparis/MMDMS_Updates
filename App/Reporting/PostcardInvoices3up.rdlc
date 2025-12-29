@@ -542,7 +542,7 @@
                                                       <Paragraph>
                                                         <TextRuns>
                                                           <TextRun>
-                                                            <Value>=IIf(Fields!UTILITY.Value = 1, IIf(Fields!FLAG.Value = "ESTIMATE", "Y", "N"), "")</Value>
+                                                            <Value EvaluationMode="Constant" />
                                                             <Style>
                                                               <FontSize>9pt</FontSize>
                                                               <FontWeight>Normal</FontWeight>
@@ -562,6 +562,7 @@
                                                       <VerticalAlign>Top</VerticalAlign>
                                                     </Style>
                                                   </Textbox>
+                                                  <rd:Selected>true</rd:Selected>
                                                 </CellContents>
                                               </TablixCell>
                                               <TablixCell>

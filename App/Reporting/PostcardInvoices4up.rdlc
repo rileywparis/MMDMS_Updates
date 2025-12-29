@@ -647,11 +647,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>= IIF(
-    Fields!FLAG.Value = "ESTIMATE",
-    Fields!BILL_USAGE.Value &amp; " Est." &amp; vbLf &amp; "gal",
-    Fields!BILL_USAGE.Value &amp; vbLf &amp; "gal"
-)</Value>
+                                      <Value>=Fields!BILL_USAGE.Value &amp; vbLf &amp; "billed"</Value>
                                       <Style>
                                         <FontSize>9pt</FontSize>
                                         <FontWeight>Bold</FontWeight>

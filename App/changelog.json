@@ -109,5 +109,15 @@
       "Change add/remove service to move in/out",
       "Auto-refresh on service changes"
     ]
+  },
+  {
+    "version": "1.0.7",
+    "date": "2025-12-29",
+    "notes": [
+      "*AR Aging Report Customization (Coming soon to other reports)",
+      "*Change default print preview app in Settings",
+      "Service Location summary in Reporting Tab",
+      "Postcard invoice usage/reading display change"
+    ]
   }
 ]
