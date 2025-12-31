@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
-  "appVersion": "1.1.01",
-  "generatedUtc": "2025-12-31T07:17:59Z",
+  "appVersion": "1.1.02",
+  "generatedUtc": "2025-12-31T15:52:46Z",
   "filesBasePath": "latest/files/",
   "files": [
     {
@@ -26,6 +26,156 @@
       "path": "config.default.json",
       "sha256": "e617ba366e1f10c30e525ddae235a891ef3c03853497ba12e7a315768fa03aa2",
       "size": 2213,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/001_AddDbVersion.sql",
+      "sha256": "076d1371e23595d024fba4676bca9e5bb5def8ac4259d8a39f7ef77edf4606d8",
+      "size": 153,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/002_MatchArchiveSchemas.sql",
+      "sha256": "301a769ecf2d6eae288806658913cf99a2021e3f9cbccbe20a26765fd337a1ea",
+      "size": 668,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/003_AddGroupBills.sql",
+      "sha256": "d0e04804196f731fb727b6e399f48c12508684f402dcdd9cdf04a7b01e4bdf8a",
+      "size": 737,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/004_FixNameCompute.sql",
+      "sha256": "1fb927b612619a1c064900e25e89b034e7ab518946a376429d8866a0ae733437",
+      "size": 755,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/005_AddDatesToTrans.sql",
+      "sha256": "3ecbfd614db6da39a27edf293147acb1b20b48e345789747162cca439181b9c2",
+      "size": 122,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/006_BillingOptimize.sql",
+      "sha256": "980938d5af905d3cd04c937b64f00bce24efdc5ba4cfdfc03a0fb7906ac7b8d7",
+      "size": 1467,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/007_ChangeGroupBills.sql",
+      "sha256": "3a5572afb7f7c72ce415088d82e2239f4fde9ab8036e7d163057dab45bc542d6",
+      "size": 922,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/008_DropRateColumns.sql",
+      "sha256": "1d5e08f6eb38538ab5a3f9bc360058b62bf614dcdd96d193d1d1550af4321199",
+      "size": 279,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/009_DialCountBillingAdd.sql",
+      "sha256": "88dd0857647fa56a5d867bc7bbf103179f470a5146dae69fdc8d2d0d9355669d",
+      "size": 695,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/010_Constraints.sql",
+      "sha256": "53f61e6b9fb8888a867b384f7e1fc4edc0c80f677ffe848c32bb8957c6123a19",
+      "size": 1619,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/011_UtilPk.sql",
+      "sha256": "055fa43758c0b9c1f5b73cdbc84d774e10eb08e318315cfe248fe43f736f5fb3",
+      "size": 429,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/012_Estimation.sql",
+      "sha256": "d1a8c66ba278ba180e608c9f4c29d71ffae892e154248d32f4957445b12454fe",
+      "size": 8931,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/013_GroupBillUsages.sql",
+      "sha256": "12e90a31e6779510a38c7f8f9bd52f26ca7400eaa315a97c989ebf1ac15bb867",
+      "size": 110,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/014_EstimationOptimize.sql",
+      "sha256": "cfe70e1c5ecbbdc2d4cdd45caf6955f72f4316d8abd9fcc726ca637f627fde13",
+      "size": 10883,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/015_BillingOptions.sql",
+      "sha256": "b2392e5871e4d3fb9cb3176b7dc28643445441a8020fc6dc9edf456418782b53",
+      "size": 709,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/016_PenaltyChange.sql",
+      "sha256": "a97d9ef4e8ff12f203241fb14717ba4a9f237fdd36bfea83ea361fa736834b26",
+      "size": 130,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/017_EstimationExcludeNewUtility.sql",
+      "sha256": "1dd7b49ce94f1bd56e1506c0787db055254dc68b51e0d18fed93625c606604b9",
+      "size": 9394,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/018_TransactionsNonNullDates.sql",
+      "sha256": "938ea041124d6dda6ef7726cafd2e020af76c5c4552291d02d955d25be87d0aa",
+      "size": 265,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/019_GroupBillDates.sql",
+      "sha256": "9846fa098d3dd1702a1776362cf3c6a30191747e68004e13e3d051924e8e602f",
+      "size": 119,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/020_StoreStaticFlags.sql",
+      "sha256": "516b2080c004b2ddbd25b93607a76c542563b80f78b2aa9aeaa3abca41875050",
+      "size": 9527,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/021_TablePks.sql",
+      "sha256": "f8cd71726299256f9c9d8ce30e3a8cc68ddcf0c9a003666cfb8839008c0b38af",
+      "size": 304,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/022_Notes.sql",
+      "sha256": "bb91b09802e9399a9ea417785ead02c3b8067f78068cc4017f8252f67ae915ee",
+      "size": 1086,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/023_SewerCleanup.sql",
+      "sha256": "c621a3fea81c579b6167aa559f8e5e95431c5cec9fefb143d7a34556760cf891",
+      "size": 1466,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/024_NewCycleStaticFlag.sql",
+      "sha256": "a24d97b94ce0ab1bd4ca0d6c57f70551b7ce044a9177ecd55f56475fbd49fa34",
+      "size": 70,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/dev_schema.txt",
+      "sha256": "eab0ee4eee6bdf36b62f2f1e041aa4ed4cb00443950d9c647aac044f65ca3525",
+      "size": 6687,
       "mode": "overwrite"
     },
     {
@@ -378,8 +528,8 @@
     },
     {
       "path": "MuniBridge.exe",
-      "sha256": "65eafa6fbfe2837a3707a888b5a1962d880db6d7a1538fd2d4c9433e768d649c",
-      "size": 1885696,
+      "sha256": "ca17213f8238227c0905c2361f67bc4b6a57bd97878d3ee5a2ec0e29bc4b2ab0",
+      "size": 1871360,
       "mode": "overwrite"
     },
     {
@@ -390,8 +540,8 @@
     },
     {
       "path": "MuniBridge.pdb",
-      "sha256": "4c7a293bb04b9c2faed008152632d00ec823fe0fcec2b12d6303b973135409e3",
-      "size": 2012672,
+      "sha256": "a2eb917b44c6bcb63a662b986aac64520e1b7fca0cc993cefa6ccc73148b5a87",
+      "size": 2016768,
       "mode": "overwrite"
     },
     {
@@ -894,8 +1044,8 @@
     },
     {
       "path": "version.json",
-      "sha256": "d8b55d96b832a526f9ce0ffaa775027fee4eff956522964627991a44317f0a68",
-      "size": 100,
+      "sha256": "a2f427e2602a24d45752ce0bab0ea8e4acb88dd5087031ef17edb18665f293e7",
+      "size": 101,
       "mode": "overwrite"
     },
     {
