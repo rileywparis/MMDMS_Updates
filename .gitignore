@@ -1,0 +1,19 @@
+# --- never ship local config / secrets ---
+config.local.json
+license.key
+
+# anywhere in repo
+**/config.local.json
+**/license.key
+
+# --- debug symbols ---
+*.pdb
+**/*.pdb
+
+# --- logs / dumps ---
+*.log
+*.dmp
+
+# --- database ---
+*.mdf
+*.ldf
