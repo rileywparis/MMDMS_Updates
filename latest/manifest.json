@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
-  "appVersion": "1.1.02",
-  "generatedUtc": "2025-12-31T16:15:19Z",
+  "appVersion": "1.1.03",
+  "generatedUtc": "2025-12-31T17:37:39Z",
   "filesBasePath": "latest/files/",
   "files": [
     {
@@ -516,7 +516,7 @@
     },
     {
       "path": "MuniBridge.exe",
-      "sha256": "ca17213f8238227c0905c2361f67bc4b6a57bd97878d3ee5a2ec0e29bc4b2ab0",
+      "sha256": "370bbb56db11da6e5fb7e2ca13cd5ffc9a3fdfa081a5f47a9bf34ae61c9f35d6",
       "size": 1871360,
       "mode": "overwrite"
     },
@@ -947,54 +947,6 @@
       "mode": "overwrite"
     },
     {
-      "path": "Updater/Newtonsoft.Json.dll",
-      "sha256": "a28c251dfe36d881e9e2462e171441b8b0ec156fe3f452602c9149b1b9efe05b",
-      "size": 723368,
-      "mode": "overwrite"
-    },
-    {
-      "path": "Updater/sni.dll",
-      "sha256": "1446d6b26da49a5a9f366972f89f4e236f916955f31ddc38ebb96217c1cace9c",
-      "size": 136488,
-      "mode": "overwrite"
-    },
-    {
-      "path": "Updater/System.Data.SqlClient.dll",
-      "sha256": "9062848acdaa10c2c4a4b9dd58b3ad3165a6d53668668b0da2ddd2ea413baf02",
-      "size": 1027360,
-      "mode": "overwrite"
-    },
-    {
-      "path": "Updater/Updater.deps.json",
-      "sha256": "1bc5cf18a70145e47ad047dc35d79269bbbc4c1785a6c8d489e3ec8a2b134d18",
-      "size": 4093,
-      "mode": "overwrite"
-    },
-    {
-      "path": "Updater/Updater.dll",
-      "sha256": "5ac5c2c634769ba78def2c30602b3f7470e919150170fbcd214fa4d6f6e50687",
-      "size": 22016,
-      "mode": "overwrite"
-    },
-    {
-      "path": "Updater/Updater.exe",
-      "sha256": "e2ebf3f445eeec74e21bf72b0ecc1426c846d18653ac66ea491a60e76b3d96c3",
-      "size": 117760,
-      "mode": "overwrite"
-    },
-    {
-      "path": "Updater/Updater.runtimeconfig.json",
-      "sha256": "4c8a73c525364eac6cbe64191bc633ed1fc8c59db376660474f6834ce0b23800",
-      "size": 355,
-      "mode": "overwrite"
-    },
-    {
-      "path": "Updater/version.config",
-      "sha256": "d1714641bf094daa850bb8ae368f43c8d30d7fce417d21d345cfcaf29c5cc7cf",
-      "size": 8,
-      "mode": "overwrite"
-    },
-    {
       "path": "UpdaterBootstrap.dll",
       "sha256": "718915396582d81e537095ed6d57d27fa532722f778886976059e514e59d9090",
       "size": 13312,
@@ -1014,7 +966,7 @@
     },
     {
       "path": "version.json",
-      "sha256": "a2f427e2602a24d45752ce0bab0ea8e4acb88dd5087031ef17edb18665f293e7",
+      "sha256": "760d1f976bbf6de9cf6b07812aa2a5edcbcdf01ee054a5798efb9bc501e0618f",
       "size": 101,
       "mode": "overwrite"
     },
