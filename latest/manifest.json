@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "appVersion": "1.1.02",
-  "generatedUtc": "2025-12-31T15:52:46Z",
+  "generatedUtc": "2025-12-31T16:15:19Z",
   "filesBasePath": "latest/files/",
   "files": [
     {
@@ -377,12 +377,6 @@
       "mode": "overwrite"
     },
     {
-      "path": "MailKit.pdb",
-      "sha256": "5810abefb400ff810a8d6e53345dd5eb974beb69ed6a94952f2f2fed2459e3ac",
-      "size": 2240000,
-      "mode": "overwrite"
-    },
-    {
       "path": "MailKit.xml",
       "sha256": "1989b887215a6aad31a86a22c63db468026c38d60b7ef0785798d208f6c6d6cf",
       "size": 3727153,
@@ -515,12 +509,6 @@
       "mode": "overwrite"
     },
     {
-      "path": "MimeKit.pdb",
-      "sha256": "cfeda831d61c4a2c38800ea9f5d539c37cbcc814c6f0c7101488557d8c1a50b6",
-      "size": 2489856,
-      "mode": "overwrite"
-    },
-    {
       "path": "MimeKit.xml",
       "sha256": "6d31850ce29843c5f8edeaeca1d7f5c1d804b85bd222f2ea191199486c9fa1d1",
       "size": 3042958,
@@ -536,12 +524,6 @@
       "path": "MuniBridge.exe.config",
       "sha256": "2907259e64211643e64331c3fc466598d0c76036f90b26a9484743669812a9cf",
       "size": 5864,
-      "mode": "overwrite"
-    },
-    {
-      "path": "MuniBridge.pdb",
-      "sha256": "a2eb917b44c6bcb63a662b986aac64520e1b7fca0cc993cefa6ccc73148b5a87",
-      "size": 2016768,
       "mode": "overwrite"
     },
     {
@@ -581,12 +563,6 @@
       "mode": "overwrite"
     },
     {
-      "path": "PdfSharp.BarCodes.pdb",
-      "sha256": "7ed279259979bacb4de2bf59c67bda173f6e62a468559e7ab503a48907749948",
-      "size": 21172,
-      "mode": "overwrite"
-    },
-    {
       "path": "PdfSharp.BarCodes.xml",
       "sha256": "ee3c544785f51addaf5f2259680a12e2ed7fa29c3041b2c328e82d865b618a47",
       "size": 33374,
@@ -596,12 +572,6 @@
       "path": "PdfSharp.Charting.dll",
       "sha256": "f8184094103252c5b0670f1b188eec6d7b2e005bc5906daecaa03a8c6e39bebe",
       "size": 88576,
-      "mode": "overwrite"
-    },
-    {
-      "path": "PdfSharp.Charting.pdb",
-      "sha256": "26b4db53953013878021124d60aa6c8d9ae63552623e413d4e4369bfe99aa5bb",
-      "size": 55868,
       "mode": "overwrite"
     },
     {
@@ -617,12 +587,6 @@
       "mode": "overwrite"
     },
     {
-      "path": "PdfSharp.Cryptography.pdb",
-      "sha256": "6694e75cc90600c1e5664eec974c2ba7f2e4eed9d19cd08739b67dee8c6af061",
-      "size": 12800,
-      "mode": "overwrite"
-    },
-    {
       "path": "PdfSharp.Cryptography.xml",
       "sha256": "c204e77a1e7214c45ed68f10b0bd484095a70cdd2ee55abd2779b0e672280f15",
       "size": 3196,
@@ -635,21 +599,9 @@
       "mode": "overwrite"
     },
     {
-      "path": "PdfSharp.pdb",
-      "sha256": "e91715a9d07fd6cddf2928253c93dbbf7f4e3640bd9734ed699972372b564cd2",
-      "size": 337432,
-      "mode": "overwrite"
-    },
-    {
       "path": "PdfSharp.Quality.dll",
       "sha256": "e6118dc680bbc17cf2fced23e319813818636c7647728b570644c79fd8543c60",
       "size": 40960,
-      "mode": "overwrite"
-    },
-    {
-      "path": "PdfSharp.Quality.pdb",
-      "sha256": "3de5324d7db8a7ba3948128d3b8e7a719b7b0620ce2ab2b2a43cdc8eee4258dc",
-      "size": 21664,
       "mode": "overwrite"
     },
     {
@@ -665,12 +617,6 @@
       "mode": "overwrite"
     },
     {
-      "path": "PdfSharp.Shared.pdb",
-      "sha256": "1131f652c72849d95a32c95ff7535cbdf207c9f204d85ecb86de529324c5e364",
-      "size": 14060,
-      "mode": "overwrite"
-    },
-    {
       "path": "PdfSharp.Shared.xml",
       "sha256": "b67dd20be6e6ce2b39fd4078a0bdc4643e8bbb7ae83cac317e5bca2544589cdb",
       "size": 14531,
@@ -683,21 +629,9 @@
       "mode": "overwrite"
     },
     {
-      "path": "PdfSharp.Snippets.pdb",
-      "sha256": "83e6fcfb366c9cc6671f8fd36edc34ff7dbc484d990800bff9241fa6592783f2",
-      "size": 39184,
-      "mode": "overwrite"
-    },
-    {
       "path": "PdfSharp.System.dll",
       "sha256": "3098cec1e93b9f13adf3c6945e2884af93a1683c7517fe4ff027a679d7c70ec1",
       "size": 10240,
-      "mode": "overwrite"
-    },
-    {
-      "path": "PdfSharp.System.pdb",
-      "sha256": "81c66ef787fed26d40ac554e34aea76770f20078244efb5df66e942ce9e625f4",
-      "size": 12696,
       "mode": "overwrite"
     },
     {
@@ -710,12 +644,6 @@
       "path": "PdfSharp.WPFonts.dll",
       "sha256": "ba47b77f9df5e903386956990efc017a7eb4e2792f56a1334d4d324ba39376af",
       "size": 421888,
-      "mode": "overwrite"
-    },
-    {
-      "path": "PdfSharp.WPFonts.pdb",
-      "sha256": "9fa2ecbac2c0c097f865389ddcba3e2862bae1623b691b0cf5ab4241b9529966",
-      "size": 9852,
       "mode": "overwrite"
     },
     {
@@ -758,12 +686,6 @@
       "path": "pt/Microsoft.SqlServer.Types.resources.dll",
       "sha256": "1b81bd499d013f6179867c47fd8dba58eb4da48c3487a5a79241544aa6ed2690",
       "size": 32672,
-      "mode": "overwrite"
-    },
-    {
-      "path": "reminders.json",
-      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "size": 2,
       "mode": "overwrite"
     },
     {
@@ -1022,6 +944,54 @@
       "path": "tokens.enc",
       "sha256": "1e7e4bebf9037713abe7fee4b269f0b9b249380ff649325100222424cb875074",
       "size": 368,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Updater/Newtonsoft.Json.dll",
+      "sha256": "a28c251dfe36d881e9e2462e171441b8b0ec156fe3f452602c9149b1b9efe05b",
+      "size": 723368,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Updater/sni.dll",
+      "sha256": "1446d6b26da49a5a9f366972f89f4e236f916955f31ddc38ebb96217c1cace9c",
+      "size": 136488,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Updater/System.Data.SqlClient.dll",
+      "sha256": "9062848acdaa10c2c4a4b9dd58b3ad3165a6d53668668b0da2ddd2ea413baf02",
+      "size": 1027360,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Updater/Updater.deps.json",
+      "sha256": "1bc5cf18a70145e47ad047dc35d79269bbbc4c1785a6c8d489e3ec8a2b134d18",
+      "size": 4093,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Updater/Updater.dll",
+      "sha256": "5ac5c2c634769ba78def2c30602b3f7470e919150170fbcd214fa4d6f6e50687",
+      "size": 22016,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Updater/Updater.exe",
+      "sha256": "e2ebf3f445eeec74e21bf72b0ecc1426c846d18653ac66ea491a60e76b3d96c3",
+      "size": 117760,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Updater/Updater.runtimeconfig.json",
+      "sha256": "4c8a73c525364eac6cbe64191bc633ed1fc8c59db376660474f6834ce0b23800",
+      "size": 355,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Updater/version.config",
+      "sha256": "d1714641bf094daa850bb8ae368f43c8d30d7fce417d21d345cfcaf29c5cc7cf",
+      "size": 8,
       "mode": "overwrite"
     },
     {
