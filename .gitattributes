@@ -1,11 +1,11 @@
-# Force consistent LF in repo for text-like files
-*.json text eol=lf
-*.xml  text eol=lf
+# Text files: store with LF in the repo (prevents hash mismatches)
+*.json  text eol=lf
+*.xml   text eol=lf
 *.config text eol=lf
-*.rdlc text eol=lf
-*.txt  text eol=lf
+*.rdlc  text eol=lf
+*.txt   text eol=lf
 
-# Always treat binaries as binary
+# Binaries: never modify
 *.dll binary
 *.exe binary
 *.pdb binary
