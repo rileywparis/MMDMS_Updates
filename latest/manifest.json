@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "appVersion": "1.1.01",
-  "generatedUtc": "2025-12-31T07:04:08Z",
+  "generatedUtc": "2025-12-31T07:17:59Z",
   "filesBasePath": "latest/files/",
   "files": [
     {
@@ -12,19 +12,19 @@
     },
     {
       "path": "BouncyCastle.Cryptography.xml",
-      "sha256": "e0a1158806ab2177e60adbc422cdfdc1d5910c78d36b43d6a4259964c20c16d8",
+      "sha256": "151a2f702df2053ce7de70ab4b2fca5af44f87dbdb9dc2224f2dbdf4fed4db1c",
       "size": 1812134,
       "mode": "overwrite"
     },
     {
       "path": "changelog.json",
-      "sha256": "ab360c6e4816bda9c9dafd68a32734cf87c05c4935415e165a3272e52a2826fb",
+      "sha256": "e9a5573bca5c54d7fdc46eddab632be637994d54c8724a574b4abc6ff8b81aa6",
       "size": 3484,
       "mode": "overwrite"
     },
     {
       "path": "config.default.json",
-      "sha256": "cab605290288dd33ed77474d095f3faa7387c84bd6b8f2e874e945c28652a850",
+      "sha256": "e617ba366e1f10c30e525ddae235a891ef3c03853497ba12e7a315768fa03aa2",
       "size": 2213,
       "mode": "overwrite"
     },
@@ -222,7 +222,7 @@
     },
     {
       "path": "MailKit.dll.config",
-      "sha256": "1d4710a4ce3ab0ac04ca374edd3e0c0a674a1735a99a32693d9c650110be3eb2",
+      "sha256": "b88836f1aa9159db10cb115f33f89eb082b3e8e31e741864d65cea4a0d60a45a",
       "size": 751,
       "mode": "overwrite"
     },
@@ -234,7 +234,7 @@
     },
     {
       "path": "MailKit.xml",
-      "sha256": "2a06d907258e175634aaf8b5490f9524b6cee797591b21b4e1127fc19ec788c3",
+      "sha256": "1989b887215a6aad31a86a22c63db468026c38d60b7ef0785798d208f6c6d6cf",
       "size": 3727153,
       "mode": "overwrite"
     },
@@ -246,7 +246,7 @@
     },
     {
       "path": "Microsoft.Bcl.AsyncInterfaces.xml",
-      "sha256": "2bca72654bac72cd4a20905452584f1f07e2bbfc5ab84e46f5855b621a06ccc4",
+      "sha256": "3897f803d4ab674033af373082932b9522e15a5c614a4a1fa0caab5b64302ca1",
       "size": 31313,
       "mode": "overwrite"
     },
@@ -258,7 +258,7 @@
     },
     {
       "path": "Microsoft.Extensions.DependencyInjection.Abstractions.xml",
-      "sha256": "9f629c193cf8767344bd0a58f2b513f248ffda9d7bd7d55286639e1f2ae63518",
+      "sha256": "d93cf562cda6d9da1d075111789baf56f321a5025392787ac7e0a09b2bd510f1",
       "size": 205740,
       "mode": "overwrite"
     },
@@ -270,7 +270,7 @@
     },
     {
       "path": "Microsoft.Extensions.DependencyInjection.xml",
-      "sha256": "f33a98b3e75c566a1f3b5e66c05d6ee6140c1d2e4a2c0e6cf1488c57e9b08ac3",
+      "sha256": "f3734b34273595b52238eef23d63d073e5af4a8a7c0e81a00b0c3d0a646f74ec",
       "size": 41886,
       "mode": "overwrite"
     },
@@ -282,7 +282,7 @@
     },
     {
       "path": "Microsoft.Extensions.Logging.Abstractions.xml",
-      "sha256": "8ea6209c93e063a0f0e03feb43dbe05f0e7e4cd5117b6519c566183d27b7b81c",
+      "sha256": "81ae574581dea20d1629c7592095a1bbf9abb9e1e7ec11191ea9bea3b8ba2381",
       "size": 91749,
       "mode": "overwrite"
     },
@@ -294,7 +294,7 @@
     },
     {
       "path": "Microsoft.Extensions.Logging.xml",
-      "sha256": "00ff4277a74004527783ab7cf94330928567a4c1c8cf77ef5017a5c33d3a321a",
+      "sha256": "7774ef863d6fa7819096fa8b8146fd8b626e06b5aa84c33c2e4744783eb71382",
       "size": 47507,
       "mode": "overwrite"
     },
@@ -306,7 +306,7 @@
     },
     {
       "path": "Microsoft.Extensions.Options.xml",
-      "sha256": "f85bcedbc50d05815786cd7e94455e678db85514da39c423fde447e720adbdf4",
+      "sha256": "65f50425fab4ecba554fd70afff4ee18340cf587f268956a068ce8ecdc3033de",
       "size": 146774,
       "mode": "overwrite"
     },
@@ -318,7 +318,7 @@
     },
     {
       "path": "Microsoft.Extensions.Primitives.xml",
-      "sha256": "6ce493b8ef77e7e264b92afa5e9cb1a3f7842ba276bb9315a92a0e07092d7731",
+      "sha256": "92661b5408efa94ff6e1dec48b25561223e5e10c7299098e90ec54c43a14ae29",
       "size": 95105,
       "mode": "overwrite"
     },
@@ -372,7 +372,7 @@
     },
     {
       "path": "MimeKit.xml",
-      "sha256": "d23018dee37954499f2cbf7de6639d8d205e7bc2c33ff1947808446471844ed4",
+      "sha256": "6d31850ce29843c5f8edeaeca1d7f5c1d804b85bd222f2ea191199486c9fa1d1",
       "size": 3042958,
       "mode": "overwrite"
     },
@@ -384,7 +384,7 @@
     },
     {
       "path": "MuniBridge.exe.config",
-      "sha256": "69ec66cda3e4192c494a47ec9919dbf73dd342a4fff982f84391aa33d50a9359",
+      "sha256": "2907259e64211643e64331c3fc466598d0c76036f90b26a9484743669812a9cf",
       "size": 5864,
       "mode": "overwrite"
     },
@@ -402,7 +402,7 @@
     },
     {
       "path": "Newtonsoft.Json.xml",
-      "sha256": "2d46b37b086d6848af5f021d2d7a40581ce78aadd8ee39d309aee4771a0eeccf",
+      "sha256": "5569f41b73874f00f50f84f80ce5334377f3da1dc84d6d559802f13b85870ddf",
       "size": 710224,
       "mode": "overwrite"
     },
@@ -420,7 +420,7 @@
     },
     {
       "path": "PdfiumViewer.xml",
-      "sha256": "4c6020a3c1cd3957ee2fcab487101ca5ed63c8352cec7343852f12fdec506af9",
+      "sha256": "218756d93274c4a25578bed8e2882141532df8df79fb90604f0278891db3382b",
       "size": 61998,
       "mode": "overwrite"
     },
@@ -438,7 +438,7 @@
     },
     {
       "path": "PdfSharp.BarCodes.xml",
-      "sha256": "2cff5be78218bf16fc3d370b7b592fb5ff9e496de41069a5b2b2724f2a53d4b5",
+      "sha256": "ee3c544785f51addaf5f2259680a12e2ed7fa29c3041b2c328e82d865b618a47",
       "size": 33374,
       "mode": "overwrite"
     },
@@ -456,7 +456,7 @@
     },
     {
       "path": "PdfSharp.Charting.xml",
-      "sha256": "d1eb8c1962e0486ec95073e220a7a3441294189c411797db9c3880dd5d06a1ed",
+      "sha256": "4c638e214eec1711fc6bae0f6f12b51a17a76280be6257d1beaa6dac37144943",
       "size": 128353,
       "mode": "overwrite"
     },
@@ -474,7 +474,7 @@
     },
     {
       "path": "PdfSharp.Cryptography.xml",
-      "sha256": "b1790a04027e963624c12b4136d26a7a57f9d4dee1d636ce41406740a21aab89",
+      "sha256": "c204e77a1e7214c45ed68f10b0bd484095a70cdd2ee55abd2779b0e672280f15",
       "size": 3196,
       "mode": "overwrite"
     },
@@ -504,7 +504,7 @@
     },
     {
       "path": "PdfSharp.Quality.xml",
-      "sha256": "fbcbfec37a8599638eabd57d990e27f431390b75c75ae4cfc9e0632df310af83",
+      "sha256": "0ebb333f4227cd21beb4092881991679a5988a2dc5e15253db38ae1d04cc91de",
       "size": 44839,
       "mode": "overwrite"
     },
@@ -522,7 +522,7 @@
     },
     {
       "path": "PdfSharp.Shared.xml",
-      "sha256": "ee2881257d52c6c4deea95035903d85d86969a99793145c92e2c00d1b4fba793",
+      "sha256": "b67dd20be6e6ce2b39fd4078a0bdc4643e8bbb7ae83cac317e5bca2544589cdb",
       "size": 14531,
       "mode": "overwrite"
     },
@@ -552,7 +552,7 @@
     },
     {
       "path": "PdfSharp.System.xml",
-      "sha256": "f39b95367e1728a31454fd3cb8687445eaf936b333a7131b68d1fa3252916fe9",
+      "sha256": "de80e0a450253eafc5d66aa4ed705da342107358b256d464ae2fea4a84cdf581",
       "size": 12223,
       "mode": "overwrite"
     },
@@ -570,13 +570,13 @@
     },
     {
       "path": "PdfSharp.WPFonts.xml",
-      "sha256": "3665c541da2288a27ba9d611395c905d145c4ae9f8f3ef6be007ea9b166f15f0",
+      "sha256": "256db0ca17fef632e4f077e0e7817dd9059bc17cbc5a461ae0584b5c29a7d096",
       "size": 1668,
       "mode": "overwrite"
     },
     {
       "path": "PdfSharp.xml",
-      "sha256": "29e567615e7f68fa9d183be21ce5f3063135b2efbbcaa26ab7016723010be992",
+      "sha256": "7a82f9282afb0be8eff21697c037c40eea4f5e87725b0e4d72ca0b03c5ccaa13",
       "size": 1326031,
       "mode": "overwrite"
     },
@@ -618,73 +618,73 @@
     },
     {
       "path": "Reporting/AccountContacts.rdlc",
-      "sha256": "66f5ef7ed446c57e7886dc792e0127b3f6d8af7196ca43c939aba7689cc6424f",
+      "sha256": "44fcaa8628b099e023e158e8b2ac76c6b00086674323989ee9a8166586c2e2b6",
       "size": 35565,
       "mode": "overwrite"
     },
     {
       "path": "Reporting/Accounts.rdlc",
-      "sha256": "ed5f549998cf6847045c9237f2f6b57ccd28e63a7812dc10ca8d5b1faf944c95",
+      "sha256": "56fcf797545e2c5d66bb90d91c9cb13f319c960c038ef3e0b7cf52cf243fee54",
       "size": 28487,
       "mode": "overwrite"
     },
     {
       "path": "Reporting/BillEditList.rdlc",
-      "sha256": "af993f7470b7383f4a617f1ac255421d93cf38a9a6e366445022e9857140dec4",
+      "sha256": "19e794a974c90c3a54bcd04bad1079cdc5875574cc423c83cbc3d41990839887",
       "size": 60099,
       "mode": "overwrite"
     },
     {
       "path": "Reporting/DEPWaterUsage.rdlc",
-      "sha256": "8c134c0b31513af58142639712cad110960be6f0948ab26ae4b022eed9daa9c4",
+      "sha256": "0ee6d9a88b89962e0e5be4d2e67135b92ee87778bdc50e2ad09e3e1a423a5982",
       "size": 48685,
       "mode": "overwrite"
     },
     {
       "path": "Reporting/GenericReport.rdlc",
-      "sha256": "c0bf3adff1428c14ad5be0d8e028f1262da3a50c8cdd8c2c71c5c134e93d7279",
+      "sha256": "e644c445bb291ecf5bb98dc220833c05fe301e4dd8a97cc603f7a014913b211c",
       "size": 19862,
       "mode": "overwrite"
     },
     {
       "path": "Reporting/GroupInvoices.rdlc",
-      "sha256": "627f2e138223f18276d5e5111b1aedafeb415ff69bc621bbc67d0d26a4e620e1",
+      "sha256": "2da378b2edd1635b530fc04765362e664eab41a58191e8734833f97cb54a9766",
       "size": 38739,
       "mode": "overwrite"
     },
     {
       "path": "Reporting/OpenBalance.rdlc",
-      "sha256": "514a7901506b5c93f5776984594f4e42a3a2c420d58f1ed873e05cdfb6294224",
+      "sha256": "7764999c4cd7d35f5a382bdfe3ac8ee0a17917fb3388010bbf17a5bc07febeae",
       "size": 29201,
       "mode": "overwrite"
     },
     {
       "path": "Reporting/PostcardInvoices3up.rdlc",
-      "sha256": "3734898b548793b8dc117429968465bd674bbdfc7796936313cc8b4c690148f0",
+      "sha256": "c4a174ebe43753d0739b5b9261f04bb5cbbace2e48da61319df361c343ff40d7",
       "size": 7726418,
       "mode": "overwrite"
     },
     {
       "path": "Reporting/PostcardInvoices4up.rdlc",
-      "sha256": "c558bfc24d358b94265b8561fbb5ebde79c4c205c252666192dd684fe6c3f285",
+      "sha256": "34a9777324cbd6730ebfa66f424aad72ef53d49788ae14d9830204df346e06ce",
       "size": 7734753,
       "mode": "overwrite"
     },
     {
       "path": "Reporting/RouteSheet.rdlc",
-      "sha256": "4d5b3069fa26acce5f5b12e53ecaa607cf345cf654b8f104a20570e587802840",
+      "sha256": "14a4f59851d7276be73ff1bd73b2eb51af7debcfad5da4c26cc7ba390014f327",
       "size": 60494,
       "mode": "overwrite"
     },
     {
       "path": "Reporting/UsageByMeterSize.rdlc",
-      "sha256": "0bcb81cccaecc8130162b5153c502a51d1d1d8b053361329e43e713766699ef4",
+      "sha256": "c01a8cee00d563b37ee58bae958419a15b78a80a4264d9f5a5fc21023799f618",
       "size": 73253,
       "mode": "overwrite"
     },
     {
       "path": "Reporting/UsageSummary.rdlc",
-      "sha256": "4a5a7d001d1506a85dc8a5bb894ef9bbd9571233bf0d04ed146e4e5566cb3381",
+      "sha256": "74a04a8c323ae3f10269c2295925a2dd09ec717ed468b27b04237a42ef99f189",
       "size": 47621,
       "mode": "overwrite"
     },
@@ -732,7 +732,7 @@
     },
     {
       "path": "System.Buffers.xml",
-      "sha256": "8e6aa4fdaed88b8d3206373a8e17ba6120dee03b1a2afbd897821d4af3cff14e",
+      "sha256": "46488123a708d93e6734a048f8d94eaa980b1679184b914e8a7cc3baafd720b3",
       "size": 11058,
       "mode": "overwrite"
     },
@@ -744,7 +744,7 @@
     },
     {
       "path": "System.Diagnostics.DiagnosticSource.xml",
-      "sha256": "236d094482ea1ddf63b1f160d84fc364c1d661a9080b2685a317da82fdb3d43c",
+      "sha256": "5e04aa978284ce4cd6f46c4d91e3a675ce0b2d309bb8a805912434cbb4e3703a",
       "size": 153196,
       "mode": "overwrite"
     },
@@ -756,7 +756,7 @@
     },
     {
       "path": "System.Formats.Asn1.xml",
-      "sha256": "a84d24178879a95faded952fd3b13d96664615c53a85a02ca0ca7c7ad8d48de9",
+      "sha256": "d92d5a6a2de034bd1bf613a5a32a8091a33eed0f176741e8afa38556d982961c",
       "size": 165136,
       "mode": "overwrite"
     },
@@ -768,7 +768,7 @@
     },
     {
       "path": "System.IO.Pipelines.xml",
-      "sha256": "286d0c502d68a000453f6be39347ae6c4cc63f7a2c73b1b941c2e25be365e9ab",
+      "sha256": "55b9d956d02a624bf76dde343df62d5805659e705436a3d76bc9e67667170bd9",
       "size": 41108,
       "mode": "overwrite"
     },
@@ -780,7 +780,7 @@
     },
     {
       "path": "System.Memory.xml",
-      "sha256": "85e03bc4aba664a212d8a5aac12b5e7fe66d0c153e605d0d5f438efdd1ef52bc",
+      "sha256": "36d0481ff2c39688c863f03853e3dbe2bd6ebfc0d9a28bd0bded1ff4ebc33af4",
       "size": 208053,
       "mode": "overwrite"
     },
@@ -792,7 +792,7 @@
     },
     {
       "path": "System.Numerics.Vectors.xml",
-      "sha256": "9d8a1c51f052d6c1537c091583bf453d4493db82025ce7e3e6c8a8cc6c0edf18",
+      "sha256": "1daa38432076296a90bcbd931b888c806d7162951d494c803750df2cefe2b6d6",
       "size": 191892,
       "mode": "overwrite"
     },
@@ -804,7 +804,7 @@
     },
     {
       "path": "System.Runtime.CompilerServices.Unsafe.xml",
-      "sha256": "c1e52a90793f1e326eecf664dcb3a50535f71746a7afb912440316bfecfbc8c6",
+      "sha256": "49a36f5205067a724cb4bf4b6ab8061f98b8fbd5bc2fe26067deecfefd40d420",
       "size": 21820,
       "mode": "overwrite"
     },
@@ -816,7 +816,7 @@
     },
     {
       "path": "System.Security.Cryptography.Pkcs.xml",
-      "sha256": "db842d62ee8d57493148602cbdad09333d3dbf403d3395843cde054f01a5b0b6",
+      "sha256": "31a7d76653af9f61af5ad8f04a95839cbdb5c84dd21b5fe9e4a4f71ba5b7ea3e",
       "size": 233685,
       "mode": "overwrite"
     },
@@ -828,7 +828,7 @@
     },
     {
       "path": "System.Text.Encodings.Web.xml",
-      "sha256": "73004b34f6fdadfc8188c6d330993c09ae774014f9dd84865117e0e31e6e0d2c",
+      "sha256": "8d6eccd886019200ec6205ccfbc143feffd8ae56bd93d2a2c402856e5e64af0a",
       "size": 63180,
       "mode": "overwrite"
     },
@@ -840,7 +840,7 @@
     },
     {
       "path": "System.Text.Json.xml",
-      "sha256": "4239b6dcca32c2034d7e25a51991aaca95bc402aa5c494dd4c39163006d2de1e",
+      "sha256": "835ddce50a5a8cb52d1ab176a08be3915f5135d6e32c008ecdc8a50e536543fc",
       "size": 570449,
       "mode": "overwrite"
     },
@@ -852,7 +852,7 @@
     },
     {
       "path": "System.Threading.Tasks.Extensions.xml",
-      "sha256": "b634ff3748d95da931f6247efe18deeba2c2ea8d61d1bdd6ae1d1d73d4fb79a1",
+      "sha256": "de8fa9eba60bb078278ea915e4af5242020a24d0655cacd5df3c0ac89ef9acb4",
       "size": 42928,
       "mode": "overwrite"
     },
@@ -864,7 +864,7 @@
     },
     {
       "path": "System.ValueTuple.xml",
-      "sha256": "c37e163fa76629c196460c7b4d54e95b1a46a4c66ab7b6f3311959c8137dc5f1",
+      "sha256": "993c363d31e64fb969d968daf3b2ea7de79d2b3fc00c8dbe67f7b8a5e8d71910",
       "size": 142,
       "mode": "overwrite"
     },
@@ -888,13 +888,13 @@
     },
     {
       "path": "UpdaterBootstrap.runtimeconfig.json",
-      "sha256": "ded3aeb5856a11db0b654a785574490cab55839ebfb17efe9e39b89618fc5b91",
+      "sha256": "aeb46a15366e38511c192ccf65312442c64e8753b3c16fd2ca0b4cb34a5c59f3",
       "size": 253,
       "mode": "overwrite"
     },
     {
       "path": "version.json",
-      "sha256": "c16a592b9f5a21e89864d89065245c90c08a3d5f819bdddb1d02cff5e224800a",
+      "sha256": "d8b55d96b832a526f9ce0ffaa775027fee4eff956522964627991a44317f0a68",
       "size": 100,
       "mode": "overwrite"
     },
