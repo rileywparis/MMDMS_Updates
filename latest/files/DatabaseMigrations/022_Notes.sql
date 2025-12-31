@@ -1,0 +1,47 @@
+
+use mdms_prod;
+
+CREATE TABLE Notes
+(
+    NOTE_PK     INT IDENTITY(1,1) NOT NULL
+        CONSTRAINT PK_Notes PRIMARY KEY,
+
+    CREATE_FOR  VARCHAR(50) NOT NULL,
+
+    [TEXT]      VARCHAR(150) NOT NULL,
+
+    [DATE]      DATETIME NOT NULL
+        CONSTRAINT DF_Notes_Date DEFAULT (GETDATE()),
+
+    [USER]      VARCHAR(50) NOT NULL
+		CONSTRAINT DF_Notes_User DEFAULT (SUSER_SNAME()),
+
+    PIN         TINYINT NOT NULL
+        CONSTRAINT DF_Notes_Pin DEFAULT (9)
+        CONSTRAINT CK_Notes_Pin CHECK (PIN BETWEEN 0 AND 9)
+);
+
+--copy notes over
+INSERT INTO Notes (CREATE_FOR, [TEXT], [USER])
+SELECT
+    CAST(a.ACCT_NO AS VARCHAR(50)) AS CREATE_FOR,
+    LTRIM(RTRIM(a.CUSTNOTE)) AS [TEXT],
+    SUSER_SNAME() AS [USER]
+FROM dbo.Accounts a
+WHERE
+    a.CUSTNOTE IS NOT NULL
+    AND LTRIM(RTRIM(a.CUSTNOTE)) <> '';
+
+--remove old columns
+ALTER TABLE Accounts
+DROP CONSTRAINT DF_Accounts_CUSTNOTE;
+
+ALTER TABLE Accounts
+DROP COLUMN CUSTNOTE;
+
+ALTER TABLE ArchivedAccounts
+DROP COLUMN CUSTNOTE;
+
+--Cleanup from EditTable revamp
+DROP VIEW
+vBillingData;

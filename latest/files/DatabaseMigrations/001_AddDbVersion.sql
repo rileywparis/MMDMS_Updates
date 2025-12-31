@@ -1,0 +1,6 @@
+CREATE TABLE DbVersion (
+    Version INT NOT NULL,
+    AppliedOn DATETIME NOT NULL DEFAULT GETDATE()
+);
+
+INSERT INTO DbVersion (Version) VALUES (1);

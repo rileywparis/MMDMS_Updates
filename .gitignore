@@ -5,6 +5,7 @@ license.key
 # anywhere in repo
 **/config.local.json
 **/license.key
+**/reminders.json
 
 # --- debug symbols ---
 *.pdb

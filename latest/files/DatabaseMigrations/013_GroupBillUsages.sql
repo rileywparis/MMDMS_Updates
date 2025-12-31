@@ -1,0 +1,3 @@
+EXEC sp_rename 'GroupBills.DIFF', 'BILL_USAGE', 'COLUMN';
+ALTER TABLE GroupBills
+ADD ACT_USAGE INT NOT NULL;
