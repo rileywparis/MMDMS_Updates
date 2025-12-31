@@ -11,6 +11,10 @@ license.key
 *.pdb
 **/*.pdb
 
+# --- updater ships via boostrap ---
+Updater/
+**/Updater/
+
 # --- logs / dumps ---
 *.log
 *.dmp
