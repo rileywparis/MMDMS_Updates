@@ -128,5 +128,12 @@
       "'View History' added to the R-Click Menus",
       "Little bug fixes"
     ]
+  },
+  {
+    "version": "1.1.0",
+    "date": "2025-12-31",
+    "notes": [
+      "*Updater optimize (future updates will be MUCH faster)"
+    ]
   }
 ]

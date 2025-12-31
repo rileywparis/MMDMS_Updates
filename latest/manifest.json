@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "appVersion": "1.1.06",
-  "generatedUtc": "2025-12-31T18:35:31Z",
+  "generatedUtc": "2025-12-31T18:39:19Z",
   "filesBasePath": "latest/files/",
   "files": [
     {
@@ -18,8 +18,8 @@
     },
     {
       "path": "changelog.json",
-      "sha256": "e9a5573bca5c54d7fdc46eddab632be637994d54c8724a574b4abc6ff8b81aa6",
-      "size": 3484,
+      "sha256": "5ee533520942751ed40c1bac2430f4088eb720e41f2978d516a6733845918d19",
+      "size": 3634,
       "mode": "overwrite"
     },
     {
