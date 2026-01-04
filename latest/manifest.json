@@ -689,78 +689,6 @@
       "mode": "overwrite"
     },
     {
-      "path": "Reporting/AccountContacts.rdlc",
-      "sha256": "44fcaa8628b099e023e158e8b2ac76c6b00086674323989ee9a8166586c2e2b6",
-      "size": 35565,
-      "mode": "overwrite"
-    },
-    {
-      "path": "Reporting/Accounts.rdlc",
-      "sha256": "56fcf797545e2c5d66bb90d91c9cb13f319c960c038ef3e0b7cf52cf243fee54",
-      "size": 28487,
-      "mode": "overwrite"
-    },
-    {
-      "path": "Reporting/BillEditList.rdlc",
-      "sha256": "19e794a974c90c3a54bcd04bad1079cdc5875574cc423c83cbc3d41990839887",
-      "size": 60099,
-      "mode": "overwrite"
-    },
-    {
-      "path": "Reporting/DEPWaterUsage.rdlc",
-      "sha256": "0ee6d9a88b89962e0e5be4d2e67135b92ee87778bdc50e2ad09e3e1a423a5982",
-      "size": 48685,
-      "mode": "overwrite"
-    },
-    {
-      "path": "Reporting/GenericReport.rdlc",
-      "sha256": "e644c445bb291ecf5bb98dc220833c05fe301e4dd8a97cc603f7a014913b211c",
-      "size": 19862,
-      "mode": "overwrite"
-    },
-    {
-      "path": "Reporting/GroupInvoices.rdlc",
-      "sha256": "2da378b2edd1635b530fc04765362e664eab41a58191e8734833f97cb54a9766",
-      "size": 38739,
-      "mode": "overwrite"
-    },
-    {
-      "path": "Reporting/OpenBalance.rdlc",
-      "sha256": "7764999c4cd7d35f5a382bdfe3ac8ee0a17917fb3388010bbf17a5bc07febeae",
-      "size": 29201,
-      "mode": "overwrite"
-    },
-    {
-      "path": "Reporting/PostcardInvoices3up.rdlc",
-      "sha256": "c4a174ebe43753d0739b5b9261f04bb5cbbace2e48da61319df361c343ff40d7",
-      "size": 7726418,
-      "mode": "overwrite"
-    },
-    {
-      "path": "Reporting/PostcardInvoices4up.rdlc",
-      "sha256": "34a9777324cbd6730ebfa66f424aad72ef53d49788ae14d9830204df346e06ce",
-      "size": 7734753,
-      "mode": "overwrite"
-    },
-    {
-      "path": "Reporting/RouteSheet.rdlc",
-      "sha256": "42383b4cc9fca5c725f93f4eae0150b7e94042be30d4054facf01691d79ad280",
-      "size": 60416,
-      "mode": "overwrite"
-    },
-    {
-      "path": "Reporting/UsageByMeterSize.rdlc",
-      "sha256": "c01a8cee00d563b37ee58bae958419a15b78a80a4264d9f5a5fc21023799f618",
-      "size": 73253,
-      "mode": "overwrite"
-    },
-    {
-      "path": "Reporting/UsageSummary.rdlc",
-      "sha256": "74a04a8c323ae3f10269c2295925a2dd09ec717ed468b27b04237a42ef99f189",
-      "size": 47621,
-      "mode": "overwrite"
-    },
-    {
       "path": "ru/Microsoft.ReportViewer.Common.resources.dll",
       "sha256": "6802f9d4f1260b3ae47fd605ff57704c3f767798c5fa19c021b85fa3690f4af0",
       "size": 1535944,
@@ -1049,4 +977,5 @@
       "mode": "overwrite"
     }
   ]
+
 }
