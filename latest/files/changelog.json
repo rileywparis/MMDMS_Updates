@@ -146,5 +146,21 @@
       "Meter number searching",
       "Allow uploading multiple read files"
     ]
+  },
+  {
+    "version": "1.2.00",
+    "date": "2025-01-04",
+    "notes": [
+      "*Added 'WTR OFF' usage flag",
+      "*Billable customers includes all Accounts attached ot Services",
+      "*Hover highlighting in all major tables",
+      "*Remove Penalty shortcut (R-Click name in Preview Bills)",
+      "Show 'N/A' usage for non-estimated utility charges",
+      "0.00 bills are auto-discarded on post",
+      "Show usage on manual entry",
+      "Allow cancelling during QuickBooks invoice sending",
+      "QuickBooks Item validation before billing",
+      "Added config refresh in settings",
+    ]
   }
 ]

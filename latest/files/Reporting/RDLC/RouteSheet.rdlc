@@ -168,7 +168,11 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>="Route " + Fields!ROUTE_NO.Value</Value>
+                                      <Value>=IIF(
+    Parameters!MissedReads.Value = True,
+    "Missed Reads Route " &amp; Fields!ROUTE_NO.Value,
+    "Route " &amp; Fields!ROUTE_NO.Value
+)</Value>
                                       <Style>
                                         <FontSize>14pt</FontSize>
                                         <FontWeight>Bold</FontWeight>
@@ -1367,6 +1371,10 @@
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
+    <ReportParameter Name="MissedReads">
+      <DataType>Boolean</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
@@ -1377,6 +1385,11 @@
           <ColumnIndex>0</ColumnIndex>
           <RowIndex>0</RowIndex>
           <ParameterName>Company</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>MissedReads</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>
