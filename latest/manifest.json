@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
-  "appVersion": "1.2.00",
-  "generatedUtc": "2026-01-04T17:42:42Z",
+  "appVersion": "1.2.01",
+  "generatedUtc": "2026-01-05T15:56:54Z",
   "filesBasePath": "latest/files/",
   "files": [
     {
@@ -18,8 +18,8 @@
     },
     {
       "path": "changelog.json",
-      "sha256": "854af39178353737b3642f7163dc47cb95463a20ac6021e4eeff5c7c89dd839a",
-      "size": 4491,
+      "sha256": "bf4b89f743804d4ddeb4233e3bbb551048e591ee362c9fd8a2cfbbfe395bbb5c",
+      "size": 4490,
       "mode": "overwrite"
     },
     {
@@ -528,8 +528,8 @@
     },
     {
       "path": "MuniBridge.exe",
-      "sha256": "9a3ca8471962016a3a67a3fc2c5755e9551efaa11764f9825b2780abeebaf913",
-      "size": 1884160,
+      "sha256": "51fba2b39f8d2a2daed2205244a9906e6e990524e333eb5bd08f98ef39ee5022",
+      "size": 1891840,
       "mode": "overwrite"
     },
     {
@@ -978,7 +978,7 @@
     },
     {
       "path": "version.json",
-      "sha256": "294211005fab5a345ed82aab6943ae113dca512d27e1f441648926501e6c6aed",
+      "sha256": "2efad1c68502ed3f5123412329867822f07521f8b1bf56ebbecbc0d813743410",
       "size": 101,
       "mode": "overwrite"
     },

@@ -22,3 +22,4 @@ Updater/
 # --- database ---
 *.mdf
 *.ldf
+*.bak
