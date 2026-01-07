@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
-  "appVersion": "1.2.01",
-  "generatedUtc": "2026-01-05T15:56:54Z",
+  "appVersion": "1.2.02",
+  "generatedUtc": "2026-01-07T06:00:00Z",
   "filesBasePath": "latest/files/",
   "files": [
     {
@@ -18,8 +18,8 @@
     },
     {
       "path": "changelog.json",
-      "sha256": "bf4b89f743804d4ddeb4233e3bbb551048e591ee362c9fd8a2cfbbfe395bbb5c",
-      "size": 4490,
+      "sha256": "0539e2291ac85512117d870e548ce9d460a7679573f54c37be91f1ee9080ead4",
+      "size": 4861,
       "mode": "overwrite"
     },
     {
@@ -528,8 +528,8 @@
     },
     {
       "path": "MuniBridge.exe",
-      "sha256": "51fba2b39f8d2a2daed2205244a9906e6e990524e333eb5bd08f98ef39ee5022",
-      "size": 1891840,
+      "sha256": "d0da2069758f3511367c51e255a4d7d2607df7072f420fc94568d205448d5896",
+      "size": 1897984,
       "mode": "overwrite"
     },
     {
@@ -744,8 +744,8 @@
     },
     {
       "path": "Reporting/RDLC/PostcardInvoices3up.rdlc",
-      "sha256": "c4a174ebe43753d0739b5b9261f04bb5cbbace2e48da61319df361c343ff40d7",
-      "size": 7726418,
+      "sha256": "d5918151b97535493d1313a7c0c09c16a1117f96c05cffbc8250598874518918",
+      "size": 7727766,
       "mode": "overwrite"
     },
     {
@@ -978,7 +978,7 @@
     },
     {
       "path": "version.json",
-      "sha256": "2efad1c68502ed3f5123412329867822f07521f8b1bf56ebbecbc0d813743410",
+      "sha256": "c7fc37f25260316262ea6cd1ce4b9359e815156e980a954d68af3f7d2bda181a",
       "size": 101,
       "mode": "overwrite"
     },

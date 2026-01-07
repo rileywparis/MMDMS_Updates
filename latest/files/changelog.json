@@ -162,5 +162,17 @@
       "QuickBooks Item validation before billing",
       "Added config refresh in settings"
     ]
+  },
+  {
+    "version": "1.2.02",
+    "date": "2025-01-07",
+    "notes": [
+      "*Post/Due dates are remembered during each session",
+      "Updated QuickBooks batch functions",
+      "Added search bar to View Bill Cycle window",
+      "Optimized the post billing process",
+      "Add page number to 3up postcard layout",
+      "Fixed many small bugs"
+    ]
   }
 ]
