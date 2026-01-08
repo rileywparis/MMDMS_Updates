@@ -1,8 +1,9 @@
 {
-  "version": "1.2.03",
+  "version": "1.2.02",
   "repoOwner": "rileywparis",
   "repoName": "MMDMS_Updates",
   "branch": "main",
   "latestFolder": "latest",
   "filesBasePath": "latest/files/"
+
 }
