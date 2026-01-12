@@ -288,3 +288,8 @@ Table: GroupBills
 - CUR_DATE System.DateTime
 - DATE System.String
 
+Table: BillCycles
+- CYCLE System.Int32
+- STATUS System.String
+- DATE System.DateTime
+

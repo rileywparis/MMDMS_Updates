@@ -1,0 +1,8 @@
+use mdms_prod;
+
+CREATE TABLE BillCycles
+(
+    CYCLE       INT NOT NULL,
+    STATUS      VARCHAR(20) NOT NULL,
+    [DATE]      DATETIME NOT NULL DEFAULT CAST(GETDATE() AS DATE)
+);

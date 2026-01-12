@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
-  "appVersion": "1.2.03",
-  "generatedUtc": "2026-01-08T15:53:39Z",
+  "appVersion": "1.2.04",
+  "generatedUtc": "2026-01-12T07:45:24Z",
   "filesBasePath": "latest/files/",
   "files": [
     {
@@ -186,8 +186,8 @@
     },
     {
       "path": "DatabaseMigrations/dev_schema.txt",
-      "sha256": "eab0ee4eee6bdf36b62f2f1e041aa4ed4cb00443950d9c647aac044f65ca3525",
-      "size": 6687,
+      "sha256": "d10235468fdcab13bce0b507cb7874d44d1cd00959260d58734ee46f2dadd8b7",
+      "size": 6778,
       "mode": "overwrite"
     },
     {
@@ -528,8 +528,8 @@
     },
     {
       "path": "MuniBridge.exe",
-      "sha256": "729462a2377de38b685648b3f6d6d4f895bfbe1a7e2de5a5c7f07ff9dffa43b9",
-      "size": 1900544,
+      "sha256": "e03dc020dcc3f1e0c6eccb53fa70ee9ad1f076cbd51334f3c479ed0a433b182d",
+      "size": 1903616,
       "mode": "overwrite"
     },
     {
@@ -960,14 +960,14 @@
     },
     {
       "path": "UpdaterBootstrap.dll",
-      "sha256": "718915396582d81e537095ed6d57d27fa532722f778886976059e514e59d9090",
+      "sha256": "9d1988607cf3ca66acfc29b6d7fd6d2f2b770b75aa2e38ed3d8cb59a55649417",
       "size": 13312,
       "mode": "overwrite"
     },
     {
       "path": "UpdaterBootstrap.exe",
-      "sha256": "2169d2f2cd01c76f3a1a158336c4834a30dd03a9450402ee1909cc9a1117debf",
-      "size": 151040,
+      "sha256": "25c44173444a161029d2232008e053d237c8da833b1ec911d2ee6673196b377a",
+      "size": 117760,
       "mode": "overwrite"
     },
     {
@@ -978,7 +978,7 @@
     },
     {
       "path": "version.json",
-      "sha256": "bcf4a5a0873405be35a14d5697c28a7a107965a6fefaed37f905cece01665c98",
+      "sha256": "84aa7d33de415cc4b088ef5389ac90d80445134e0a53a4bfe0488296d89b7fc1",
       "size": 101,
       "mode": "overwrite"
     },
