@@ -1,4 +1,11 @@
 use mdms_prod;
 
-INSERT INTO StaticFlags (Flag)
-VALUES ('WTR OFF')
+IF NOT EXISTS (
+    SELECT 1
+    FROM StaticFlags
+    WHERE Flag = 'WTR OFF'
+)
+BEGIN
+    INSERT INTO StaticFlags (Flag)
+    VALUES ('WTR OFF');
+END

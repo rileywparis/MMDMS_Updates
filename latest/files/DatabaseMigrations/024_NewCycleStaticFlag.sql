@@ -1,4 +1,11 @@
 use mdms_prod;
 
-INSERT INTO StaticFlags (Flag)
-VALUES ('NEW CYCLE')
+IF NOT EXISTS (
+    SELECT 1
+    FROM StaticFlags
+    WHERE Flag = 'NEW CYCLE'
+)
+BEGIN
+    INSERT INTO StaticFlags (Flag)
+    VALUES ('NEW CYCLE');
+END

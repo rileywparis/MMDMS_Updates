@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
-  "appVersion": "1.2.04",
-  "generatedUtc": "2026-01-12T07:45:24Z",
+  "appVersion": "1.2.05",
+  "generatedUtc": "2026-01-12T08:01:44Z",
   "filesBasePath": "latest/files/",
   "files": [
     {
@@ -174,14 +174,26 @@
     },
     {
       "path": "DatabaseMigrations/024_NewCycleStaticFlag.sql",
-      "sha256": "a24d97b94ce0ab1bd4ca0d6c57f70551b7ce044a9177ecd55f56475fbd49fa34",
-      "size": 70,
+      "sha256": "a6eb02b4306849267f52a4e79931ce5e850ad1240b6489c559dd4051d9e5caf5",
+      "size": 177,
       "mode": "overwrite"
     },
     {
       "path": "DatabaseMigrations/025_WtrOffStaticFlag.sql",
-      "sha256": "c020e13d5a8f96d9f2feb19b6c919a392f3159ff25a17eb740d5367a02bb9a7d",
-      "size": 68,
+      "sha256": "abf71f22d6ce30f90b0e86ad5b739295b6c848faa78eb7354272d455f29964dd",
+      "size": 173,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/026_BillCycleTable.sql",
+      "sha256": "b9571e83526579c2eebdba4a82da53ded59d3cb39230d35ffdae5fc01d1b13e1",
+      "size": 340,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/027_FalseDupeWarningFix6.sql",
+      "sha256": "a6c0bd159864925bd0c0fab3735378543bbe09057e59efcdba77ce82e68d9490",
+      "size": 581,
       "mode": "overwrite"
     },
     {
@@ -978,7 +990,7 @@
     },
     {
       "path": "version.json",
-      "sha256": "84aa7d33de415cc4b088ef5389ac90d80445134e0a53a4bfe0488296d89b7fc1",
+      "sha256": "f811b8a06ebe0a1819b0b4f807faac6cc15192dce9c1032467514527cd24d5df",
       "size": 101,
       "mode": "overwrite"
     },
