@@ -174,5 +174,15 @@
       "Add page number to 3up postcard layout",
       "Fixed many small bugs"
     ]
+  },
+  {
+    "version": "1.2.08",
+    "date": "2025-01-13",
+    "notes": [
+      "*Added Remote Support Link (Uses Gmail)",
+      "Added Bad Meter Reads Report",
+      "Added force update button in settings",
+      "Fixed updating bugs"
+    ]
   }
 ]
