@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
-  "appVersion": "1.2.09",
-  "generatedUtc": "2026-01-14T16:21:10Z",
+  "appVersion": "1.3.00",
+  "generatedUtc": "2026-01-19T15:07:26Z",
   "filesBasePath": "latest/files/",
   "files": [
     {
@@ -18,14 +18,14 @@
     },
     {
       "path": "changelog.json",
-      "sha256": "1ae8d30c636b2d74be69d2a8b1ea6d4fc93855026f56d2255c50f09bf20f822a",
-      "size": 5114,
+      "sha256": "99553fe815d7a75707f255a8749dd24580b0a576c162faa558c6e090d5dc8202",
+      "size": 7921,
       "mode": "overwrite"
     },
     {
       "path": "config.default.json",
-      "sha256": "e617ba366e1f10c30e525ddae235a891ef3c03853497ba12e7a315768fa03aa2",
-      "size": 2213,
+      "sha256": "9e2c539d9df1da19c3baf40b8346ec202bc1e7c55c850b9dd96eca814ed3bdc7",
+      "size": 2156,
       "mode": "overwrite"
     },
     {
@@ -198,8 +198,8 @@
     },
     {
       "path": "DatabaseMigrations/dev_schema.txt",
-      "sha256": "d10235468fdcab13bce0b507cb7874d44d1cd00959260d58734ee46f2dadd8b7",
-      "size": 6778,
+      "sha256": "460d8a5226feef1510ed6980501c58b0a680076d13819ac2183b7fe696d07913",
+      "size": 6679,
       "mode": "overwrite"
     },
     {
@@ -540,14 +540,14 @@
     },
     {
       "path": "MuniBridge.exe",
-      "sha256": "7d38dc6839e28f1c5cb99b3ee4372ac6c746addca375a413dcea5d3de177bbbc",
-      "size": 1923072,
+      "sha256": "593d3a0d107e15ba25b2eb943a23639d4e94df22c270c911baf92011231d3117",
+      "size": 1973760,
       "mode": "overwrite"
     },
     {
       "path": "MuniBridge.exe.config",
-      "sha256": "ae403180271f15009dde74ff9b7cdb05a924af1fa16d0742e3b3832b4ff5a939",
-      "size": 5744,
+      "sha256": "01fb8f1b15a48b3e0000ca5b655acbc571bb300587aa23b7b1c6aa40dee19a67",
+      "size": 5975,
       "mode": "overwrite"
     },
     {
@@ -738,8 +738,8 @@
     },
     {
       "path": "Reporting/RDLC/GenericReport.rdlc",
-      "sha256": "e644c445bb291ecf5bb98dc220833c05fe301e4dd8a97cc603f7a014913b211c",
-      "size": 19862,
+      "sha256": "b24c0d6020cfd8f01e191f17d9ba0df5e8a2fb4f542c8c3315ad9905fbaa16ca",
+      "size": 19966,
       "mode": "overwrite"
     },
     {
@@ -756,8 +756,8 @@
     },
     {
       "path": "Reporting/RDLC/PostcardInvoices3up.rdlc",
-      "sha256": "d5918151b97535493d1313a7c0c09c16a1117f96c05cffbc8250598874518918",
-      "size": 7727766,
+      "sha256": "fc510016518a64885e7e56b717593d29264dbe4f73d6bb207e0e32fc8ab3ac47",
+      "size": 7728022,
       "mode": "overwrite"
     },
     {
@@ -990,7 +990,7 @@
     },
     {
       "path": "version.json",
-      "sha256": "e3c000c9e3f20b1bcbd48bf35c4adbf9f77935d6ff5c6083c5260732a60b4e3a",
+      "sha256": "400eaa45a2fed9e8512f991b952ca845f7f09b1b0fe37437d9aab9504f46a424",
       "size": 101,
       "mode": "overwrite"
     },

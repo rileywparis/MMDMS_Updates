@@ -83,7 +83,6 @@ Table: Usages
 - SERV_ID System.String
 - ACCT_NO System.String
 - ACT_USAGE System.Int32
-- RATE_CODE System.String
 - BILL_USAGE System.Int32
 - METER_NO System.String
 - PRIOR_READ System.Int32
@@ -103,7 +102,6 @@ Table: Accounts
 - ACCT_NO System.String
 - LAST System.String
 - FIRST System.String
-- MIDDLE System.String
 - SPOUSE System.String
 - ADDR1 System.String
 - ADDR2 System.String
@@ -118,17 +116,16 @@ Table: Accounts
 - ADD_DATE System.DateTime
 - BILL_ADDR System.String
 - SERV_ID System.String
-- FNAME System.String
-- REV_FNAME System.String
 - KEEP_BILLING System.Boolean
 - BILL_EMAIL System.Boolean
 - BILL_PAPER System.Boolean
+- FNAME System.String
+- REV_FNAME System.String
 
 Table: ArchivedAccounts
 - ACCT_NO System.String
 - LAST System.String
 - FIRST System.String
-- MIDDLE System.String
 - SPOUSE System.String
 - ADDR1 System.String
 - ADDR2 System.String
@@ -151,12 +148,11 @@ Table: ArchivedAccounts
 
 Table: vRouteSheetData
 - SERV_ID System.String
+- ADDR System.String
 - ACCT_NO System.String
 - LAST System.String
 - FIRST System.String
-- MIDDLE System.String
 - REV_FNAME System.String
-- ADDR System.String
 - UTILITY System.Byte
 - ROUTE_NO System.String
 - READ_SEQ System.String

@@ -222,6 +222,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Value">
+                          <CanGrow>true</CanGrow>
                           <CanShrink>true</CanShrink>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -318,6 +319,7 @@
                     <CellContents>
                       <Textbox Name="RowIndex">
                         <CanGrow>true</CanGrow>
+                        <CanShrink>true</CanShrink>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
