@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "appVersion": "1.3.01",
-  "generatedUtc": "2026-01-20T06:09:03Z",
+  "generatedUtc": "2026-01-20T06:13:29Z",
   "filesBasePath": "latest/files/",
   "files": [
     {
@@ -218,6 +218,12 @@
       "path": "DatabaseMigrations/031_RetryRecentMigrations.sql",
       "sha256": "21e68ccca951c65e17ffbf8c372c14f54ed7be7edb3084e8aca94dae52f6514e",
       "size": 62,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/032_RetryRecentMigrations.sql",
+      "sha256": "291afe63038088b064e90bd59ba4e80057324d052030768dc8cf477d7ad4b25e",
+      "size": 15957,
       "mode": "overwrite"
     },
     {
