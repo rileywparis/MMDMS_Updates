@@ -1,3 +1,7 @@
+use mdms_prod;
+
+BEGIN TRY
+
 BEGIN TRAN;
 
 -- 1) Drop indexes on computed columns
@@ -140,3 +144,9 @@ LEFT JOIN dbo.vLatestUsage lu
 ');
 
 COMMIT TRAN;
+
+END TRY
+BEGIN CATCH
+    IF @@TRANCOUNT > 0 ROLLBACK TRAN;
+    THROW;
+END CATCH
