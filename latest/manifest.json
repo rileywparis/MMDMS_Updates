@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "appVersion": "1.3.01",
-  "generatedUtc": "2026-01-20T05:35:01Z",
+  "generatedUtc": "2026-01-20T05:39:27Z",
   "filesBasePath": "latest/files/",
   "files": [
     {
@@ -212,6 +212,12 @@
       "path": "DatabaseMigrations/030_EstimationOutliers.sql",
       "sha256": "a05072ebeb673ad86e3a3c76ce359a34ad4d72b200a462a017ce86f8eaefb489",
       "size": 11527,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/031_RetryRecentMigrations.sql",
+      "sha256": "291afe63038088b064e90bd59ba4e80057324d052030768dc8cf477d7ad4b25e",
+      "size": 15957,
       "mode": "overwrite"
     },
     {
