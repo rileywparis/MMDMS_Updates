@@ -29,12 +29,6 @@
       "mode": "overwrite"
     },
     {
-      "path": "config.local.json.bad_20260102_172113.bak",
-      "sha256": "ab543004f3c55993d0f59385e2138e22213919e797d9cf20c445b89381a469f5",
-      "size": 2282,
-      "mode": "overwrite"
-    },
-    {
       "path": "DatabaseMigrations/001_AddDbVersion.sql",
       "sha256": "076d1371e23595d024fba4676bca9e5bb5def8ac4259d8a39f7ef77edf4606d8",
       "size": 153,
@@ -1103,4 +1097,5 @@
       "mode": "overwrite"
     }
   ]
+
 }
