@@ -239,10 +239,6 @@ Table: Rates
 - BEG_RANGE System.Int32
 - END_RANGE System.Int32
 
-Table: DbVersion
-- Version System.Int32
-- AppliedOn System.DateTime
-
 Table: Notes
 - NOTE_PK System.Int32
 - CREATE_FOR System.String
@@ -250,6 +246,15 @@ Table: Notes
 - DATE System.DateTime
 - USER System.String
 - PIN System.Byte
+
+Table: DbVersion
+- Version System.Int32
+- AppliedOn System.DateTime
+
+Table: BillCycles
+- CYCLE System.Int32
+- STATUS System.String
+- DATE System.DateTime
 
 Table: vLatestUsage
 - SERV_ID System.String
@@ -283,9 +288,4 @@ Table: GroupBills
 - ACT_USAGE System.Int32
 - CUR_DATE System.DateTime
 - DATE System.String
-
-Table: BillCycles
-- CYCLE System.Int32
-- STATUS System.String
-- DATE System.DateTime
 

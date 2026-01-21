@@ -9,40 +9,27 @@
       </ConnectionProperties>
       <rd:DataSourceID>45a8607c-4433-4efe-a923-ea892e1b7c9c</rd:DataSourceID>
     </DataSource>
+    <DataSource Name="mdmsDataSet">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>e030f8ae-6938-4c41-ae83-753da7289039</rd:DataSourceID>
+    </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DEPWaterUsageDataSet">
       <Query>
-        <DataSourceName>v2_MDMSDBDataSet</DataSourceName>
+        <DataSourceName>mdmsDataSet</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="UTILITY">
-          <DataField>UTILITY</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="SERV_ID">
           <DataField>SERV_ID</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="StartRead">
-          <DataField>StartRead</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="EndRead">
-          <DataField>EndRead</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CalculatedUsage">
-          <DataField>CalculatedUsage</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="CATEGORY">
           <DataField>CATEGORY</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CorrectedUsage">
-          <DataField>CorrectedUsage</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="SummedUsage">
@@ -55,8 +42,8 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>v2_MDMSDBDataSet</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\panda\source\repos\MDMS\MDMS\Reporting\v2_MDMSDBDataSet.xsd</rd:SchemaPath>
+        <rd:DataSetName>mdmsDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\panda\source\repos\MDMS\MDMS\Data\mdmsDataSet.xsd</rd:SchemaPath>
         <rd:TableName>DEPWaterUsage</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
@@ -76,7 +63,7 @@
                     <TablixCornerRow>
                       <TablixCornerCell>
                         <CellContents>
-                          <Textbox Name="Textbox39">
+                          <Textbox Name="LblCategory">
                             <CanGrow>true</CanGrow>
                             <KeepTogether>true</KeepTogether>
                             <Paragraphs>
@@ -90,7 +77,6 @@
                                 <Style />
                               </Paragraph>
                             </Paragraphs>
-                            <rd:DefaultName>Textbox39</rd:DefaultName>
                             <Style>
                               <Border>
                                 <Style>None</Style>
@@ -124,7 +110,7 @@
                       <TablixCells>
                         <TablixCell>
                           <CellContents>
-                            <Textbox Name="AccountCount1">
+                            <Textbox Name="AccountCount">
                               <CanGrow>true</CanGrow>
                               <KeepTogether>true</KeepTogether>
                               <Paragraphs>
@@ -140,7 +126,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <rd:DefaultName>AccountCount1</rd:DefaultName>
                               <Style>
                                 <Border>
                                   <Color>LightGrey</Color>
@@ -159,14 +144,14 @@
                         </TablixCell>
                         <TablixCell>
                           <CellContents>
-                            <Textbox Name="TotalUsage2">
+                            <Textbox Name="TotalUsage">
                               <CanGrow>true</CanGrow>
                               <KeepTogether>true</KeepTogether>
                               <Paragraphs>
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=IIf(IsNothing(Sum(Fields!CorrectedUsage.Value)), 0, Format(Sum(Fields!CorrectedUsage.Value), "N0"))</Value>
+                                      <Value>=IIf(IsNothing(Sum(Fields!SummedUsage.Value)), 0, Format(Sum(Fields!SummedUsage.Value), "N0"))</Value>
                                       <Style />
                                     </TextRun>
                                   </TextRuns>
@@ -175,7 +160,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <rd:DefaultName>TotalUsage2</rd:DefaultName>
                               <Style>
                                 <Border>
                                   <Color>LightGrey</Color>
@@ -237,14 +221,14 @@
                         </TablixCell>
                         <TablixCell>
                           <CellContents>
-                            <Textbox Name="CorrectedUsage">
+                            <Textbox Name="SummedUsage">
                               <CanGrow>true</CanGrow>
                               <KeepTogether>true</KeepTogether>
                               <Paragraphs>
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Format(Sum(Fields!CorrectedUsage.Value), "N0")</Value>
+                                      <Value>=Format(Sum(Fields!SummedUsage.Value), "N0")</Value>
                                       <Style>
                                         <FontWeight>Bold</FontWeight>
                                       </Style>
@@ -255,7 +239,6 @@
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <rd:DefaultName>CorrectedUsage</rd:DefaultName>
                               <Style>
                                 <Border>
                                   <Color>LightGrey</Color>
@@ -293,14 +276,18 @@
                       <TablixHeader>
                         <Size>0.25in</Size>
                         <CellContents>
-                          <Textbox Name="ROUTE_NO1">
+                          <Textbox Name="RouteNo">
                             <CanGrow>true</CanGrow>
                             <KeepTogether>true</KeepTogether>
                             <Paragraphs>
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value>="Route " + Fields!ROUTE_NO.Value</Value>
+                                    <Value>=IIf(
+    IsNothing(Fields!ROUTE_NO.Value) Or Trim(Fields!ROUTE_NO.Value) = "",
+    "Route N/A",
+    "Route " + Fields!ROUTE_NO.Value
+)</Value>
                                     <Style />
                                   </TextRun>
                                 </TextRuns>
@@ -309,7 +296,6 @@
                                 </Style>
                               </Paragraph>
                             </Paragraphs>
-                            <rd:DefaultName>ROUTE_NO1</rd:DefaultName>
                             <Style>
                               <Border>
                                 <Color>LightGrey</Color>
@@ -328,6 +314,7 @@
                               <PaddingBottom>2pt</PaddingBottom>
                             </Style>
                           </Textbox>
+                          <rd:Selected>true</rd:Selected>
                         </CellContents>
                       </TablixHeader>
                       <TablixMembers>
@@ -354,21 +341,24 @@
                       <TablixHeader>
                         <Size>1in</Size>
                         <CellContents>
-                          <Textbox Name="CATEGORY2">
+                          <Textbox Name="TxtCategory">
                             <CanGrow>true</CanGrow>
                             <KeepTogether>true</KeepTogether>
                             <Paragraphs>
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value>=Fields!CATEGORY.Value</Value>
+                                    <Value>=IIf(
+    IsNothing(Fields!CATEGORY.Value) Or Trim(Fields!CATEGORY.Value) = "",
+    "Category N/A",
+    Fields!CATEGORY.Value
+)</Value>
                                     <Style />
                                   </TextRun>
                                 </TextRuns>
                                 <Style />
                               </Paragraph>
                             </Paragraphs>
-                            <rd:DefaultName>CATEGORY2</rd:DefaultName>
                             <Style>
                               <Border>
                                 <Color>LightGrey</Color>
@@ -387,7 +377,7 @@
                       <TablixHeader>
                         <Size>1in</Size>
                         <CellContents>
-                          <Textbox Name="Textbox45">
+                          <Textbox Name="LblTotal">
                             <CanGrow>true</CanGrow>
                             <KeepTogether>true</KeepTogether>
                             <Paragraphs>
@@ -403,7 +393,6 @@
                                 <Style />
                               </Paragraph>
                             </Paragraphs>
-                            <rd:DefaultName>Textbox45</rd:DefaultName>
                             <Style>
                               <Border>
                                 <Color>LightGrey</Color>
@@ -542,7 +531,7 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox57">
+                        <Textbox Name="TxtBlank0">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -556,7 +545,6 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox57</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -572,7 +560,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox53">
+                        <Textbox Name="LblAccoutns">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -588,7 +576,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox53</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -607,7 +594,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox55">
+                        <Textbox Name="LblUsage">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -623,7 +610,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox55</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -644,21 +630,24 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="CATEGORY">
+                        <Textbox Name="TxtSummaryCategory">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!CATEGORY.Value</Value>
+                                  <Value>=IIf(
+    IsNothing(Fields!CATEGORY.Value) Or Trim(Fields!CATEGORY.Value) = "",
+    "Category N/A",
+    Fields!CATEGORY.Value
+)</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>CATEGORY</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -716,7 +705,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Format(Sum(Fields!CorrectedUsage.Value), "N0")</Value>
+                                  <Value>=Format(Sum(Fields!SummedUsage.Value), "N0")</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -746,7 +735,7 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox61">
+                        <Textbox Name="LblGrandTotal">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -762,7 +751,6 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox61</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -779,7 +767,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="TotalAccountsInCategory1">
+                        <Textbox Name="GrandTotalAccountsInCategory">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -797,7 +785,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>TotalAccountsInCategory1</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -824,7 +811,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Format(Sum(Fields!CorrectedUsage.Value), "N0")</Value>
+                                  <Value>=Format(Sum(Fields!SummedUsage.Value), "N0")</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -929,7 +916,66 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>All usage numbers represent ACTUAL usages only, not billed usages</Value>
+                    <Value>Usage Disclaimer:</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>All usage values shown represent </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>actual</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value> recorded usage only and </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>do not</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value> reflect billed or estimated amounts.</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Totals are calculated by summing all actual usage records dated within the calendar year, </Value>
+                    <Style />
+                  </TextRun>
+                  <TextRun>
+                    <Value>regardless</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value> of account status or subsequent deletion.</Value>
                     <Style />
                   </TextRun>
                 </TextRuns>
@@ -937,10 +983,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>3.37375in</Top>
-            <Left>2.98958in</Left>
-            <Height>0.28125in</Height>
-            <Width>4.52083in</Width>
+            <Top>3.50917in</Top>
+            <Left>1.77084in</Left>
+            <Height>0.875in</Height>
+            <Width>6.95833in</Width>
             <ZIndex>5</ZIndex>
             <Style>
               <Border>
