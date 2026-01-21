@@ -17,6 +17,7 @@ license.key
 # --- logs / dumps ---
 *.log
 *.dmp
+*.bad_*
 
 # --- database ---
 *.mdf
