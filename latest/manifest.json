@@ -1,0 +1,1101 @@
+{
+  "manifestVersion": 1,
+  "appVersion": "1.3.02",
+  "generatedUtc": "2026-01-20T07:21:51Z",
+  "filesBasePath": "latest/files/",
+  "files": [
+    {
+      "path": "BouncyCastle.Cryptography.dll",
+      "sha256": "372bac437b8832a225425367919a956dec52232f8da16c244dec4f1ac60d6fbb",
+      "size": 4694688,
+      "mode": "overwrite"
+    },
+    {
+      "path": "BouncyCastle.Cryptography.xml",
+      "sha256": "151a2f702df2053ce7de70ab4b2fca5af44f87dbdb9dc2224f2dbdf4fed4db1c",
+      "size": 1812134,
+      "mode": "overwrite"
+    },
+    {
+      "path": "changelog.json",
+      "sha256": "99553fe815d7a75707f255a8749dd24580b0a576c162faa558c6e090d5dc8202",
+      "size": 7921,
+      "mode": "overwrite"
+    },
+    {
+      "path": "config.default.json",
+      "sha256": "91c2d83a9e0b88a568d0c3432f951b987b0e72f2fac5a64e589c06144067430e",
+      "size": 2154,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/001_AddDbVersion.sql",
+      "sha256": "076d1371e23595d024fba4676bca9e5bb5def8ac4259d8a39f7ef77edf4606d8",
+      "size": 153,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/002_MatchArchiveSchemas.sql",
+      "sha256": "301a769ecf2d6eae288806658913cf99a2021e3f9cbccbe20a26765fd337a1ea",
+      "size": 668,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/003_AddGroupBills.sql",
+      "sha256": "d0e04804196f731fb727b6e399f48c12508684f402dcdd9cdf04a7b01e4bdf8a",
+      "size": 737,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/004_FixNameCompute.sql",
+      "sha256": "1fb927b612619a1c064900e25e89b034e7ab518946a376429d8866a0ae733437",
+      "size": 755,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/005_AddDatesToTrans.sql",
+      "sha256": "3ecbfd614db6da39a27edf293147acb1b20b48e345789747162cca439181b9c2",
+      "size": 122,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/006_BillingOptimize.sql",
+      "sha256": "980938d5af905d3cd04c937b64f00bce24efdc5ba4cfdfc03a0fb7906ac7b8d7",
+      "size": 1467,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/007_ChangeGroupBills.sql",
+      "sha256": "3a5572afb7f7c72ce415088d82e2239f4fde9ab8036e7d163057dab45bc542d6",
+      "size": 922,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/008_DropRateColumns.sql",
+      "sha256": "1d5e08f6eb38538ab5a3f9bc360058b62bf614dcdd96d193d1d1550af4321199",
+      "size": 279,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/009_DialCountBillingAdd.sql",
+      "sha256": "88dd0857647fa56a5d867bc7bbf103179f470a5146dae69fdc8d2d0d9355669d",
+      "size": 695,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/010_Constraints.sql",
+      "sha256": "53f61e6b9fb8888a867b384f7e1fc4edc0c80f677ffe848c32bb8957c6123a19",
+      "size": 1619,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/011_UtilPk.sql",
+      "sha256": "055fa43758c0b9c1f5b73cdbc84d774e10eb08e318315cfe248fe43f736f5fb3",
+      "size": 429,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/012_Estimation.sql",
+      "sha256": "d1a8c66ba278ba180e608c9f4c29d71ffae892e154248d32f4957445b12454fe",
+      "size": 8931,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/013_GroupBillUsages.sql",
+      "sha256": "12e90a31e6779510a38c7f8f9bd52f26ca7400eaa315a97c989ebf1ac15bb867",
+      "size": 110,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/014_EstimationOptimize.sql",
+      "sha256": "cfe70e1c5ecbbdc2d4cdd45caf6955f72f4316d8abd9fcc726ca637f627fde13",
+      "size": 10883,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/015_BillingOptions.sql",
+      "sha256": "b2392e5871e4d3fb9cb3176b7dc28643445441a8020fc6dc9edf456418782b53",
+      "size": 709,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/016_PenaltyChange.sql",
+      "sha256": "a97d9ef4e8ff12f203241fb14717ba4a9f237fdd36bfea83ea361fa736834b26",
+      "size": 130,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/017_EstimationExcludeNewUtility.sql",
+      "sha256": "1dd7b49ce94f1bd56e1506c0787db055254dc68b51e0d18fed93625c606604b9",
+      "size": 9394,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/018_TransactionsNonNullDates.sql",
+      "sha256": "938ea041124d6dda6ef7726cafd2e020af76c5c4552291d02d955d25be87d0aa",
+      "size": 265,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/019_GroupBillDates.sql",
+      "sha256": "9846fa098d3dd1702a1776362cf3c6a30191747e68004e13e3d051924e8e602f",
+      "size": 119,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/020_StoreStaticFlags.sql",
+      "sha256": "516b2080c004b2ddbd25b93607a76c542563b80f78b2aa9aeaa3abca41875050",
+      "size": 9527,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/021_TablePks.sql",
+      "sha256": "f8cd71726299256f9c9d8ce30e3a8cc68ddcf0c9a003666cfb8839008c0b38af",
+      "size": 304,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/022_Notes.sql",
+      "sha256": "bb91b09802e9399a9ea417785ead02c3b8067f78068cc4017f8252f67ae915ee",
+      "size": 1086,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/023_SewerCleanup.sql",
+      "sha256": "c621a3fea81c579b6167aa559f8e5e95431c5cec9fefb143d7a34556760cf891",
+      "size": 1466,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/024_NewCycleStaticFlag.sql",
+      "sha256": "a6eb02b4306849267f52a4e79931ce5e850ad1240b6489c559dd4051d9e5caf5",
+      "size": 177,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/025_WtrOffStaticFlag.sql",
+      "sha256": "abf71f22d6ce30f90b0e86ad5b739295b6c848faa78eb7354272d455f29964dd",
+      "size": 173,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/026_BillCycleTable.sql",
+      "sha256": "b9571e83526579c2eebdba4a82da53ded59d3cb39230d35ffdae5fc01d1b13e1",
+      "size": 340,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/027_FalseDupeWarningFix6.sql",
+      "sha256": "a6c0bd159864925bd0c0fab3735378543bbe09057e59efcdba77ce82e68d9490",
+      "size": 581,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/028_MiddleNameDrop.sql",
+      "sha256": "c1cf0825c1cb0ad099c6dee64117ffa7ced9796f2d2cd90ea6469ab9a588e2e1",
+      "size": 4328,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/029_RateCodeRemove.sql",
+      "sha256": "38e310ef49ce97f321cb624926e1c05950b215bfa7cd09f20cb69b6268e662b1",
+      "size": 135,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/030_EstimationOutliers.sql",
+      "sha256": "a05072ebeb673ad86e3a3c76ce359a34ad4d72b200a462a017ce86f8eaefb489",
+      "size": 11527,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/031_RetryRecentMigrations.sql",
+      "sha256": "21e68ccca951c65e17ffbf8c372c14f54ed7be7edb3084e8aca94dae52f6514e",
+      "size": 62,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/032_RetryRecentMigrations.sql",
+      "sha256": "291afe63038088b064e90bd59ba4e80057324d052030768dc8cf477d7ad4b25e",
+      "size": 15957,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/dev_schema.txt",
+      "sha256": "460d8a5226feef1510ed6980501c58b0a680076d13819ac2183b7fe696d07913",
+      "size": 6679,
+      "mode": "overwrite"
+    },
+    {
+      "path": "de/Microsoft.ReportViewer.Common.resources.dll",
+      "sha256": "0f1c9203457d69200e7c5816c22cd154b7073a43ddb3a3f65908609a7b3894dd",
+      "size": 1456200,
+      "mode": "overwrite"
+    },
+    {
+      "path": "de/Microsoft.ReportViewer.DataVisualization.resources.dll",
+      "sha256": "30bf49ef9bdcc4c188362a95750e384b47cbc20ea8d68c475c4f181e59d57f94",
+      "size": 1418296,
+      "mode": "overwrite"
+    },
+    {
+      "path": "de/Microsoft.ReportViewer.Design.resources.dll",
+      "sha256": "7aa676b968dc9bb752fe0fbc077c35a4e43e595d9c4b144507b669671dc224e3",
+      "size": 23496,
+      "mode": "overwrite"
+    },
+    {
+      "path": "de/Microsoft.ReportViewer.WinForms.resources.dll",
+      "sha256": "a5d9bc25584e52fc5d964fa408196863542414a9015a4671a6b59b1afeff5562",
+      "size": 71112,
+      "mode": "overwrite"
+    },
+    {
+      "path": "de/Microsoft.SqlServer.Types.resources.dll",
+      "sha256": "9d8f05b4d7e22b2e9667150b4ce0d2db6e1f830329ca5da1e035e439fa779e08",
+      "size": 33184,
+      "mode": "overwrite"
+    },
+    {
+      "path": "EnvDTE.dll",
+      "sha256": "ccb40444994d04552924e09578e0b99ca8da028e4f5dab1eb75fdcf52fd2134c",
+      "size": 256040,
+      "mode": "overwrite"
+    },
+    {
+      "path": "es/Microsoft.ReportViewer.Common.resources.dll",
+      "sha256": "6a90e8f38049626c89a475a31a005d9fa8d6a2db4c8ec8ad4626f01662256e17",
+      "size": 1454040,
+      "mode": "overwrite"
+    },
+    {
+      "path": "es/Microsoft.ReportViewer.DataVisualization.resources.dll",
+      "sha256": "557621b4100f6ff3f27ba80ad4091e2beaace82a28f611816c12fa11bb283337",
+      "size": 1414712,
+      "mode": "overwrite"
+    },
+    {
+      "path": "es/Microsoft.ReportViewer.Design.resources.dll",
+      "sha256": "fcab20eae75c5824a824a047a49d928ff68dcde0ca2abd2e7419e8282fff4d08",
+      "size": 23496,
+      "mode": "overwrite"
+    },
+    {
+      "path": "es/Microsoft.ReportViewer.WinForms.resources.dll",
+      "sha256": "e0bc07cb47499089c1fd2d39f7495f6cdadc2b584301b2d37deb436c9942fb03",
+      "size": 71736,
+      "mode": "overwrite"
+    },
+    {
+      "path": "es/Microsoft.SqlServer.Types.resources.dll",
+      "sha256": "f5090c5457b41e8e4f58ad62ba7c2919b082a095e210973a23d8158a1e54efda",
+      "size": 32672,
+      "mode": "overwrite"
+    },
+    {
+      "path": "fr/Microsoft.ReportViewer.Common.resources.dll",
+      "sha256": "6ab279f6c1fa6a1c21f8ea8796ddcacfec5b3053c8c8adfb71697372892d2e59",
+      "size": 1463752,
+      "mode": "overwrite"
+    },
+    {
+      "path": "fr/Microsoft.ReportViewer.DataVisualization.resources.dll",
+      "sha256": "5e28a2cfc25efbce8ac0d65f83b624535190435d400c5880f507061d6493ee46",
+      "size": 1425464,
+      "mode": "overwrite"
+    },
+    {
+      "path": "fr/Microsoft.ReportViewer.Design.resources.dll",
+      "sha256": "b5eb2eaaf1b65f2fd45c431b44fe21b9aa54c24963ffc59e0a02cf9cc17f5165",
+      "size": 23496,
+      "mode": "overwrite"
+    },
+    {
+      "path": "fr/Microsoft.ReportViewer.WinForms.resources.dll",
+      "sha256": "f83a139a0d598515745fe6cae44e80547896ebb3ec3f5cfffb1b3d46cd3eb188",
+      "size": 72136,
+      "mode": "overwrite"
+    },
+    {
+      "path": "fr/Microsoft.SqlServer.Types.resources.dll",
+      "sha256": "ec813e66decce59406c824d221925c5262a77ccfea1d75293366382f5e9f80ee",
+      "size": 33696,
+      "mode": "overwrite"
+    },
+    {
+      "path": "it/Microsoft.ReportViewer.Common.resources.dll",
+      "sha256": "65172c1664c01b28e65bf25f8bd6694d5d49570646f47ee64ec54a72a33560cc",
+      "size": 1460280,
+      "mode": "overwrite"
+    },
+    {
+      "path": "it/Microsoft.ReportViewer.DataVisualization.resources.dll",
+      "sha256": "42aba96baf7784bdbdca2f51920dad90f50946500d9a6b7f3d65c6503b86fa54",
+      "size": 1409592,
+      "mode": "overwrite"
+    },
+    {
+      "path": "it/Microsoft.ReportViewer.Design.resources.dll",
+      "sha256": "20d505f303f3c84deb9e275da32d641ef3764a43f188b21fb0b0045748f8382f",
+      "size": 23496,
+      "mode": "overwrite"
+    },
+    {
+      "path": "it/Microsoft.ReportViewer.WinForms.resources.dll",
+      "sha256": "0eba6b98ed947c1448178e25e271c6a8bc9a8d42de4bcdf14a275ff996bd6c99",
+      "size": 71736,
+      "mode": "overwrite"
+    },
+    {
+      "path": "it/Microsoft.SqlServer.Types.resources.dll",
+      "sha256": "43556d8e45e66ac46081692aca1003d5505489f64d0850388871eccbae679329",
+      "size": 32672,
+      "mode": "overwrite"
+    },
+    {
+      "path": "ja/Microsoft.ReportViewer.Common.resources.dll",
+      "sha256": "f420c5716120c55918fad8a2618d211b036130c46946b8c62d1d7dc59fd2d6d4",
+      "size": 1478200,
+      "mode": "overwrite"
+    },
+    {
+      "path": "ja/Microsoft.ReportViewer.DataVisualization.resources.dll",
+      "sha256": "b4234b0c4f17bc129fdb700a18b318a75957fb9e750ed05bcef150b967d90c1d",
+      "size": 1453128,
+      "mode": "overwrite"
+    },
+    {
+      "path": "ja/Microsoft.ReportViewer.Design.resources.dll",
+      "sha256": "a40556b5c6cef7a7baa5726f1950e6188106b894b688dd112f31557ce19c0207",
+      "size": 23608,
+      "mode": "overwrite"
+    },
+    {
+      "path": "ja/Microsoft.ReportViewer.WinForms.resources.dll",
+      "sha256": "f76bf1e6fb974d7ddaae6f5a1bdce523dc1578eb354f6eb58e0364d8538e3f57",
+      "size": 74200,
+      "mode": "overwrite"
+    },
+    {
+      "path": "ja/Microsoft.SqlServer.Types.resources.dll",
+      "sha256": "3e14bb4898c8f2612244851bec5ce05ebb337e7e3acc4870e3d0c5d342f50723",
+      "size": 35232,
+      "mode": "overwrite"
+    },
+    {
+      "path": "ko/Microsoft.ReportViewer.Common.resources.dll",
+      "sha256": "836f1f87b9b135935920b136bb0ce35a35891e4ae6428f57a40c3f1dd4f924a1",
+      "size": 1451992,
+      "mode": "overwrite"
+    },
+    {
+      "path": "ko/Microsoft.ReportViewer.DataVisualization.resources.dll",
+      "sha256": "4610bd6cbca7d8e083b8b405711e0ffa0dcf610c3ea059dc29bd7651320a46f5",
+      "size": 1421368,
+      "mode": "overwrite"
+    },
+    {
+      "path": "ko/Microsoft.ReportViewer.Design.resources.dll",
+      "sha256": "b7a65c18cd2c6592f1f87fe8d0de44fb350bcef414af7bf837dcc6b8d04d7080",
+      "size": 23496,
+      "mode": "overwrite"
+    },
+    {
+      "path": "ko/Microsoft.ReportViewer.WinForms.resources.dll",
+      "sha256": "fee57a9b909bcfe62715e8371862ea740853dfc67d05ce2c998cb0a12eb57c15",
+      "size": 71736,
+      "mode": "overwrite"
+    },
+    {
+      "path": "ko/Microsoft.SqlServer.Types.resources.dll",
+      "sha256": "c0bd73afd31ed20028df3a5a888379c1a950f3edb55c921e0780bfc837a24c3d",
+      "size": 33184,
+      "mode": "overwrite"
+    },
+    {
+      "path": "MailKit.dll",
+      "sha256": "e34fa856d1ca026bbeaf2fc5c59fdf8cfac33bbb6f24b1eb2f46a48b3e9e94c0",
+      "size": 933888,
+      "mode": "overwrite"
+    },
+    {
+      "path": "MailKit.dll.config",
+      "sha256": "b88836f1aa9159db10cb115f33f89eb082b3e8e31e741864d65cea4a0d60a45a",
+      "size": 751,
+      "mode": "overwrite"
+    },
+    {
+      "path": "MailKit.xml",
+      "sha256": "1989b887215a6aad31a86a22c63db468026c38d60b7ef0785798d208f6c6d6cf",
+      "size": 3727153,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.Bcl.AsyncInterfaces.dll",
+      "sha256": "8fdf7184ef57acf0ecb94841dcf7ff2efe482022d394748452c84a3f2ff2ea43",
+      "size": 26424,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.Bcl.AsyncInterfaces.xml",
+      "sha256": "3897f803d4ab674033af373082932b9522e15a5c614a4a1fa0caab5b64302ca1",
+      "size": 31313,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+      "sha256": "19edd4f5e69a4589dc314909b5854a22f89c4b9ab040591771397b2cb1a17ba6",
+      "size": 63784,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+      "sha256": "d93cf562cda6d9da1d075111789baf56f321a5025392787ac7e0a09b2bd510f1",
+      "size": 205740,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.Extensions.DependencyInjection.dll",
+      "sha256": "e969e314ce9398a34710e93e5f77668efe2f85b08f8c9729f98eba786c32c2a2",
+      "size": 98088,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.Extensions.DependencyInjection.xml",
+      "sha256": "f3734b34273595b52238eef23d63d073e5af4a8a7c0e81a00b0c3d0a646f74ec",
+      "size": 41886,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.Extensions.Logging.Abstractions.dll",
+      "sha256": "40106d9517df283b67c4e5ca1b861156903b7e6bf20cccdb16649544315d42ee",
+      "size": 67880,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.Extensions.Logging.Abstractions.xml",
+      "sha256": "81ae574581dea20d1629c7592095a1bbf9abb9e1e7ec11191ea9bea3b8ba2381",
+      "size": 91749,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.Extensions.Logging.dll",
+      "sha256": "5220b42d56c4c458472166c01e4570dd85e6c9d8bcdaae7c06d77987057f616b",
+      "size": 54024,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.Extensions.Logging.xml",
+      "sha256": "7774ef863d6fa7819096fa8b8146fd8b626e06b5aa84c33c2e4744783eb71382",
+      "size": 47507,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.Extensions.Options.dll",
+      "sha256": "7370c72f875d991187e27b5ab2ec2442ba34e6ff27950153c6696aec90553c5d",
+      "size": 68768,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.Extensions.Options.xml",
+      "sha256": "65f50425fab4ecba554fd70afff4ee18340cf587f268956a068ce8ecdc3033de",
+      "size": 146774,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.Extensions.Primitives.dll",
+      "sha256": "3c6ea55594433e2f0340227bd1588fbab1ba8a10c99319b528cc5573259340cb",
+      "size": 49936,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.Extensions.Primitives.xml",
+      "sha256": "92661b5408efa94ff6e1dec48b25561223e5e10c7299098e90ec54c43a14ae29",
+      "size": 95105,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.ReportViewer.Common.dll",
+      "sha256": "8bf52bd4ce91b38cb594253bc41c7029a0125aa7537a0553637de5c09906ca18",
+      "size": 9036248,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.ReportViewer.DataVisualization.dll",
+      "sha256": "23a342d494c13275ca646de14f9f2bd350c7bc5477b6f17cdf3b0f69eb58dac6",
+      "size": 5094968,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.ReportViewer.Design.dll",
+      "sha256": "7a4597bc24057cfdf18be3f5dd05957bb2931d8bdfb1f7a65b75f0e18e984097",
+      "size": 84536,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.ReportViewer.ProcessingObjectModel.dll",
+      "sha256": "d27d058701d989930249647d249f62fe5aeb65cdbe5e14b2594839e931756a0e",
+      "size": 98248,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.ReportViewer.WinForms.dll",
+      "sha256": "1b927c2d312e864ea73ad50711e5f6c2f58113869597e3abf33d3b38df5f23ea",
+      "size": 598584,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.SqlServer.Types.dll",
+      "sha256": "dc879dfae27754d84b24211f969b460d8feafe6da7a5b72efb376eb60ea368d5",
+      "size": 370592,
+      "mode": "overwrite"
+    },
+    {
+      "path": "MimeKit.dll",
+      "sha256": "cb312132cf592d2091c0185ccf43e265ade1d2f965ff30316e4fc004943aa3e0",
+      "size": 1270272,
+      "mode": "overwrite"
+    },
+    {
+      "path": "MimeKit.xml",
+      "sha256": "6d31850ce29843c5f8edeaeca1d7f5c1d804b85bd222f2ea191199486c9fa1d1",
+      "size": 3042958,
+      "mode": "overwrite"
+    },
+    {
+      "path": "MuniBridge.exe",
+      "sha256": "2acda801b35db45a3eabba4c127a400efc2354b742ebd2a916762177c77fdf94",
+      "size": 1979904,
+      "mode": "overwrite"
+    },
+    {
+      "path": "MuniBridge.exe.config",
+      "sha256": "8fcb4dee63d80143327811012b02e54f7d957647d9b7f92ba64174573a9baf40",
+      "size": 5744,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Newtonsoft.Json.dll",
+      "sha256": "b624949df8b0e3a6153fdfb730a7c6f4990b6592ee0d922e1788433d276610f3",
+      "size": 701992,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Newtonsoft.Json.xml",
+      "sha256": "5569f41b73874f00f50f84f80ce5334377f3da1dc84d6d559802f13b85870ddf",
+      "size": 710224,
+      "mode": "overwrite"
+    },
+    {
+      "path": "nl/PdfiumViewer.resources.dll",
+      "sha256": "6426550dab099f55a5973dff404988a44d80d0970aba3f214faee3d3a3a1944e",
+      "size": 4608,
+      "mode": "overwrite"
+    },
+    {
+      "path": "PdfiumViewer.dll",
+      "sha256": "65f1fcbf4a836cf37a0e8ca32badc0fb81b9387014ce141cc05e5da711486ba8",
+      "size": 115712,
+      "mode": "overwrite"
+    },
+    {
+      "path": "PdfiumViewer.xml",
+      "sha256": "218756d93274c4a25578bed8e2882141532df8df79fb90604f0278891db3382b",
+      "size": 61998,
+      "mode": "overwrite"
+    },
+    {
+      "path": "PdfSharp.BarCodes.dll",
+      "sha256": "a7d16977391964bdd5e17be68f904db9d665e5057e8b2120025fc1d4337811d5",
+      "size": 32256,
+      "mode": "overwrite"
+    },
+    {
+      "path": "PdfSharp.BarCodes.xml",
+      "sha256": "ee3c544785f51addaf5f2259680a12e2ed7fa29c3041b2c328e82d865b618a47",
+      "size": 33374,
+      "mode": "overwrite"
+    },
+    {
+      "path": "PdfSharp.Charting.dll",
+      "sha256": "f8184094103252c5b0670f1b188eec6d7b2e005bc5906daecaa03a8c6e39bebe",
+      "size": 88576,
+      "mode": "overwrite"
+    },
+    {
+      "path": "PdfSharp.Charting.xml",
+      "sha256": "4c638e214eec1711fc6bae0f6f12b51a17a76280be6257d1beaa6dac37144943",
+      "size": 128353,
+      "mode": "overwrite"
+    },
+    {
+      "path": "PdfSharp.Cryptography.dll",
+      "sha256": "1b22050df526f1a8723004f903728f282f6d5c947bf9c5fe6c802a43ad1b432e",
+      "size": 13312,
+      "mode": "overwrite"
+    },
+    {
+      "path": "PdfSharp.Cryptography.xml",
+      "sha256": "c204e77a1e7214c45ed68f10b0bd484095a70cdd2ee55abd2779b0e672280f15",
+      "size": 3196,
+      "mode": "overwrite"
+    },
+    {
+      "path": "PdfSharp.dll",
+      "sha256": "22c78baf53f206ff92cf57b732bc9ae68bb4377178fdafbcd03b2a87676ab832",
+      "size": 798720,
+      "mode": "overwrite"
+    },
+    {
+      "path": "PdfSharp.Quality.dll",
+      "sha256": "e6118dc680bbc17cf2fced23e319813818636c7647728b570644c79fd8543c60",
+      "size": 40960,
+      "mode": "overwrite"
+    },
+    {
+      "path": "PdfSharp.Quality.xml",
+      "sha256": "0ebb333f4227cd21beb4092881991679a5988a2dc5e15253db38ae1d04cc91de",
+      "size": 44839,
+      "mode": "overwrite"
+    },
+    {
+      "path": "PdfSharp.Shared.dll",
+      "sha256": "ca5da46d4f98212f1bfb06aaea9227bb2c58c6d157779692154a47c2f44e8798",
+      "size": 26112,
+      "mode": "overwrite"
+    },
+    {
+      "path": "PdfSharp.Shared.xml",
+      "sha256": "b67dd20be6e6ce2b39fd4078a0bdc4643e8bbb7ae83cac317e5bca2544589cdb",
+      "size": 14531,
+      "mode": "overwrite"
+    },
+    {
+      "path": "PdfSharp.Snippets.dll",
+      "sha256": "08b7d0b00ba99ca082d4bceb57ce35a174501b1bf246c1f5281acd21a45a5703",
+      "size": 154624,
+      "mode": "overwrite"
+    },
+    {
+      "path": "PdfSharp.System.dll",
+      "sha256": "3098cec1e93b9f13adf3c6945e2884af93a1683c7517fe4ff027a679d7c70ec1",
+      "size": 10240,
+      "mode": "overwrite"
+    },
+    {
+      "path": "PdfSharp.System.xml",
+      "sha256": "de80e0a450253eafc5d66aa4ed705da342107358b256d464ae2fea4a84cdf581",
+      "size": 12223,
+      "mode": "overwrite"
+    },
+    {
+      "path": "PdfSharp.WPFonts.dll",
+      "sha256": "ba47b77f9df5e903386956990efc017a7eb4e2792f56a1334d4d324ba39376af",
+      "size": 421888,
+      "mode": "overwrite"
+    },
+    {
+      "path": "PdfSharp.WPFonts.xml",
+      "sha256": "256db0ca17fef632e4f077e0e7817dd9059bc17cbc5a461ae0584b5c29a7d096",
+      "size": 1668,
+      "mode": "overwrite"
+    },
+    {
+      "path": "PdfSharp.xml",
+      "sha256": "7a82f9282afb0be8eff21697c037c40eea4f5e87725b0e4d72ca0b03c5ccaa13",
+      "size": 1326031,
+      "mode": "overwrite"
+    },
+    {
+      "path": "pt/Microsoft.ReportViewer.Common.resources.dll",
+      "sha256": "f3ca104914e39169f294d5b182263179c058883acba16ee810bf28f842ea2c26",
+      "size": 1442888,
+      "mode": "overwrite"
+    },
+    {
+      "path": "pt/Microsoft.ReportViewer.DataVisualization.resources.dll",
+      "sha256": "dc254e9f3625e669d530fa83a246b4ebb92632da791bdd03d87942e2f87980fa",
+      "size": 1404984,
+      "mode": "overwrite"
+    },
+    {
+      "path": "pt/Microsoft.ReportViewer.Design.resources.dll",
+      "sha256": "8e74449fb94f8c7afaff857a94bd8ffeaa58c69823ccc55a1ecd83f2c77d953f",
+      "size": 23496,
+      "mode": "overwrite"
+    },
+    {
+      "path": "pt/Microsoft.ReportViewer.WinForms.resources.dll",
+      "sha256": "4d0667b4277521e271e782a1756f74af2304372839d3f1e726fe3af37f2e6872",
+      "size": 71736,
+      "mode": "overwrite"
+    },
+    {
+      "path": "pt/Microsoft.SqlServer.Types.resources.dll",
+      "sha256": "1b81bd499d013f6179867c47fd8dba58eb4da48c3487a5a79241544aa6ed2690",
+      "size": 32672,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Reporting/RDLC/AccountContacts.rdlc",
+      "sha256": "44fcaa8628b099e023e158e8b2ac76c6b00086674323989ee9a8166586c2e2b6",
+      "size": 35565,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Reporting/RDLC/Accounts.rdlc",
+      "sha256": "56fcf797545e2c5d66bb90d91c9cb13f319c960c038ef3e0b7cf52cf243fee54",
+      "size": 28487,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Reporting/RDLC/BillEditList.rdlc",
+      "sha256": "19e794a974c90c3a54bcd04bad1079cdc5875574cc423c83cbc3d41990839887",
+      "size": 60099,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Reporting/RDLC/DEPWaterUsage.rdlc",
+      "sha256": "0ee6d9a88b89962e0e5be4d2e67135b92ee87778bdc50e2ad09e3e1a423a5982",
+      "size": 48685,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Reporting/RDLC/GenericReport.rdlc",
+      "sha256": "b24c0d6020cfd8f01e191f17d9ba0df5e8a2fb4f542c8c3315ad9905fbaa16ca",
+      "size": 19966,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Reporting/RDLC/GroupInvoices.rdlc",
+      "sha256": "2da378b2edd1635b530fc04765362e664eab41a58191e8734833f97cb54a9766",
+      "size": 38739,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Reporting/RDLC/OpenBalance.rdlc",
+      "sha256": "7764999c4cd7d35f5a382bdfe3ac8ee0a17917fb3388010bbf17a5bc07febeae",
+      "size": 29201,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Reporting/RDLC/PostcardInvoices3up.rdlc",
+      "sha256": "fc510016518a64885e7e56b717593d29264dbe4f73d6bb207e0e32fc8ab3ac47",
+      "size": 7728022,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Reporting/RDLC/PostcardInvoices4up.rdlc",
+      "sha256": "34a9777324cbd6730ebfa66f424aad72ef53d49788ae14d9830204df346e06ce",
+      "size": 7734753,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Reporting/RDLC/RouteSheet.rdlc",
+      "sha256": "b4a5c35bf115f57828774db9ddb46bc3667a6191a74f75ecbb4815735c7351df",
+      "size": 60855,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Reporting/RDLC/UsageByMeterSize.rdlc",
+      "sha256": "c01a8cee00d563b37ee58bae958419a15b78a80a4264d9f5a5fc21023799f618",
+      "size": 73253,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Reporting/RDLC/UsageSummary.rdlc",
+      "sha256": "74a04a8c323ae3f10269c2295925a2dd09ec717ed468b27b04237a42ef99f189",
+      "size": 47621,
+      "mode": "overwrite"
+    },
+    {
+      "path": "ru/Microsoft.ReportViewer.Common.resources.dll",
+      "sha256": "6802f9d4f1260b3ae47fd605ff57704c3f767798c5fa19c021b85fa3690f4af0",
+      "size": 1535944,
+      "mode": "overwrite"
+    },
+    {
+      "path": "ru/Microsoft.ReportViewer.DataVisualization.resources.dll",
+      "sha256": "a48fcd5c6fbc0291427d44a8ea00a7ca54050cb5f034290fff16989a9623daa7",
+      "size": 1589816,
+      "mode": "overwrite"
+    },
+    {
+      "path": "ru/Microsoft.ReportViewer.Design.resources.dll",
+      "sha256": "52170ac7f14481157ed70c12ba8cfa8ccefa37848e1db214f34a21423c9b94f3",
+      "size": 24024,
+      "mode": "overwrite"
+    },
+    {
+      "path": "ru/Microsoft.ReportViewer.WinForms.resources.dll",
+      "sha256": "c2e53864f06d335910339f73828b0a3455678eae43c6378fdb36489c13940fa3",
+      "size": 78808,
+      "mode": "overwrite"
+    },
+    {
+      "path": "ru/Microsoft.SqlServer.Types.resources.dll",
+      "sha256": "cf008f562361e9cae6981231be39ae95ba7c33ad94493de813b73878b94aa3d0",
+      "size": 41888,
+      "mode": "overwrite"
+    },
+    {
+      "path": "stdole.dll",
+      "sha256": "d6cdf961c6d2712fe1958815e51a30960d79fff1e97788b7741627dba972e8f7",
+      "size": 16384,
+      "mode": "overwrite"
+    },
+    {
+      "path": "System.Buffers.dll",
+      "sha256": "3af1e07305bed0abe0cf32d9854e0a7f5f470216adee1b87d02350be09d31b35",
+      "size": 23856,
+      "mode": "overwrite"
+    },
+    {
+      "path": "System.Buffers.xml",
+      "sha256": "46488123a708d93e6734a048f8d94eaa980b1679184b914e8a7cc3baafd720b3",
+      "size": 11058,
+      "mode": "overwrite"
+    },
+    {
+      "path": "System.Diagnostics.DiagnosticSource.dll",
+      "sha256": "1887592615fc08bbc91ad62307c8c11dfc14c45bf120d271d66be4a0d1a149a7",
+      "size": 189104,
+      "mode": "overwrite"
+    },
+    {
+      "path": "System.Diagnostics.DiagnosticSource.xml",
+      "sha256": "5e04aa978284ce4cd6f46c4d91e3a675ce0b2d309bb8a805912434cbb4e3703a",
+      "size": 153196,
+      "mode": "overwrite"
+    },
+    {
+      "path": "System.Formats.Asn1.dll",
+      "sha256": "84692333cd9e3d9ef2761722a853dc88a412e1e71809744e18639a293c218c8e",
+      "size": 105232,
+      "mode": "overwrite"
+    },
+    {
+      "path": "System.Formats.Asn1.xml",
+      "sha256": "d92d5a6a2de034bd1bf613a5a32a8091a33eed0f176741e8afa38556d982961c",
+      "size": 165136,
+      "mode": "overwrite"
+    },
+    {
+      "path": "System.IO.Pipelines.dll",
+      "sha256": "f19d78c5cffddeae66a79d772fa0ebb30c101912fe7cf7541913308b54cf79cf",
+      "size": 84776,
+      "mode": "overwrite"
+    },
+    {
+      "path": "System.IO.Pipelines.xml",
+      "sha256": "55b9d956d02a624bf76dde343df62d5805659e705436a3d76bc9e67667170bd9",
+      "size": 41108,
+      "mode": "overwrite"
+    },
+    {
+      "path": "System.Memory.dll",
+      "sha256": "b8fe216aff0f6d162f8eefe7be1712162b7d8199e20ce2e70ffac36c7ce20a4c",
+      "size": 145192,
+      "mode": "overwrite"
+    },
+    {
+      "path": "System.Memory.xml",
+      "sha256": "36d0481ff2c39688c863f03853e3dbe2bd6ebfc0d9a28bd0bded1ff4ebc33af4",
+      "size": 208053,
+      "mode": "overwrite"
+    },
+    {
+      "path": "System.Numerics.Vectors.dll",
+      "sha256": "22c84be385fe8ba6d0e0138952748f28d781fce36078b5a7aed91a6104bcd99b",
+      "size": 110344,
+      "mode": "overwrite"
+    },
+    {
+      "path": "System.Numerics.Vectors.xml",
+      "sha256": "1daa38432076296a90bcbd931b888c806d7162951d494c803750df2cefe2b6d6",
+      "size": 191892,
+      "mode": "overwrite"
+    },
+    {
+      "path": "System.Runtime.CompilerServices.Unsafe.dll",
+      "sha256": "2d6f419d641682d8efc4a40e850d2e85de519d6823b93daf2aeee63206d4e32d",
+      "size": 19224,
+      "mode": "overwrite"
+    },
+    {
+      "path": "System.Runtime.CompilerServices.Unsafe.xml",
+      "sha256": "49a36f5205067a724cb4bf4b6ab8061f98b8fbd5bc2fe26067deecfefd40d420",
+      "size": 21820,
+      "mode": "overwrite"
+    },
+    {
+      "path": "System.Security.Cryptography.Pkcs.dll",
+      "sha256": "89436836e39a6bb4275613ce45226ffa10e590151296343560221441d7a79670",
+      "size": 22176,
+      "mode": "overwrite"
+    },
+    {
+      "path": "System.Security.Cryptography.Pkcs.xml",
+      "sha256": "31a7d76653af9f61af5ad8f04a95839cbdb5c84dd21b5fe9e4a4f71ba5b7ea3e",
+      "size": 233685,
+      "mode": "overwrite"
+    },
+    {
+      "path": "System.Text.Encodings.Web.dll",
+      "sha256": "fdb1e5eb6ca30808e5d2d49799b85107db77b37c1517b2cad37a8f877d5f6aca",
+      "size": 79656,
+      "mode": "overwrite"
+    },
+    {
+      "path": "System.Text.Encodings.Web.xml",
+      "sha256": "8d6eccd886019200ec6205ccfbc143feffd8ae56bd93d2a2c402856e5e64af0a",
+      "size": 63180,
+      "mode": "overwrite"
+    },
+    {
+      "path": "System.Text.Json.dll",
+      "sha256": "66c209e7a4f563bb16aa674591f397ed8bb329cfa72905cfde5b018004ce522f",
+      "size": 726816,
+      "mode": "overwrite"
+    },
+    {
+      "path": "System.Text.Json.xml",
+      "sha256": "835ddce50a5a8cb52d1ab176a08be3915f5135d6e32c008ecdc8a50e536543fc",
+      "size": 570449,
+      "mode": "overwrite"
+    },
+    {
+      "path": "System.Threading.Tasks.Extensions.dll",
+      "sha256": "692c324c02a922f890aaf5948c54ec9758f5ab7019b8e8ab169c106ddd3231f4",
+      "size": 27944,
+      "mode": "overwrite"
+    },
+    {
+      "path": "System.Threading.Tasks.Extensions.xml",
+      "sha256": "de8fa9eba60bb078278ea915e4af5242020a24d0655cacd5df3c0ac89ef9acb4",
+      "size": 42928,
+      "mode": "overwrite"
+    },
+    {
+      "path": "System.ValueTuple.dll",
+      "sha256": "e905d102585b22c6df04f219af5cbdbfa7bc165979e9788b62df6dcc165e10f4",
+      "size": 25232,
+      "mode": "overwrite"
+    },
+    {
+      "path": "System.ValueTuple.xml",
+      "sha256": "993c363d31e64fb969d968daf3b2ea7de79d2b3fc00c8dbe67f7b8a5e8d71910",
+      "size": 142,
+      "mode": "overwrite"
+    },
+    {
+      "path": "tokens.enc",
+      "sha256": "09b0779670ab7fcd81a5282a3875cff38e02fec41fde3ee2de590adaf94c6cfc",
+      "size": 496,
+      "mode": "overwrite"
+    },
+    {
+      "path": "UpdaterBootstrap.dll",
+      "sha256": "9d1988607cf3ca66acfc29b6d7fd6d2f2b770b75aa2e38ed3d8cb59a55649417",
+      "size": 13312,
+      "mode": "overwrite"
+    },
+    {
+      "path": "UpdaterBootstrap.exe",
+      "sha256": "25c44173444a161029d2232008e053d237c8da833b1ec911d2ee6673196b377a",
+      "size": 117760,
+      "mode": "overwrite"
+    },
+    {
+      "path": "UpdaterBootstrap.runtimeconfig.json",
+      "sha256": "aeb46a15366e38511c192ccf65312442c64e8753b3c16fd2ca0b4cb34a5c59f3",
+      "size": 253,
+      "mode": "overwrite"
+    },
+    {
+      "path": "version.json",
+      "sha256": "a609ac216382db843f3a1851d10b6a9fa9e7fdcf9b6409510a14be6cd59a3817",
+      "size": 101,
+      "mode": "overwrite"
+    },
+    {
+      "path": "x64/SqlServerSpatial160.dll",
+      "sha256": "b51ec8d05094b27f6f54d2e0203841d04af6c2e3ec6843cadb5f8598c106c9b4",
+      "size": 681904,
+      "mode": "overwrite"
+    },
+    {
+      "path": "x86/pdfium.dll",
+      "sha256": "8d301086740272454c6a92e3c98426617fa4ed11114989f06913c2127a4a23e2",
+      "size": 13634048,
+      "mode": "overwrite"
+    },
+    {
+      "path": "x86/SqlServerSpatial160.dll",
+      "sha256": "6cd7900343d8ea662afc9b4782b5e65c1459e01dc698279e72d69c4a954fdb18",
+      "size": 571296,
+      "mode": "overwrite"
+    },
+    {
+      "path": "zh-CHS/Microsoft.ReportViewer.Common.resources.dll",
+      "sha256": "88b5510672b877f769fd4cbe8d6ab3a25bf0c645c473feaeb0186dd5113a0b3c",
+      "size": 1412152,
+      "mode": "overwrite"
+    },
+    {
+      "path": "zh-CHS/Microsoft.ReportViewer.DataVisualization.resources.dll",
+      "sha256": "d115d0d541d6208ba23cd19f1f2132e1e9aa5befec32dffe0ed09b7f07ed8f69",
+      "size": 1338936,
+      "mode": "overwrite"
+    },
+    {
+      "path": "zh-CHS/Microsoft.ReportViewer.Design.resources.dll",
+      "sha256": "55743a664c3d79ff32edb115209bcc23ba81584aedf968657e413cef88fdd56c",
+      "size": 22984,
+      "mode": "overwrite"
+    },
+    {
+      "path": "zh-CHS/Microsoft.ReportViewer.WinForms.resources.dll",
+      "sha256": "a4455cc3aae2a73fa124d6e165b9bcc03de97e91c63c52ff1408c7a67f352d04",
+      "size": 68152,
+      "mode": "overwrite"
+    },
+    {
+      "path": "zh-CHT/Microsoft.ReportViewer.Common.resources.dll",
+      "sha256": "38e6fc918d39fe864ae91f378166b2e26932d2689b1c49040467f030db0ff2eb",
+      "size": 1410504,
+      "mode": "overwrite"
+    },
+    {
+      "path": "zh-CHT/Microsoft.ReportViewer.DataVisualization.resources.dll",
+      "sha256": "3590e6b1efaf39c599dba5e6b8b0b5edd38ffa573b39b10e11e2fac4391e9bac",
+      "size": 1342536,
+      "mode": "overwrite"
+    },
+    {
+      "path": "zh-CHT/Microsoft.ReportViewer.Design.resources.dll",
+      "sha256": "0ab3e98483f61c5fc8e929266adbb2fbfed3ccee1885d9138b9403f8a9d63932",
+      "size": 22984,
+      "mode": "overwrite"
+    },
+    {
+      "path": "zh-CHT/Microsoft.ReportViewer.WinForms.resources.dll",
+      "sha256": "25fd3d5af814d58f12a7536828d44062c087ba3446fc64781859ee2c675fe590",
+      "size": 68552,
+      "mode": "overwrite"
+    },
+    {
+      "path": "zh-Hans/Microsoft.SqlServer.Types.resources.dll",
+      "sha256": "681dde71e6e56aaa8f4e55c053e5f7c6299a16ee1d32648232b55e085f1582da",
+      "size": 30624,
+      "mode": "overwrite"
+    },
+    {
+      "path": "zh-Hant/Microsoft.SqlServer.Types.resources.dll",
+      "sha256": "34ee477ca5f11c9a5ed7eadd913a210bb018f5e11159ff43339844bfdf59e4ad",
+      "size": 30624,
+      "mode": "overwrite"
+    }
+  ]
+
+}
