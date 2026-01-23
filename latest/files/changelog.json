@@ -245,5 +245,14 @@
       "Added warning when trying to open 2nd MuniBridge instance",
       "Added user inital for notes box for multi-user mode"
     ]
+  },
+  {
+    "version": "1.3.04",
+    "date": "2025-01-22",
+    "notes": [
+      "**Revamped adjustments (double-click invoice or usage row to access)",
+      "*Added 'View Recently Printed' button in Reporting tab",
+      "Small bug fixes"
+    ]
   }
 ]
