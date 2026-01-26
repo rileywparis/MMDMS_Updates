@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "appVersion": "1.3.05",
-  "generatedUtc": "2026-01-26T07:04:57Z",
+  "generatedUtc": "2026-01-26T07:18:54Z",
   "filesBasePath": "latest/files/",
   "files": [
     {
@@ -218,6 +218,12 @@
       "path": "DatabaseMigrations/032_RetryRecentMigrations.sql",
       "sha256": "291afe63038088b064e90bd59ba4e80057324d052030768dc8cf477d7ad4b25e",
       "size": 15957,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/033_ServiceNotes.sql",
+      "sha256": "a9905e6f5a642888a9700dc516026723b5e0d1d64cf9fe2ed82e4e0d2489e839",
+      "size": 506,
       "mode": "overwrite"
     },
     {
@@ -839,6 +845,30 @@
       "mode": "overwrite"
     },
     {
+      "path": "Serilog.dll",
+      "sha256": "dce550ab904db02c329e32b34d304556e4f32f7a3accb07f2e885961424d84a5",
+      "size": 164864,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Serilog.Sinks.File.dll",
+      "sha256": "f57dc69a0fcc22b908bc6f6c9c180d634013749ebdb25b07a85c83776bd75625",
+      "size": 38912,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Serilog.Sinks.File.xml",
+      "sha256": "1c66f346dc3034fa8bb86e26089a45157e6efce59400fce1d5ebacf5435d7b30",
+      "size": 44098,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Serilog.xml",
+      "sha256": "363dee02e47dba1bfa39c87738cc17aa6b42648275acd2cbb3276e2f6ef394ae",
+      "size": 389222,
+      "mode": "overwrite"
+    },
+    {
       "path": "stdole.dll",
       "sha256": "d6cdf961c6d2712fe1958815e51a30960d79fff1e97788b7741627dba972e8f7",
       "size": 16384,
@@ -962,6 +992,18 @@
       "path": "System.Text.Json.xml",
       "sha256": "835ddce50a5a8cb52d1ab176a08be3915f5135d6e32c008ecdc8a50e536543fc",
       "size": 570449,
+      "mode": "overwrite"
+    },
+    {
+      "path": "System.Threading.Channels.dll",
+      "sha256": "a42e45a1bb8e6528d244f8611cf1e3e731cab481a67928c1be815e635ffe8ec7",
+      "size": 74000,
+      "mode": "overwrite"
+    },
+    {
+      "path": "System.Threading.Channels.xml",
+      "sha256": "faa0211cb9b2a4aefbb5a4d58e9ff6150995e5a2c88d9b013b9566768cad6e01",
+      "size": 18329,
       "mode": "overwrite"
     },
     {
