@@ -254,5 +254,15 @@
       "*Added 'View Recently Printed' button in Reporting tab",
       "Small bug fixes"
     ]
+  },
+  {
+    "version": "1.3.05",
+    "date": "2025-01-26",
+    "notes": [
+      "*Add ability to edit line item amounts",
+      "*Changed Service notes to muli-item box",
+      "Added option to send error log in bug report menu",
+      "Bug fixes"
+    ]
   }
 ]
