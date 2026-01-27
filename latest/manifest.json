@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
-  "appVersion": "1.3.05",
-  "generatedUtc": "2026-01-26T07:18:54Z",
+  "appVersion": "1.3.06",
+  "generatedUtc": "2026-01-27T05:14:23Z",
   "filesBasePath": "latest/files/",
   "files": [
     {
@@ -570,7 +570,7 @@
     },
     {
       "path": "MuniBridge.exe",
-      "sha256": "c40f50c62fca9841eeffa0a0fe278d1fd927b343e09e6f8903cd71f166aac33f",
+      "sha256": "ebf78ea70aa0bfc6aee65c8fba8133d06d6a2e2fa26f9983780840f6b1232bb0",
       "size": 2081280,
       "mode": "overwrite"
     },
@@ -774,8 +774,8 @@
     },
     {
       "path": "Reporting/RDLC/GroupInvoices.rdlc",
-      "sha256": "2da378b2edd1635b530fc04765362e664eab41a58191e8734833f97cb54a9766",
-      "size": 38739,
+      "sha256": "0a591cd2d7f14b07c3e1bcb0e9d3b126e95e0479766f8fa86a303edc04721045",
+      "size": 48068,
       "mode": "overwrite"
     },
     {
@@ -1032,8 +1032,8 @@
     },
     {
       "path": "tokens.enc",
-      "sha256": "09b0779670ab7fcd81a5282a3875cff38e02fec41fde3ee2de590adaf94c6cfc",
-      "size": 496,
+      "sha256": "b3659c1d8ac842dcee341a298c35ca8eae966d80db8a095cabb1af0f5dd5d79e",
+      "size": 560,
       "mode": "overwrite"
     },
     {
@@ -1056,7 +1056,7 @@
     },
     {
       "path": "version.json",
-      "sha256": "bafebe7dfdea7e8af3d63aa9e88d299a59253f08bf28687f1a85396f7d5b636d",
+      "sha256": "201034db7221090e205ee0ab9e8e48c7424affeb72df05810f77de6fbb821931",
       "size": 101,
       "mode": "overwrite"
     },
