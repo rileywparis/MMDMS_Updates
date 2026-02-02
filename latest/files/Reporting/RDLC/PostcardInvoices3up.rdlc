@@ -502,6 +502,7 @@
                                                       <VerticalAlign>Top</VerticalAlign>
                                                     </Style>
                                                   </Textbox>
+                                                  <rd:Selected>true</rd:Selected>
                                                 </CellContents>
                                               </TablixCell>
                                               <TablixCell>
@@ -634,7 +635,6 @@
                                                       <VerticalAlign>Top</VerticalAlign>
                                                     </Style>
                                                   </Textbox>
-                                                  <rd:Selected>true</rd:Selected>
                                                 </CellContents>
                                               </TablixCell>
                                               <TablixCell>
@@ -684,7 +684,17 @@
                                       <TablixRowHierarchy>
                                         <TablixMembers>
                                           <TablixMember>
-                                            <Group Name="UTILITY" />
+                                            <Group Name="UTILITY">
+                                              <Filters>
+                                                <Filter>
+                                                  <FilterExpression>=Fields!UTILITY.Value</FilterExpression>
+                                                  <Operator>NotEqual</Operator>
+                                                  <FilterValues>
+                                                    <FilterValue DataType="Integer">0</FilterValue>
+                                                  </FilterValues>
+                                                </Filter>
+                                              </Filters>
+                                            </Group>
                                           </TablixMember>
                                         </TablixMembers>
                                       </TablixRowHierarchy>

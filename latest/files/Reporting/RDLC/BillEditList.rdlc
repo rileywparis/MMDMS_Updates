@@ -9,33 +9,24 @@
       </ConnectionProperties>
       <rd:DataSourceID>dcc24091-a46f-4dfc-b55a-161d24fd07b1</rd:DataSourceID>
     </DataSource>
+    <DataSource Name="mdmsDataSet">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>6ff1c5e5-c3d9-446b-90b0-1d27fecf0fbb</rd:DataSourceID>
+    </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="BillEditListDataSet">
       <Query>
-        <DataSourceName>v2_MDMSDBDataSet</DataSourceName>
+        <DataSourceName>mdmsDataSet</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="CUR_READ">
-          <DataField>CUR_READ</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="PRIOR_READ">
-          <DataField>PRIOR_READ</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
         <Field Name="REF_NO">
           <DataField>REF_NO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="FLAG">
-          <DataField>FLAG</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="BILL_USAGE">
-          <DataField>BILL_USAGE</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="ACCT_NO">
           <DataField>ACCT_NO</DataField>
@@ -45,54 +36,42 @@
           <DataField>SERV_ID</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="UTILITY">
-          <DataField>UTILITY</DataField>
+        <Field Name="ROUTE_NO">
+          <DataField>ROUTE_NO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="REV_FNAME">
           <DataField>REV_FNAME</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="BILL_USAGE">
+          <DataField>BILL_USAGE</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="UTILITY">
+          <DataField>UTILITY</DataField>
+          <rd:TypeName>System.Byte</rd:TypeName>
+        </Field>
         <Field Name="AMOUNT">
           <DataField>AMOUNT</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="BILL_CYCLE">
-          <DataField>BILL_CYCLE</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="BALANCE">
-          <DataField>BALANCE</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="USAGE_UTIL">
-          <DataField>USAGE_UTIL</DataField>
+        <Field Name="FLAG">
+          <DataField>FLAG</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="UTIL_NAME">
           <DataField>UTIL_NAME</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="USAGE_UTIL1">
-          <DataField>USAGE_UTIL</DataField>
-          <rd:TypeName>System.Byte</rd:TypeName>
-        </Field>
-        <Field Name="UTILITY1">
-          <DataField>UTILITY</DataField>
-          <rd:TypeName>System.Byte</rd:TypeName>
-        </Field>
-        <Field Name="ROUTE_NO">
-          <DataField>ROUTE_NO</DataField>
+        <Field Name="ItemDesc">
+          <DataField>ItemDesc</DataField>
           <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="PREV_BALANCE">
-          <DataField>PREV_BALANCE</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>v2_MDMSDBDataSet</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\panda\source\repos\MDMS\MDMS\Reporting\v2_MDMSDBDataSet.xsd</rd:SchemaPath>
+        <rd:DataSetName>mdmsDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\panda\source\repos\MDMS\MDMS\Data\mdmsDataSet.xsd</rd:SchemaPath>
         <rd:TableName>BillEditList</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
@@ -104,7 +83,7 @@
     <ReportSection>
       <Body>
         <ReportItems>
-          <Textbox Name="lbl10">
+          <Textbox Name="LblReportName">
             <CanGrow>true</CanGrow>
             <KeepTogether>true</KeepTogether>
             <Paragraphs>
@@ -137,7 +116,7 @@
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Textbox Name="lbl11">
+          <Textbox Name="LblCompany">
             <CanGrow>true</CanGrow>
             <KeepTogether>true</KeepTogether>
             <Paragraphs>
@@ -171,7 +150,7 @@
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Textbox Name="Textbox21">
+          <Textbox Name="TxtReportDate">
             <CanGrow>true</CanGrow>
             <KeepTogether>true</KeepTogether>
             <Paragraphs>
@@ -187,7 +166,6 @@
                 </Style>
               </Paragraph>
             </Paragraphs>
-            <rd:DefaultName>Textbox18</rd:DefaultName>
             <Top>0.49479in</Top>
             <Left>3.26042in</Left>
             <Height>0.25in</Height>
@@ -203,7 +181,7 @@
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Textbox Name="Textbox22">
+          <Textbox Name="TxtSort">
             <CanGrow>true</CanGrow>
             <KeepTogether>true</KeepTogether>
             <Paragraphs>
@@ -219,7 +197,6 @@
                 </Style>
               </Paragraph>
             </Paragraphs>
-            <rd:DefaultName>Textbox18</rd:DefaultName>
             <Top>0.65729in</Top>
             <Left>3.26042in</Left>
             <Height>0.25in</Height>
@@ -235,7 +212,7 @@
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Tablix Name="Tablix6">
+          <Tablix Name="TablixCharges">
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
@@ -251,7 +228,7 @@
                   <Width>0.65in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.65in</Width>
+                  <Width>0.3375in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -260,7 +237,7 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox101">
+                        <Textbox Name="LblAcctNo">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -276,7 +253,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox100</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -294,7 +270,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="UTILITY2">
+                        <Textbox Name="TxtUtilName">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -310,7 +286,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>UTILITY</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -328,7 +303,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox97">
+                        <Textbox Name="LblCharge">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -346,7 +321,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox94</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -371,7 +345,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Prev. Bal</Value>
+                                  <Value>Bill Usg.</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -405,7 +379,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Bal.</Value>
+                                  <Value>Flag</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -437,7 +411,7 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox32">
+                        <Textbox Name="Blank0">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -453,7 +427,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox32</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -472,7 +445,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox33">
+                        <Textbox Name="Blank1">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -488,7 +461,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox33</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -507,7 +479,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox37">
+                        <Textbox Name="Blank2">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -523,7 +495,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox33</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -542,7 +513,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox35">
+                        <Textbox Name="Blank3">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -558,7 +529,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox35</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -577,7 +547,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox36">
+                        <Textbox Name="Blank4">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -593,7 +563,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox36</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -659,7 +628,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!AMOUNT.Value</Value>
+                                  <Value>=Format(Sum(Fields!AMOUNT.Value), "N2")</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -687,14 +656,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="AMOUNT1">
+                        <Textbox Name="CHARGE">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!AMOUNT.Value)</Value>
+                                  <Value>=Format(Sum(Fields!AMOUNT.Value), "N2")</Value>
                                   <Style>
                                     <FontWeight>SemiBold</FontWeight>
                                   </Style>
@@ -705,7 +674,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>AMOUNT1</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>#c8c8c8</Color>
@@ -728,14 +696,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="BALANCE">
+                        <Textbox Name="BILL_USAGE">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=IIf(IsNothing(Fields!BALANCE.Value), "", Fields!BALANCE.Value - Sum(Fields!AMOUNT.Value))</Value>
+                                  <Value>=Format(Fields!BILL_USAGE.Value, "N0")</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -744,7 +712,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>BALANCE</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -763,14 +730,19 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="BALANCE1">
+                        <Textbox Name="FLAG">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=IIf(Fields!BALANCE.Value = -99999, "", Fields!BALANCE.Value)</Value>
+                                  <Value>=Switch(
+    Fields!FLAG.Value = "ESTIMATE", "E",
+    Fields!FLAG.Value = "PHYSICAL", "P",
+    Fields!FLAG.Value = "WTR OFF", "X",
+    True, ""
+)</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -779,7 +751,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>BALANCE1</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -803,7 +774,7 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox104">
+                        <Textbox Name="Blank7">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -819,7 +790,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox104</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -840,7 +810,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="AMOUNT2">
+                        <Textbox Name="TOTAL_AMOUNT">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -856,7 +826,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>AMOUNT2</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -877,7 +846,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="AMOUNT3">
+                        <Textbox Name="TOTAL_CHARGE">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -895,7 +864,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>AMOUNT3</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -920,14 +888,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox107">
+                        <Textbox Name="Textbox8">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Format(Sum(Fields!BILL_USAGE.Value), "N0")</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -936,7 +904,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox107</rd:DefaultName>
+                          <rd:DefaultName>Textbox8</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -953,11 +921,12 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox108">
+                        <Textbox Name="Blank9">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -973,7 +942,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox108</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1000,7 +968,7 @@
               <TablixMembers>
                 <TablixMember />
                 <TablixMember>
-                  <Group Name="ColumnGroup">
+                  <Group Name="UTILITY">
                     <GroupExpressions>
                       <GroupExpression>=Fields!UTILITY.Value</GroupExpression>
                     </GroupExpressions>
@@ -1046,7 +1014,7 @@
                       <TablixHeader>
                         <Size>1.97083in</Size>
                         <CellContents>
-                          <Textbox Name="Textbox95">
+                          <Textbox Name="LblName">
                             <CanGrow>true</CanGrow>
                             <KeepTogether>true</KeepTogether>
                             <Paragraphs>
@@ -1060,7 +1028,6 @@
                                 <Style />
                               </Paragraph>
                             </Paragraphs>
-                            <rd:DefaultName>Textbox93</rd:DefaultName>
                             <Style>
                               <Border>
                                 <Style>None</Style>
@@ -1093,7 +1060,7 @@
                           <TablixHeader>
                             <Size>1.97083in</Size>
                             <CellContents>
-                              <Textbox Name="Textbox31">
+                              <Textbox Name="TxtRouteNo">
                                 <CanGrow>true</CanGrow>
                                 <KeepTogether>true</KeepTogether>
                                 <Paragraphs>
@@ -1109,7 +1076,6 @@
                                     <Style />
                                   </Paragraph>
                                 </Paragraphs>
-                                <rd:DefaultName>Textbox31</rd:DefaultName>
                                 <Style>
                                   <Border>
                                     <Color>LightGrey</Color>
@@ -1185,7 +1151,7 @@
                   <TablixHeader>
                     <Size>1.97083in</Size>
                     <CellContents>
-                      <Textbox Name="Textbox103">
+                      <Textbox Name="LblTotals">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
@@ -1199,7 +1165,6 @@
                             <Style />
                           </Paragraph>
                         </Paragraphs>
-                        <rd:DefaultName>Textbox103</rd:DefaultName>
                         <Style>
                           <Border>
                             <Style>None</Style>
@@ -1225,7 +1190,7 @@
             <Top>0.87221in</Top>
             <Left>0.00835in</Left>
             <Height>1in</Height>
-            <Width>5.28748in</Width>
+            <Width>4.97498in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -1233,7 +1198,7 @@
               </Border>
             </Style>
           </Tablix>
-          <Tablix Name="Tablix7">
+          <Tablix Name="TablixMisc">
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
@@ -1243,13 +1208,7 @@
                   <Width>0.7in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.7in</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>0.65in</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>0.65in</Width>
+                  <Width>2.80208in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -1258,7 +1217,7 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox106">
+                        <Textbox Name="LblAcctNo2">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -1274,7 +1233,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox100</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1292,14 +1250,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="UTILITY3">
+                        <Textbox Name="Textbox6">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!UTIL_NAME.Value</Value>
+                                  <Value />
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -1308,7 +1266,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>UTILITY</rd:DefaultName>
+                          <rd:DefaultName>Textbox6</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1326,59 +1284,22 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox98">
+                        <Textbox Name="LblItemDesc">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Charge</Value>
-                                  <Style>
-                                    <FontWeight>SemiBold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Right</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox94</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox100">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>Prev. Bal</Value>
+                                  <Value>Item Desc</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Right</TextAlign>
+                                <TextAlign>Left</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox96</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1386,41 +1307,7 @@
                             <BottomBorder>
                               <Style>Solid</Style>
                             </BottomBorder>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox109">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>Bal.</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Right</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox98</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
-                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingLeft>6pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
@@ -1470,42 +1357,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="AMOUNT4">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!AMOUNT.Value</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Right</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>AMOUNT</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>None</Style>
-                            </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="AMOUNT5">
+                        <Textbox Name="AMOUNT2">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -1513,47 +1365,6 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Sum(Fields!AMOUNT.Value)</Value>
-                                  <Style>
-                                    <FontWeight>SemiBold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Right</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>AMOUNT1</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>#c8c8c8</Color>
-                              <Style>None</Style>
-                            </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
-                            <LeftBorder>
-                              <Style>Solid</Style>
-                            </LeftBorder>
-                            <BackgroundColor>#f0f0f0</BackgroundColor>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="BALANCE2">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=IIf(IsNothing(Fields!BALANCE.Value), "", Fields!BALANCE.Value - Sum(Fields!AMOUNT.Value))</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -1562,7 +1373,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>BALANCE</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -1581,23 +1391,23 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="BALANCE3">
+                        <Textbox Name="ItemDesc">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=IIf(Fields!BALANCE.Value = - 99999, "", Fields!BALANCE.Value)</Value>
+                                  <Value>=Fields!ItemDesc.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Right</TextAlign>
+                                <TextAlign>Left</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>BALANCE1</rd:DefaultName>
+                          <rd:DefaultName>ItemDesc</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -1606,7 +1416,7 @@
                             <BottomBorder>
                               <Style>Solid</Style>
                             </BottomBorder>
-                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingLeft>6pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
@@ -1621,7 +1431,7 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox110">
+                        <Textbox Name="Blank11">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -1637,7 +1447,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox104</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1658,7 +1467,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="AMOUNT6">
+                        <Textbox Name="TOTAL_AMOUNT2">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -1674,7 +1483,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>AMOUNT2</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1695,49 +1503,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox30">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value />
-                                  <Style>
-                                    <FontWeight>SemiBold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Right</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox30</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <TopBorder>
-                              <Style>Solid</Style>
-                            </TopBorder>
-                            <BottomBorder>
-                              <Style>None</Style>
-                            </BottomBorder>
-                            <LeftBorder>
-                              <Style>None</Style>
-                            </LeftBorder>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox111">
+                        <Textbox Name="Blank12">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -1749,11 +1515,10 @@
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Right</TextAlign>
+                                <TextAlign>Left</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox107</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1764,44 +1529,7 @@
                             <BottomBorder>
                               <Style>None</Style>
                             </BottomBorder>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox112">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value />
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Right</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox108</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <TopBorder>
-                              <Style>Solid</Style>
-                            </TopBorder>
-                            <BottomBorder>
-                              <Style>None</Style>
-                            </BottomBorder>
-                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingLeft>6pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
@@ -1817,7 +1545,7 @@
               <TablixMembers>
                 <TablixMember />
                 <TablixMember>
-                  <Group Name="ColumnGroup2">
+                  <Group Name="UTILITY2">
                     <GroupExpressions>
                       <GroupExpression>=Fields!UTILITY.Value</GroupExpression>
                     </GroupExpressions>
@@ -1836,10 +1564,11 @@
                       <Value>=Fields!UTILITY.Value</Value>
                     </SortExpression>
                   </SortExpressions>
+                  <TablixMembers>
+                    <TablixMember />
+                    <TablixMember />
+                  </TablixMembers>
                 </TablixMember>
-                <TablixMember />
-                <TablixMember />
-                <TablixMember />
               </TablixMembers>
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
@@ -1848,7 +1577,7 @@
                   <TablixHeader>
                     <Size>1.97083in</Size>
                     <CellContents>
-                      <Textbox Name="Textbox96">
+                      <Textbox Name="LblName2">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
@@ -1862,7 +1591,6 @@
                             <Style />
                           </Paragraph>
                         </Paragraphs>
-                        <rd:DefaultName>Textbox93</rd:DefaultName>
                         <Style>
                           <Border>
                             <Style>None</Style>
@@ -1881,9 +1609,6 @@
                 </TablixMember>
                 <TablixMember>
                   <Group Name="ACCT_NO2">
-                    <GroupExpressions>
-                      <GroupExpression>=Fields!ACCT_NO.Value</GroupExpression>
-                    </GroupExpressions>
                     <Filters>
                       <Filter>
                         <FilterExpression>=CDbl(Sum(IIf(CStr(Fields!UTIL_NAME.Value &amp; "") = "MISC", 1, 0)))</FilterExpression>
@@ -1941,7 +1666,7 @@
                   <TablixHeader>
                     <Size>1.97083in</Size>
                     <CellContents>
-                      <Textbox Name="Textbox34">
+                      <Textbox Name="Blank10">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
@@ -1955,7 +1680,6 @@
                             <Style />
                           </Paragraph>
                         </Paragraphs>
-                        <rd:DefaultName>Textbox34</rd:DefaultName>
                         <Style>
                           <Border>
                             <Style>None</Style>
@@ -1981,7 +1705,7 @@
             <Top>2.33957in</Top>
             <Left>0.00835in</Left>
             <Height>0.75in</Height>
-            <Width>5.28748in</Width>
+            <Width>6.08956in</Width>
             <ZIndex>5</ZIndex>
             <Style>
               <Border>
@@ -2033,7 +1757,7 @@
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
-            <Textbox Name="Textbox18">
+            <Textbox Name="LblPage">
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
@@ -2049,7 +1773,6 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox18</rd:DefaultName>
               <Top>0.0125in</Top>
               <Left>7in</Left>
               <Height>0.25in</Height>
@@ -2064,7 +1787,7 @@
                 <PaddingBottom>2pt</PaddingBottom>
               </Style>
             </Textbox>
-            <Textbox Name="Textbox19">
+            <Textbox Name="LblFooterName">
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
@@ -2080,7 +1803,6 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox18</rd:DefaultName>
               <Top>0.0125in</Top>
               <Left>2.8125in</Left>
               <Height>0.25in</Height>
@@ -2096,7 +1818,7 @@
                 <PaddingBottom>2pt</PaddingBottom>
               </Style>
             </Textbox>
-            <Textbox Name="Textbox20">
+            <Textbox Name="LblDateTime">
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
@@ -2112,7 +1834,6 @@
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox18</rd:DefaultName>
               <Top>0.0125in</Top>
               <Height>0.25in</Height>
               <Width>1.47917in</Width>

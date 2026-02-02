@@ -264,5 +264,17 @@
       "Added option to send error log in bug report menu",
       "Bug fixes"
     ]
+  },
+  {
+    "version": "1.3.07",
+    "date": "2025-02-02",
+    "notes": [
+      "Added usage and flag to Bill Edit List",
+      "Changed Bill Edit List and reporting Pie Chart to use QB Transactions",
+      "Reminders pop-up without restarting MuniBridge",
+      "Fixed Acct No. sorting in Aging Report",
+      "Fixed post date using last month",
+      "Bug fixes"
+    ]
   }
 ]

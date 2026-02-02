@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
-  "appVersion": "1.3.06",
-  "generatedUtc": "2026-01-27T05:14:23Z",
+  "appVersion": "1.3.07",
+  "generatedUtc": "2026-02-02T05:08:55Z",
   "filesBasePath": "latest/files/",
   "files": [
     {
@@ -18,8 +18,8 @@
     },
     {
       "path": "changelog.json",
-      "sha256": "b0d7307d0ebd4137e73fc8d818d8cee4961c9f89b7b35db0c8cd40c3a9146f97",
-      "size": 9104,
+      "sha256": "565f72f058667a959c4a27d18b5736f6426de1115ddcc9f2c393184c5c4b974c",
+      "size": 9488,
       "mode": "overwrite"
     },
     {
@@ -570,8 +570,8 @@
     },
     {
       "path": "MuniBridge.exe",
-      "sha256": "ebf78ea70aa0bfc6aee65c8fba8133d06d6a2e2fa26f9983780840f6b1232bb0",
-      "size": 2081280,
+      "sha256": "f2ee36e5cd86bc2bc2d942dff179b350f4cf93d8eec7c9959237e4a9e9362500",
+      "size": 2100736,
       "mode": "overwrite"
     },
     {
@@ -756,14 +756,14 @@
     },
     {
       "path": "Reporting/RDLC/BillEditList.rdlc",
-      "sha256": "e5d77c62579d05c48b08403fd681d84a61b8fa6c88507eb45590745243f3d013",
-      "size": 95848,
+      "sha256": "c51da6ba7448cca7c517d352534476a04a5fc4bae13e11aed3b92c5f631163ba",
+      "size": 82183,
       "mode": "overwrite"
     },
     {
       "path": "Reporting/RDLC/DEPWaterUsage.rdlc",
-      "sha256": "00261206cce08eff18d3393b5ba842bf3666ebfc3e1442d0d2e4afe2e42243d9",
-      "size": 49733,
+      "sha256": "0e9b128b4619b980062ac18b0282e5246c50c3d0c0f5a857b2ba9cad17c9c884",
+      "size": 66829,
       "mode": "overwrite"
     },
     {
@@ -786,14 +786,14 @@
     },
     {
       "path": "Reporting/RDLC/PostcardInvoices3up.rdlc",
-      "sha256": "fc510016518a64885e7e56b717593d29264dbe4f73d6bb207e0e32fc8ab3ac47",
-      "size": 7728022,
+      "sha256": "e7756e9ed07c0b73d5f06039c278644aaf1f5944ffb3a001f0528e596ac5447d",
+      "size": 7728731,
       "mode": "overwrite"
     },
     {
       "path": "Reporting/RDLC/PostcardInvoices4up.rdlc",
-      "sha256": "34a9777324cbd6730ebfa66f424aad72ef53d49788ae14d9830204df346e06ce",
-      "size": 7734753,
+      "sha256": "6d8b9cd917f9ad9d2d6f5bd975a3985972d43e9e2e2bd3ef3dd1e7ee5d0d9214",
+      "size": 7735545,
       "mode": "overwrite"
     },
     {
@@ -804,14 +804,14 @@
     },
     {
       "path": "Reporting/RDLC/UsageByMeterSize.rdlc",
-      "sha256": "c01a8cee00d563b37ee58bae958419a15b78a80a4264d9f5a5fc21023799f618",
-      "size": 73253,
+      "sha256": "a05548b0301a67bb82d5f0be7b183bdc68f5a05a60594cd4dc4d6f6a71130a22",
+      "size": 74227,
       "mode": "overwrite"
     },
     {
       "path": "Reporting/RDLC/UsageSummary.rdlc",
-      "sha256": "74a04a8c323ae3f10269c2295925a2dd09ec717ed468b27b04237a42ef99f189",
-      "size": 47621,
+      "sha256": "97acbdd6b34d67d9f66724cdef0c882b592a5a4b3db2d1d8536a043c527df294",
+      "size": 48650,
       "mode": "overwrite"
     },
     {
@@ -1056,7 +1056,7 @@
     },
     {
       "path": "version.json",
-      "sha256": "201034db7221090e205ee0ab9e8e48c7424affeb72df05810f77de6fbb821931",
+      "sha256": "150b7b6e3da055ee589a6e681740cc0f3bc12b6071341c0a97dfbc6c1ed6916c",
       "size": 101,
       "mode": "overwrite"
     },
