@@ -254,6 +254,15 @@ Table: BillCycles
 - STATUS System.String
 - DATE System.DateTime
 
+Table: PendingItems
+- ITEM_PK System.Int32
+- ACCT_NO System.String
+- UTILITY System.Byte
+- QB_ITEM System.String
+- ITEM_DESC System.String
+- AMOUNT System.Decimal
+- TRAN_DATE System.DateTime
+
 Table: vLatestUsage
 - SERV_ID System.String
 - UTILITY System.Byte

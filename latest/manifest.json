@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
-  "appVersion": "1.3.07",
-  "generatedUtc": "2026-02-02T05:08:55Z",
+  "appVersion": "1.3.08",
+  "generatedUtc": "2026-02-04T06:18:11Z",
   "filesBasePath": "latest/files/",
   "files": [
     {
@@ -18,14 +18,14 @@
     },
     {
       "path": "changelog.json",
-      "sha256": "565f72f058667a959c4a27d18b5736f6426de1115ddcc9f2c393184c5c4b974c",
-      "size": 9488,
+      "sha256": "8a92b09c42906cec2849349371480a18259753e66b48fe168642be8267319352",
+      "size": 9948,
       "mode": "overwrite"
     },
     {
       "path": "config.default.json",
-      "sha256": "91c2d83a9e0b88a568d0c3432f951b987b0e72f2fac5a64e589c06144067430e",
-      "size": 2154,
+      "sha256": "6d7bddc73393e4f29b3543b09b80c2e4895a3b547bd7d2e1ecdba6f33edf306e",
+      "size": 2175,
       "mode": "overwrite"
     },
     {
@@ -228,8 +228,8 @@
     },
     {
       "path": "DatabaseMigrations/dev_schema.txt",
-      "sha256": "c2dc1c6049f7741e9018b4104a64675f1bfe2d3ad942eb20815bda7039888e9b",
-      "size": 6623,
+      "sha256": "c1c9cf5adfb532a053203cf7f899afcac0f27e5f327bde361ccac647bcdf9c6d",
+      "size": 6824,
       "mode": "overwrite"
     },
     {
@@ -570,8 +570,8 @@
     },
     {
       "path": "MuniBridge.exe",
-      "sha256": "f2ee36e5cd86bc2bc2d942dff179b350f4cf93d8eec7c9959237e4a9e9362500",
-      "size": 2100736,
+      "sha256": "34330130289f184b6bad24310a624db38231f6380d5036a34f83310edb387680",
+      "size": 2150400,
       "mode": "overwrite"
     },
     {
@@ -756,8 +756,8 @@
     },
     {
       "path": "Reporting/RDLC/BillEditList.rdlc",
-      "sha256": "c51da6ba7448cca7c517d352534476a04a5fc4bae13e11aed3b92c5f631163ba",
-      "size": 82183,
+      "sha256": "e81b897c15a5d6429742e2e034ae9eeb5656260a37d9eefd7ea1c243faabdf67",
+      "size": 101995,
       "mode": "overwrite"
     },
     {
@@ -1056,7 +1056,7 @@
     },
     {
       "path": "version.json",
-      "sha256": "150b7b6e3da055ee589a6e681740cc0f3bc12b6071341c0a97dfbc6c1ed6916c",
+      "sha256": "7f7b1bc55a58005aebf0afca974ee92d7e1a180fbf813073eefa3fc148966e04",
       "size": 101,
       "mode": "overwrite"
     },

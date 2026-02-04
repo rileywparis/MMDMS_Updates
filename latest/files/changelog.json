@@ -276,5 +276,19 @@
       "Fixed post date using last month",
       "Bug fixes"
     ]
+  },
+  {
+    "version": "1.3.08",
+    "date": "2025-02-04",
+    "notes": [
+      "***Added pending charges list (penalties show here after due date)",
+      "Re-worked the Single Bill calculation form",
+      "Re-worked Bill Edit List layout again",
+      "Made notes/message save button turn red, reminding you to save",
+      "Subtle tweaks to history tabs",
+      "Subtle UI tweaks",
+      "Added more error tracking",
+      "Bug fixes"
+    ]
   }
 ]

@@ -2,7 +2,7 @@
   "Database": {
     "ConnectionString": "Server=(LocalDB)\\MSSQLLocalDB;Database=mdms_prod;Trusted_Connection=True;Connect Timeout=5;",
     "MasterConnectionString": "Server=(LocalDB)\\MSSQLLocalDB;Database=master;Trusted_Connection=True;Connect Timeout=5;",
-    "DevConnectionString": "Server=(localdb)\\MSSQLLocalDB;Database=mdms_prod;Trusted_Connection=True;Connect Timeout=3;",
+    "DevConnectionString": "Server=(localDB)\\MSSQLLocalDB;Database=mdms_prod;Trusted_Connection=True;Connect Timeout=3;",
     "Utility1": "WATER",
     "Utility2": "SEWER",
     "Utility3": "",
@@ -41,6 +41,7 @@
     "MeterSizes": "5/8,3/4,1,1 1/2,2,3,4",
     "UseEDUs": true,
     "DueDays": 24,
+    "GraceDays": 4,
     "PrintInMuniBridge": true,
     "GroupBilling": true,
     "InvoiceRdlc": "PostcardInvoices4up",
