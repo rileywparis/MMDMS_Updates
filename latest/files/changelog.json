@@ -290,5 +290,22 @@
       "Added more error tracking",
       "Bug fixes"
     ]
+  },
+  {
+    "version": "1.3.20",
+    "date": "2026-02-17",
+    "notes": [
+      "*Added meter details report",
+      "*Optional comma formatting for meter reads (disable in settings)",
+      "Added new Account button to top of Accounts tab",
+      "Added right-click to Utilities box to add new Utility",
+      "Added CSV import/export function for rate tables",
+      "Added CSV export for Accounts table",
+      "Added location pie chart click fucntion to filter by accounts",
+      "Improved file path memory",
+      "Made many backend database improvements",
+      "Fixed AR Aging Report display inconsistencies",
+      "Bug fixes"
+    ]
   }
 ]

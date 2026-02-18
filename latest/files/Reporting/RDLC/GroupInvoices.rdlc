@@ -768,7 +768,7 @@
                               </Group>
                               <SortExpressions>
                                 <SortExpression>
-                                  <Value>=Fields!UTIL_NAME.Value</Value>
+                                  <Value>=Fields!UTILITY.Value</Value>
                                 </SortExpression>
                               </SortExpressions>
                               <TablixHeader>
@@ -795,6 +795,7 @@
                                       </Border>
                                     </Style>
                                   </Textbox>
+                                  <rd:Selected>true</rd:Selected>
                                 </CellContents>
                               </TablixHeader>
                               <TablixMembers>

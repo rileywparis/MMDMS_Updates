@@ -42,6 +42,7 @@ Table: RateDescs
 - UNITS System.String
 - APPLIES System.Byte
 - ASSOC System.String
+- USE_EDU System.Boolean
 
 Table: AcctNoRegistry
 - ACCT_NO System.String
@@ -295,4 +296,11 @@ Table: GroupBills
 - ACT_USAGE System.Int32
 - CUR_DATE System.DateTime
 - DATE System.String
+
+Table: UtilsConfig
+- CODE System.Byte
+- DISPLAY System.String
+- QB_ITEM_NAME System.String
+- QB_ITEM_ID System.String
+- ALIAS System.String
 

@@ -69,6 +69,7 @@
   "Company": {
     "Name": "Municipal Authority of Cityville",
     "Address": "PO Box 123",
+    "Street": "123 Main St",
     "Phone": "(814) 123-4567",
     "City": "Cityville",
     "State": "PA",

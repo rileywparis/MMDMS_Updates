@@ -1,0 +1,4 @@
+use mdms_prod;
+
+ALTER TABLE RateDescs
+ADD USE_EDU BIT NOT NULL DEFAULT 1;
