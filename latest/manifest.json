@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "appVersion": "1.3.30",
-  "generatedUtc": "2026-02-23T19:06:42Z",
+  "generatedUtc": "2026-02-23T20:17:55Z",
   "filesBasePath": "latest/files/",
   "files": [
     {
@@ -1104,8 +1104,8 @@
     },
     {
       "path": "Updater.Common.dll",
-      "sha256": "9d33712a37654ce4b26e4e3757e2a6a82be21fbe80b093767160e7f0a76e96df",
-      "size": 12800,
+      "sha256": "4cb5d7bd8db08a47b0ac5f4975df5c862dacaaaee73b763348cf756bacd0ba32",
+      "size": 13312,
       "mode": "overwrite"
     },
     {
