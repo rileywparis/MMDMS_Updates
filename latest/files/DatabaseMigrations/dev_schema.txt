@@ -264,6 +264,13 @@ Table: PendingItems
 - AMOUNT System.Decimal
 - TRAN_DATE System.DateTime
 
+Table: UtilsConfig
+- CODE System.Byte
+- DISPLAY System.String
+- QB_ITEM_NAME System.String
+- QB_ITEM_ID System.String
+- ALIAS System.String
+
 Table: vLatestUsage
 - SERV_ID System.String
 - UTILITY System.Byte
@@ -296,11 +303,4 @@ Table: GroupBills
 - ACT_USAGE System.Int32
 - CUR_DATE System.DateTime
 - DATE System.String
-
-Table: UtilsConfig
-- CODE System.Byte
-- DISPLAY System.String
-- QB_ITEM_NAME System.String
-- QB_ITEM_ID System.String
-- ALIAS System.String
 

@@ -1,30 +1,13 @@
 {
   "Database": {
+    "DatabaseRootPath": "",
     "ConnectionString": "Server=(LocalDB)\\MSSQLLocalDB;Database=mdms_prod;Trusted_Connection=True;Connect Timeout=5;",
     "MasterConnectionString": "Server=(LocalDB)\\MSSQLLocalDB;Database=master;Trusted_Connection=True;Connect Timeout=5;",
     "DevConnectionString": "Server=(localDB)\\MSSQLLocalDB;Database=mdms_prod;Trusted_Connection=True;Connect Timeout=3;",
-    "Utility1": "WATER",
-    "Utility2": "SEWER",
-    "Utility3": "",
-    "Utility4": "WATER IMP",
-    "Utility5": "SEWER IMP",
-    "Utility6": "",
-    "Utility7": "",
-    "Utility8": "MISC",
-    "Utility9": "PENALTY",
     "NumericAcctNo": true
   },
   "QuickBooks": {
     "UsingQBO": false,
-    "Utility1Item": "Water Usage",
-    "Utility2Item": "Sewer Usage",
-    "Utility3Item": "",
-    "Utility4Item": "Water Improvements",
-    "Utility5Item": "Sewer Improvements",
-    "Utility6Item": "",
-    "Utility7Item": "",
-    "Utility8Item": "Misc",
-    "Utility9Item": "Penalty",
     "InvoiceTemplate": "MuniBridge Invoice"
   },
   "File": {
@@ -39,21 +22,10 @@
     "UnitsPerRate": 1000,
     "SewerEstimate": 1000,
     "MeterSizes": "5/8,3/4,1,1 1/2,2,3,4",
-    "UseEDUs": true,
     "DueDays": 24,
     "GraceDays": 4,
     "PrintInMuniBridge": true,
-    "GroupBilling": true,
-    "InvoiceRdlc": "PostcardInvoices4up",
-    "Alias1": "WTR",
-    "Alias2": "SWR",
-    "Alias3": "",
-    "Alias4": "WI",
-    "Alias5": "SI",
-    "Alias6": "",
-    "Alias7": "",
-    "Alias8": "MISC",
-    "Alias9": "PEN"
+    "InvoiceRdlc": "PostcardInvoices4up"
   },
   "Preferences": {
     "HighBill": 100.00,

@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
-  "appVersion": "1.3.20",
-  "generatedUtc": "2026-02-18T03:06:02Z",
+  "appVersion": "1.3.30",
+  "generatedUtc": "2026-02-23T18:12:15Z",
   "filesBasePath": "latest/files/",
   "files": [
     {
@@ -18,14 +18,14 @@
     },
     {
       "path": "changelog.json",
-      "sha256": "72ed8984eb17c374f67c92dac70f51ba5d592c3da53a45355e3c8a86dca17ddf",
-      "size": 10608,
+      "sha256": "908e07c07dc8c67e86b038de20199d596484fb0c531d89a6cf6a4e357fb02820",
+      "size": 11276,
       "mode": "overwrite"
     },
     {
       "path": "config.default.json",
-      "sha256": "24336e5c8379fcdd1b5831c5923b2a4cef733b68183710f1aea5d303b2deace6",
-      "size": 2205,
+      "sha256": "58b730cbfcf9282a2bf5b59d21641f88f3baa4de0d61c5f1a2d81ef64ad0d44e",
+      "size": 1475,
       "mode": "overwrite"
     },
     {
@@ -246,7 +246,7 @@
     },
     {
       "path": "DatabaseMigrations/dev_schema.txt",
-      "sha256": "e548f83269e5a29d0d778e3451569527dbbad2f9dfa046ac1917ebe9e067b7fa",
+      "sha256": "b776b5c53eac93957d945293feb4740480c64faabeff2675ca2e3265d821cfae",
       "size": 6998,
       "mode": "overwrite"
     },
@@ -575,6 +575,42 @@
       "mode": "overwrite"
     },
     {
+      "path": "Microsoft.Web.WebView2.Core.dll",
+      "sha256": "4b50632e5ddfb83b185ebddeb5e1fb233a05aeeda9cfdec96bee269e11c5b49d",
+      "size": 649840,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.Web.WebView2.Core.xml",
+      "sha256": "3b785c977423c00c50afad20372694d70a17d1a1d84abe9ab763af6cc4d0e6ab",
+      "size": 579713,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.Web.WebView2.WinForms.dll",
+      "sha256": "6ac2725b90837eba6cb3aab84c57f8927aa43dabdcdb00d1701b29aa1bbca50d",
+      "size": 39024,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.Web.WebView2.WinForms.xml",
+      "sha256": "b1e01ea4979fd1f0e854821a9c91e32418bb259920f2e2893ace82506b74a43a",
+      "size": 41870,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.Web.WebView2.Wpf.dll",
+      "sha256": "f26f3cd7cc1a24d297d5d414f122c4e22d493c461c023838ad8671fa7899e967",
+      "size": 82544,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.Web.WebView2.Wpf.xml",
+      "sha256": "8aa8334d446df3f56f72de38c1ee109744e50c7f9949cd59590f3379c5044f85",
+      "size": 142442,
+      "mode": "overwrite"
+    },
+    {
       "path": "MimeKit.dll",
       "sha256": "cb312132cf592d2091c0185ccf43e265ade1d2f965ff30316e4fc004943aa3e0",
       "size": 1270272,
@@ -588,26 +624,26 @@
     },
     {
       "path": "MuniBridge.exe",
-      "sha256": "b6974156ac8a7054e13947cfb583547f622e4977a1e297e1cdf8835640b3ea7a",
-      "size": 2316800,
+      "sha256": "4a8970878c38249e717948129cdfa859c41776d86bb7b2e4e968efb4948f800e",
+      "size": 2351104,
       "mode": "overwrite"
     },
     {
       "path": "MuniBridge.exe.config",
-      "sha256": "20f8f9814ac59a43f06cd20bc464c0b414670a799ef2eb6f7548595da0f29077",
-      "size": 6213,
+      "sha256": "bba033a388025d4658e6e15a8c87c2ed1dffcaff6bce23c800ea0abc83912afe",
+      "size": 6433,
       "mode": "overwrite"
     },
     {
       "path": "Newtonsoft.Json.dll",
-      "sha256": "b624949df8b0e3a6153fdfb730a7c6f4990b6592ee0d922e1788433d276610f3",
-      "size": 701992,
+      "sha256": "f0c07af0e84d4dd4da4bd7823ba4535bc0481b3bf623ed40b659b68147a6bb75",
+      "size": 721320,
       "mode": "overwrite"
     },
     {
       "path": "Newtonsoft.Json.xml",
-      "sha256": "5569f41b73874f00f50f84f80ce5334377f3da1dc84d6d559802f13b85870ddf",
-      "size": 710224,
+      "sha256": "454f6df15eb2f4eea1e769eb16bdaf2e0cf84737ffd229f698b232e332df021f",
+      "size": 733577,
       "mode": "overwrite"
     },
     {
@@ -869,6 +905,12 @@
       "mode": "overwrite"
     },
     {
+      "path": "runtimes/win-x86/native/WebView2Loader.dll",
+      "sha256": "161dc6673084a31f64670ace8e61cb0e1b55af815b6c7c8217a0cdd8503454e2",
+      "size": 121448,
+      "mode": "overwrite"
+    },
+    {
       "path": "Serilog.dll",
       "sha256": "dce550ab904db02c329e32b34d304556e4f32f7a3accb07f2e885961424d84a5",
       "size": 164864,
@@ -1061,6 +1103,12 @@
       "mode": "overwrite"
     },
     {
+      "path": "Updater.Common.dll",
+      "sha256": "6444cefb9a661e9f0aa3085a1c397453af7863c8ffe7159fd0066a41020d635b",
+      "size": 12800,
+      "mode": "overwrite"
+    },
+    {
       "path": "UpdaterBootstrap.dll",
       "sha256": "9d1988607cf3ca66acfc29b6d7fd6d2f2b770b75aa2e38ed3d8cb59a55649417",
       "size": 13312,
@@ -1080,7 +1128,7 @@
     },
     {
       "path": "version.json",
-      "sha256": "51b2472fc164a0edaf7e206090391b4e491845789a7c736eea3da47d1c19f143",
+      "sha256": "4b7a7839f753153352382a2cab25dd6aaabda3f3374bb00af08da0c9eca8c69a",
       "size": 101,
       "mode": "overwrite"
     },

@@ -307,5 +307,21 @@
       "Fixed AR Aging Report display inconsistencies",
       "Bug fixes"
     ]
+  },
+  {
+    "version": "1.3.30",
+    "date": "2026-02-23",
+    "notes": [
+      "**Added print button to the main Accounts view (Prints Accounts with current filter / search results)",
+      "**Revamped print dialog for convenience (can now search with Ctrl+F)",
+      "*Changed posting dialog (now has its own window)",
+      "Added option to include/exclude credit balances from printing",
+      "Names with a misc charge are now highlighted in Preview",
+      "Revamped settings UI",
+      "Added option to print line items in lowercase",
+      "Made many backend improvements for long-term reliability",
+      "UI Tweaks",
+      "Bug fixes"
+    ]
   }
 ]

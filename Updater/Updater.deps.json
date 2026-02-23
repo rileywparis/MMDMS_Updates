@@ -10,7 +10,10 @@
       "Updater/1.0.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.4",
-          "System.Data.SqlClient": "4.9.0"
+          "Serilog": "4.3.0",
+          "Serilog.Sinks.File": "7.0.0",
+          "System.Data.SqlClient": "4.9.0",
+          "Updater.Common": "1.0.0"
         },
         "runtime": {
           "Updater.dll": {}
@@ -36,6 +39,25 @@
           }
         }
       },
+      "Serilog/4.3.0": {
+        "runtime": {
+          "lib/net6.0/Serilog.dll": {
+            "assemblyVersion": "4.3.0.0",
+            "fileVersion": "4.3.0.0"
+          }
+        }
+      },
+      "Serilog.Sinks.File/7.0.0": {
+        "dependencies": {
+          "Serilog": "4.3.0"
+        },
+        "runtime": {
+          "lib/net6.0/Serilog.Sinks.File.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.0.0"
+          }
+        }
+      },
       "System.Data.SqlClient/4.9.0": {
         "dependencies": {
           "runtime.native.System.Data.SqlClient.sni": "4.4.0"
@@ -44,6 +66,14 @@
           "runtimes/win/lib/net6.0/System.Data.SqlClient.dll": {
             "assemblyVersion": "4.6.1.6",
             "fileVersion": "4.900.24.56208"
+          }
+        }
+      },
+      "Updater.Common/1.0.0": {
+        "runtime": {
+          "Updater.Common.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       }
@@ -76,12 +106,31 @@
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
     },
+    "Serilog/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+cDryFR0GRhsGOnZSKwaDzRRl4MupvJ42FhCE4zhQRVanX0Jpg6WuCBk59OVhVDPmab1bB+nRykAnykYELA9qQ==",
+      "path": "serilog/4.3.0",
+      "hashPath": "serilog.4.3.0.nupkg.sha512"
+    },
+    "Serilog.Sinks.File/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fKL7mXv7qaiNBUC71ssvn/dU0k9t0o45+qm2XgKAlSt19xF+ijjxyA3R6HmCgfKEKwfcfkwWjayuQtRueZFkYw==",
+      "path": "serilog.sinks.file/7.0.0",
+      "hashPath": "serilog.sinks.file.7.0.0.nupkg.sha512"
+    },
     "System.Data.SqlClient/4.9.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-j4KJO+vC62NyUtNHz854njEqXbT8OmAa5jb1nrGfYWBOcggyYUQE0w/snXeaCjdvkSKWuUD+hfvlbN8pTrJTXg==",
       "path": "system.data.sqlclient/4.9.0",
       "hashPath": "system.data.sqlclient.4.9.0.nupkg.sha512"
+    },
+    "Updater.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
