@@ -323,5 +323,17 @@
       "UI Tweaks",
       "Bug fixes"
     ]
+  },
+  {
+    "version": "1.3.31",
+    "date": "2026-02-24",
+    "notes": [
+      "Added remove row option in the Bill Preview (Right-Click)",
+      "Added more print options to new print dialog",
+      "Added 'Create In QuickBooks' button for missing Customers",
+      "Removed bill cycle closing (new one is created instead)",
+      "Improved QBO speed",
+      "UI Tweaks"
+    ]
   }
 ]

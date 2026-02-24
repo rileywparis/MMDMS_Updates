@@ -304,3 +304,7 @@ Table: GroupBills
 - CUR_DATE System.DateTime
 - DATE System.String
 
+Table: CurrentStatus
+- FIELD System.String
+- VALUE System.String
+
