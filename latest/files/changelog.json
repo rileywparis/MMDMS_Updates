@@ -332,5 +332,27 @@
       "Added more error logging",
       "Backend work for upcoming features"
     ]
+  },
+  {
+    "version": "1.3.34",
+    "date": "2026-03-08",
+    "notes": [
+      "Implemented 'Bill Email' function (Uses QuickBooks)",
+      "Added icons to certain menu items",
+      "Added ability to adjust Credit Memos (previously blocked)",
+      "Added 'Delete Both' option to the 'Both' history tab",
+      "Added more preference options to Settings",
+      "Added preference for penalty enforcement type",
+      "Changed Accounts contact/address + CC address panels",
+      "Changed Date boxes to accept dates with or without slashes",
+      "Tweaked penalty pending charges to be more precise",
+      "Optimized performance when switching tabs",
+      "Fixed QBO not staying connected",
+      "Fixed penalties not applying",
+      "Fixed save button for reports",
+      "Fixed migration error for multi-user database",
+      "Fixed Config backups saving in incorrect location",
+      "Fixed little UI bugs"
+    ]
   }
 ]

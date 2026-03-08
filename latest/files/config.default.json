@@ -24,6 +24,7 @@
     "MeterSizes": "5/8,3/4,1,1 1/2,2,3,4",
     "DueDays": 24,
     "GraceDays": 4,
+    "PenaltyEnforceType": 0,
     "PrintInMuniBridge": true,
     "InvoiceRdlc": "PostcardInvoices4up"
   },
