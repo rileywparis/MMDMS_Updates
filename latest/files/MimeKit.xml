@@ -2977,9 +2977,6 @@
             <returns><see langword="true" /> if the content type was successfully parsed; otherwise, <see langword="false" />.</returns>
             <param name="text">The text to parse.</param>
             <param name="type">The parsed content type.</param>
-            <exception cref="T:System.ArgumentNullException">
-            <paramref name="text"/> is <see langword="null"/>.
-            </exception>
         </member>
         <member name="M:MimeKit.ContentType.Parse(MimeKit.ParserOptions,System.Byte[],System.Int32,System.Int32)">
             <summary>
@@ -4605,10 +4602,8 @@
             <param name="domain">The domain that the signer represents.</param>
             <param name="selector">The selector subdividing the domain.</param>
             <param name="algorithm">The signature algorithm.</param>
-            <exception cref="T:System.ArgumentNullException">
-            <para><paramref name="domain"/> is <see langword="null"/>.</para>
-            <para>-or-</para>
-            <para><paramref name="selector"/> is <see langword="null"/>.</para>
+            <exception cref="T:System.NotImplementedException">
+            This constructor is no longer supported. Use one of the other constructors.
             </exception>
         </member>
         <member name="M:MimeKit.Cryptography.ArcSigner.#ctor(Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.String,System.String,MimeKit.Cryptography.DkimSignatureAlgorithm)">
@@ -7001,7 +6996,7 @@
             <para>Gets or sets the padding to use for key encryption when
             the <see cref="P:MimeKit.Cryptography.CmsRecipient.Certificate"/>'s public key is an RSA key.</para>
             </remarks>
-            <value>The encryption padding scheme.</value>
+            <value>The encryption padding scheme or <see langword="null"/> if unspecified.</value>
         </member>
         <member name="T:MimeKit.Cryptography.CmsRecipientCollection">
             <summary>
@@ -7130,17 +7125,6 @@
             If the X.509 certificate is known for the signer, you may wish to use a
             <see cref="T:MimeKit.Cryptography.CmsSigner"/> as opposed to having the <see cref="T:MimeKit.Cryptography.CryptographyContext"/>
             do its own certificate lookup for the signer's <see cref="T:MimeKit.MailboxAddress"/>.
-            </remarks>
-        </member>
-        <member name="M:MimeKit.Cryptography.CmsSigner.#ctor">
-            <summary>
-            Initialize a new instance of the <see cref="T:MimeKit.Cryptography.CmsSigner"/> class.
-            </summary>
-            <remarks>
-            <para>The initial value of the <see cref="P:MimeKit.Cryptography.CmsSigner.DigestAlgorithm"/> will be set to
-            <see cref="F:MimeKit.Cryptography.DigestAlgorithm.Sha256"/> and both the
-            <see cref="P:MimeKit.Cryptography.CmsSigner.SignedAttributes"/> and <see cref="P:MimeKit.Cryptography.CmsSigner.UnsignedAttributes"/> properties
-            will be initialized to empty tables.</para>
             </remarks>
         </member>
         <member name="M:MimeKit.Cryptography.CmsSigner.#ctor(System.Collections.Generic.IEnumerable{Org.BouncyCastle.X509.X509Certificate},Org.BouncyCastle.Crypto.AsymmetricKeyParameter,MimeKit.Cryptography.SubjectIdentifierType)">
@@ -9351,6 +9335,9 @@
             <para>-or-</para>
             <para><paramref name="selector"/> is <see langword="null"/>.</para>
             </exception>
+            <exception cref="T:System.NotImplementedException">
+            This constructor is no longer supported. Use one of the other constructors.
+            </exception>
         </member>
         <member name="M:MimeKit.Cryptography.DkimSigner.#ctor(Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.String,System.String,MimeKit.Cryptography.DkimSignatureAlgorithm)">
             <summary>
@@ -9617,6 +9604,9 @@
             <para><paramref name="domain"/> is <see langword="null"/>.</para>
             <para>-or-</para>
             <para><paramref name="selector"/> is <see langword="null"/>.</para>
+            </exception>
+            <exception cref="T:System.NotImplementedException">
+            This constructor is no longer supported. Use one of the other constructors.
             </exception>
         </member>
         <member name="M:MimeKit.Cryptography.DkimSignerBase.#ctor(Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.String,System.String,MimeKit.Cryptography.DkimSignatureAlgorithm)">
@@ -18735,6 +18725,30 @@
             <param name="table">The table.</param>
             <param name="column">The column to add.</param>
         </member>
+        <member name="M:MimeKit.Cryptography.SqlCertificateDatabase.CreateParameterName(System.String)">
+            <summary>
+            Create a parameter name for use in SQL database queries.
+            </summary>
+            <remarks>
+            <para>Creates a parameter name for use in SQL database queries.</para>
+            <para>The <paramref name="variableName"/> string is typically the name of the column being matched,
+            but may also be other variable names such as "NOW", "DATETIME", or "FLAGS".</para>
+            <para>By default, this method creates a parameter name by prefixing <paramref name="variableName"/>
+            with an '@' character.</para>
+            </remarks>
+            <param name="variableName">The name of the variable.</param>
+            <returns>The parameter name to be used in queries and <see cref="P:System.Data.Common.DbParameter.ParameterName"/>.</returns>
+        </member>
+        <member name="M:MimeKit.Cryptography.SqlCertificateDatabase.LimitToOne(System.Text.StringBuilder)">
+            <summary>
+            Limit the query results to a single record.
+            </summary>
+            <remarks>
+            Modifies the SQL <c>SELECT</c> <paramref name="query"/> to limit the query results to a single record.
+            </remarks>
+            <param name="query">A <see cref="T:System.Text.StringBuilder"/> containing an SQL <c>SELECT</c> query.</param>
+            <returns>A modified SQL query that will limit the results to a single record.</returns>
+        </member>
         <member name="M:MimeKit.Cryptography.SqlCertificateDatabase.GetIndexName(System.String,System.String[])">
             <summary>
             Gets the name of an index based on the table and columns that it is built against.
@@ -18770,7 +18784,7 @@
         </member>
         <member name="M:MimeKit.Cryptography.SqlCertificateDatabase.CreateSelectQuery(MimeKit.Cryptography.X509CertificateRecordFields)">
             <summary>
-            Creates a SELECT query string builder for the specified fields of an X.509 certificate record.
+            Create a SELECT query string builder for the specified fields of an X.509 certificate record.
             </summary>
             <remarks>
             Creates a SELECT query string builder for the specified fields of an X.509 certificate record.
@@ -18780,7 +18794,7 @@
         </member>
         <member name="M:MimeKit.Cryptography.SqlCertificateDatabase.CreateSelectQuery(MimeKit.Cryptography.X509CrlRecordFields)">
             <summary>
-            Creates a SELECT query string builder for the specified fields of an X.509 CRL record.
+            Create a SELECT query string builder for the specified fields of an X.509 CRL record.
             </summary>
             <remarks>
             Creates a SELECT query string builder for the specified fields of an X.509 CRL record.
@@ -19176,17 +19190,15 @@
             <param name="tableName">The name of the table.</param>
             <param name="columnNames">The names of the columns that were indexed.</param>
         </member>
-        <member name="M:MimeKit.Cryptography.SQLServerCertificateDatabase.GetSelectCommand(System.Data.Common.DbConnection,Org.BouncyCastle.X509.X509Certificate,MimeKit.Cryptography.X509CertificateRecordFields)">
+        <member name="M:MimeKit.Cryptography.SQLServerCertificateDatabase.LimitToOne(System.Text.StringBuilder)">
             <summary>
-            Gets the database command to select the record matching the specified certificate.
+            Limit the query results to a single record.
             </summary>
             <remarks>
-            Gets the database command to select the record matching the specified certificate.
+            Modifies the SQL <c>SELECT</c> <paramref name="query"/> to limit the query results to a single record.
             </remarks>
-            <returns>The database command.</returns>
-            <param name="connection">The database connection.</param>
-            <param name="certificate">The certificate.</param>
-            <param name="fields">The fields to return.</param>
+            <param name="query">A <see cref="T:System.Text.StringBuilder"/> containing an SQL <c>SELECT</c> query.</param>
+            <returns>A modified SQL query that will limit the results to a single record.</returns>
         </member>
         <member name="M:MimeKit.Cryptography.SQLServerCertificateDatabase.GetInsertCommand(System.Data.Common.DbConnection,MimeKit.Cryptography.X509CertificateRecord)">
             <summary>
@@ -21255,6 +21267,28 @@
             </remarks>
             <value>The size of the salt.</value>
         </member>
+        <member name="M:MimeKit.Cryptography.X509CertificateDatabase.ExecuteReader(System.Data.Common.DbCommand)">
+            <summary>
+            Execute a database command.
+            </summary>
+            <remarks>
+            <para>Executes the <see cref="M:System.Data.Common.DbCommand.ExecuteReader"/> method.</para>
+            <para>This method is intended to be overridden by subclasses to patch commands before execution or to log them.</para>
+            </remarks>
+            <param name="command">The command to be executed.</param>
+            <returns>The database reader.</returns>
+        </member>
+        <member name="M:MimeKit.Cryptography.X509CertificateDatabase.ExecuteNonQuery(System.Data.Common.DbCommand)">
+            <summary>
+            Execute a non-query database command.
+            </summary>
+            <remarks>
+            <para>Executes the <see cref="M:System.Data.Common.DbCommand.ExecuteNonQuery"/> method.</para>
+            <para>This method is intended to be overridden by subclasses to patch commands before execution or to log them.</para>
+            </remarks>
+            <param name="command">The command to be executed.</param>
+            <returns>The number of rows affected.</returns>
+        </member>
         <member name="M:MimeKit.Cryptography.X509CertificateDatabase.GetColumnNames(MimeKit.Cryptography.X509CertificateRecordFields)">
             <summary>
             Gets the column names for the specified fields.
@@ -21273,6 +21307,9 @@
             Creates a new database command.
             </remarks>
             <returns>A new database command.</returns>
+            <exception cref="T:System.ObjectDisposedException">
+            The <see cref="T:MimeKit.Cryptography.X509CertificateDatabase"/> has been disposed.
+            </exception>
         </member>
         <member name="M:MimeKit.Cryptography.X509CertificateDatabase.ExecuteWithinTransaction(System.Action)">
             <summary>
@@ -21281,6 +21318,9 @@
             <remarks>
             All database commands used within the <paramref name="action"/> must be created using <see cref="M:MimeKit.Cryptography.X509CertificateDatabase.CreateCommand"/>.
             </remarks>
+            <exception cref="T:System.ObjectDisposedException">
+            The <see cref="T:MimeKit.Cryptography.X509CertificateDatabase"/> has been disposed.
+            </exception>
         </member>
         <member name="M:MimeKit.Cryptography.X509CertificateDatabase.GetSelectCommand(System.Data.Common.DbConnection,Org.BouncyCastle.X509.X509Certificate,MimeKit.Cryptography.X509CertificateRecordFields)">
             <summary>
@@ -21475,6 +21515,9 @@
             <exception cref="T:System.ArgumentNullException">
             <paramref name="certificate"/> is <see langword="null"/>.
             </exception>
+            <exception cref="T:System.ObjectDisposedException">
+            The <see cref="T:MimeKit.Cryptography.X509CertificateDatabase"/> has been disposed.
+            </exception>
         </member>
         <member name="M:MimeKit.Cryptography.X509CertificateDatabase.FindCertificates(Org.BouncyCastle.Utilities.Collections.ISelector{Org.BouncyCastle.X509.X509Certificate})">
             <summary>
@@ -21486,6 +21529,9 @@
             </remarks>
             <returns>The matching certificates.</returns>
             <param name="selector">The match selector or <see langword="null"/> to return all certificates.</param>
+            <exception cref="T:System.ObjectDisposedException">
+            The <see cref="T:MimeKit.Cryptography.X509CertificateDatabase"/> has been disposed.
+            </exception>
         </member>
         <member name="M:MimeKit.Cryptography.X509CertificateDatabase.FindPrivateKeys(Org.BouncyCastle.Utilities.Collections.ISelector{Org.BouncyCastle.X509.X509Certificate})">
             <summary>
@@ -21495,8 +21541,11 @@
             Searches the database for certificate records matching the selector, returning the
             private keys for each matching record.
             </remarks>
-            <returns>The matching certificates.</returns>
+            <returns>The private keys for the matching certificates.</returns>
             <param name="selector">The match selector or <see langword="null"/> to return all private keys.</param>
+            <exception cref="T:System.ObjectDisposedException">
+            The <see cref="T:MimeKit.Cryptography.X509CertificateDatabase"/> has been disposed.
+            </exception>
         </member>
         <member name="M:MimeKit.Cryptography.X509CertificateDatabase.Find(MimeKit.MailboxAddress,System.DateTime,System.Boolean,MimeKit.Cryptography.X509CertificateRecordFields)">
             <summary>
@@ -21515,6 +21564,9 @@
             <exception cref="T:System.ArgumentNullException">
             <paramref name="mailbox"/> is <see langword="null"/>.
             </exception>
+            <exception cref="T:System.ObjectDisposedException">
+            The <see cref="T:MimeKit.Cryptography.X509CertificateDatabase"/> has been disposed.
+            </exception>
         </member>
         <member name="M:MimeKit.Cryptography.X509CertificateDatabase.Find(Org.BouncyCastle.Utilities.Collections.ISelector{Org.BouncyCastle.X509.X509Certificate},System.Boolean,MimeKit.Cryptography.X509CertificateRecordFields)">
             <summary>
@@ -21528,6 +21580,9 @@
             <param name="selector">The match selector or <see langword="null"/> to match all certificates.</param>
             <param name="trustedAnchorsOnly"><see langword="true" /> if only trusted anchor certificates should be returned.</param>
             <param name="fields">The desired fields.</param>
+            <exception cref="T:System.ObjectDisposedException">
+            The <see cref="T:MimeKit.Cryptography.X509CertificateDatabase"/> has been disposed.
+            </exception>
         </member>
         <member name="M:MimeKit.Cryptography.X509CertificateDatabase.Add(MimeKit.Cryptography.X509CertificateRecord)">
             <summary>
@@ -21539,6 +21594,9 @@
             <param name="record">The certificate record.</param>
             <exception cref="T:System.ArgumentNullException">
             <paramref name="record"/> is <see langword="null"/>.
+            </exception>
+            <exception cref="T:System.ObjectDisposedException">
+            The <see cref="T:MimeKit.Cryptography.X509CertificateDatabase"/> has been disposed.
             </exception>
         </member>
         <member name="M:MimeKit.Cryptography.X509CertificateDatabase.Remove(MimeKit.Cryptography.X509CertificateRecord)">
@@ -21552,6 +21610,9 @@
             <exception cref="T:System.ArgumentNullException">
             <paramref name="record"/> is <see langword="null"/>.
             </exception>
+            <exception cref="T:System.ObjectDisposedException">
+            The <see cref="T:MimeKit.Cryptography.X509CertificateDatabase"/> has been disposed.
+            </exception>
         </member>
         <member name="M:MimeKit.Cryptography.X509CertificateDatabase.Update(MimeKit.Cryptography.X509CertificateRecord,MimeKit.Cryptography.X509CertificateRecordFields)">
             <summary>
@@ -21564,6 +21625,9 @@
             <param name="fields">The fields to update.</param>
             <exception cref="T:System.ArgumentNullException">
             <paramref name="record"/> is <see langword="null"/>.
+            </exception>
+            <exception cref="T:System.ObjectDisposedException">
+            The <see cref="T:MimeKit.Cryptography.X509CertificateDatabase"/> has been disposed.
             </exception>
         </member>
         <member name="M:MimeKit.Cryptography.X509CertificateDatabase.Find(Org.BouncyCastle.Asn1.X509.X509Name,MimeKit.Cryptography.X509CrlRecordFields)">
@@ -21580,6 +21644,9 @@
             <exception cref="T:System.ArgumentNullException">
             <paramref name="issuer"/> is <see langword="null"/>.
             </exception>
+            <exception cref="T:System.ObjectDisposedException">
+            The <see cref="T:MimeKit.Cryptography.X509CertificateDatabase"/> has been disposed.
+            </exception>
         </member>
         <member name="M:MimeKit.Cryptography.X509CertificateDatabase.Find(Org.BouncyCastle.X509.X509Crl,MimeKit.Cryptography.X509CrlRecordFields)">
             <summary>
@@ -21595,6 +21662,9 @@
             <exception cref="T:System.ArgumentNullException">
             <paramref name="crl"/> is <see langword="null"/>.
             </exception>
+            <exception cref="T:System.ObjectDisposedException">
+            The <see cref="T:MimeKit.Cryptography.X509CertificateDatabase"/> has been disposed.
+            </exception>
         </member>
         <member name="M:MimeKit.Cryptography.X509CertificateDatabase.Add(MimeKit.Cryptography.X509CrlRecord)">
             <summary>
@@ -21606,6 +21676,9 @@
             <param name="record">The CRL record.</param>
             <exception cref="T:System.ArgumentNullException">
             <paramref name="record"/> is <see langword="null"/>.
+            </exception>
+            <exception cref="T:System.ObjectDisposedException">
+            The <see cref="T:MimeKit.Cryptography.X509CertificateDatabase"/> has been disposed.
             </exception>
         </member>
         <member name="M:MimeKit.Cryptography.X509CertificateDatabase.Remove(MimeKit.Cryptography.X509CrlRecord)">
@@ -21619,6 +21692,9 @@
             <exception cref="T:System.ArgumentNullException">
             <paramref name="record"/> is <see langword="null"/>.
             </exception>
+            <exception cref="T:System.ObjectDisposedException">
+            The <see cref="T:MimeKit.Cryptography.X509CertificateDatabase"/> has been disposed.
+            </exception>
         </member>
         <member name="M:MimeKit.Cryptography.X509CertificateDatabase.Update(MimeKit.Cryptography.X509CrlRecord)">
             <summary>
@@ -21631,6 +21707,9 @@
             <exception cref="T:System.ArgumentNullException">
             <paramref name="record"/> is <see langword="null"/>.
             </exception>
+            <exception cref="T:System.ObjectDisposedException">
+            The <see cref="T:MimeKit.Cryptography.X509CertificateDatabase"/> has been disposed.
+            </exception>
         </member>
         <member name="M:MimeKit.Cryptography.X509CertificateDatabase.GetCrlStore">
             <summary>
@@ -21640,6 +21719,9 @@
             Gets a certificate revocation list store.
             </remarks>
             <returns>A certificate revocation list store.</returns>
+            <exception cref="T:System.ObjectDisposedException">
+            The <see cref="T:MimeKit.Cryptography.X509CertificateDatabase"/> has been disposed.
+            </exception>
         </member>
         <member name="M:MimeKit.Cryptography.X509CertificateDatabase.Org#BouncyCastle#Utilities#Collections#IStore{Org#BouncyCastle#X509#X509Certificate}#EnumerateMatches(Org.BouncyCastle.Utilities.Collections.ISelector{Org.BouncyCastle.X509.X509Certificate})">
             <summary>
@@ -21926,8 +22008,7 @@
             Initialize a new instance of the <see cref="T:MimeKit.Cryptography.X509CertificateRecord"/> class.
             </summary>
             <remarks>
-            This constructor is only meant to be used by implementors of <see cref="T:MimeKit.Cryptography.IX509CertificateDatabase"/>
-            when loading records from the database.
+            Creates a new certificate record for storing in a <see cref="T:MimeKit.Cryptography.IX509CertificateDatabase"/>.
             </remarks>
         </member>
         <member name="T:MimeKit.Cryptography.X509CertificateStore">
@@ -37218,6 +37299,9 @@
             </remarks>
             <param name="action">The type of change.</param>
             <param name="header">The header being added, changed or removed.</param>
+            <exception cref="T:System.ArgumentNullException">
+            <paramref name="header"/> must not be null when <paramref name="action"/> is not <see cref="F:MimeKit.HeaderListChangedAction.Cleared"/>.
+            </exception>
         </member>
         <member name="M:MimeKit.MimeEntity.Dispose(System.Boolean)">
             <summary>

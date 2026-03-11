@@ -1,25 +1,25 @@
 {
   "manifestVersion": 1,
-  "appVersion": "1.3.34",
-  "generatedUtc": "2026-03-08T23:12:30Z",
+  "appVersion": "1.3.35",
+  "generatedUtc": "2026-03-11T21:03:53Z",
   "filesBasePath": "latest/files/",
   "files": [
     {
       "path": "BouncyCastle.Cryptography.dll",
-      "sha256": "372bac437b8832a225425367919a956dec52232f8da16c244dec4f1ac60d6fbb",
+      "sha256": "d9a58c84baa55a12684cd2381bca03c8f2a9cbae21a6bf1e9ebd65f495629721",
       "size": 4694688,
       "mode": "overwrite"
     },
     {
       "path": "BouncyCastle.Cryptography.xml",
-      "sha256": "151a2f702df2053ce7de70ab4b2fca5af44f87dbdb9dc2224f2dbdf4fed4db1c",
-      "size": 1812134,
+      "sha256": "f15c7513b8b9e807893462c5361dec06dfd06101b104e0e9d687d9943d3405cc",
+      "size": 1812032,
       "mode": "overwrite"
     },
     {
       "path": "changelog.json",
-      "sha256": "3029851cf48ffa072130012252c9074027f7822bc980e15b4f4f1ed63e1ece1d",
-      "size": 12442,
+      "sha256": "ab1c32a95b96798d17373598ce0971948425bc764e363f12e547d7b4a61876c0",
+      "size": 12907,
       "mode": "overwrite"
     },
     {
@@ -618,26 +618,26 @@
     },
     {
       "path": "MimeKit.dll",
-      "sha256": "cb312132cf592d2091c0185ccf43e265ade1d2f965ff30316e4fc004943aa3e0",
-      "size": 1270272,
+      "sha256": "52684cd05bc5872c98279cb5ef98c813337eb52d09c7be92c80a41fa2cd99d80",
+      "size": 1310720,
       "mode": "overwrite"
     },
     {
       "path": "MimeKit.xml",
-      "sha256": "6d31850ce29843c5f8edeaeca1d7f5c1d804b85bd222f2ea191199486c9fa1d1",
-      "size": 3042958,
+      "sha256": "9a7a7bcfa2d9b61f0a125d867629660fed7054ae3ca766fef352aa843cb18352",
+      "size": 3048321,
       "mode": "overwrite"
     },
     {
       "path": "MuniBridge.exe",
-      "sha256": "6ca069851dc13861b78a95df3f7a26427a7ce62af757d7e770a51eed3b9c2a97",
-      "size": 2448896,
+      "sha256": "ae81d355ca42fe2e65f9bf70bd2cd5bec32387e515ac55b1f2acce0111ed3aa1",
+      "size": 2453504,
       "mode": "overwrite"
     },
     {
       "path": "MuniBridge.exe.config",
-      "sha256": "bba033a388025d4658e6e15a8c87c2ed1dffcaff6bce23c800ea0abc83912afe",
-      "size": 6433,
+      "sha256": "4520eb1838329f2d5a2fdbd7536e462f21f112ec168281965ba39a6583b0c257",
+      "size": 6653,
       "mode": "overwrite"
     },
     {
@@ -948,8 +948,8 @@
     },
     {
       "path": "System.Buffers.dll",
-      "sha256": "3af1e07305bed0abe0cf32d9854e0a7f5f470216adee1b87d02350be09d31b35",
-      "size": 23856,
+      "sha256": "2d78d770c9cb997199154ae8c018b9f1d1efbc86729f7264dde6dbad2a12cac3",
+      "size": 23816,
       "mode": "overwrite"
     },
     {
@@ -996,8 +996,8 @@
     },
     {
       "path": "System.Memory.dll",
-      "sha256": "b8fe216aff0f6d162f8eefe7be1712162b7d8199e20ce2e70ffac36c7ce20a4c",
-      "size": 145192,
+      "sha256": "d5e8e4866f9cfa66f7765660f84b210198893e55335487afe5ebda342c0e913d",
+      "size": 145200,
       "mode": "overwrite"
     },
     {
@@ -1008,7 +1008,7 @@
     },
     {
       "path": "System.Numerics.Vectors.dll",
-      "sha256": "22c84be385fe8ba6d0e0138952748f28d781fce36078b5a7aed91a6104bcd99b",
+      "sha256": "20c2fa81b8c70d651099d762954f285fd4f942e63b2d7217c145dab8d4b2f4c9",
       "size": 110344,
       "mode": "overwrite"
     },
@@ -1134,7 +1134,7 @@
     },
     {
       "path": "version.json",
-      "sha256": "ad8559179da166836665ff283aff8bb54027574e965faef2887449969c5f00d2",
+      "sha256": "d0f66a50cf2546de9df7841245646672ad35d94baaad952ecd2f6708413776bf",
       "size": 101,
       "mode": "overwrite"
     },

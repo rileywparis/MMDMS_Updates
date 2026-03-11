@@ -354,5 +354,16 @@
       "Fixed Config backups saving in incorrect location",
       "Fixed little UI bugs"
     ]
+  },
+  {
+    "version": "1.3.35",
+    "date": "2026-03-08",
+    "notes": [
+      "Reverted recent change that made QB take forever to connect",
+      "Added lock to 'Calculate Single' to prevent duplicates of the same Account opening",
+      "Added highlighting to standard utility line items that are credits",
+      "Added 'Calculate Single' shortcut to right-clicking an Account",
+      "Remove line item compression of dissimilar signed items"
+    ]
   }
 ]

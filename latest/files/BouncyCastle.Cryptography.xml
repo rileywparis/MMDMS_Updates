@@ -8584,7 +8584,6 @@
         <member name="T:Org.BouncyCastle.Bcpg.BcpgInputStream.PartialInputStream">
             <summary>
             A stream that overlays our input stream, allowing the user to only read a segment of it.
-            NB: dataLength will be negative if the segment length is in the upper range above 2**31.
             </summary>
         </member>
         <member name="T:Org.BouncyCastle.Bcpg.BcpgObject">
