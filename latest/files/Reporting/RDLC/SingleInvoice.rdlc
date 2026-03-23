@@ -1051,6 +1051,39 @@ Parameters!CoCity.Value + ", " + Parameters!CoState.Value + " " + Parameters!CoZ
                                 <PaddingRight>2pt</PaddingRight>
                               </Style>
                             </Textbox>
+                            <Textbox Name="TxtMessage">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Parameters!Message.Value</Value>
+                                      <Style>
+                                        <FontSize>12pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>6.01747in</Top>
+                              <Left>0.45666in</Left>
+                              <Height>0.85957in</Height>
+                              <Width>3.40173in</Width>
+                              <ZIndex>23</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
                           </ReportItems>
                           <KeepTogether>true</KeepTogether>
                           <Style>
@@ -1059,6 +1092,7 @@ Parameters!CoCity.Value + ", " + Parameters!CoState.Value + " " + Parameters!CoZ
                             </Border>
                           </Style>
                         </Rectangle>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -1556,7 +1590,6 @@ Parameters!CoEmail.Value</Value>
                             </Border>
                           </Style>
                         </Rectangle>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>

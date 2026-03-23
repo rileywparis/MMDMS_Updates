@@ -365,5 +365,21 @@
       "Added 'Calculate Single' shortcut to right-clicking an Account",
       "Remove line item compression of dissimilar signed items"
     ]
+  },
+  {
+    "version": "1.3.40",
+    "date": "2026-03-22",
+    "notes": [
+      "Temporarily disabled pending penalties. Penalties are currently calculated using old system (at time of billing) until further testing of new system.",
+      "Added payment processing integration (in testing)",
+      "Added copy to new Account feature (allows copying Account info to a new Account)",
+      "Added button to manually add more reads to the Verify & Edit Table",
+      "Added print button to missed customers inside of 'View Bill Cycle'",
+      "Added 'Add Message' option to Bill Single form",
+      "UI Tweaks",
+      "Fixed graphics bug showing ghost transactions on closed account",
+      "Small bug fixes",
+      "Added more error logging"
+    ]
   }
 ]

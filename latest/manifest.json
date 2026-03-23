@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
-  "appVersion": "1.3.35",
-  "generatedUtc": "2026-03-11T21:03:53Z",
+  "appVersion": "1.3.40",
+  "generatedUtc": "2026-03-23T03:20:47Z",
   "filesBasePath": "latest/files/",
   "files": [
     {
@@ -18,14 +18,14 @@
     },
     {
       "path": "changelog.json",
-      "sha256": "ab1c32a95b96798d17373598ce0971948425bc764e363f12e547d7b4a61876c0",
-      "size": 12907,
+      "sha256": "943d2819acd0432a32af8b63df43502becfcb6e412ebd6e2af578ec9b924e43b",
+      "size": 13670,
       "mode": "overwrite"
     },
     {
       "path": "config.default.json",
-      "sha256": "8aee81a9fb120a2bc9ed0ff44441f1127a1b894ca52a528ecc53d4e8ebb48d0f",
-      "size": 1505,
+      "sha256": "5652c541d7b496a4b980fe8ea25d21f572e04224b55e14c2c8fbe1204e0cffe7",
+      "size": 1550,
       "mode": "overwrite"
     },
     {
@@ -630,14 +630,14 @@
     },
     {
       "path": "MuniBridge.exe",
-      "sha256": "ae81d355ca42fe2e65f9bf70bd2cd5bec32387e515ac55b1f2acce0111ed3aa1",
-      "size": 2453504,
+      "sha256": "a749d449e3ab308f496e4314aae2d03a0d0eb91dc937207e784747142037d3b9",
+      "size": 2552320,
       "mode": "overwrite"
     },
     {
       "path": "MuniBridge.exe.config",
-      "sha256": "4520eb1838329f2d5a2fdbd7536e462f21f112ec168281965ba39a6583b0c257",
-      "size": 6653,
+      "sha256": "3c2a23ae6bfc589b1ac37bf41f40173c47cbb90effc6adad4a1283b0d7e3f079",
+      "size": 6554,
       "mode": "overwrite"
     },
     {
@@ -803,6 +803,18 @@
       "mode": "overwrite"
     },
     {
+      "path": "Renci.SshNet.dll",
+      "sha256": "eeb4a734101956c3b88aa1841455843f9720c1396590439a8e6e669c19041bdd",
+      "size": 497664,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Renci.SshNet.xml",
+      "sha256": "ca36fc679c70a09c0aa81c8bcf83900a843428cbe061d35097146884530ed537",
+      "size": 1241626,
+      "mode": "overwrite"
+    },
+    {
       "path": "Reporting/RDLC/AccountContacts.rdlc",
       "sha256": "44fcaa8628b099e023e158e8b2ac76c6b00086674323989ee9a8166586c2e2b6",
       "size": 35565,
@@ -864,8 +876,8 @@
     },
     {
       "path": "Reporting/RDLC/SingleInvoice.rdlc",
-      "sha256": "f1245cc8c717bb01b56be47bc8f907795e42e65efb4797221df8c027f8f7288a",
-      "size": 86490,
+      "sha256": "83632ef1fb997dafa8fb3edd2d36776406f9e0f461f8a47eb702a861785a6bf0",
+      "size": 88219,
       "mode": "overwrite"
     },
     {
@@ -1110,7 +1122,7 @@
     },
     {
       "path": "Updater.Common.dll",
-      "sha256": "cb005d3a7c23bf02e1ad2004e575f27ea5a7f7be607d42f93e55ec48a9c8f66c",
+      "sha256": "d532de808643d63f0003e1562af2d9d9628a8dc32d2b65ab14b49029a1bb6a78",
       "size": 13312,
       "mode": "overwrite"
     },
@@ -1134,7 +1146,7 @@
     },
     {
       "path": "version.json",
-      "sha256": "d0f66a50cf2546de9df7841245646672ad35d94baaad952ecd2f6708413776bf",
+      "sha256": "1eee316d4ccb01ce427fd691042d823462199adb0fde5a112150c06f7e355c5a",
       "size": 101,
       "mode": "overwrite"
     },

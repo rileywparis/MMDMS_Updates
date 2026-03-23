@@ -26,7 +26,8 @@
     "GraceDays": 4,
     "PenaltyEnforceType": 0,
     "PrintInMuniBridge": true,
-    "InvoiceRdlc": "PostcardInvoices4up"
+    "InvoiceRdlc": "PostcardInvoices4up",
+    "ReversalItemName": "Payment Reversal"
   },
   "Preferences": {
     "HighBill": 100.00,
