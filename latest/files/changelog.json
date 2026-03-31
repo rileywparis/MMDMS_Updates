@@ -392,5 +392,13 @@
       "Fixed Bill Email checkbox bug + removed save button (saved instantly now)",
       "Small bug fixes"
     ]
+  },
+  {
+    "version": "1.3.42",
+    "date": "2026-03-31",
+    "notes": [
+      "Added bad meter read report",
+      "Fixed account number not being fully prioritized in the search bar"
+    ]
   }
 ]
