@@ -313,7 +313,7 @@
                                   </Paragraphs>
                                   <Top>1.19097in</Top>
                                   <Left>0.401in</Left>
-                                  <Height>0.36458in</Height>
+                                  <Height>0.25831in</Height>
                                   <Width>2in</Width>
                                   <ZIndex>2</ZIndex>
                                   <Style>
@@ -456,6 +456,40 @@
                                     <PaddingLeft>2pt</PaddingLeft>
                                     <PaddingRight>6pt</PaddingRight>
                                     <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="TxtPaymentMsg">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Parameters!PaymentMsg.Value</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <Top>1.44928in</Top>
+                                  <Left>0.11979in</Left>
+                                  <Height>0.25in</Height>
+                                  <Width>5.76042in</Width>
+                                  <ZIndex>7</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Top</VerticalAlign>
+                                    <PaddingLeft>10pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>4pt</PaddingTop>
                                     <PaddingBottom>2pt</PaddingBottom>
                                   </Style>
                                 </Textbox>
@@ -785,7 +819,6 @@
                                               <TablixCell>
                                                 <CellContents>
                                                   <Textbox Name="Utility">
-                                                    <CanGrow>true</CanGrow>
                                                     <KeepTogether>true</KeepTogether>
                                                     <Paragraphs>
                                                       <Paragraph>
@@ -822,7 +855,7 @@
                                                       <Paragraph>
                                                         <TextRuns>
                                                           <TextRun>
-                                                            <Value>=Format(Fields!AMOUNT.Value, "C2")</Value>
+                                                            <Value>=Format(Fields!AMOUNT.Value, "N2")</Value>
                                                             <Style>
                                                               <FontSize>9pt</FontSize>
                                                               <FontWeight>Bold</FontWeight>
@@ -884,8 +917,8 @@
                                     </Tablix>
                                   </ReportItems>
                                   <KeepTogether>true</KeepTogether>
-                                  <Top>0.28542in</Top>
-                                  <Height>0.91558in</Height>
+                                  <Top>0.13542in</Top>
+                                  <Height>1.06558in</Height>
                                   <Width>3.3645in</Width>
                                   <Style>
                                     <Border>
@@ -893,64 +926,6 @@
                                     </Border>
                                   </Style>
                                 </Rectangle>
-                                <Textbox Name="LblPriorBal">
-                                  <CanGrow>true</CanGrow>
-                                  <KeepTogether>true</KeepTogether>
-                                  <Paragraphs>
-                                    <Paragraph>
-                                      <TextRuns>
-                                        <TextRun>
-                                          <Value>Prior Balance</Value>
-                                          <Style>
-                                            <FontSize>9pt</FontSize>
-                                            <FontWeight>Bold</FontWeight>
-                                          </Style>
-                                        </TextRun>
-                                      </TextRuns>
-                                      <Style />
-                                    </Paragraph>
-                                  </Paragraphs>
-                                  <Top>0.13542in</Top>
-                                  <Height>0.15in</Height>
-                                  <Width>2.50325in</Width>
-                                  <ZIndex>1</ZIndex>
-                                  <Style>
-                                    <Border>
-                                      <Style>None</Style>
-                                    </Border>
-                                    <PaddingLeft>16pt</PaddingLeft>
-                                  </Style>
-                                </Textbox>
-                                <Textbox Name="TxtPrevBal">
-                                  <CanGrow>true</CanGrow>
-                                  <KeepTogether>true</KeepTogether>
-                                  <Paragraphs>
-                                    <Paragraph>
-                                      <TextRuns>
-                                        <TextRun>
-                                          <Value>=Format(First(Fields!PREV_BALANCE.Value), "C2")</Value>
-                                          <Style>
-                                            <FontSize>9pt</FontSize>
-                                            <FontWeight>Bold</FontWeight>
-                                          </Style>
-                                        </TextRun>
-                                      </TextRuns>
-                                      <Style>
-                                        <TextAlign>Right</TextAlign>
-                                      </Style>
-                                    </Paragraph>
-                                  </Paragraphs>
-                                  <Top>0.13542in</Top>
-                                  <Left>2.50325in</Left>
-                                  <Height>0.15in</Height>
-                                  <Width>0.86125in</Width>
-                                  <ZIndex>2</ZIndex>
-                                  <Style>
-                                    <Border>
-                                      <Style>None</Style>
-                                    </Border>
-                                  </Style>
-                                </Textbox>
                               </ReportItems>
                               <KeepTogether>true</KeepTogether>
                               <Top>0.925in</Top>
@@ -1158,6 +1133,11 @@
       <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
+    <ReportParameter Name="PaymentMsg">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
@@ -1173,6 +1153,11 @@
           <ColumnIndex>1</ColumnIndex>
           <RowIndex>0</RowIndex>
           <ParameterName>Message</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>PaymentMsg</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>

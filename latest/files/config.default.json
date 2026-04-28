@@ -16,7 +16,6 @@
   "Billing": {
     "FlatRatePenalty": false,
     "ChargeBasedPenalty": false,
-    "PenaltyRate": 0.05,
     "ExcludePenaltyMin": 1.00,
     "ErrorAllow": 0.30,
     "UnitsPerRate": 1000,
@@ -25,14 +24,17 @@
     "DueDays": 24,
     "GraceDays": 4,
     "PenaltyEnforceType": 0,
-    "PrintInMuniBridge": true,
     "InvoiceRdlc": "PostcardInvoices4up",
-    "ReversalItemName": "Payment Reversal"
+    "ReversalItemName": "Payment Reversal",
+    "BillPaymentMsg": ""
   },
   "Preferences": {
     "HighBill": 100.00,
     "LowBill": 50.00,
     "HighUsage": 10000,
+    "BadReadStreak": 3,
+    "PrintPriorBalance": true,
+    "PrintLastPaid": true,
     "PrintInBrowser": false
   },
   "Estimation": {

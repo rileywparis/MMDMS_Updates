@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
-  "appVersion": "1.3.42",
-  "generatedUtc": "2026-03-31T21:05:36Z",
+  "appVersion": "1.4.00",
+  "generatedUtc": "2026-04-28T07:10:40Z",
   "filesBasePath": "latest/files/",
   "files": [
     {
@@ -18,14 +18,14 @@
     },
     {
       "path": "changelog.json",
-      "sha256": "7b355df77d544cb90f2b66db8af6fc55586a5ecbea2ae78797cdab084d80a7f5",
-      "size": 14243,
+      "sha256": "4ac28a60be7c67aeb5f161281d8b54a5fc6dd5e8305908c91cd533815f13c7dc",
+      "size": 16556,
       "mode": "overwrite"
     },
     {
       "path": "config.default.json",
-      "sha256": "5652c541d7b496a4b980fe8ea25d21f572e04224b55e14c2c8fbe1204e0cffe7",
-      "size": 1550,
+      "sha256": "93e2c6e610b5129cbeb7f88f1fe80ca4f8364df7ef0f0c591a87acd50523835a",
+      "size": 1604,
       "mode": "overwrite"
     },
     {
@@ -251,9 +251,33 @@
       "mode": "overwrite"
     },
     {
+      "path": "DatabaseMigrations/038_TransAudit.sql",
+      "sha256": "6d1625b407bae82202cf31eec2920218c7bf6b3c02e36706cf99ee83a417b527",
+      "size": 209,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/039_MessageOpting.sql",
+      "sha256": "cb4796b02f8de28447cc5e7a767ed7ed28a0e0067bc5d0a775f6ecc867c534a9",
+      "size": 160,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/040_RouteNoAmbiguity.sql",
+      "sha256": "8633dcf52c845126875f377a7dd358700c6eff4303f233dac6d1c0181635f28a",
+      "size": 203,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/041_LatestReadsChange.sql",
+      "sha256": "2633a0e07f8c5c15b76a46f04759d71c7e49c97ba792598f239cf5672339ecb5",
+      "size": 989,
+      "mode": "overwrite"
+    },
+    {
       "path": "DatabaseMigrations/dev_schema.txt",
-      "sha256": "88f0a7ecbb450a99666b5e33fbf4f82d2f017f4b660c3326093936c62a70706f",
-      "size": 7068,
+      "sha256": "f68213b7b993f9e0ec414338fd426a0427614b82f20d4c4bd3e367978074f5e0",
+      "size": 6662,
       "mode": "overwrite"
     },
     {
@@ -288,8 +312,8 @@
     },
     {
       "path": "EnvDTE.dll",
-      "sha256": "bda63de20b91d1c71925ab702bc1b57d5814fb438bccb1a7c575eb9a69889c60",
-      "size": 256032,
+      "sha256": "ef36ec7b7e6d2f86eaea46485d49956d6371d2a677dd534324766985835dad9a",
+      "size": 256072,
       "mode": "overwrite"
     },
     {
@@ -473,6 +497,30 @@
       "mode": "overwrite"
     },
     {
+      "path": "Microsoft.Bcl.Memory.dll",
+      "sha256": "2b6d4f14dfea89daa49ce8688be8492483d308d2b429ec55a969472ca3745eaf",
+      "size": 78096,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.Bcl.Memory.xml",
+      "sha256": "b7899aaf27215225e92a206df46426060c7861eec2b41d5eda5fde0d1d99767d",
+      "size": 101757,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.Bcl.TimeProvider.dll",
+      "sha256": "1c5a3d263b723ecf05a98d9bec4e59c476d553c75e912dfefb3e137671b7be72",
+      "size": 32520,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.Bcl.TimeProvider.xml",
+      "sha256": "a31e5056739638f79e45cfe9b49142a754bb3466e80f71f5d7035d1091bac9f3",
+      "size": 31521,
+      "mode": "overwrite"
+    },
+    {
       "path": "Microsoft.Extensions.DependencyInjection.Abstractions.dll",
       "sha256": "19edd4f5e69a4589dc314909b5854a22f89c4b9ab040591771397b2cb1a17ba6",
       "size": 63784,
@@ -542,6 +590,54 @@
       "path": "Microsoft.Extensions.Primitives.xml",
       "sha256": "92661b5408efa94ff6e1dec48b25561223e5e10c7299098e90ec54c43a14ae29",
       "size": 95105,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.IdentityModel.Abstractions.dll",
+      "sha256": "dba4f6a3cf580dbada13c00c4563f08c14be56dfc72937802fa617f115a5ca4d",
+      "size": 20008,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.IdentityModel.Abstractions.xml",
+      "sha256": "9e9a102373fa8a058764732719a7ae76ed40be18107f4950fbd5d38af80f8d17",
+      "size": 16405,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.IdentityModel.JsonWebTokens.dll",
+      "sha256": "7cc56cbece7ac7fe7a84b350d4e16fa1cc8dcf537756eebd49a9e578b791d8c1",
+      "size": 162336,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.IdentityModel.JsonWebTokens.xml",
+      "sha256": "f292a16766e42c6fedbb542c305eb5566a0a3eaad64790cd9bac964f5c1a71bf",
+      "size": 125118,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.IdentityModel.Logging.dll",
+      "sha256": "9d047c62259856a5cbe1fc5e76aa312907a7d70ab7b6419d9c2c73105a6018b0",
+      "size": 38984,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.IdentityModel.Logging.xml",
+      "sha256": "2531f4c62e6cafbafc9faf7d831f536208b9190d75e9c4742a2af4967bedee17",
+      "size": 54090,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.IdentityModel.Tokens.dll",
+      "sha256": "63979bad63a8586351b8b1fb0f76a92f7c598f7d0c5eaba4fd875bd47d42d991",
+      "size": 356936,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Microsoft.IdentityModel.Tokens.xml",
+      "sha256": "d7e522a8a68c4bbce09280373d8020e7dd535f6732c251c7450391e7aea714d7",
+      "size": 530188,
       "mode": "overwrite"
     },
     {
@@ -630,14 +726,14 @@
     },
     {
       "path": "MuniBridge.exe",
-      "sha256": "e485f5834c47aeb0aedf37a77218fe41ff9ac7439cbd3e7ac0546d93e4a35966",
-      "size": 2555392,
+      "sha256": "e7dd308895e9aa875af1f1a28da8cc3b27a7a5c43a563b8247aaa4f796c7683e",
+      "size": 2861056,
       "mode": "overwrite"
     },
     {
       "path": "MuniBridge.exe.config",
-      "sha256": "3c2a23ae6bfc589b1ac37bf41f40173c47cbb90effc6adad4a1283b0d7e3f079",
-      "size": 6554,
+      "sha256": "9ffe43335ebe40ec6d85c45e668c6e25832b1bf7b99f7dca03719732f6efb33b",
+      "size": 7884,
       "mode": "overwrite"
     },
     {
@@ -846,8 +942,8 @@
     },
     {
       "path": "Reporting/RDLC/GroupInvoices.rdlc",
-      "sha256": "fcc993e8533ef271feff4b006e5bd21aa7404e7a90607e16df97cf90f116b14b",
-      "size": 48133,
+      "sha256": "8dd3695ca6ddcebc4b1c00e901765e0505c2c9ab17964f3fc2c0df7c75fad2c1",
+      "size": 53587,
       "mode": "overwrite"
     },
     {
@@ -858,14 +954,14 @@
     },
     {
       "path": "Reporting/RDLC/PostcardInvoices3up.rdlc",
-      "sha256": "e7756e9ed07c0b73d5f06039c278644aaf1f5944ffb3a001f0528e596ac5447d",
-      "size": 7728731,
+      "sha256": "2b7a0a4bd13c4c13fbe081bac8e6cee71ed482a6422f9762619bc49656a79c9c",
+      "size": 7730963,
       "mode": "overwrite"
     },
     {
       "path": "Reporting/RDLC/PostcardInvoices4up.rdlc",
-      "sha256": "7773d896df47cb9673490228f0c030943b2668c38a8fd18c34d68a70ec8a1183",
-      "size": 7735462,
+      "sha256": "d8ad2fb7aaa56718f281e73d031ff56871cf554b2c0870147ca7824f32638ab5",
+      "size": 7734476,
       "mode": "overwrite"
     },
     {
@@ -876,8 +972,8 @@
     },
     {
       "path": "Reporting/RDLC/SingleInvoice.rdlc",
-      "sha256": "83632ef1fb997dafa8fb3edd2d36776406f9e0f461f8a47eb702a861785a6bf0",
-      "size": 88219,
+      "sha256": "2c73e5a1d9d0c8135294040a9d73f3eb083c7a08804b515ccea7c8eec2eed143",
+      "size": 90093,
       "mode": "overwrite"
     },
     {
@@ -995,6 +1091,18 @@
       "mode": "overwrite"
     },
     {
+      "path": "System.IdentityModel.Tokens.Jwt.dll",
+      "sha256": "85d1ad75823259ff4e3da3a11fb367e4c553df66c37a58430d610f89145a3bb0",
+      "size": 90656,
+      "mode": "overwrite"
+    },
+    {
+      "path": "System.IdentityModel.Tokens.Jwt.xml",
+      "sha256": "bef8abc6e3975b4232080b69167fe389cfe506005f555eb62458b876a956309a",
+      "size": 143984,
+      "mode": "overwrite"
+    },
+    {
       "path": "System.IO.Pipelines.dll",
       "sha256": "f19d78c5cffddeae66a79d772fa0ebb30c101912fe7cf7541913308b54cf79cf",
       "size": 84776,
@@ -1032,8 +1140,8 @@
     },
     {
       "path": "System.Runtime.CompilerServices.Unsafe.dll",
-      "sha256": "2d6f419d641682d8efc4a40e850d2e85de519d6823b93daf2aeee63206d4e32d",
-      "size": 19224,
+      "sha256": "08cbd7278b66f1e68425a82d4b97181a4130d93e3dd91831407aba7212ccdacf",
+      "size": 19256,
       "mode": "overwrite"
     },
     {
@@ -1116,14 +1224,26 @@
     },
     {
       "path": "tokens.enc",
-      "sha256": "b3659c1d8ac842dcee341a298c35ca8eae966d80db8a095cabb1af0f5dd5d79e",
-      "size": 560,
+      "sha256": "ce3dd8071f9d368cfbbe83873e91ff1d68e1d1014984912637f26e2c76655b68",
+      "size": 656,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Twilio.dll",
+      "sha256": "69166972b4e207c41530c1bf853e3227178dfdbf0491a46434e301b17f7ac36e",
+      "size": 8556544,
+      "mode": "overwrite"
+    },
+    {
+      "path": "Twilio.xml",
+      "sha256": "1b41c292a0504610c3632a0a5f89ac7dcbb41b9fca2d41a12c85f982dabdd397",
+      "size": 9411969,
       "mode": "overwrite"
     },
     {
       "path": "Updater.Common.dll",
-      "sha256": "e96780e57361fa8f17328586a214a4cfef36807758a0c464b99106584d18ce3e",
-      "size": 13312,
+      "sha256": "5d8c8571d12f294d2460e8150490102979d325793c37291c410580a6a8611a1c",
+      "size": 13824,
       "mode": "overwrite"
     },
     {
@@ -1145,8 +1265,14 @@
       "mode": "overwrite"
     },
     {
+      "path": "user_guide.pdf",
+      "sha256": "575b755747bd5145c3156c491a2ff6151ed3d87e94d7175e6f745f4d6b2a9927",
+      "size": 235639,
+      "mode": "overwrite"
+    },
+    {
       "path": "version.json",
-      "sha256": "ee5c544e512d8f90b69902e3aecd0266026d6b47ba9dbce8252c96665b2d623a",
+      "sha256": "448a31d146c8d620fb8ec74b68c2b758ca1bcbf431ed52bb50007ecc36e44eef",
       "size": 101,
       "mode": "overwrite"
     },

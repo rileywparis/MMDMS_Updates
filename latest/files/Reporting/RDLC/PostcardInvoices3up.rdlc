@@ -431,6 +431,40 @@
                                     <PaddingBottom>2pt</PaddingBottom>
                                   </Style>
                                 </Textbox>
+                                <Textbox Name="TxtPaymentMsg">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Parameters!PaymentMsg.Value</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <Top>1.42708in</Top>
+                                  <Left>0.11979in</Left>
+                                  <Height>0.25in</Height>
+                                  <Width>5.76042in</Width>
+                                  <ZIndex>6</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Top</VerticalAlign>
+                                    <PaddingLeft>10pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>4pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
                               </ReportItems>
                               <KeepTogether>true</KeepTogether>
                               <Top>2.5in</Top>
@@ -476,7 +510,6 @@
                                               <TablixCell>
                                                 <CellContents>
                                                   <Textbox Name="Prior">
-                                                    <CanGrow>true</CanGrow>
                                                     <KeepTogether>true</KeepTogether>
                                                     <Paragraphs>
                                                       <Paragraph>
@@ -502,7 +535,6 @@
                                                       <VerticalAlign>Top</VerticalAlign>
                                                     </Style>
                                                   </Textbox>
-                                                  <rd:Selected>true</rd:Selected>
                                                 </CellContents>
                                               </TablixCell>
                                               <TablixCell>
@@ -645,7 +677,7 @@
                                                       <Paragraph>
                                                         <TextRuns>
                                                           <TextRun>
-                                                            <Value>=Format(Fields!AMOUNT.Value, "C2")</Value>
+                                                            <Value>=Format(Fields!AMOUNT.Value, "N2")</Value>
                                                             <Style>
                                                               <FontSize>9pt</FontSize>
                                                               <FontWeight>Normal</FontWeight>
@@ -665,6 +697,7 @@
                                                       <VerticalAlign>Top</VerticalAlign>
                                                     </Style>
                                                   </Textbox>
+                                                  <rd:Selected>true</rd:Selected>
                                                 </CellContents>
                                               </TablixCell>
                                             </TablixCells>
@@ -1012,6 +1045,11 @@
       <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
+    <ReportParameter Name="PaymentMsg">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
@@ -1027,6 +1065,11 @@
           <ColumnIndex>1</ColumnIndex>
           <RowIndex>0</RowIndex>
           <ParameterName>Message</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>PaymentMsg</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>

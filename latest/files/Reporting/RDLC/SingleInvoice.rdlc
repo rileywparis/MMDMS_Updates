@@ -475,6 +475,7 @@
                                                   <PaddingBottom>1pt</PaddingBottom>
                                                 </Style>
                                               </Textbox>
+                                              <rd:Selected>true</rd:Selected>
                                             </CellContents>
                                           </TablixCell>
                                           <TablixCell>
@@ -528,11 +529,6 @@
                                             <GroupExpression>=Fields!UTIL_NAME.Value</GroupExpression>
                                           </GroupExpressions>
                                         </Group>
-                                        <SortExpressions>
-                                          <SortExpression>
-                                            <Value>=Fields!UTILITY.Value</Value>
-                                          </SortExpression>
-                                        </SortExpressions>
                                       </TablixMember>
                                     </TablixMembers>
                                   </TablixRowHierarchy>
@@ -1084,6 +1080,40 @@ Parameters!CoCity.Value + ", " + Parameters!CoState.Value + " " + Parameters!CoZ
                                 <PaddingBottom>2pt</PaddingBottom>
                               </Style>
                             </Textbox>
+                            <Textbox Name="TxtPaymentMsg">
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Parameters!PaymentMsg.Value</Value>
+                                      <Style>
+                                        <FontSize>9pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>2.87723in</Top>
+                              <Left>0.45658in</Left>
+                              <Height>0.25in</Height>
+                              <Width>5.76042in</Width>
+                              <ZIndex>24</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <VerticalAlign>Top</VerticalAlign>
+                                <PaddingLeft>10pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>4pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
                           </ReportItems>
                           <KeepTogether>true</KeepTogether>
                           <Style>
@@ -1092,7 +1122,6 @@ Parameters!CoCity.Value + ", " + Parameters!CoState.Value + " " + Parameters!CoZ
                             </Border>
                           </Style>
                         </Rectangle>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -1684,6 +1713,11 @@ Parameters!CoEmail.Value</Value>
       <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
+    <ReportParameter Name="PaymentMsg">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
@@ -1734,6 +1768,11 @@ Parameters!CoEmail.Value</Value>
           <ColumnIndex>0</ColumnIndex>
           <RowIndex>3</RowIndex>
           <ParameterName>CoStreet</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>3</RowIndex>
+          <ParameterName>PaymentMsg</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>

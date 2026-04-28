@@ -17,7 +17,6 @@ Table: Utilities
 - SERV_ID System.String
 - ACCT_NO System.String
 - UTILITY System.Byte
-- ROUTE_NO System.String
 - READ_SEQ System.String
 - SERV_STAT System.String
 - RATE_CODE System.String
@@ -91,11 +90,11 @@ Table: Usages
 - PRIOR_DATE System.DateTime
 - CUR_DATE System.DateTime
 - BILL_CYCLE System.Int32
-- TOTAL System.Decimal
-- PREV_BALANCE System.Decimal
-- BALANCE System.Decimal
 - FLAG System.String
 - USAGE_PK System.Int32
+- SIZE System.String
+- NO_OF_MIN System.Int32
+- RATE_CODE System.String
 
 Table: Accounts
 - ACCT_NO System.String
@@ -120,6 +119,7 @@ Table: Accounts
 - BILL_PAPER System.Boolean
 - FNAME System.String
 - REV_FNAME System.String
+- MSG_OPT System.Boolean
 
 Table: ArchivedAccounts
 - ACCT_NO System.String
@@ -144,23 +144,7 @@ Table: ArchivedAccounts
 - KEEP_BILLING System.Boolean
 - BILL_EMAIL System.Boolean
 - BILL_PAPER System.Boolean
-
-Table: vRouteSheetData
-- SERV_ID System.String
-- ADDR System.String
-- ACCT_NO System.String
-- LAST System.String
-- FIRST System.String
-- REV_FNAME System.String
-- UTILITY System.Byte
-- ROUTE_NO System.String
-- READ_SEQ System.String
-- METER_NO System.String
-- MET_MESS System.String
-- NOTES System.String
-- NO_OF_DIAL System.Int32
-- CUR_READ System.Int32
-- CUR_DATE System.DateTime
+- MSG_OPT System.Boolean
 
 Table: vServiceStatus
 - ACCT_NO System.String
@@ -204,7 +188,6 @@ Table: ArchivedUtilities
 - SERV_ID System.String
 - ACCT_NO System.String
 - UTILITY System.Byte
-- ROUTE_NO System.String
 - READ_SEQ System.String
 - SERV_STAT System.String
 - RATE_CODE System.String
