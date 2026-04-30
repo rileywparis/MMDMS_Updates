@@ -444,5 +444,12 @@
       "Fixed button highlighting getting stuck",
       "Fixed many, many, other small bugs"
     ]
+  },
+  {
+    "version": "1.4.01",
+    "date": "2026-04-30",
+    "notes": [
+      "Fixed penalties not calculating (pending penalties still disabled until further notice)"
+    ]
   }
 ]
