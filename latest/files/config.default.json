@@ -20,7 +20,6 @@
     "ErrorAllow": 0.30,
     "UnitsPerRate": 1000,
     "SewerEstimate": 1000,
-    "MeterSizes": "5/8,3/4,1,1 1/2,2,3,4",
     "DueDays": 24,
     "GraceDays": 4,
     "PenaltyEnforceType": 0,
@@ -31,7 +30,9 @@
   "Preferences": {
     "HighBill": 100.00,
     "LowBill": 50.00,
-    "HighUsage": 10000,
+    "LowUsageMin": 2000,
+    "LowVarThresh": 1.5,
+    "HighVarThresh": 0.75,
     "BadReadStreak": 3,
     "PrintPriorBalance": true,
     "PrintLastPaid": true,
@@ -41,6 +42,10 @@
     "YearLimit": 5,
     "AdjustmentFactor": 0.0,
     "Weights": "10,6,3,2,1"
+  },
+  "Meter": {
+    "MeterSizes": "5/8,3/4,1,1 1/2,2,3,4",
+    "DeviceTypes": "Unknown,Visual,Touch Pad,Radio,Cellular"
   },
   "Company": {
     "Name": "Municipal Authority of Cityville",

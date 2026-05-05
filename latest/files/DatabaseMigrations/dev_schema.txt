@@ -29,6 +29,8 @@ Table: Utilities
 - NO_OF_DIAL System.Int32
 - INSTALL_DA System.DateTime
 - UTIL_PK System.Int32
+- ENDPOINT System.String
+- DEV_TYPE System.Int32
 
 Table: StaticFlags
 - Flag System.String
@@ -200,6 +202,8 @@ Table: ArchivedUtilities
 - NO_OF_DIAL System.Int32
 - INSTALL_DA System.DateTime
 - UTIL_PK System.Int32
+- ENDPOINT System.String
+- DEV_TYPE System.Int32
 
 Table: CopyBillToList
 - ACCT_NO System.String

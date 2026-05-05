@@ -451,5 +451,27 @@
     "notes": [
       "Fixed penalties not calculating (pending penalties still disabled until further notice)"
     ]
+  },
+  {
+    "version": "1.4.10",
+    "date": "2026-05-05",
+    "notes": [
+      "**Added Utility & status filtering",
+      "*Added button to activate/deactivate all Utilities at location in one motion",
+      "*Added option for non-blocking success messages (on by default)",
+      "Added more to the user guide",
+      "Added search results for notes",
+      "Added Utility double-clicking from billing slideout (read-only)",
+      "Added soft warning for QB Acct No. conflicts (E.g. duplicate accounts)",
+      "Added bill payment message to settings",
+      "Added alert system (Alerts from MuniBridge to you. E.g. Known issue being fixed",
+      "Added additional meter fields (optional)",
+      "Changed prior read to use last PHYSICAL read date moving forward",
+      "Changed manual estimates from displaying '-123' bill usage to display 'TYPE'",
+      "Changed filtering & refresh behavior",
+      "Replaced high usage highlighting with variance highlighting (highlights if usage is outside of expected range)",
+      "Small UI changes",
+      "Fixed payment month display in Reporting"
+    ]
   }
 ]
