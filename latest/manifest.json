@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
-  "appVersion": "1.4.01",
-  "generatedUtc": "2026-04-30T13:35:32Z",
+  "appVersion": "1.4.10",
+  "generatedUtc": "2026-05-05T18:52:17Z",
   "filesBasePath": "latest/files/",
   "files": [
     {
@@ -18,14 +18,14 @@
     },
     {
       "path": "changelog.json",
-      "sha256": "0dd17b673154633585c6e79baa58890918af1121de6ed91622ddbd1b043026df",
-      "size": 16740,
+      "sha256": "f0063d88adfa486e3a0f0bfe0a00eb81f1be42988a06d5a41c8efe52b03d7796",
+      "size": 17865,
       "mode": "overwrite"
     },
     {
       "path": "config.default.json",
-      "sha256": "93e2c6e610b5129cbeb7f88f1fe80ca4f8364df7ef0f0c591a87acd50523835a",
-      "size": 1604,
+      "sha256": "e4494efee51d7616629755dc48730ce97b9aa3bb8a2da85169ab95ea4745afa6",
+      "size": 1741,
       "mode": "overwrite"
     },
     {
@@ -275,9 +275,27 @@
       "mode": "overwrite"
     },
     {
+      "path": "DatabaseMigrations/042_LastPhysicalForPrior.sql",
+      "sha256": "77bd3697d47f80b15ac0e90fff8dd32f30c2e373becb4b9ce8991f037da3710a",
+      "size": 631,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/043_MeterEndpoint.sql",
+      "sha256": "c44d35e493a2e98ac32131636dc40890b377d83782659de4344e3ae32a07adb4",
+      "size": 570,
+      "mode": "overwrite"
+    },
+    {
+      "path": "DatabaseMigrations/044_NotesIdx.sql",
+      "sha256": "fa7ea16b16c5684e72dd7600768e6c48276217cdc021bc70dd072fbab875ef68",
+      "size": 319,
+      "mode": "overwrite"
+    },
+    {
       "path": "DatabaseMigrations/dev_schema.txt",
-      "sha256": "f68213b7b993f9e0ec414338fd426a0427614b82f20d4c4bd3e367978074f5e0",
-      "size": 6662,
+      "sha256": "54ab634881a94929a46a58fd676f7afd3497cb5ce992ad801e612b9c21d10001",
+      "size": 6764,
       "mode": "overwrite"
     },
     {
@@ -468,20 +486,20 @@
     },
     {
       "path": "MailKit.dll",
-      "sha256": "e34fa856d1ca026bbeaf2fc5c59fdf8cfac33bbb6f24b1eb2f46a48b3e9e94c0",
-      "size": 933888,
+      "sha256": "b671818b5e6a3f2dd07650de8d2db4265d3f9e7af9a4e4585354f89fcb16434f",
+      "size": 973312,
       "mode": "overwrite"
     },
     {
       "path": "MailKit.dll.config",
-      "sha256": "b88836f1aa9159db10cb115f33f89eb082b3e8e31e741864d65cea4a0d60a45a",
-      "size": 751,
+      "sha256": "cb578a790ef24dfe850b9f3d007bd73d043853c8cf738827e0c8e7d0863eff56",
+      "size": 1101,
       "mode": "overwrite"
     },
     {
       "path": "MailKit.xml",
-      "sha256": "1989b887215a6aad31a86a22c63db468026c38d60b7ef0785798d208f6c6d6cf",
-      "size": 3727153,
+      "sha256": "d8567239976d9290b40fc1b8e4cdd5c673fbbbe8b41f30f3ef73c27041dd6971",
+      "size": 3735629,
       "mode": "overwrite"
     },
     {
@@ -714,26 +732,26 @@
     },
     {
       "path": "MimeKit.dll",
-      "sha256": "52684cd05bc5872c98279cb5ef98c813337eb52d09c7be92c80a41fa2cd99d80",
-      "size": 1310720,
+      "sha256": "ef6bfdfd1fd6f8ea4765d24d2224485ef0ce0d1c16f504d64d4cc64184f00a15",
+      "size": 1315840,
       "mode": "overwrite"
     },
     {
       "path": "MimeKit.xml",
-      "sha256": "9a7a7bcfa2d9b61f0a125d867629660fed7054ae3ca766fef352aa843cb18352",
-      "size": 3048321,
+      "sha256": "2bdf95b6a9f3b53f6cc93841e104b7eed4136151fa0aebd347f0005b335410ef",
+      "size": 3053515,
       "mode": "overwrite"
     },
     {
       "path": "MuniBridge.exe",
-      "sha256": "9d8a15adff8b43aa41a9f381892d43a6f362b8d61520a8f54080769f1deb9e96",
-      "size": 2861056,
+      "sha256": "a5891764023a576c39a7885a5209599d19f610e1abfdfac12b6f997c2b2c3a49",
+      "size": 3025920,
       "mode": "overwrite"
     },
     {
       "path": "MuniBridge.exe.config",
-      "sha256": "9ffe43335ebe40ec6d85c45e668c6e25832b1bf7b99f7dca03719732f6efb33b",
-      "size": 7884,
+      "sha256": "62cf35b086c2c7e6b5042377e1774b0a8070ba0ed0188c3c5746845225837360",
+      "size": 8006,
       "mode": "overwrite"
     },
     {
@@ -960,7 +978,7 @@
     },
     {
       "path": "Reporting/RDLC/PostcardInvoices4up.rdlc",
-      "sha256": "d8ad2fb7aaa56718f281e73d031ff56871cf554b2c0870147ca7824f32638ab5",
+      "sha256": "744c99a6022490a8fd5fd94db3b866e6201534d5e1be837002047a882422764d",
       "size": 7734476,
       "mode": "overwrite"
     },
@@ -1266,13 +1284,13 @@
     },
     {
       "path": "user_guide.pdf",
-      "sha256": "575b755747bd5145c3156c491a2ff6151ed3d87e94d7175e6f745f4d6b2a9927",
-      "size": 235639,
+      "sha256": "6340c6eddfd42fb9e26224a6a33d23d0c6139eb72187c591c964ce8b7593771d",
+      "size": 261064,
       "mode": "overwrite"
     },
     {
       "path": "version.json",
-      "sha256": "b68f9c8ec736eb8b4e5591186a333c043ae48eb9041958c136005e716890ace7",
+      "sha256": "39c8d08262f81fd60a4e60d6eb3c57b5274e18228b229ca8f1045bdce5469dd0",
       "size": 101,
       "mode": "overwrite"
     },
