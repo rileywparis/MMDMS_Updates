@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
-  "appVersion": "1.4.10",
-  "generatedUtc": "2026-05-05T18:52:17Z",
+  "appVersion": "1.4.11",
+  "generatedUtc": "2026-05-14T02:55:05Z",
   "filesBasePath": "latest/files/",
   "files": [
     {
@@ -18,8 +18,8 @@
     },
     {
       "path": "changelog.json",
-      "sha256": "f0063d88adfa486e3a0f0bfe0a00eb81f1be42988a06d5a41c8efe52b03d7796",
-      "size": 17865,
+      "sha256": "1b26b4bf374ae1a3361857c7651269c466e8e6de99938ccb9f1399695d28ed3c",
+      "size": 18275,
       "mode": "overwrite"
     },
     {
@@ -293,9 +293,15 @@
       "mode": "overwrite"
     },
     {
+      "path": "DatabaseMigrations/045_Adjustments.sql",
+      "sha256": "4e0ca4c5738e1386cc08daf5dd5d8fd37a2f67f4af281620ee955cc9838c450f",
+      "size": 192,
+      "mode": "overwrite"
+    },
+    {
       "path": "DatabaseMigrations/dev_schema.txt",
-      "sha256": "54ab634881a94929a46a58fd676f7afd3497cb5ce992ad801e612b9c21d10001",
-      "size": 6764,
+      "sha256": "504688f52286389f8e8d8d0af05aaeb8b5638d7b4b862adb0464a0647e432096",
+      "size": 6786,
       "mode": "overwrite"
     },
     {
@@ -330,8 +336,8 @@
     },
     {
       "path": "EnvDTE.dll",
-      "sha256": "ef36ec7b7e6d2f86eaea46485d49956d6371d2a677dd534324766985835dad9a",
-      "size": 256072,
+      "sha256": "a3619c416a0124920d959b7f117031a538c5cda03d671179edfac59889ebf86d",
+      "size": 256032,
       "mode": "overwrite"
     },
     {
@@ -744,8 +750,8 @@
     },
     {
       "path": "MuniBridge.exe",
-      "sha256": "a5891764023a576c39a7885a5209599d19f610e1abfdfac12b6f997c2b2c3a49",
-      "size": 3025920,
+      "sha256": "f43a3a2ec352f9f964a66f618e0b84dea60c3bbdf43775b103b6cad0dd1ebeec",
+      "size": 3037184,
       "mode": "overwrite"
     },
     {
@@ -1284,13 +1290,13 @@
     },
     {
       "path": "user_guide.pdf",
-      "sha256": "6340c6eddfd42fb9e26224a6a33d23d0c6139eb72187c591c964ce8b7593771d",
-      "size": 261064,
+      "sha256": "80a548a3f3c637a0caa015f141ca3445014082db4dd0679e546e48591d706006",
+      "size": 278694,
       "mode": "overwrite"
     },
     {
       "path": "version.json",
-      "sha256": "39c8d08262f81fd60a4e60d6eb3c57b5274e18228b229ca8f1045bdce5469dd0",
+      "sha256": "bf310feb011c0d3690457a46691301464dabefd9ed823438a41489fadb58a40c",
       "size": 101,
       "mode": "overwrite"
     },

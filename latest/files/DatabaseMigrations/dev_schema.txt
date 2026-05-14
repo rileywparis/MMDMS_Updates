@@ -12,6 +12,7 @@ Table: Transactions
 - TRAN_DATE System.DateTime
 - DUE_DATE System.DateTime
 - TRANS_PK System.Int32
+- ADJ System.Boolean
 
 Table: Utilities
 - SERV_ID System.String

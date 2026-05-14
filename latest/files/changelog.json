@@ -473,5 +473,18 @@
       "Small UI changes",
       "Fixed payment month display in Reporting"
     ]
+  },
+  {
+    "version": "1.4.11",
+    "date": "2026-05-13",
+    "notes": [
+      "Added filter for EDU count",
+      "Added more QB closing error logging (Still having issues)",
+      "Added missed customer report",
+      "Added price auto-fill for QuickBooks items",
+      "Changed back-end of Transactions table",
+      "Fixed 'Create Utility' button not showing",
+      "Small bug fixes"
+    ]
   }
 ]
