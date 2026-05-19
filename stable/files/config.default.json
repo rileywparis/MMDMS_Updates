@@ -1,0 +1,60 @@
+{
+  "Database": {
+    "DatabaseRootPath": "",
+    "ConnectionString": "Server=(LocalDB)\\MSSQLLocalDB;Database=mdms_prod;Trusted_Connection=True;Connect Timeout=5;",
+    "MasterConnectionString": "Server=(LocalDB)\\MSSQLLocalDB;Database=master;Trusted_Connection=True;Connect Timeout=5;",
+    "DevConnectionString": "Server=(localDB)\\MSSQLLocalDB;Database=mdms_prod;Trusted_Connection=True;Connect Timeout=3;",
+    "NumericAcctNo": true
+  },
+  "QuickBooks": {
+    "UsingQBO": false,
+    "InvoiceTemplate": "MuniBridge Invoice"
+  },
+  "File": {
+    "ReaderImport": "SNS6590"
+  },
+  "Billing": {
+    "FlatRatePenalty": false,
+    "ChargeBasedPenalty": false,
+    "ExcludePenaltyMin": 1.00,
+    "ErrorAllow": 0.30,
+    "UnitsPerRate": 1000,
+    "SewerEstimate": 1000,
+    "DueDays": 24,
+    "GraceDays": 4,
+    "PenaltyEnforceType": 0,
+    "InvoiceRdlc": "PostcardInvoices4up",
+    "ReversalItemName": "Payment Reversal",
+    "BillPaymentMsg": ""
+  },
+  "Preferences": {
+    "HighBill": 100.00,
+    "LowBill": 50.00,
+    "LowUsageMin": 2000,
+    "LowVarThresh": 1.5,
+    "HighVarThresh": 0.75,
+    "BadReadStreak": 3,
+    "PrintPriorBalance": true,
+    "PrintLastPaid": true,
+    "PrintInBrowser": false
+  },
+  "Estimation": {
+    "YearLimit": 5,
+    "AdjustmentFactor": 0.0,
+    "Weights": "10,6,3,2,1"
+  },
+  "Meter": {
+    "MeterSizes": "5/8,3/4,1,1 1/2,2,3,4",
+    "DeviceTypes": "Unknown,Visual,Touch Pad,Radio,Cellular"
+  },
+  "Company": {
+    "Name": "Municipal Authority of Cityville",
+    "Address": "PO Box 123",
+    "Street": "123 Main St",
+    "Phone": "(814) 123-4567",
+    "City": "Cityville",
+    "State": "PA",
+    "Zip": "12345",
+    "Email": "test@gmail.com"
+  }
+}

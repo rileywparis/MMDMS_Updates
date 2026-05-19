@@ -1,0 +1,490 @@
+[
+  {
+    "version": "0.2.0",
+    "date": "2025-10-11",
+    "notes": [
+      "*Copy Bill To feature",
+      "*Bill Edit List Report",
+      "*Invoice mass messages",
+      " Allow posting without sending to QuickBooks",
+      " Database optimization",
+      " Improved updater"
+    ]
+  },
+  {
+    "version": "0.2.1",
+    "date": "2025-10-21",
+    "notes": [
+      "*Update notes",
+      "*Unassigned service location view",
+      "*Recent searches",
+      "*Reminders/Calendar",
+      " Update account creation form",
+      " Update estimate UI + settings"
+    ]
+  },
+  {
+    "version": "0.2.3",
+    "date": "2025-10-24",
+    "notes": [
+      "*Hotfix for Service Location Suffix Edit",
+      "*Change Table Font Size in Settings>Preferences"
+    ]
+  },
+  {
+    "version": "0.2.6",
+    "date": "2025-10-29",
+    "notes": [
+      "*AR Aging Report (W.I.P.)",
+      "*Group Billing",
+      "*Database optimization",
+      "*Automatic database updating",
+      "SQL Express support",
+      "Help button (W.I.P.)",
+      "Exclude Minimum Penalty option"
+    ]
+  },
+  {
+    "version": "0.2.8",
+    "date": "2025-11-02",
+    "notes": [
+      "*Import/Export Billing Table",
+      "*AR Aging Report Filtered (temporary)",
+      "Warning when editing negative usage",
+      "Changed Billing page layout"
+    ]
+  },
+  {
+    "version": "0.5.0",
+    "date": "2025-11-16",
+    "notes": [
+      "**Created many new errors",
+      "**Revamped estimation logic",
+      "*Change dial count from Verify & Edit",
+      "Route Sheet date line + tally",
+      "QuickBooks Online Integration (W.I.P.)"
+    ]
+  },
+  {
+    "version": "0.5.7",
+    "date": "2025-11-21",
+    "notes": [
+      "*Accounts table view overhaul",
+      "*Find customer in QuickBooks button (R-Click Account)",
+      "*Auto fill mail address on account creation"
+    ]
+  },
+  {
+    "version": "1.0.2",
+    "date": "2025-12-7",
+    "notes": [
+      "*Reporting tab with statistic charts",
+      "*Checkbox to silence warnings",
+      "Edit Usage Row from History window",
+      "Bill amount highlighting",
+      "Moved current read line on Route Sheet"
+    ]
+  },
+  {
+    "version": "1.0.3",
+    "date": "2025-12-20",
+    "notes": [
+      "*Allow Form re-sizing",
+      "*Account notes revamp",
+      "*Remove multiple rows from 'Verify & Edit' table",
+      "Row highlight color preferences",
+      "Stability improvements",
+      "Optimization"
+    ]
+  },
+  {
+    "version": "1.0.5",
+    "date": "2025-12-27",
+    "notes": [
+      "*Bills Sent/Printed in the same Preview Sort Order",
+      "*Remember last batch message (during current session)",
+      "*Search bar in Service move-in window",
+      "*Allow archiving directly from database validation window",
+      "Loading splash screen",
+      "Change add/remove service to move in/out",
+      "Auto-refresh on service changes"
+    ]
+  },
+  {
+    "version": "1.0.7",
+    "date": "2025-12-29",
+    "notes": [
+      "*AR Aging Report Customization (Coming soon to other reports)",
+      "*Change default print preview app in Settings",
+      "Service Location summary in Reporting Tab",
+      "Postcard invoice usage/reading display change"
+    ]
+  },
+  {
+    "version": "1.0.9",
+    "date": "2025-12-30",
+    "notes": [
+      "AR Aging Report Date Change",
+      "'View History' added to the R-Click Menus",
+      "Little bug fixes"
+    ]
+  },
+  {
+    "version": "1.1.0",
+    "date": "2025-12-31",
+    "notes": [
+      "*Updater optimize (future updates will be MUCH faster)"
+    ]
+  },
+  {
+    "version": "1.1.07",
+    "date": "2025-12-31",
+    "notes": [
+      "Note pinning",
+      "Note editing",
+      "Missed read report",
+      "Meter number searching",
+      "Allow uploading multiple read files"
+    ]
+  },
+  {
+    "version": "1.2.00",
+    "date": "2025-01-04",
+    "notes": [
+      "*Added 'WTR OFF' usage flag",
+      "*Billable customers includes all Accounts attached ot Services",
+      "*Hover highlighting in all major tables",
+      "*Remove Penalty shortcut (R-Click name in Preview Bills)",
+      "Show 'N/A' usage for non-estimated utility charges",
+      "0.00 bills are auto-discarded on post",
+      "Show usage on manual entry",
+      "Allow cancelling during QuickBooks invoice sending",
+      "QuickBooks Item validation before billing",
+      "Added config refresh in settings"
+    ]
+  },
+  {
+    "version": "1.2.02",
+    "date": "2025-01-07",
+    "notes": [
+      "*Post/Due dates are remembered during each session",
+      "Updated QuickBooks batch functions",
+      "Added search bar to View Bill Cycle window",
+      "Optimized the post billing process",
+      "Add page number to 3up postcard layout",
+      "Fixed many small bugs"
+    ]
+  },
+  {
+    "version": "1.2.08",
+    "date": "2025-01-13",
+    "notes": [
+      "*Added Remote Support Link (Uses Gmail)",
+      "Added Bad Meter Reads Report",
+      "Added force update button in settings",
+      "Fixed updating bugs"
+    ]
+  },
+  {
+    "version": "1.3.00",
+    "date": "2025-01-19",
+    "notes": [
+      "Big Update — Please Read\n",
+      "Thank you for your patience as several major changes are being rolled out.",
+      "Large updates can sometimes introduce unexpected issues, but these changes are important for the long-term improvement and stability of MuniBridge.",
+      "The backend communication between MuniBridge and QuickBooks has been completely rebuilt. This refactor enables new features and performance improvements that were not practical before.",
+      "With these changes, QuickBooks will not let you close it unless MuniBridge is closed first.",
+      "QuickBooks Online is not affected yet by these changes\n",
+      "Key Improvements:",
+      "QuickBooks transactions now appear in the history window",
+      "QuickBooks requests (such as sending invoices) are much faster",
+      "QuickBooks requests can continue even while modal dialogs are open",
+      "Improved long-term reliability once this refactoring phase is complete\n",
+      "Because this was a large internal change, please let me know if you experience any of the following:",
+      "MuniBridge closing unexpectedly",
+      "QuickBooks not closing properly after MuniBridge is closed",
+      "Any errors, including what you were doing when they occurred\n",
+      "These updates have been tested, but behavior can vary between machines. Your feedback is extremely helpful in identifying any remaining issues.\n\n",
+      "------------------------------------------------------------------------",
+      "Update Notes:",
+      "***Added history tab that shows QuickBooks transactions",
+      "**Added last payment amount and date to view",
+      "**Faster QuickBooks communication",
+      "*Added Service Location column options to AR Aging Report",
+      "REMOVED MIDDLE NAME COLUMN (First names were combined with middle name during update)",
+      "Auto-refresh the balance more frequently",
+      "Remove 'Find in QuickBooks' feature (Too unreliable)",
+      "Exclude outliers from estimates",
+      "Cache estimates to increase performance",
+      "Misc line items now show description when printed",
+      "Added reset button when add/removing line items",
+      "Fixed same-date table rows being out of order",
+      "Fixed charge based penalties not showing 'Due if Late'",
+      "Water and Sewer meter sizes change in unison",
+      "Moved 'Enable Prior Edits' to the Advanced menu",
+      "Moved Actual Usage beside Bill Usage, but is highlighted green",
+      "Replaced meter reading columns with service address when previewing bills",
+      "Allow right-clicking on row number in Edit Table",
+      "Allow right-clicking on Accounts column header",
+      "Subtle UI tweaks"
+    ]
+  },
+  {
+    "version": "1.3.03",
+    "date": "2025-01-20",
+    "notes": [
+      "**Added 'Both' tab to history",
+      "*Implemented transactions tab for QBO",
+      "Added refresh button for QB transactions / balance",
+      "Updated DEP Usage Report",
+      "Change QB AR Aging Report to use limits instead of buckets",
+      "Added record count to some reports",
+      "Added totals line to some reports",
+      "Fixed Accounts table column preferences not saving",
+      "Improved database initialization",
+      "Added warning when trying to open 2nd MuniBridge instance",
+      "Added user inital for notes box for multi-user mode"
+    ]
+  },
+  {
+    "version": "1.3.04",
+    "date": "2025-01-22",
+    "notes": [
+      "**Revamped adjustments (double-click invoice or usage row to access)",
+      "*Added 'View Recently Printed' button in Reporting tab",
+      "Small bug fixes"
+    ]
+  },
+  {
+    "version": "1.3.05",
+    "date": "2025-01-26",
+    "notes": [
+      "*Add ability to edit line item amounts",
+      "*Changed Service notes to muli-item box",
+      "Added option to send error log in bug report menu",
+      "Bug fixes"
+    ]
+  },
+  {
+    "version": "1.3.07",
+    "date": "2025-02-02",
+    "notes": [
+      "Added usage and flag to Bill Edit List",
+      "Changed Bill Edit List and reporting Pie Chart to use QB Transactions",
+      "Reminders pop-up without restarting MuniBridge",
+      "Fixed Acct No. sorting in Aging Report",
+      "Fixed post date using last month",
+      "Bug fixes"
+    ]
+  },
+  {
+    "version": "1.3.08",
+    "date": "2025-02-04",
+    "notes": [
+      "***Added pending charges list (penalties show here after due date)",
+      "Re-worked the Single Bill calculation form",
+      "Re-worked Bill Edit List layout again",
+      "Made notes/message save button turn red, reminding you to save",
+      "Subtle tweaks to history tabs",
+      "Subtle UI tweaks",
+      "Added more error tracking",
+      "Bug fixes"
+    ]
+  },
+  {
+    "version": "1.3.20",
+    "date": "2026-02-17",
+    "notes": [
+      "*Added meter details report",
+      "*Optional comma formatting for meter reads (disable in settings)",
+      "Added new Account button to top of Accounts tab",
+      "Added right-click to Utilities box to add new Utility",
+      "Added CSV import/export function for rate tables",
+      "Added CSV export for Accounts table",
+      "Added location pie chart click fucntion to filter by accounts",
+      "Improved file path memory",
+      "Made many backend database improvements",
+      "Fixed AR Aging Report display inconsistencies",
+      "Bug fixes"
+    ]
+  },
+  {
+    "version": "1.3.30",
+    "date": "2026-02-23",
+    "notes": [
+      "**Added print button to the main Accounts view (Prints Accounts with current filter / search results)",
+      "**Revamped print dialog for convenience (can now search with Ctrl+F)",
+      "*Changed posting dialog (now has its own window)",
+      "Added option to include/exclude credit balances from printing",
+      "Names with a misc charge are now highlighted in Preview",
+      "Revamped settings UI",
+      "Added option to print line items in lowercase",
+      "Made many backend improvements for long-term reliability",
+      "UI Tweaks",
+      "Bug fixes"
+    ]
+  },
+  {
+    "version": "1.3.33",
+    "date": "2026-03-01",
+    "notes": [
+      "Added outline to table selection highlighting",
+      "Added more error logging",
+      "Backend work for upcoming features"
+    ]
+  },
+  {
+    "version": "1.3.34",
+    "date": "2026-03-08",
+    "notes": [
+      "Implemented 'Bill Email' function (Uses QuickBooks)",
+      "Added icons to certain menu items",
+      "Added ability to adjust Credit Memos (previously blocked)",
+      "Added 'Delete Both' option to the 'Both' history tab",
+      "Added more preference options to Settings",
+      "Added preference for penalty enforcement type",
+      "Changed Accounts contact/address + CC address panels",
+      "Changed Date boxes to accept dates with or without slashes",
+      "Tweaked penalty pending charges to be more precise",
+      "Optimized performance when switching tabs",
+      "Fixed QBO not staying connected",
+      "Fixed penalties not applying",
+      "Fixed save button for reports",
+      "Fixed migration error for multi-user database",
+      "Fixed Config backups saving in incorrect location",
+      "Fixed little UI bugs"
+    ]
+  },
+  {
+    "version": "1.3.35",
+    "date": "2026-03-08",
+    "notes": [
+      "Reverted recent change that made QB take forever to connect",
+      "Added lock to 'Calculate Single' to prevent duplicates of the same Account opening",
+      "Added highlighting to standard utility line items that are credits",
+      "Added 'Calculate Single' shortcut to right-clicking an Account",
+      "Remove line item compression of dissimilar signed items"
+    ]
+  },
+  {
+    "version": "1.3.40",
+    "date": "2026-03-22",
+    "notes": [
+      "Temporarily disabled pending penalties. Penalties are currently calculated using old system (at time of billing) until further testing of new system.",
+      "Added payment processing integration (in testing)",
+      "Added copy to new Account feature (allows copying Account info to a new Account)",
+      "Added button to manually add more reads to the Verify & Edit Table",
+      "Added print button to missed customers inside of 'View Bill Cycle'",
+      "Added 'Add Message' option to Bill Single form",
+      "UI Tweaks",
+      "Fixed graphics bug showing ghost transactions on closed account",
+      "Small bug fixes",
+      "Added more error logging"
+    ]
+  },
+  {
+    "version": "1.3.41",
+    "date": "2026-03-29",
+    "notes": [
+      "**Added meter message feature (Right-Click row in 'Verify & Edit' table)",
+      "Added highlight to edges of selected row",
+      "Implemented bill paper checkbox",
+      "Fixed Bill Email checkbox bug + removed save button (saved instantly now)",
+      "Small bug fixes"
+    ]
+  },
+  {
+    "version": "1.3.42",
+    "date": "2026-03-31",
+    "notes": [
+      "Added bad meter read report",
+      "Fixed account number not being fully prioritized in the search bar"
+    ]
+  },
+  {
+    "version": "1.4.00",
+    "date": "2026-04-28",
+    "notes": [
+      "***Added mass messaging system",
+      "***Added history/service/warning slideout when Verifying & Editing",
+      "**Added user guide in Help Menu (W.I.P.)",
+      "**Added bad meter read streak highlighting",
+      "**Added payment summary pie charts to Reporting tab",
+      "*Added option to print last payment on bill (enabled by default)",
+      "*Added option to print prior balance line on bill (enabled by default)",
+      "Added 'Search for Acct' menu item when right-clicking",
+      "Added date to update notes",
+      "Added payment message field to print on invoices",
+      "Added past update notes catalog in Help menu",
+      "Added average usage report",
+      "Added billing prefs to Account Creation form",
+      "Added highlighting for usage not in resolution of 100 gallons e.g. 3,460",
+      "Added 'NOT LIKE' operator to report preview",
+      "Added data validation to View Bill Cycle (looks for QB invoice)",
+      "Added more error logging",
+      "Switched Serv. ID to Acct No. for manual entries",
+      "Improved backend structure for future reliability",
+      "Reset user color highlight settings",
+      "Changed table highlighting, still W.I.P...",
+      "Changed payment processor balance upload to refresh every hour",
+      "Changed many small UI elements",
+      "Fixed QuickBooks being locked still with MuniBridge closed (Maybe??)",
+      "Fixed posting cancellation on QB email failure",
+      "Fixed estimation usage caching issue",
+      "Fixed the not equal (!=) operator in report preview",
+      "Fixed notes/message clearing after a \"Too many characters\" error",
+      "Fixed QB payment import to accept only the Acct No.",
+      "Fixed name not showing on all pages for group billing",
+      "Fixed reports preview width scale not matching PDF output",
+      "Fixed reports preview column resizing",
+      "Fixed group billing button highlighting behavior",
+      "Fixed some tables not sorting Acct No. properly",
+      "Fixed not being able to manually enter negative number into Bill Usage",
+      "Fixed PDFs being blocked when open",
+      "Fixed button highlighting getting stuck",
+      "Fixed many, many, other small bugs"
+    ]
+  },
+  {
+    "version": "1.4.01",
+    "date": "2026-04-30",
+    "notes": [
+      "Fixed penalties not calculating (pending penalties still disabled until further notice)"
+    ]
+  },
+  {
+    "version": "1.4.10",
+    "date": "2026-05-05",
+    "notes": [
+      "**Added Utility & status filtering",
+      "*Added button to activate/deactivate all Utilities at location in one motion",
+      "*Added option for non-blocking success messages (on by default)",
+      "Added more to the user guide",
+      "Added search results for notes",
+      "Added Utility double-clicking from billing slideout (read-only)",
+      "Added soft warning for QB Acct No. conflicts (E.g. duplicate accounts)",
+      "Added bill payment message to settings",
+      "Added alert system (Alerts from MuniBridge to you. E.g. Known issue being fixed",
+      "Added additional meter fields (optional)",
+      "Changed prior read to use last PHYSICAL read date moving forward",
+      "Changed manual estimates from displaying '-123' bill usage to display 'TYPE'",
+      "Changed filtering & refresh behavior",
+      "Replaced high usage highlighting with variance highlighting (highlights if usage is outside of expected range)",
+      "Small UI changes",
+      "Fixed payment month display in Reporting"
+    ]
+  },
+  {
+    "version": "1.4.11",
+    "date": "2026-05-13",
+    "notes": [
+      "Added filter for EDU count",
+      "Added more QB closing error logging (Still having issues)",
+      "Added missed customer report",
+      "Added price auto-fill for QuickBooks items",
+      "Changed back-end of Transactions table",
+      "Fixed 'Create Utility' button not showing",
+      "Small bug fixes"
+    ]
+  }
+]
