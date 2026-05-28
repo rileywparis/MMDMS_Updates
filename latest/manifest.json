@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
-  "appVersion": "1.4.11",
-  "generatedUtc": "2026-05-14T02:55:05Z",
+  "appVersion": "1.4.12",
+  "generatedUtc": "2026-05-28T17:15:39Z",
   "filesBasePath": "latest/files/",
   "files": [
     {
@@ -750,8 +750,8 @@
     },
     {
       "path": "MuniBridge.exe",
-      "sha256": "f43a3a2ec352f9f964a66f618e0b84dea60c3bbdf43775b103b6cad0dd1ebeec",
-      "size": 3037184,
+      "sha256": "c8fff40a163b7f298d560a28dd3d54c3b22745c3909fbcb442b1ac94219f2724",
+      "size": 3037696,
       "mode": "overwrite"
     },
     {
@@ -1266,7 +1266,7 @@
     },
     {
       "path": "Updater.Common.dll",
-      "sha256": "5d8c8571d12f294d2460e8150490102979d325793c37291c410580a6a8611a1c",
+      "sha256": "2d9a9e446be35888e9d3ea8e502af2068fe44a892fb902170ad51982adeb7464",
       "size": 13824,
       "mode": "overwrite"
     },
@@ -1296,7 +1296,7 @@
     },
     {
       "path": "version.json",
-      "sha256": "bf310feb011c0d3690457a46691301464dabefd9ed823438a41489fadb58a40c",
+      "sha256": "4c62225facf6bba924fc3cf6fd2b8224668bfde489c9d4689e06947571196db4",
       "size": 101,
       "mode": "overwrite"
     },
