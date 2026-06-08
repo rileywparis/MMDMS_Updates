@@ -486,5 +486,21 @@
       "Fixed 'Create Utility' button not showing",
       "Small bug fixes"
     ]
+  },
+  {
+    "version": "1.4.13",
+    "date": "2026-06-08",
+    "notes": [
+      "*Added multi-select right-clicking (remove multiple penalties or rows at a time)",
+      "Added Updater fail safe (will be used soon)",
+      "Added custom all report",
+      "Added print bill preview option",
+      "Added duplicate property address detection",
+      "Added vacant property archive button",
+      "Added image field for invoices",
+      "Changed 'TYPE' display for invalid estimates to 'NO EST.'",
+      "Changed QuickBooks customer lists to hide non-MuniBridge accounts",
+      "Small bug fixes"
+    ]
   }
 ]

@@ -68,6 +68,10 @@
           <DataField>ItemDesc</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="SORT_ORDER">
+          <DataField>SORT_ORDER</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>mdmsDataSet</rd:DataSetName>
@@ -167,9 +171,9 @@
               </Paragraph>
             </Paragraphs>
             <Top>0.49479in</Top>
-            <Left>3.26042in</Left>
+            <Left>2.57148in</Left>
             <Height>0.25in</Height>
-            <Width>1.47917in</Width>
+            <Width>2.85704in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -198,9 +202,9 @@
               </Paragraph>
             </Paragraphs>
             <Top>0.65729in</Top>
-            <Left>3.26042in</Left>
+            <Left>3.03646in</Left>
             <Height>0.25in</Height>
-            <Width>1.47917in</Width>
+            <Width>1.92708in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -1010,7 +1014,7 @@
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!ROUTE_NO.Value</Value>
+                      <Value>=Min(Fields!SORT_ORDER.Value)</Value>
                     </SortExpression>
                   </SortExpressions>
                   <TablixMembers>
@@ -1056,7 +1060,7 @@
                       </Group>
                       <SortExpressions>
                         <SortExpression>
-                          <Value>=Fields!ROUTE_NO.Value</Value>
+                          <Value>=Min(Fields!SORT_ORDER.Value)</Value>
                         </SortExpression>
                       </SortExpressions>
                       <TablixMembers>
@@ -1106,10 +1110,7 @@
                           </Group>
                           <SortExpressions>
                             <SortExpression>
-                              <Value>=Fields!REV_FNAME.Value</Value>
-                            </SortExpression>
-                            <SortExpression>
-                              <Value>=Fields!ACCT_NO.Value</Value>
+                              <Value>=Min(Fields!SORT_ORDER.Value)</Value>
                             </SortExpression>
                           </SortExpressions>
                           <TablixHeader>
@@ -1630,10 +1631,7 @@
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!REV_FNAME.Value</Value>
-                    </SortExpression>
-                    <SortExpression>
-                      <Value>=Fields!ACCT_NO.Value</Value>
+                      <Value>=Min(Fields!SORT_ORDER.Value)</Value>
                     </SortExpression>
                   </SortExpressions>
                   <TablixHeader>

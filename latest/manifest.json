@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
-  "appVersion": "1.4.12",
-  "generatedUtc": "2026-05-28T17:15:39Z",
+  "appVersion": "1.4.13",
+  "generatedUtc": "2026-06-08T05:03:15Z",
   "filesBasePath": "latest/files/",
   "files": [
     {
@@ -18,14 +18,14 @@
     },
     {
       "path": "changelog.json",
-      "sha256": "1b26b4bf374ae1a3361857c7651269c466e8e6de99938ccb9f1399695d28ed3c",
-      "size": 18275,
+      "sha256": "55986040e28aa0a3f8830ad513472ff25bbb54b9638e91fde341570a80c5a091",
+      "size": 18893,
       "mode": "overwrite"
     },
     {
       "path": "config.default.json",
-      "sha256": "e4494efee51d7616629755dc48730ce97b9aa3bb8a2da85169ab95ea4745afa6",
-      "size": 1741,
+      "sha256": "3371930ecf4fead795ae46adb58f89525179b0c9c8757bff24ba88322733559d",
+      "size": 1795,
       "mode": "overwrite"
     },
     {
@@ -750,8 +750,8 @@
     },
     {
       "path": "MuniBridge.exe",
-      "sha256": "c8fff40a163b7f298d560a28dd3d54c3b22745c3909fbcb442b1ac94219f2724",
-      "size": 3037696,
+      "sha256": "c413e0c380138b95148b3122e7329746dc400919c2d00944632eb2e6ee3854a4",
+      "size": 3060736,
       "mode": "overwrite"
     },
     {
@@ -948,8 +948,8 @@
     },
     {
       "path": "Reporting/RDLC/BillEditList.rdlc",
-      "sha256": "e81b897c15a5d6429742e2e034ae9eeb5656260a37d9eefd7ea1c243faabdf67",
-      "size": 101995,
+      "sha256": "681c4a93ab46cfb1ea75e0636524c587ad2ed74c7d2adc6e1ebdbe79d4ae37d2",
+      "size": 101872,
       "mode": "overwrite"
     },
     {
@@ -966,8 +966,8 @@
     },
     {
       "path": "Reporting/RDLC/GroupInvoices.rdlc",
-      "sha256": "8dd3695ca6ddcebc4b1c00e901765e0505c2c9ab17964f3fc2c0df7c75fad2c1",
-      "size": 53587,
+      "sha256": "c75c273c05c0e788d40472617cde1dc6cafc6a4725a71e7723059daac0308de1",
+      "size": 55310,
       "mode": "overwrite"
     },
     {
@@ -978,14 +978,14 @@
     },
     {
       "path": "Reporting/RDLC/PostcardInvoices3up.rdlc",
-      "sha256": "2b7a0a4bd13c4c13fbe081bac8e6cee71ed482a6422f9762619bc49656a79c9c",
-      "size": 7730963,
+      "sha256": "333c5589f33ca091303d253fc663ff19f3e02a0352c2dc432004120b0741da8a",
+      "size": 7732462,
       "mode": "overwrite"
     },
     {
       "path": "Reporting/RDLC/PostcardInvoices4up.rdlc",
-      "sha256": "744c99a6022490a8fd5fd94db3b866e6201534d5e1be837002047a882422764d",
-      "size": 7734476,
+      "sha256": "500a6d26ba86da2cc7a31cbc4f6d217c2f17409e290cfe56b510d6f49dacf9bf",
+      "size": 7736060,
       "mode": "overwrite"
     },
     {
@@ -996,19 +996,19 @@
     },
     {
       "path": "Reporting/RDLC/SingleInvoice.rdlc",
-      "sha256": "2c73e5a1d9d0c8135294040a9d73f3eb083c7a08804b515ccea7c8eec2eed143",
-      "size": 90093,
+      "sha256": "c7168dfb60fa16bb070ed57207493468ad3ee4c0d9b67d0346cb8894b2728030",
+      "size": 91600,
       "mode": "overwrite"
     },
     {
       "path": "Reporting/RDLC/UsageByMeterSize.rdlc",
-      "sha256": "a05548b0301a67bb82d5f0be7b183bdc68f5a05a60594cd4dc4d6f6a71130a22",
+      "sha256": "d41493de25141a4f4557c6238995fdf3d90f2ced96a893472acef2d19eaf5eb5",
       "size": 74227,
       "mode": "overwrite"
     },
     {
       "path": "Reporting/RDLC/UsageSummary.rdlc",
-      "sha256": "97acbdd6b34d67d9f66724cdef0c882b592a5a4b3db2d1d8536a043c527df294",
+      "sha256": "6bb1a6d283f40c57fdebed1d564acdc5159212fb9cf75bd048ec7da27f207d3f",
       "size": 48650,
       "mode": "overwrite"
     },
@@ -1266,8 +1266,8 @@
     },
     {
       "path": "Updater.Common.dll",
-      "sha256": "2d9a9e446be35888e9d3ea8e502af2068fe44a892fb902170ad51982adeb7464",
-      "size": 13824,
+      "sha256": "c049052d97c8461611c6b7d1a166507a646f98ceab3f0e466536b304d3a2c095",
+      "size": 15360,
       "mode": "overwrite"
     },
     {
@@ -1290,13 +1290,13 @@
     },
     {
       "path": "user_guide.pdf",
-      "sha256": "80a548a3f3c637a0caa015f141ca3445014082db4dd0679e546e48591d706006",
-      "size": 278694,
+      "sha256": "3c4257ec30b42f46e4fca795d03db3350f68d022cc192bb418d98a1d5f5d98fd",
+      "size": 282821,
       "mode": "overwrite"
     },
     {
       "path": "version.json",
-      "sha256": "4c62225facf6bba924fc3cf6fd2b8224668bfde489c9d4689e06947571196db4",
+      "sha256": "2413b5b3236de0be770ec4ea1d5ae72bf4342b083194526793b88b22351cb490",
       "size": 101,
       "mode": "overwrite"
     },

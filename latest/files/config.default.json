@@ -23,6 +23,7 @@
     "DueDays": 24,
     "GraceDays": 4,
     "PenaltyEnforceType": 0,
+    "BillingFreq": 1,
     "InvoiceRdlc": "PostcardInvoices4up",
     "ReversalItemName": "Payment Reversal",
     "BillPaymentMsg": ""
@@ -36,7 +37,8 @@
     "BadReadStreak": 3,
     "PrintPriorBalance": true,
     "PrintLastPaid": true,
-    "PrintInBrowser": false
+    "PrintInBrowser": false,
+    "FindLatestUpdate": true
   },
   "Estimation": {
     "YearLimit": 5,
