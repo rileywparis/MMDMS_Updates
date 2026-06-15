@@ -502,5 +502,13 @@
       "Changed QuickBooks customer lists to hide non-MuniBridge accounts",
       "Small bug fixes"
     ]
+  },
+  {
+    "version": "1.4.14",
+    "date": "2026-06-15",
+    "notes": [
+      "Backend maintenance to Update installer",
+      "Small filtering bug fixes"
+    ]
   }
 ]
