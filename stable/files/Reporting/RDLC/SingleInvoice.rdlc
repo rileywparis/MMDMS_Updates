@@ -475,7 +475,6 @@
                                                   <PaddingBottom>1pt</PaddingBottom>
                                                 </Style>
                                               </Textbox>
-                                              <rd:Selected>true</rd:Selected>
                                             </CellContents>
                                           </TablixCell>
                                           <TablixCell>
@@ -1114,6 +1113,29 @@ Parameters!CoCity.Value + ", " + Parameters!CoState.Value + " " + Parameters!CoZ
                                 <PaddingBottom>2pt</PaddingBottom>
                               </Style>
                             </Textbox>
+                            <Image Name="Image">
+                              <Source>External</Source>
+                              <Value>="file:///C:/ProgramData/MuniBridge/billing-image.png"</Value>
+                              <MIMEType>image/png</MIMEType>
+                              <Sizing>Fit</Sizing>
+                              <Top>0.32745in</Top>
+                              <Left>4.02083in</Left>
+                              <Height>1in</Height>
+                              <Width>1in</Width>
+                              <ZIndex>25</ZIndex>
+                              <Visibility>
+                                <Hidden>=Not Parameters!HasImage.Value</Hidden>
+                              </Visibility>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Image>
                           </ReportItems>
                           <KeepTogether>true</KeepTogether>
                           <Style>
@@ -1718,6 +1740,10 @@ Parameters!CoEmail.Value</Value>
       <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
+    <ReportParameter Name="HasImage">
+      <DataType>Boolean</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
@@ -1773,6 +1799,11 @@ Parameters!CoEmail.Value</Value>
           <ColumnIndex>1</ColumnIndex>
           <RowIndex>3</RowIndex>
           <ParameterName>PaymentMsg</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>3</RowIndex>
+          <ParameterName>HasImage</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>
