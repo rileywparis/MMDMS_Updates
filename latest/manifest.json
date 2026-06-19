@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
-  "appVersion": "1.4.14",
-  "generatedUtc": "2026-06-15T05:30:45Z",
+  "appVersion": "1.4.15",
+  "generatedUtc": "2026-06-19T05:26:57Z",
   "filesBasePath": "latest/files/",
   "files": [
     {
@@ -1248,8 +1248,8 @@
     },
     {
       "path": "tokens.enc",
-      "sha256": "a30ced81dcf5493d463e930ce5e81a2e70507ec9bc92ef9b765d4233f8f65d30",
-      "size": 720,
+      "sha256": "a1425fc42f340c707fd99ddc924e5f69ab416c3a2e331474f479f16935885ff0",
+      "size": 656,
       "mode": "overwrite"
     },
     {
@@ -1290,13 +1290,13 @@
     },
     {
       "path": "user_guide.pdf",
-      "sha256": "3c4257ec30b42f46e4fca795d03db3350f68d022cc192bb418d98a1d5f5d98fd",
-      "size": 282821,
+      "sha256": "29b213b03a04359c69d5bd12e12d272bd9e6501011832aadb7d59fd45833d018",
+      "size": 285558,
       "mode": "overwrite"
     },
     {
       "path": "version.json",
-      "sha256": "0bf13fc69adfd45891fc17c8e0be3d48f1f7725d9d965b4d3a7f263b51d040f1",
+      "sha256": "5fe2d49a93f755bdafc74f2f26f6e624767c48bf4b78a92fea86492ac792d7ee",
       "size": 101,
       "mode": "overwrite"
     },
