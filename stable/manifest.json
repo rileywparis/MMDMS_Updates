@@ -1,8 +1,8 @@
 {
   "manifestVersion": 1,
-  "appVersion": "1.4.15",
-  "generatedUtc": "2026-06-19T05:26:57Z",
-  "filesBasePath": "latest/files/",
+  "appVersion": "1.4.16",
+  "generatedUtc": "2026-06-22T02:15:55Z",
+  "filesBasePath": "stable/files/",
   "files": [
     {
       "path": "BouncyCastle.Cryptography.dll",
@@ -1266,8 +1266,8 @@
     },
     {
       "path": "Updater.Common.dll",
-      "sha256": "69253f42d8d89bc0cc294db22dbfe3f07e4159a2f9dcb4754613ab750b8b0fd4",
-      "size": 15360,
+      "sha256": "1eb7d10ff54d88a9773ef4bc50a692c9f7956d7fa17c7670f2f0997ae4bf99ba",
+      "size": 16384,
       "mode": "overwrite"
     },
     {
@@ -1296,7 +1296,7 @@
     },
     {
       "path": "version.json",
-      "sha256": "5fe2d49a93f755bdafc74f2f26f6e624767c48bf4b78a92fea86492ac792d7ee",
+      "sha256": "5760db890438a23ce541a0b2856c68662257b220e515d4ff672cc5cb22d3fc99",
       "size": 101,
       "mode": "overwrite"
     },

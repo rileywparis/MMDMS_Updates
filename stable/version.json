@@ -1,8 +1,8 @@
 {
-  "version": "1.4.15",
+  "version": "1.4.16",
   "repoOwner": "rileywparis",
   "repoName": "MMDMS_Updates",
   "branch": "main",
-  "latestFolder": "latest",
-  "filesBasePath": "latest/files/"
+  "latestFolder": "stable",
+  "filesBasePath": "stable/files/"
 }
