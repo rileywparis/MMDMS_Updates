@@ -510,5 +510,12 @@
       "Backend maintenance to Update installer",
       "Small filtering bug fixes"
     ]
+  },
+  {
+    "version": "1.4.17",
+    "date": "2026-07-08",
+    "notes": [
+      "QuickBooks closing lock fix attempt"
+    ]
   }
 ]
