@@ -517,5 +517,15 @@
     "notes": [
       "QuickBooks closing lock fix attempt"
     ]
+  },
+  {
+    "version": "1.4.18",
+    "date": "2026-07-27",
+    "notes": [
+      "Fixed payments flashing when empty",
+      "Disabled estimate caching temporarily (slower estimates)",
+      "Added print charts button to reporting screen",
+      "Added meter message button to manual entries"
+    ]
   }
 ]

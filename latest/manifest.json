@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
-  "appVersion": "1.4.17",
-  "generatedUtc": "2026-07-09T02:00:39Z",
+  "appVersion": "1.4.18",
+  "generatedUtc": "2026-07-27T04:08:06Z",
   "filesBasePath": "latest/files/",
   "files": [
     {
@@ -18,8 +18,8 @@
     },
     {
       "path": "changelog.json",
-      "sha256": "540ceeba795023d97a8e7a3b57ebb08cfe763a3c6702f5730fc606a7829f2cf4",
-      "size": 19197,
+      "sha256": "afa967734e74ac2565db63069272c9a4dbe07f91431670348b3c9edfa3e28c42",
+      "size": 19506,
       "mode": "overwrite"
     },
     {
@@ -336,7 +336,7 @@
     },
     {
       "path": "EnvDTE.dll",
-      "sha256": "02ed3f245c2cd093d34680f60eeffe6236e252cdb06c39679ff1cdbc78b90ee4",
+      "sha256": "30ef349d65aa3aacee79dd78c6efa52a2057114c30f5c5d0b61c7178ccf98070",
       "size": 255800,
       "mode": "overwrite"
     },
@@ -750,8 +750,8 @@
     },
     {
       "path": "MuniBridge.exe",
-      "sha256": "ee240f4f79a6023b795d45ee2f561fdc0969f4d355c110f2fa1850f241bdb57f",
-      "size": 3067904,
+      "sha256": "9906d8a329e58be96089e9780df149d9eb8e3c8ab89f53c051ca39028a365ce5",
+      "size": 3070464,
       "mode": "overwrite"
     },
     {
@@ -1266,7 +1266,7 @@
     },
     {
       "path": "Updater.Common.dll",
-      "sha256": "1eb7d10ff54d88a9773ef4bc50a692c9f7956d7fa17c7670f2f0997ae4bf99ba",
+      "sha256": "9e7e30de08959f35eb06c4074dcb6d845173af4c2e481124597c31c11ce6b9b1",
       "size": 16384,
       "mode": "overwrite"
     },
@@ -1296,7 +1296,7 @@
     },
     {
       "path": "version.json",
-      "sha256": "0dd36ae44157aaa3a5271e707beb248b764cd2bef8eab3a0d3d97fbb6561586d",
+      "sha256": "61f79b36f254a51c7d3ae6496389bdea32f33866f61fdb330acd65e6e3b3651a",
       "size": 101,
       "mode": "overwrite"
     },
